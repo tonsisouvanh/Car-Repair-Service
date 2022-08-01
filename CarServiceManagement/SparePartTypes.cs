@@ -61,6 +61,8 @@ namespace CarServiceManagement
                     {
                         MessageBox.Show(ex.Message);
                     }
+                    Load_SparePartTypes();
+
                 }
             }
             else if (colName == "edit")
@@ -73,9 +75,10 @@ namespace CarServiceManagement
                 sptm.btnUpdate.Enabled = true;
 
                 sptm.ShowDialog();
+                Load_SparePartTypes();
+
             }
 
-            Load_SparePartTypes();
         }
     }
 }

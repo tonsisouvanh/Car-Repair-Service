@@ -35,7 +35,7 @@ namespace CarServiceManagement
 
         private void ImageButtonClose_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            this.Close();
         }
 
         private void ImageButtonMaximize_Click(object sender, EventArgs e)

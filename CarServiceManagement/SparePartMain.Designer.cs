@@ -74,14 +74,13 @@
             // sidebar_SparePartType
             // 
             this.sidebar_SparePartType.BorderColor = System.Drawing.Color.White;
-            this.sidebar_SparePartType.BorderThickness = 1;
             this.sidebar_SparePartType.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.sidebar_SparePartType.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.sidebar_SparePartType.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.sidebar_SparePartType.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.sidebar_SparePartType.Dock = System.Windows.Forms.DockStyle.Top;
             this.sidebar_SparePartType.FillColor = System.Drawing.Color.Transparent;
-            this.sidebar_SparePartType.Font = new System.Drawing.Font("Phetsarath OT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sidebar_SparePartType.Font = new System.Drawing.Font("Noto Sans Lao", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sidebar_SparePartType.ForeColor = System.Drawing.Color.White;
             this.sidebar_SparePartType.Location = new System.Drawing.Point(7, 271);
             this.sidebar_SparePartType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -94,14 +93,15 @@
             // sidebar_SpareParts
             // 
             this.sidebar_SpareParts.BorderColor = System.Drawing.Color.White;
-            this.sidebar_SpareParts.BorderThickness = 1;
+            this.sidebar_SpareParts.CustomBorderColor = System.Drawing.Color.White;
+            this.sidebar_SpareParts.CustomBorderThickness = new System.Windows.Forms.Padding(0, 1, 0, 0);
             this.sidebar_SpareParts.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.sidebar_SpareParts.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.sidebar_SpareParts.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.sidebar_SpareParts.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.sidebar_SpareParts.Dock = System.Windows.Forms.DockStyle.Top;
             this.sidebar_SpareParts.FillColor = System.Drawing.Color.Transparent;
-            this.sidebar_SpareParts.Font = new System.Drawing.Font("Phetsarath OT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sidebar_SpareParts.Font = new System.Drawing.Font("Noto Sans Lao", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sidebar_SpareParts.ForeColor = System.Drawing.Color.White;
             this.sidebar_SpareParts.Location = new System.Drawing.Point(7, 225);
             this.sidebar_SpareParts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -197,11 +197,11 @@
             this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTitle.AutoSize = true;
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitle.Font = new System.Drawing.Font("Phetsarath OT", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Font = new System.Drawing.Font("Noto Sans Lao", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(443, 10);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(72, 41);
+            this.lblTitle.Size = new System.Drawing.Size(71, 44);
             this.lblTitle.TabIndex = 2;
             this.lblTitle.Text = "ຫົວຂໍ້";
             // 

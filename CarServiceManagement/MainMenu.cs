@@ -27,5 +27,11 @@ namespace CarServiceManagement
             this.WindowState = FormWindowState.Maximized;
 
         }
+
+        private void guna2TileButton1_Click(object sender, EventArgs e)
+        {
+            SparePartMain sppm = new SparePartMain();
+            sppm.ShowDialog();
+        }
     }
 }
