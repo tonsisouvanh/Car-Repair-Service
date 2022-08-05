@@ -28,13 +28,12 @@ namespace CarServiceManagement
         private bool checkForm()
         {
             string partName = txtPartName.Text.ToString();
-            string desc = txtPartDesc.Text.ToString();
             string cal_unit = txtCalUnit.Text.ToString();
             string price = txtPrice.Text.ToString();
             string currency = txtCurrency.Text.ToString();
 
 
-            return partName != "" && desc != "" && cal_unit != "" && price != "" && currency != "";
+            return partName != "" && cal_unit != "" && price != "" && currency != "";
         }
 
         public void Clear()
@@ -50,8 +49,8 @@ namespace CarServiceManagement
             //comboBoxPartBrand.SelectedIndex = 0;
             numberStock.Value = 1;
 
-            btnSave.Enabled = true;
-            btnUpdate.Enabled = false;
+            //btnSave.Enabled = true;
+            //btnUpdate.Enabled = false;
         }
        
         private void load_PartType()

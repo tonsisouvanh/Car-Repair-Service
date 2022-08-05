@@ -31,30 +31,26 @@
             this.components = new System.ComponentModel.Container();
             this.picClose = new System.Windows.Forms.PictureBox();
             this.labelID = new System.Windows.Forms.Label();
-            this.txtBrand = new System.Windows.Forms.TextBox();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.label1 = new System.Windows.Forms.Label();
-            this.labelPartTypeName = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtCurrency = new System.Windows.Forms.TextBox();
-            this.txtCalUnit = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.comboBoxPartType = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.numberStock = new System.Windows.Forms.NumericUpDown();
-            this.txtPrice = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtPartDesc = new System.Windows.Forms.TextBox();
-            this.txtPartName = new System.Windows.Forms.TextBox();
+            this.txtCusName = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnUpdate = new System.Windows.Forms.Button();
+            this.txtPhone = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtAddressDetail = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.comboBoxProvince = new System.Windows.Forms.ComboBox();
+            this.comboBoxDistrict = new System.Windows.Forms.ComboBox();
+            this.buttonAddCar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numberStock)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,19 +72,10 @@
             this.labelID.AutoSize = true;
             this.labelID.Location = new System.Drawing.Point(48, 432);
             this.labelID.Name = "labelID";
-            this.labelID.Size = new System.Drawing.Size(44, 16);
+            this.labelID.Size = new System.Drawing.Size(77, 16);
             this.labelID.TabIndex = 86;
-            this.labelID.Text = "PartID";
+            this.labelID.Text = "CustomerID";
             this.labelID.Visible = false;
-            // 
-            // txtBrand
-            // 
-            this.txtBrand.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBrand.Location = new System.Drawing.Point(775, 160);
-            this.txtBrand.Margin = new System.Windows.Forms.Padding(4);
-            this.txtBrand.Name = "txtBrand";
-            this.txtBrand.Size = new System.Drawing.Size(245, 37);
-            this.txtBrand.TabIndex = 70;
             // 
             // guna2BorderlessForm1
             // 
@@ -108,144 +95,16 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ປ້ອນ / ແກ້ໄຂຂໍ່ມູນລູກຄ້າ";
             // 
-            // labelPartTypeName
-            // 
-            this.labelPartTypeName.AutoSize = true;
-            this.labelPartTypeName.Location = new System.Drawing.Point(48, 449);
-            this.labelPartTypeName.Name = "labelPartTypeName";
-            this.labelPartTypeName.Size = new System.Drawing.Size(100, 16);
-            this.labelPartTypeName.TabIndex = 87;
-            this.labelPartTypeName.Text = "PartTypeName";
-            this.labelPartTypeName.Visible = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(637, 158);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(42, 33);
-            this.label5.TabIndex = 85;
-            this.label5.Text = "ຍີ່ຫໍ້";
-            // 
-            // txtCurrency
-            // 
-            this.txtCurrency.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCurrency.Location = new System.Drawing.Point(503, 328);
-            this.txtCurrency.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCurrency.Name = "txtCurrency";
-            this.txtCurrency.Size = new System.Drawing.Size(67, 37);
-            this.txtCurrency.TabIndex = 74;
-            this.txtCurrency.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtCalUnit
-            // 
-            this.txtCalUnit.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCalUnit.Location = new System.Drawing.Point(217, 271);
-            this.txtCalUnit.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCalUnit.Name = "txtCalUnit";
-            this.txtCalUnit.Size = new System.Drawing.Size(353, 37);
-            this.txtCalUnit.TabIndex = 72;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(43, 269);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(110, 33);
-            this.label9.TabIndex = 84;
-            this.label9.Text = "ຫົວໜ່ວຍວັດ";
-            // 
-            // comboBoxPartType
-            // 
-            this.comboBoxPartType.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxPartType.FormattingEnabled = true;
-            this.comboBoxPartType.Location = new System.Drawing.Point(775, 107);
-            this.comboBoxPartType.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBoxPartType.Name = "comboBoxPartType";
-            this.comboBoxPartType.Size = new System.Drawing.Size(244, 37);
-            this.comboBoxPartType.TabIndex = 68;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Dosis", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(637, 221);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(51, 24);
-            this.label8.TabIndex = 83;
-            this.label8.Text = "Stock";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(636, 105);
+            this.label3.Location = new System.Drawing.Point(45, 164);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 33);
+            this.label3.Size = new System.Drawing.Size(57, 33);
             this.label3.TabIndex = 82;
-            this.label3.Text = "ປະເພດ";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(45, 326);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(52, 33);
-            this.label7.TabIndex = 81;
-            this.label7.Text = "ລາຄາ";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(45, 160);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 33);
-            this.label4.TabIndex = 80;
-            this.label4.Text = "ຄຳອະທິບາຍ";
-            // 
-            // numberStock
-            // 
-            this.numberStock.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numberStock.Location = new System.Drawing.Point(774, 216);
-            this.numberStock.Margin = new System.Windows.Forms.Padding(4);
-            this.numberStock.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numberStock.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numberStock.Name = "numberStock";
-            this.numberStock.Size = new System.Drawing.Size(245, 37);
-            this.numberStock.TabIndex = 71;
-            this.numberStock.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numberStock.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // txtPrice
-            // 
-            this.txtPrice.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrice.Location = new System.Drawing.Point(217, 328);
-            this.txtPrice.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(278, 37);
-            this.txtPrice.TabIndex = 73;
+            this.label3.Text = "ອິເມວ";
             // 
             // btnSave
             // 
@@ -263,6 +122,7 @@
             this.btnSave.TabIndex = 76;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel
             // 
@@ -280,6 +140,7 @@
             this.btnCancel.TabIndex = 79;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // label2
             // 
@@ -288,28 +149,18 @@
             this.label2.Location = new System.Drawing.Point(45, 105);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 33);
+            this.label2.Size = new System.Drawing.Size(70, 33);
             this.label2.TabIndex = 77;
-            this.label2.Text = "ຊື່ອາໄຫຼ່";
+            this.label2.Text = "ຊື່ລູກຄ້າ";
             // 
-            // txtPartDesc
+            // txtCusName
             // 
-            this.txtPartDesc.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPartDesc.Location = new System.Drawing.Point(217, 162);
-            this.txtPartDesc.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPartDesc.Multiline = true;
-            this.txtPartDesc.Name = "txtPartDesc";
-            this.txtPartDesc.Size = new System.Drawing.Size(353, 88);
-            this.txtPartDesc.TabIndex = 69;
-            // 
-            // txtPartName
-            // 
-            this.txtPartName.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPartName.Location = new System.Drawing.Point(217, 108);
-            this.txtPartName.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPartName.Name = "txtPartName";
-            this.txtPartName.Size = new System.Drawing.Size(353, 37);
-            this.txtPartName.TabIndex = 67;
+            this.txtCusName.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCusName.Location = new System.Drawing.Point(172, 108);
+            this.txtCusName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCusName.Name = "txtCusName";
+            this.txtCusName.Size = new System.Drawing.Size(353, 37);
+            this.txtCusName.TabIndex = 67;
             // 
             // panel1
             // 
@@ -339,38 +190,149 @@
             this.btnUpdate.TabIndex = 78;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // txtPhone
+            // 
+            this.txtPhone.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhone.Location = new System.Drawing.Point(734, 164);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(285, 37);
+            this.txtPhone.TabIndex = 88;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(588, 164);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(99, 33);
+            this.label4.TabIndex = 89;
+            this.label4.Text = "ເບີໂທລະສັບ";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(172, 164);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(353, 37);
+            this.txtEmail.TabIndex = 90;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(45, 222);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(56, 33);
+            this.label6.TabIndex = 91;
+            this.label6.Text = "ແຂວງ";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(588, 222);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(52, 33);
+            this.label7.TabIndex = 94;
+            this.label7.Text = "ເມືອງ";
+            // 
+            // txtAddressDetail
+            // 
+            this.txtAddressDetail.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddressDetail.Location = new System.Drawing.Point(221, 279);
+            this.txtAddressDetail.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAddressDetail.Name = "txtAddressDetail";
+            this.txtAddressDetail.Size = new System.Drawing.Size(798, 37);
+            this.txtAddressDetail.TabIndex = 96;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(45, 279);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(129, 33);
+            this.label8.TabIndex = 95;
+            this.label8.Text = "ລາຍລະອຽດທີ່ຢູ່";
+            // 
+            // comboBoxProvince
+            // 
+            this.comboBoxProvince.DropDownHeight = 200;
+            this.comboBoxProvince.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxProvince.FormattingEnabled = true;
+            this.comboBoxProvince.IntegralHeight = false;
+            this.comboBoxProvince.Location = new System.Drawing.Point(172, 222);
+            this.comboBoxProvince.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxProvince.Name = "comboBoxProvince";
+            this.comboBoxProvince.Size = new System.Drawing.Size(353, 37);
+            this.comboBoxProvince.TabIndex = 97;
+            // 
+            // comboBoxDistrict
+            // 
+            this.comboBoxDistrict.DropDownHeight = 200;
+            this.comboBoxDistrict.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxDistrict.FormattingEnabled = true;
+            this.comboBoxDistrict.IntegralHeight = false;
+            this.comboBoxDistrict.Location = new System.Drawing.Point(734, 222);
+            this.comboBoxDistrict.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxDistrict.Name = "comboBoxDistrict";
+            this.comboBoxDistrict.Size = new System.Drawing.Size(285, 37);
+            this.comboBoxDistrict.TabIndex = 98;
+            // 
+            // buttonAddCar
+            // 
+            this.buttonAddCar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonAddCar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.buttonAddCar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonAddCar.FlatAppearance.BorderSize = 0;
+            this.buttonAddCar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAddCar.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddCar.ForeColor = System.Drawing.Color.White;
+            this.buttonAddCar.Location = new System.Drawing.Point(894, 357);
+            this.buttonAddCar.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonAddCar.Name = "buttonAddCar";
+            this.buttonAddCar.Size = new System.Drawing.Size(125, 43);
+            this.buttonAddCar.TabIndex = 99;
+            this.buttonAddCar.Text = "ໃສ່ຂໍ້ມູນລົດ";
+            this.buttonAddCar.UseVisualStyleBackColor = false;
+            this.buttonAddCar.Click += new System.EventHandler(this.buttonAddCar_Click);
             // 
             // CustomerModule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 476);
-            this.Controls.Add(this.labelID);
-            this.Controls.Add(this.txtBrand);
-            this.Controls.Add(this.labelPartTypeName);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtCurrency);
-            this.Controls.Add(this.txtCalUnit);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.comboBoxPartType);
+            this.Controls.Add(this.buttonAddCar);
+            this.Controls.Add(this.comboBoxDistrict);
+            this.Controls.Add(this.comboBoxProvince);
+            this.Controls.Add(this.txtAddressDetail);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.numberStock);
-            this.Controls.Add(this.txtPrice);
+            this.Controls.Add(this.txtPhone);
+            this.Controls.Add(this.labelID);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtPartDesc);
-            this.Controls.Add(this.txtPartName);
+            this.Controls.Add(this.txtCusName);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnUpdate);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CustomerModule";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CustomerModule";
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numberStock)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -382,27 +344,24 @@
 
         private System.Windows.Forms.PictureBox picClose;
         public System.Windows.Forms.Label labelID;
-        public System.Windows.Forms.TextBox txtBrand;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
-        public System.Windows.Forms.Label labelPartTypeName;
-        private System.Windows.Forms.Label label5;
-        public System.Windows.Forms.TextBox txtCurrency;
-        public System.Windows.Forms.TextBox txtCalUnit;
-        private System.Windows.Forms.Label label9;
-        public System.Windows.Forms.ComboBox comboBoxPartType;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label4;
-        public System.Windows.Forms.NumericUpDown numberStock;
-        public System.Windows.Forms.TextBox txtPrice;
         public System.Windows.Forms.Button btnSave;
         public System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label label2;
-        public System.Windows.Forms.TextBox txtPartDesc;
-        public System.Windows.Forms.TextBox txtPartName;
+        public System.Windows.Forms.TextBox txtCusName;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Label label6;
+        public System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.Label label4;
+        public System.Windows.Forms.TextBox txtPhone;
+        public System.Windows.Forms.TextBox txtAddressDetail;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        public System.Windows.Forms.ComboBox comboBoxDistrict;
+        public System.Windows.Forms.ComboBox comboBoxProvince;
+        public System.Windows.Forms.Button buttonAddCar;
     }
 }

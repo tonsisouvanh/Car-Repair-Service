@@ -25,8 +25,8 @@ namespace CarServiceManagement
         public void Clear()
         {
             txtPartTypeName.Clear();
-            btnUpdate.Enabled = false;
-            btnSave.Enabled = true;
+            //btnUpdate.Enabled = false;
+            //btnSave.Enabled = true;
             txtPartTypeName.Focus();
         }
 

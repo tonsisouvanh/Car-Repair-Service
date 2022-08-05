@@ -276,7 +276,7 @@
             this.label1.Location = new System.Drawing.Point(4, 15);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(232, 38);
+            this.label1.Size = new System.Drawing.Size(221, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "ປ້ອນ / ແກ້ໄຂຂໍ່ມູນອາໄຫຼ່";
             // 
@@ -315,8 +315,10 @@
             // 
             // comboBoxPartType
             // 
+            this.comboBoxPartType.DropDownHeight = 200;
             this.comboBoxPartType.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxPartType.FormattingEnabled = true;
+            this.comboBoxPartType.IntegralHeight = false;
             this.comboBoxPartType.Location = new System.Drawing.Point(775, 112);
             this.comboBoxPartType.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxPartType.Name = "comboBoxPartType";

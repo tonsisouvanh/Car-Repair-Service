@@ -23,13 +23,77 @@ namespace CarServiceManagement
         {
             DataTable data = DataProvider.Instance.ExecuteQuery("select * from Customer");
             gunaDtgvCustomers.DataSource = data;
-            //gunaDtgvCustomers.Columns["price"].DefaultCellStyle.Format = "N0";
         }
 
         private void ImageButtonAdd_Click(object sender, EventArgs e)
         {
-            CustomerModule cus = new CustomerModule();
+            CustomerModule cus = new CustomerModule(this);
             cus.ShowDialog();
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            DataTable data = DataProvider.Instance.ExecuteQuery("select * from Customer where " +
+            "concat(name,email,phone,province,district,created_date) LIKE N'%" + txtSearch.Text + "%'");
+            gunaDtgvCustomers.DataSource = data;
+        }
+
+        private void gunaDtgvCustomers_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //For update and delete brand by cell click from tbBrand
+            string colName = gunaDtgvCustomers.Columns[e.ColumnIndex].Name;
+
+            if (colName == "delete")
+            {
+                if (MessageBox.Show("ຕ້ອງການລົບຂໍ້ມູນ?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    try
+                    {
+                        int customerID = Int32.Parse(gunaDtgvCustomers.Rows[e.RowIndex].Cells["customerID"].FormattedValue.ToString());
+
+                        string query = "DELETE Customer WHERE customerID = " + customerID;
+                        int result = DataProvider.Instance.ExecuteNoneQuery(query);
+
+                        if (result != 0)
+                        {
+                            MessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("ບໍ່ສາມາດລົບໄດ້ ຫຼື ລອງລົບຂໍ້ມູນລົດກ່ອນຂອງລູກຄ້າກ່ອນ ແລ້ວພະຍາຍາມໃໝ່", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                    Load_Customers();
+
+                }
+            }
+            else if (colName == "edit")
+            {
+                CustomerModule module = new CustomerModule(this);
+
+                module.labelID.Text = gunaDtgvCustomers.Rows[e.RowIndex].Cells["customerID"].FormattedValue.ToString();
+
+                module.txtCusName.Text = gunaDtgvCustomers.Rows[e.RowIndex].Cells["name"].FormattedValue.ToString();
+                module.txtEmail.Text = gunaDtgvCustomers.Rows[e.RowIndex].Cells["email"].FormattedValue.ToString();
+                module.txtPhone.Text = gunaDtgvCustomers.Rows[e.RowIndex].Cells["phone"].FormattedValue.ToString();
+                module.comboBoxProvince.SelectedIndex = module.comboBoxProvince.FindStringExact(gunaDtgvCustomers.Rows[e.RowIndex].Cells["province"].FormattedValue.ToString());
+                module.comboBoxDistrict.SelectedIndex = module.comboBoxDistrict.FindStringExact(gunaDtgvCustomers.Rows[e.RowIndex].Cells["district"].FormattedValue.ToString());
+                module.txtAddressDetail.Text = gunaDtgvCustomers.Rows[e.RowIndex].Cells["address_detail"].FormattedValue.ToString();
+
+
+                module.btnSave.Enabled = false;
+                module.btnUpdate.Enabled = true;
+
+                module.ShowDialog();
+                Load_Customers();
+
+            }
         }
     }
 }
