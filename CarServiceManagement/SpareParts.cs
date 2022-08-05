@@ -16,14 +16,14 @@ namespace CarServiceManagement
         public SpareParts()
         {
             InitializeComponent();
-            Load_SpareParts();
+            Load_SpareParts();  
         }
 
         public void Load_SpareParts()
         {
-            DataTable dtDept = DataProvider.Instance.ExecuteQuery("select p.*,pt.name as type_name from PartType pt,Part p where pt.parttypeID = p.part_type " +
+            DataTable data = DataProvider.Instance.ExecuteQuery("select p.*,pt.name as type_name from PartType pt,Part p where pt.parttypeID = p.part_type " +
                 "and concat(p.name, pt.name, p.brand) LIKE '%" + txtPartName.Text + "%'");
-            gunaDtgvParts.DataSource = dtDept;
+            gunaDtgvParts.DataSource = data;
             gunaDtgvParts.Columns["price"].DefaultCellStyle.Format = "N0";
         }
 

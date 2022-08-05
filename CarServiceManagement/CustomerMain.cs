@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CarServiceManagement
 {
-    public partial class SparePartMain : Form
+    public partial class CustomerMain : Form
     {
-        public SparePartMain()
+        public CustomerMain()
         {
             InitializeComponent();
         }
@@ -43,15 +43,9 @@ namespace CarServiceManagement
             this.WindowState = FormWindowState.Maximized;
         }
 
-        private void sidebar_SpareParts_Click(object sender, EventArgs e)
+        private void sidebar_customers_Click(object sender, EventArgs e)
         {
-            openChildForm(new SpareParts());
-        }
-
-        private void sidebar_SparePartType_Click(object sender, EventArgs e)
-        {
-            openChildForm(new SparePartTypes());
-
+            openChildForm(new Customers());
         }
     }
 }

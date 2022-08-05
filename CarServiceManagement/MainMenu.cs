@@ -33,5 +33,11 @@ namespace CarServiceManagement
             SparePartMain sppm = new SparePartMain();
             sppm.ShowDialog();
         }
+
+        private void guna2TileButton2_Click(object sender, EventArgs e)
+        {
+            CustomerMain customer = new CustomerMain();
+            customer.ShowDialog();
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace CarServiceManagement
 {
-    partial class SparePartMain
+    partial class CustomerMain
     {
         /// <summary>
         /// Required designer variable.
@@ -29,11 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SparePartMain));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerMain));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2PanelSidebar = new Guna.UI2.WinForms.Guna2Panel();
-            this.sidebar_SparePartType = new Guna.UI2.WinForms.Guna2Button();
-            this.sidebar_SpareParts = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.sidebar_vehicles = new Guna.UI2.WinForms.Guna2Button();
+            this.sidebar_customers = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PanelLogo = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PanelTitle = new Guna.UI2.WinForms.Guna2Panel();
             this.lblTitle = new System.Windows.Forms.Label();
@@ -55,11 +57,13 @@
             // 
             // guna2PanelSidebar
             // 
-            this.guna2PanelSidebar.BackColor = System.Drawing.Color.Firebrick;
+            this.guna2PanelSidebar.BackColor = System.Drawing.Color.Teal;
             this.guna2PanelSidebar.BorderColor = System.Drawing.Color.White;
             this.guna2PanelSidebar.BorderThickness = 2;
-            this.guna2PanelSidebar.Controls.Add(this.sidebar_SparePartType);
-            this.guna2PanelSidebar.Controls.Add(this.sidebar_SpareParts);
+            this.guna2PanelSidebar.Controls.Add(this.guna2Button2);
+            this.guna2PanelSidebar.Controls.Add(this.guna2Button1);
+            this.guna2PanelSidebar.Controls.Add(this.sidebar_vehicles);
+            this.guna2PanelSidebar.Controls.Add(this.sidebar_customers);
             this.guna2PanelSidebar.Controls.Add(this.guna2PanelLogo);
             this.guna2PanelSidebar.CustomBorderColor = System.Drawing.Color.Transparent;
             this.guna2PanelSidebar.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 1, 0);
@@ -69,47 +73,88 @@
             this.guna2PanelSidebar.Name = "guna2PanelSidebar";
             this.guna2PanelSidebar.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.guna2PanelSidebar.Size = new System.Drawing.Size(235, 856);
-            this.guna2PanelSidebar.TabIndex = 4;
+            this.guna2PanelSidebar.TabIndex = 5;
             // 
-            // sidebar_SparePartType
+            // guna2Button2
             // 
-            this.sidebar_SparePartType.BorderColor = System.Drawing.Color.White;
-            this.sidebar_SparePartType.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.sidebar_SparePartType.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.sidebar_SparePartType.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.sidebar_SparePartType.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.sidebar_SparePartType.Dock = System.Windows.Forms.DockStyle.Top;
-            this.sidebar_SparePartType.FillColor = System.Drawing.Color.Transparent;
-            this.sidebar_SparePartType.Font = new System.Drawing.Font("Noto Sans Lao", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sidebar_SparePartType.ForeColor = System.Drawing.Color.White;
-            this.sidebar_SparePartType.Location = new System.Drawing.Point(7, 271);
-            this.sidebar_SparePartType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.sidebar_SparePartType.Name = "sidebar_SparePartType";
-            this.sidebar_SparePartType.Size = new System.Drawing.Size(221, 46);
-            this.sidebar_SparePartType.TabIndex = 2;
-            this.sidebar_SparePartType.Text = "ປະເພດອາໄຫຼ່";
-            this.sidebar_SparePartType.Click += new System.EventHandler(this.sidebar_SparePartType_Click);
+            this.guna2Button2.BorderColor = System.Drawing.Color.White;
+            this.guna2Button2.CustomBorderColor = System.Drawing.Color.White;
+            this.guna2Button2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 1, 0, 0);
+            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.Font = new System.Drawing.Font("Noto Sans Lao", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.Location = new System.Drawing.Point(7, 363);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.Size = new System.Drawing.Size(221, 46);
+            this.guna2Button2.TabIndex = 4;
+            this.guna2Button2.Text = "ຍີ່ຫໍ້ລົດ";
             // 
-            // sidebar_SpareParts
+            // guna2Button1
             // 
-            this.sidebar_SpareParts.BorderColor = System.Drawing.Color.White;
-            this.sidebar_SpareParts.CustomBorderColor = System.Drawing.Color.White;
-            this.sidebar_SpareParts.CustomBorderThickness = new System.Windows.Forms.Padding(0, 1, 0, 0);
-            this.sidebar_SpareParts.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.sidebar_SpareParts.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.sidebar_SpareParts.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.sidebar_SpareParts.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.sidebar_SpareParts.Dock = System.Windows.Forms.DockStyle.Top;
-            this.sidebar_SpareParts.FillColor = System.Drawing.Color.Transparent;
-            this.sidebar_SpareParts.Font = new System.Drawing.Font("Noto Sans Lao", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sidebar_SpareParts.ForeColor = System.Drawing.Color.White;
-            this.sidebar_SpareParts.Location = new System.Drawing.Point(7, 225);
-            this.sidebar_SpareParts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.sidebar_SpareParts.Name = "sidebar_SpareParts";
-            this.sidebar_SpareParts.Size = new System.Drawing.Size(221, 46);
-            this.sidebar_SpareParts.TabIndex = 1;
-            this.sidebar_SpareParts.Text = "ລາຍການອາໄຫຼ່";
-            this.sidebar_SpareParts.Click += new System.EventHandler(this.sidebar_SpareParts_Click);
+            this.guna2Button1.BorderColor = System.Drawing.Color.White;
+            this.guna2Button1.CustomBorderColor = System.Drawing.Color.White;
+            this.guna2Button1.CustomBorderThickness = new System.Windows.Forms.Padding(0, 1, 0, 0);
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Noto Sans Lao", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(7, 317);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(221, 46);
+            this.guna2Button1.TabIndex = 3;
+            this.guna2Button1.Text = "ປະເພດລົດ";
+            // 
+            // sidebar_vehicles
+            // 
+            this.sidebar_vehicles.BorderColor = System.Drawing.Color.White;
+            this.sidebar_vehicles.CustomBorderColor = System.Drawing.Color.White;
+            this.sidebar_vehicles.CustomBorderThickness = new System.Windows.Forms.Padding(0, 1, 0, 0);
+            this.sidebar_vehicles.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.sidebar_vehicles.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.sidebar_vehicles.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.sidebar_vehicles.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.sidebar_vehicles.Dock = System.Windows.Forms.DockStyle.Top;
+            this.sidebar_vehicles.FillColor = System.Drawing.Color.Transparent;
+            this.sidebar_vehicles.Font = new System.Drawing.Font("Noto Sans Lao", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sidebar_vehicles.ForeColor = System.Drawing.Color.White;
+            this.sidebar_vehicles.Location = new System.Drawing.Point(7, 271);
+            this.sidebar_vehicles.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sidebar_vehicles.Name = "sidebar_vehicles";
+            this.sidebar_vehicles.Size = new System.Drawing.Size(221, 46);
+            this.sidebar_vehicles.TabIndex = 2;
+            this.sidebar_vehicles.Text = "ລົດຂອງລູກຄ້າ";
+            // 
+            // sidebar_customers
+            // 
+            this.sidebar_customers.BorderColor = System.Drawing.Color.White;
+            this.sidebar_customers.CustomBorderColor = System.Drawing.Color.White;
+            this.sidebar_customers.CustomBorderThickness = new System.Windows.Forms.Padding(0, 1, 0, 0);
+            this.sidebar_customers.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.sidebar_customers.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.sidebar_customers.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.sidebar_customers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.sidebar_customers.Dock = System.Windows.Forms.DockStyle.Top;
+            this.sidebar_customers.FillColor = System.Drawing.Color.Transparent;
+            this.sidebar_customers.Font = new System.Drawing.Font("Noto Sans Lao", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sidebar_customers.ForeColor = System.Drawing.Color.White;
+            this.sidebar_customers.Location = new System.Drawing.Point(7, 225);
+            this.sidebar_customers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sidebar_customers.Name = "sidebar_customers";
+            this.sidebar_customers.Size = new System.Drawing.Size(221, 46);
+            this.sidebar_customers.TabIndex = 1;
+            this.sidebar_customers.Text = "ລາຍຊື່ລູກຄ້າ";
+            this.sidebar_customers.Click += new System.EventHandler(this.sidebar_customers_Click);
             // 
             // guna2PanelLogo
             // 
@@ -135,14 +180,14 @@
             this.guna2PanelTitle.CustomBorderColor = System.Drawing.Color.White;
             this.guna2PanelTitle.CustomBorderThickness = new System.Windows.Forms.Padding(0, 1, 1, 1);
             this.guna2PanelTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2PanelTitle.FillColor = System.Drawing.Color.Firebrick;
+            this.guna2PanelTitle.FillColor = System.Drawing.Color.Teal;
             this.guna2PanelTitle.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2PanelTitle.ForeColor = System.Drawing.Color.White;
             this.guna2PanelTitle.Location = new System.Drawing.Point(235, 0);
             this.guna2PanelTitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2PanelTitle.Name = "guna2PanelTitle";
             this.guna2PanelTitle.Size = new System.Drawing.Size(1095, 62);
-            this.guna2PanelTitle.TabIndex = 5;
+            this.guna2PanelTitle.TabIndex = 6;
             // 
             // lblTitle
             // 
@@ -167,7 +212,7 @@
             this.PanelMain.Name = "PanelMain";
             this.PanelMain.Padding = new System.Windows.Forms.Padding(0, 0, 1, 0);
             this.PanelMain.Size = new System.Drawing.Size(1095, 794);
-            this.PanelMain.TabIndex = 6;
+            this.PanelMain.TabIndex = 7;
             // 
             // ImageButtonMaximize
             // 
@@ -207,7 +252,7 @@
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2PictureBox1.Image = global::CarServiceManagement.Properties.Resources.maintenance;
+            this.guna2PictureBox1.Image = global::CarServiceManagement.Properties.Resources.customer;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(29, 30);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -217,7 +262,7 @@
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // SparePartMain
+            // CustomerMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -226,9 +271,9 @@
             this.Controls.Add(this.guna2PanelTitle);
             this.Controls.Add(this.guna2PanelSidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "SparePartMain";
+            this.Name = "CustomerMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SparePartMain";
+            this.Text = "CustomerMain";
             this.guna2PanelSidebar.ResumeLayout(false);
             this.guna2PanelLogo.ResumeLayout(false);
             this.guna2PanelTitle.ResumeLayout(false);
@@ -242,14 +287,16 @@
 
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelSidebar;
-        private Guna.UI2.WinForms.Guna2Button sidebar_SparePartType;
-        private Guna.UI2.WinForms.Guna2Button sidebar_SpareParts;
+        private Guna.UI2.WinForms.Guna2Button sidebar_customers;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelLogo;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2Panel PanelMain;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelTitle;
-        private System.Windows.Forms.Label lblTitle;
         private Guna.UI2.WinForms.Guna2ImageButton ImageButtonMaximize;
         private Guna.UI2.WinForms.Guna2ImageButton ImageButtonClose;
+        private System.Windows.Forms.Label lblTitle;
+        private Guna.UI2.WinForms.Guna2Panel PanelMain;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button sidebar_vehicles;
     }
 }
