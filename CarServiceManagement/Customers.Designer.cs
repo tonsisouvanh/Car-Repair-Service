@@ -42,6 +42,7 @@
             this.ImageButtonAdd = new Guna.UI2.WinForms.Guna2ImageButton();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
             this.customerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,6 +52,7 @@
             this.address_detail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.created_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.updated_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addcar = new System.Windows.Forms.DataGridViewImageColumn();
             this.edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.guna2Panel1.SuspendLayout();
@@ -156,6 +158,7 @@
             this.address_detail,
             this.created_date,
             this.updated_date,
+            this.addcar,
             this.edit,
             this.delete});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -187,6 +190,7 @@
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(2);
             this.gunaDtgvCustomers.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.gunaDtgvCustomers.RowTemplate.Height = 33;
             this.gunaDtgvCustomers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -267,6 +271,17 @@
             this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewImageColumn2.Width = 125;
             // 
+            // dataGridViewImageColumn3
+            // 
+            this.dataGridViewImageColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn3.HeaderText = "";
+            this.dataGridViewImageColumn3.Image = global::CarServiceManagement.Properties.Resources.delete_24;
+            this.dataGridViewImageColumn3.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn3.MinimumWidth = 6;
+            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
+            this.dataGridViewImageColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn3.Width = 125;
+            // 
             // customerID
             // 
             this.customerID.DataPropertyName = "customerID";
@@ -279,13 +294,14 @@
             // 
             // name
             // 
-            this.name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.name.DataPropertyName = "name";
             this.name.HeaderText = "ລູກຄ້າ";
             this.name.MinimumWidth = 6;
             this.name.Name = "name";
             this.name.ReadOnly = true;
             this.name.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.name.Width = 90;
             // 
             // email
             // 
@@ -361,17 +377,29 @@
             this.updated_date.ReadOnly = true;
             this.updated_date.Visible = false;
             // 
+            // addcar
+            // 
+            this.addcar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.addcar.HeaderText = "";
+            this.addcar.Image = global::CarServiceManagement.Properties.Resources.car;
+            this.addcar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.addcar.MinimumWidth = 8;
+            this.addcar.Name = "addcar";
+            this.addcar.ReadOnly = true;
+            this.addcar.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.addcar.Width = 8;
+            // 
             // edit
             // 
             this.edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.edit.HeaderText = "";
             this.edit.Image = global::CarServiceManagement.Properties.Resources.pencil_24;
             this.edit.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.edit.MinimumWidth = 6;
+            this.edit.MinimumWidth = 8;
             this.edit.Name = "edit";
             this.edit.ReadOnly = true;
             this.edit.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.edit.Width = 6;
+            this.edit.Width = 8;
             // 
             // delete
             // 
@@ -379,11 +407,11 @@
             this.delete.HeaderText = "";
             this.delete.Image = global::CarServiceManagement.Properties.Resources.delete_24;
             this.delete.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.delete.MinimumWidth = 6;
+            this.delete.MinimumWidth = 8;
             this.delete.Name = "delete";
             this.delete.ReadOnly = true;
             this.delete.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.delete.Width = 6;
+            this.delete.Width = 8;
             // 
             // Customers
             // 
@@ -415,6 +443,7 @@
         private Guna.UI2.WinForms.Guna2ImageButton ImageButtonAdd;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn customerID;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.DataGridViewTextBoxColumn email;
@@ -424,6 +453,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn address_detail;
         private System.Windows.Forms.DataGridViewTextBoxColumn created_date;
         private System.Windows.Forms.DataGridViewTextBoxColumn updated_date;
+        private System.Windows.Forms.DataGridViewImageColumn addcar;
         private System.Windows.Forms.DataGridViewImageColumn edit;
         private System.Windows.Forms.DataGridViewImageColumn delete;
     }

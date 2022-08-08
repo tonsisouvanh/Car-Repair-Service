@@ -19,7 +19,10 @@ namespace CarServiceManagement
 
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (MessageBox.Show("Exit Application?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void ImageButtonMaximize_Click(object sender, EventArgs e)

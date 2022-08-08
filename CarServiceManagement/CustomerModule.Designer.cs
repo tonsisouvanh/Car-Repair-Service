@@ -49,7 +49,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.comboBoxProvince = new System.Windows.Forms.ComboBox();
             this.comboBoxDistrict = new System.Windows.Forms.ComboBox();
-            this.buttonAddCar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -115,7 +114,7 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Dosis", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(628, 408);
+            this.btnSave.Location = new System.Drawing.Point(628, 361);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(125, 43);
@@ -133,7 +132,7 @@
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Dosis", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
-            this.btnCancel.Location = new System.Drawing.Point(894, 408);
+            this.btnCancel.Location = new System.Drawing.Point(894, 361);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(125, 43);
@@ -160,7 +159,7 @@
             this.txtCusName.Margin = new System.Windows.Forms.Padding(4);
             this.txtCusName.Name = "txtCusName";
             this.txtCusName.Size = new System.Drawing.Size(353, 37);
-            this.txtCusName.TabIndex = 67;
+            this.txtCusName.TabIndex = 1;
             // 
             // panel1
             // 
@@ -183,7 +182,7 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Dosis", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(761, 408);
+            this.btnUpdate.Location = new System.Drawing.Point(761, 361);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(125, 43);
@@ -199,7 +198,7 @@
             this.txtPhone.Margin = new System.Windows.Forms.Padding(4);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(285, 37);
-            this.txtPhone.TabIndex = 88;
+            this.txtPhone.TabIndex = 3;
             // 
             // label4
             // 
@@ -219,7 +218,7 @@
             this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(353, 37);
-            this.txtEmail.TabIndex = 90;
+            this.txtEmail.TabIndex = 2;
             // 
             // label6
             // 
@@ -250,7 +249,7 @@
             this.txtAddressDetail.Margin = new System.Windows.Forms.Padding(4);
             this.txtAddressDetail.Name = "txtAddressDetail";
             this.txtAddressDetail.Size = new System.Drawing.Size(798, 37);
-            this.txtAddressDetail.TabIndex = 96;
+            this.txtAddressDetail.TabIndex = 6;
             // 
             // label8
             // 
@@ -273,7 +272,7 @@
             this.comboBoxProvince.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxProvince.Name = "comboBoxProvince";
             this.comboBoxProvince.Size = new System.Drawing.Size(353, 37);
-            this.comboBoxProvince.TabIndex = 97;
+            this.comboBoxProvince.TabIndex = 4;
             // 
             // comboBoxDistrict
             // 
@@ -285,32 +284,13 @@
             this.comboBoxDistrict.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxDistrict.Name = "comboBoxDistrict";
             this.comboBoxDistrict.Size = new System.Drawing.Size(285, 37);
-            this.comboBoxDistrict.TabIndex = 98;
-            // 
-            // buttonAddCar
-            // 
-            this.buttonAddCar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonAddCar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
-            this.buttonAddCar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonAddCar.FlatAppearance.BorderSize = 0;
-            this.buttonAddCar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAddCar.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAddCar.ForeColor = System.Drawing.Color.White;
-            this.buttonAddCar.Location = new System.Drawing.Point(894, 357);
-            this.buttonAddCar.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonAddCar.Name = "buttonAddCar";
-            this.buttonAddCar.Size = new System.Drawing.Size(125, 43);
-            this.buttonAddCar.TabIndex = 99;
-            this.buttonAddCar.Text = "ໃສ່ຂໍ້ມູນລົດ";
-            this.buttonAddCar.UseVisualStyleBackColor = false;
-            this.buttonAddCar.Click += new System.EventHandler(this.buttonAddCar_Click);
+            this.comboBoxDistrict.TabIndex = 5;
             // 
             // CustomerModule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 476);
-            this.Controls.Add(this.buttonAddCar);
+            this.ClientSize = new System.Drawing.Size(1067, 429);
             this.Controls.Add(this.comboBoxDistrict);
             this.Controls.Add(this.comboBoxProvince);
             this.Controls.Add(this.txtAddressDetail);
@@ -362,6 +342,5 @@
         private System.Windows.Forms.Label label7;
         public System.Windows.Forms.ComboBox comboBoxDistrict;
         public System.Windows.Forms.ComboBox comboBoxProvince;
-        public System.Windows.Forms.Button buttonAddCar;
     }
 }

@@ -47,5 +47,23 @@ namespace CarServiceManagement
         {
             openChildForm(new Customers());
         }
+
+        private void sidebar_vehicles_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Vehicles());
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            openChildForm(new VehicleTypes());
+
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            openChildForm(new VehicleBrands());
+
+        }
     }
 }

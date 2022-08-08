@@ -371,3 +371,26 @@ END
 --SELECT p.pcode, p.barcode, p.pdesc, b.brand, c.category, p.price, p.reorder 
 --FROM tbProduct AS p INNER JOIN tbBrand AS b ON b.id = p.bid INNER JOIN tbCategory AS c on c.id = p.cid 
 --WHERE CONCAT(p.pdesc, b.brand, c.category) LIKE '%" +txtSearch.Text+ "%'
+
+--select distinct v.*,vt.type_name,vb.brand_name,c.phone from Vehicle v inner join Customer c
+--on v.customerID = c.customerID
+--inner join VehicleType vt on v.typeID = vt.typeID
+--inner join VehicleBrand vb on v.brandID = vb.brandID
+
+--select v.*,vt.type_name,vb.brand_name,c.phone from Vehicle v, VehicleType vt, VehicleBrand vb, Customer c
+--where v.typeID = vt.typeID and v.brandID = vb.brandID and v.customerID = c.customerID;
+
+--select * from Vehicle where concat(name,color,plate_number,) LIKE N'%" + txtSearch.Text + "%'
+
+--select distinct v.*,vt.type_name,vb.brand_name,c.phone from Vehicle v inner join Customer c
+--on v.customerID = c.customerID
+--inner join VehicleType vt on v.typeID = vt.typeID
+--inner join VehicleBrand vb on v.brandID = vb.brandID
+--where concat(v.name,v.color,v.plate_number,vt.type_name,vb.brand_name,c.phone) LIKE N'%" + txtSearch.Text + "%'
+
+--select * from VehicleType
+--select * from VehicleBrand
+--select * from customer
+--select TOP(1) customerID, name from customer where phone = '02054433029'
+
+--select TOP(1) customerID, name from customer where phone = '02054433029'

@@ -94,6 +94,13 @@ namespace CarServiceManagement
                 Load_Customers();
 
             }
+            else if(colName == "addcar")
+            {
+                Vehicles v = new Vehicles();
+                VehicleModule vm = new VehicleModule(v);
+                vm.txtCustInfo.Text = gunaDtgvCustomers.Rows[e.RowIndex].Cells["phone"].FormattedValue.ToString();
+                vm.ShowDialog();
+            }
         }
     }
 }

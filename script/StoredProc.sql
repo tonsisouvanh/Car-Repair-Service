@@ -212,3 +212,68 @@ rollback tran
 --commit tran
 
 --rollback tran
+
+
+-- @@@@@@@@@@@@@@@@@@@@@@ Vehicles @@@@@@@@@@@@@@@@@@@@@@@
+-- @@ Add Vehicles
+if(OBJECT_ID('sp_AddVehicle') is not null)
+	drop proc sp_AddVehicle
+go
+create procedure sp_AddVehicle
+	@name nvarchar(255), @color nvarchar(55),
+	@typeID int, @brandID int,
+	@plate_number nvarchar(20), @descriptions nvarchar(250),
+	@customerID int
+as
+begin
+
+	INSERT INTO Vehicle(name,color,typeID,brandID,plate_number,descriptions,customerID) 
+	VALUES(@name, @color, @typeID, @brandID, @plate_number, @descriptions, @customerID)
+	
+end
+GO
+
+-- test
+begin tran
+	
+	--exec sp_AddVehicle N'';
+	 
+
+commit tran
+
+rollback tran
+
+
+
+
+-- @@ Update Vehicles
+if(OBJECT_ID('sp_UpdateVehicle') is not null)
+	drop proc sp_UpdateVehicle
+go
+create procedure sp_UpdateVehicle
+	@name nvarchar(255), @color nvarchar(55),
+	@typeID int, @brandID int,
+	@plate_number nvarchar(20), @descriptions nvarchar(250),
+	@vehicleID int, @customerID int
+as
+begin
+
+	UPDATE Vehicle
+	SET name = @name,color = @color,typeID = @typeID,brandID = @brandID,
+			plate_number = @plate_number,descriptions = @descriptions
+			where vehicleID = @vehicleID and customerID = @customerID
+	
+end
+GO
+
+-- test
+begin tran
+	
+	--exec sp_AddVehicle N'';
+	 
+
+commit tran
+
+rollback tran
+
+

@@ -16,7 +16,7 @@ namespace CarServiceManagement
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CustomerMain());
+            Application.Run(new MainMenu());
         }
     }
 }

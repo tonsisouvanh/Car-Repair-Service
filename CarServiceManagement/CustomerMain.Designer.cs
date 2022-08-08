@@ -94,6 +94,7 @@
             this.guna2Button2.Size = new System.Drawing.Size(221, 46);
             this.guna2Button2.TabIndex = 4;
             this.guna2Button2.Text = "ຍີ່ຫໍ້ລົດ";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2Button1
             // 
@@ -114,6 +115,7 @@
             this.guna2Button1.Size = new System.Drawing.Size(221, 46);
             this.guna2Button1.TabIndex = 3;
             this.guna2Button1.Text = "ປະເພດລົດ";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // sidebar_vehicles
             // 
@@ -134,6 +136,7 @@
             this.sidebar_vehicles.Size = new System.Drawing.Size(221, 46);
             this.sidebar_vehicles.TabIndex = 2;
             this.sidebar_vehicles.Text = "ລົດຂອງລູກຄ້າ";
+            this.sidebar_vehicles.Click += new System.EventHandler(this.sidebar_vehicles_Click);
             // 
             // sidebar_customers
             // 

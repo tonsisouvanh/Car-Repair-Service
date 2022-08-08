@@ -119,6 +119,42 @@
     <Compile Include="SparePartTypes.Designer.cs">
       <DependentUpon>SparePartTypes.cs</DependentUpon>
     </Compile>
+    <Compile Include="VehicleBrandModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleBrandModule.Designer.cs">
+      <DependentUpon>VehicleBrandModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleBrands.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleBrands.Designer.cs">
+      <DependentUpon>VehicleBrands.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleModule.Designer.cs">
+      <DependentUpon>VehicleModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicles.Designer.cs">
+      <DependentUpon>Vehicles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleTypeModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleTypeModule.Designer.cs">
+      <DependentUpon>VehicleTypeModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleTypes.Designer.cs">
+      <DependentUpon>VehicleTypes.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CustomerMain.resx">
       <DependentUpon>CustomerMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -155,6 +191,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SparePartTypes.resx">
       <DependentUpon>SparePartTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleBrandModule.resx">
+      <DependentUpon>VehicleBrandModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleBrands.resx">
+      <DependentUpon>VehicleBrands.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleModule.resx">
+      <DependentUpon>VehicleModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicles.resx">
+      <DependentUpon>Vehicles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleTypeModule.resx">
+      <DependentUpon>VehicleTypeModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleTypes.resx">
+      <DependentUpon>VehicleTypes.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -232,6 +286,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\delete-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
