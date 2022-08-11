@@ -26,6 +26,7 @@ namespace CarServiceManagement
             gunaDtgvPartImportBill.DataSource = data;
             gunaDtgvPartImportBill.Columns["total"].DefaultCellStyle.Format = "N0";
 
+
         }
 
         private void ImageButtonAdd_Click(object sender, EventArgs e)

@@ -21,9 +21,32 @@ namespace CarServiceManagement
             partImportBills = p;
             passedID = tempid;
             load_ImportBillDetail();
+            load_SpareParts();
 
         }
 
+        private void reloadTotal(int billID)
+        {
+            DataTable data = DataProvider.Instance.ExecuteQuery("select top(1) sum(subtotal) as total from PartImportBillDetail " +
+                "where importbillID = "+billID+
+                "group by importbillID");
+
+            if (data.Rows.Count > 0)
+            {
+                DataRow row = data.Rows[0];
+
+                decimal total = Convert.ToDecimal(row["total"].ToString());
+                this.labelTotal.Text = total.ToString("N0");
+            }
+        }
+
+        public void load_SpareParts()
+        {
+            DataTable data = DataProvider.Instance.ExecuteQuery("select p.partID as partIDs,p.name,p.price as part_price,p.cal_unit from Part p");
+            gunaDtgvParts.DataSource = data;
+            gunaDtgvParts.Columns["part_price"].DefaultCellStyle.Format = "N0";
+
+        }
         public void load_ImportBillDetail()
         {
             DataTable data = DataProvider.Instance.ExecuteQuery("select pibd.importbilldetailID, pibd.partID, pibd.importbillID, p.name, p.price, pibd.quantity,p.cal_unit, pibd.subtotal " +
@@ -61,6 +84,11 @@ namespace CarServiceManagement
         private void gunaDtgvPartImportBillDetail_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             string colName = gunaDtgvPartImportBillDetail.Columns[e.ColumnIndex].Name;
+            int qty = Convert.ToInt32(gunaDtgvPartImportBillDetail.Rows[e.RowIndex].Cells["quantity"].FormattedValue.ToString());
+            int id = Convert.ToInt32(gunaDtgvPartImportBillDetail.Rows[e.RowIndex].Cells["importbilldetailID"].FormattedValue.ToString());
+            int billid = Convert.ToInt32(gunaDtgvPartImportBillDetail.Rows[e.RowIndex].Cells["importbillID"].FormattedValue.ToString());
+            int partid = Convert.ToInt32(gunaDtgvPartImportBillDetail.Rows[e.RowIndex].Cells["partID"].FormattedValue.ToString());
+            decimal subtotal = Convert.ToDecimal(gunaDtgvPartImportBillDetail.Rows[e.RowIndex].Cells["subtotal"].FormattedValue.ToString());
 
             if (colName == "delete")
             {
@@ -68,10 +96,11 @@ namespace CarServiceManagement
                 {
                     try
                     {
-                        int customerID = Int32.Parse(gunaDtgvPartImportBillDetail.Rows[e.RowIndex].Cells["customerID"].FormattedValue.ToString());
+                        
 
-                        string query = "DELETE Customer WHERE customerID = " + customerID;
-                        int result = DataProvider.Instance.ExecuteNoneQuery(query);
+                        string query = "exec sp_DeletePartImportBillDetail @importbilldetailID , @partID , @importBillID , @quantity , @subtotal";
+
+                        int result = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { id, partid, billid, qty, subtotal });
 
                         if (result != 0)
                         {
@@ -89,6 +118,8 @@ namespace CarServiceManagement
                         MessageBox.Show(ex.Message);
                     }
                     load_ImportBillDetail();
+                    partImportBills.Load_PartImportBill();
+                    reloadTotal(billid);
 
                 }
             }
@@ -112,6 +143,90 @@ namespace CarServiceManagement
                 //module.ShowDialog();
                 //Load_Customers();
             }
+        }
+
+        private void gunaDtgvParts_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string colName = gunaDtgvParts.Columns[e.ColumnIndex].Name;
+
+            if (colName == "add")
+            {
+                Qty f = new Qty();
+                f.ShowDialog();
+                int qty = Convert.ToInt32(Math.Round(f.numericQty.Value, 0));
+                int billid = Convert.ToInt32(labelBillNumber.Text.ToString());
+                int partid = Convert.ToInt32(gunaDtgvParts.Rows[e.RowIndex].Cells["partIDs"].FormattedValue.ToString());
+                if (qty > 0)
+                {
+                    try
+                    {
+                
+
+                        string query = "exec sp_AddPartImportBillDetail @partID , @importBillID , @quantity";
+                        int result = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { partid,billid,qty });
+
+
+                        if (result != 0)
+                        {
+                            MessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("ບໍ່ສາມາດເພີ່ມໄດ້", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+
+                        load_ImportBillDetail();
+                        partImportBills.Load_PartImportBill();
+
+                        reloadTotal(billid);
+
+
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+
+            }
+            //else if(colName == "delete")
+            //{
+            //    if (MessageBox.Show("ຕ້ອງການລົບຂໍ້ມູນ?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            //    {
+            //        try
+            //        {
+            //            int id = Convert.ToInt32(gunaDtgvPartImportBillDetail.Rows[e.RowIndex].Cells["importbilldetailID"].FormattedValue.ToString());
+            //            int billid = Convert.ToInt32(gunaDtgvPartImportBillDetail.Rows[e.RowIndex].Cells["importbillID"].FormattedValue.ToString());
+            //            int partid = Convert.ToInt32(gunaDtgvPartImportBillDetail.Rows[e.RowIndex].Cells["partID"].FormattedValue.ToString());
+            //            int qty = Convert.ToInt32(gunaDtgvPartImportBillDetail.Rows[e.RowIndex].Cells["quantity"].FormattedValue.ToString());
+            //            decimal subtotal = Convert.ToInt32(gunaDtgvPartImportBillDetail.Rows[e.RowIndex].Cells["subtotal"].FormattedValue.ToString());
+
+
+            //            string query = "exec sp_AddPartImportBillDetail @importbilldetailID ,@partID , @importBillID , @quantity , @subtotal";
+
+            //            int result = DataProvider.Instance.ExecuteNoneQuery(query, new object[] {id, partid, billid, qty, subtotal });
+
+            //            if (result != 0)
+            //            {
+            //                MessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            //            }
+            //            else
+            //            {
+            //                MessageBox.Show("ບໍ່ສາມາດລົບໄດ້ ຫຼື ລອງລົບຂໍ້ມູນລົດຂອງລູກຄ້າກ່ອນ ແລ້ວພະຍາຍາມໃໝ່", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //            }
+
+            //        }
+            //        catch (Exception ex)
+            //        {
+            //            MessageBox.Show(ex.Message);
+            //        }
+            //        load_ImportBillDetail();
+
+            //    }
+            //}
         }
     }
 }

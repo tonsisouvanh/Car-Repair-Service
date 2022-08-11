@@ -139,7 +139,7 @@
             this.dtpTo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpTo.Location = new System.Drawing.Point(813, 11);
-            this.dtpTo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpTo.Margin = new System.Windows.Forms.Padding(4);
             this.dtpTo.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpTo.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpTo.Name = "dtpTo";
@@ -156,7 +156,7 @@
             this.dtpFrom.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFrom.Location = new System.Drawing.Point(559, 11);
-            this.dtpFrom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpFrom.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFrom.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpFrom.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpFrom.Name = "dtpFrom";
@@ -208,7 +208,7 @@
             this.guna2PanelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2PanelBottom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
             this.guna2PanelBottom.Location = new System.Drawing.Point(0, 496);
-            this.guna2PanelBottom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PanelBottom.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PanelBottom.Name = "guna2PanelBottom";
             this.guna2PanelBottom.Size = new System.Drawing.Size(1067, 58);
             this.guna2PanelBottom.TabIndex = 14;
@@ -257,7 +257,7 @@
             "high - low",
             "status"});
             this.cbbFilter.Location = new System.Drawing.Point(719, 7);
-            this.cbbFilter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbFilter.Margin = new System.Windows.Forms.Padding(4);
             this.cbbFilter.Name = "cbbFilter";
             this.cbbFilter.Size = new System.Drawing.Size(152, 36);
             this.cbbFilter.TabIndex = 1;
@@ -554,7 +554,7 @@
             this.Controls.Add(this.gunaDtgvPartImportBill);
             this.Controls.Add(this.guna2PanelBottom);
             this.Controls.Add(this.guna2Panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PartImportBills";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "ບິນນຳເຂົ້າອາໄຫຼ່";
@@ -597,6 +597,6 @@
         private System.Windows.Forms.DataGridViewImageColumn edit;
         private System.Windows.Forms.DataGridViewImageColumn delete;
         private System.Windows.Forms.Label label5;
-        public Guna.UI2.WinForms.Guna2DataGridView gunaDtgvPartImportBill;
+        private Guna.UI2.WinForms.Guna2DataGridView gunaDtgvPartImportBill;
     }
 }
