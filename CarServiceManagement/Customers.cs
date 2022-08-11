@@ -21,7 +21,8 @@ namespace CarServiceManagement
 
         public void Load_Customers()
         {
-            DataTable data = DataProvider.Instance.ExecuteQuery("select * from Customer");
+            DataTable data = DataProvider.Instance.ExecuteQuery("select * from Customer where " +
+             "concat(name,email,phone,province,district,created_date) LIKE N'%" + txtSearch.Text + "%'");
             gunaDtgvCustomers.DataSource = data;
         }
 
@@ -33,14 +34,11 @@ namespace CarServiceManagement
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            DataTable data = DataProvider.Instance.ExecuteQuery("select * from Customer where " +
-            "concat(name,email,phone,province,district,created_date) LIKE N'%" + txtSearch.Text + "%'");
-            gunaDtgvCustomers.DataSource = data;
+            Load_Customers();
         }
 
         private void gunaDtgvCustomers_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            //For update and delete brand by cell click from tbBrand
             string colName = gunaDtgvCustomers.Columns[e.ColumnIndex].Name;
 
             if (colName == "delete")

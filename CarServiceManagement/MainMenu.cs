@@ -42,5 +42,11 @@ namespace CarServiceManagement
             CustomerMain customer = new CustomerMain();
             customer.ShowDialog();
         }
+
+        private void guna2TileButton3_Click(object sender, EventArgs e)
+        {
+            BillMain bill = new BillMain();
+            bill.ShowDialog();
+        }
     }
 }

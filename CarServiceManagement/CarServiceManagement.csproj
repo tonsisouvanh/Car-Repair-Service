@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BillMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillMain.Designer.cs">
+      <DependentUpon>BillMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomerMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,8 +87,38 @@
     <Compile Include="MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="PartImportBillDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartImportBillDetail.Designer.cs">
+      <DependentUpon>PartImportBillDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PartImportBillDetailModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartImportBillDetailModule.Designer.cs">
+      <DependentUpon>PartImportBillDetailModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PartImportBillModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartImportBillModule.Designer.cs">
+      <DependentUpon>PartImportBillModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PartImportBills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartImportBills.Designer.cs">
+      <DependentUpon>PartImportBills.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Qty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Qty.Designer.cs">
+      <DependentUpon>Qty.cs</DependentUpon>
+    </Compile>
     <Compile Include="SparePartDetial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +191,9 @@
     <Compile Include="VehicleTypes.Designer.cs">
       <DependentUpon>VehicleTypes.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BillMain.resx">
+      <DependentUpon>BillMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerMain.resx">
       <DependentUpon>CustomerMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,6 +206,18 @@
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PartImportBillDetail.resx">
+      <DependentUpon>PartImportBillDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartImportBillDetailModule.resx">
+      <DependentUpon>PartImportBillDetailModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartImportBillModule.resx">
+      <DependentUpon>PartImportBillModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartImportBills.resx">
+      <DependentUpon>PartImportBills.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -177,6 +228,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Qty.resx">
+      <DependentUpon>Qty.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SparePartMain.resx">
       <DependentUpon>SparePartMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -289,6 +343,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\billdetail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reloading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

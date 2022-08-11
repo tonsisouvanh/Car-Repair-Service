@@ -16,7 +16,8 @@ namespace CarServiceManagement
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainMenu());
+            //PartImportBillDetail ds = new PartImportBillDetail();
+            Application.Run(new BillMain());
         }
     }
 }

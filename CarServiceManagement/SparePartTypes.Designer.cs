@@ -52,11 +52,10 @@
             // 
             this.guna2PanelBottom.Controls.Add(this.guna2ImageButtonAdd);
             this.guna2PanelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2PanelBottom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(70)))), ((int)(((byte)(144)))));
-            this.guna2PanelBottom.Location = new System.Drawing.Point(0, 392);
-            this.guna2PanelBottom.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PanelBottom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.guna2PanelBottom.Location = new System.Drawing.Point(0, 319);
             this.guna2PanelBottom.Name = "guna2PanelBottom";
-            this.guna2PanelBottom.Size = new System.Drawing.Size(800, 58);
+            this.guna2PanelBottom.Size = new System.Drawing.Size(600, 47);
             this.guna2PanelBottom.TabIndex = 9;
             // 
             // dataGridViewImageColumn1
@@ -66,7 +65,6 @@
             this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.dataGridViewImageColumn1.MinimumWidth = 6;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Width = 125;
             // 
             // dataGridViewImageColumn2
             // 
@@ -75,7 +73,6 @@
             this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.dataGridViewImageColumn2.MinimumWidth = 6;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-            this.dataGridViewImageColumn2.Width = 125;
             // 
             // DtgvPartTypes
             // 
@@ -119,6 +116,7 @@
             this.DtgvPartTypes.EnableHeadersVisualStyles = false;
             this.DtgvPartTypes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DtgvPartTypes.Location = new System.Drawing.Point(0, 0);
+            this.DtgvPartTypes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DtgvPartTypes.Name = "DtgvPartTypes";
             this.DtgvPartTypes.ReadOnly = true;
             this.DtgvPartTypes.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -136,7 +134,7 @@
             this.DtgvPartTypes.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.DtgvPartTypes.RowTemplate.Height = 30;
             this.DtgvPartTypes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DtgvPartTypes.Size = new System.Drawing.Size(800, 392);
+            this.DtgvPartTypes.Size = new System.Drawing.Size(600, 319);
             this.DtgvPartTypes.TabIndex = 10;
             this.DtgvPartTypes.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.DtgvPartTypes.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -171,7 +169,7 @@
             this.parttypeID.ReadOnly = true;
             this.parttypeID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.parttypeID.Visible = false;
-            this.parttypeID.Width = 74;
+            this.parttypeID.Width = 61;
             // 
             // name
             // 
@@ -195,7 +193,7 @@
             this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
             this.dataGridViewImageColumn3.ReadOnly = true;
             this.dataGridViewImageColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewImageColumn3.Width = 23;
+            this.dataGridViewImageColumn3.Width = 6;
             // 
             // dataGridViewImageColumn4
             // 
@@ -208,7 +206,7 @@
             this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
             this.dataGridViewImageColumn4.ReadOnly = true;
             this.dataGridViewImageColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewImageColumn4.Width = 23;
+            this.dataGridViewImageColumn4.Width = 6;
             // 
             // edit
             // 
@@ -247,21 +245,22 @@
             this.guna2ImageButtonAdd.ImageRotate = 0F;
             this.guna2ImageButtonAdd.ImageSize = new System.Drawing.Size(40, 40);
             this.guna2ImageButtonAdd.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.guna2ImageButtonAdd.Location = new System.Drawing.Point(742, 5);
-            this.guna2ImageButtonAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2ImageButtonAdd.Location = new System.Drawing.Point(556, 4);
+            this.guna2ImageButtonAdd.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ImageButtonAdd.Name = "guna2ImageButtonAdd";
             this.guna2ImageButtonAdd.PressedState.ImageSize = new System.Drawing.Size(0, 0);
-            this.guna2ImageButtonAdd.Size = new System.Drawing.Size(49, 47);
+            this.guna2ImageButtonAdd.Size = new System.Drawing.Size(37, 38);
             this.guna2ImageButtonAdd.TabIndex = 0;
             this.guna2ImageButtonAdd.Click += new System.EventHandler(this.guna2ImageButtonAdd_Click);
             // 
             // SparePartTypes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.DtgvPartTypes);
             this.Controls.Add(this.guna2PanelBottom);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "SparePartTypes";
             this.Text = "ປະເພດອາໄຫຼ່";
             this.guna2PanelBottom.ResumeLayout(false);

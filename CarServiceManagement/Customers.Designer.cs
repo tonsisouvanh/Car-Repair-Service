@@ -35,14 +35,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.gunaDtgvCustomers = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2PanelBottom = new Guna.UI2.WinForms.Guna2Panel();
-            this.ImageButtonAdd = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.gunaDtgvCustomers = new Guna.UI2.WinForms.Guna2DataGridView();
             this.customerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,13 +47,18 @@
             this.address_detail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.created_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.updated_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
             this.addcar = new System.Windows.Forms.DataGridViewImageColumn();
             this.edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.delete = new System.Windows.Forms.DataGridViewImageColumn();
+            this.ImageButtonAdd = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaDtgvCustomers)).BeginInit();
             this.guna2PanelBottom.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaDtgvCustomers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -72,9 +72,9 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(800, 60);
+            this.guna2Panel1.Size = new System.Drawing.Size(600, 49);
             this.guna2Panel1.TabIndex = 10;
             // 
             // label1
@@ -82,23 +82,12 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 11);
+            this.label1.Location = new System.Drawing.Point(9, 9);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 33);
+            this.label1.Size = new System.Drawing.Size(53, 26);
             this.label1.TabIndex = 3;
             this.label1.Text = "ຄົ້ນຫາ:";
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.White;
-            this.guna2PictureBox1.Image = global::CarServiceManagement.Properties.Resources.search;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(330, 16);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(29, 28);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 2;
-            this.guna2PictureBox1.TabStop = false;
             // 
             // txtSearch
             // 
@@ -113,15 +102,25 @@
             this.txtSearch.Font = new System.Drawing.Font("Phetsarath OT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.ForeColor = System.Drawing.Color.Black;
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.Location = new System.Drawing.Point(88, 10);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtSearch.Location = new System.Drawing.Point(66, 8);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
             this.txtSearch.PlaceholderText = "";
             this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(279, 40);
+            this.txtSearch.Size = new System.Drawing.Size(209, 32);
             this.txtSearch.TabIndex = 1;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            // 
+            // guna2PanelBottom
+            // 
+            this.guna2PanelBottom.Controls.Add(this.ImageButtonAdd);
+            this.guna2PanelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2PanelBottom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.guna2PanelBottom.Location = new System.Drawing.Point(0, 319);
+            this.guna2PanelBottom.Name = "guna2PanelBottom";
+            this.guna2PanelBottom.Size = new System.Drawing.Size(600, 47);
+            this.guna2PanelBottom.TabIndex = 13;
             // 
             // gunaDtgvCustomers
             // 
@@ -137,13 +136,13 @@
             this.gunaDtgvCustomers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gunaDtgvCustomers.BackgroundColor = System.Drawing.Color.White;
             this.gunaDtgvCustomers.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gunaDtgvCustomers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.gunaDtgvCustomers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gunaDtgvCustomers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Noto Sans Lao SemiCondensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gunaDtgvCustomers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
@@ -172,8 +171,8 @@
             this.gunaDtgvCustomers.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaDtgvCustomers.EnableHeadersVisualStyles = false;
             this.gunaDtgvCustomers.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDtgvCustomers.Location = new System.Drawing.Point(0, 60);
-            this.gunaDtgvCustomers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gunaDtgvCustomers.Location = new System.Drawing.Point(0, 49);
+            this.gunaDtgvCustomers.Margin = new System.Windows.Forms.Padding(2);
             this.gunaDtgvCustomers.Name = "gunaDtgvCustomers";
             this.gunaDtgvCustomers.ReadOnly = true;
             this.gunaDtgvCustomers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -194,8 +193,8 @@
             this.gunaDtgvCustomers.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.gunaDtgvCustomers.RowTemplate.Height = 33;
             this.gunaDtgvCustomers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDtgvCustomers.Size = new System.Drawing.Size(800, 390);
-            this.gunaDtgvCustomers.TabIndex = 11;
+            this.gunaDtgvCustomers.Size = new System.Drawing.Size(600, 270);
+            this.gunaDtgvCustomers.TabIndex = 14;
             this.gunaDtgvCustomers.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.gunaDtgvCustomers.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.gunaDtgvCustomers.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
@@ -217,70 +216,6 @@
             this.gunaDtgvCustomers.ThemeStyle.RowsStyle.Height = 33;
             this.gunaDtgvCustomers.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDtgvCustomers.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.gunaDtgvCustomers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gunaDtgvCustomers_CellContentClick);
-            // 
-            // guna2PanelBottom
-            // 
-            this.guna2PanelBottom.Controls.Add(this.ImageButtonAdd);
-            this.guna2PanelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2PanelBottom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
-            this.guna2PanelBottom.Location = new System.Drawing.Point(0, 392);
-            this.guna2PanelBottom.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2PanelBottom.Name = "guna2PanelBottom";
-            this.guna2PanelBottom.Size = new System.Drawing.Size(800, 58);
-            this.guna2PanelBottom.TabIndex = 12;
-            // 
-            // ImageButtonAdd
-            // 
-            this.ImageButtonAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ImageButtonAdd.BackColor = System.Drawing.Color.Transparent;
-            this.ImageButtonAdd.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.ImageButtonAdd.HoverState.ImageSize = new System.Drawing.Size(38, 38);
-            this.ImageButtonAdd.Image = global::CarServiceManagement.Properties.Resources.plus_green;
-            this.ImageButtonAdd.ImageOffset = new System.Drawing.Point(0, 0);
-            this.ImageButtonAdd.ImageRotate = 0F;
-            this.ImageButtonAdd.ImageSize = new System.Drawing.Size(40, 40);
-            this.ImageButtonAdd.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ImageButtonAdd.Location = new System.Drawing.Point(742, 5);
-            this.ImageButtonAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ImageButtonAdd.Name = "ImageButtonAdd";
-            this.ImageButtonAdd.PressedState.ImageSize = new System.Drawing.Size(0, 0);
-            this.ImageButtonAdd.Size = new System.Drawing.Size(49, 47);
-            this.ImageButtonAdd.TabIndex = 0;
-            this.ImageButtonAdd.Click += new System.EventHandler(this.ImageButtonAdd_Click);
-            // 
-            // dataGridViewImageColumn1
-            // 
-            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewImageColumn1.HeaderText = "";
-            this.dataGridViewImageColumn1.Image = global::CarServiceManagement.Properties.Resources.pencil_24;
-            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dataGridViewImageColumn1.MinimumWidth = 6;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewImageColumn1.Width = 125;
-            // 
-            // dataGridViewImageColumn2
-            // 
-            this.dataGridViewImageColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewImageColumn2.HeaderText = "";
-            this.dataGridViewImageColumn2.Image = global::CarServiceManagement.Properties.Resources.delete_24;
-            this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dataGridViewImageColumn2.MinimumWidth = 6;
-            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-            this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewImageColumn2.Width = 125;
-            // 
-            // dataGridViewImageColumn3
-            // 
-            this.dataGridViewImageColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewImageColumn3.HeaderText = "";
-            this.dataGridViewImageColumn3.Image = global::CarServiceManagement.Properties.Resources.delete_24;
-            this.dataGridViewImageColumn3.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dataGridViewImageColumn3.MinimumWidth = 6;
-            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
-            this.dataGridViewImageColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewImageColumn3.Width = 125;
             // 
             // customerID
             // 
@@ -301,7 +236,7 @@
             this.name.Name = "name";
             this.name.ReadOnly = true;
             this.name.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.name.Width = 90;
+            this.name.Width = 74;
             // 
             // email
             // 
@@ -312,7 +247,7 @@
             this.email.Name = "email";
             this.email.ReadOnly = true;
             this.email.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.email.Width = 88;
+            this.email.Width = 73;
             // 
             // phone
             // 
@@ -323,7 +258,7 @@
             this.phone.Name = "phone";
             this.phone.ReadOnly = true;
             this.phone.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.phone.Width = 84;
+            this.phone.Width = 69;
             // 
             // province
             // 
@@ -334,7 +269,7 @@
             this.province.Name = "province";
             this.province.ReadOnly = true;
             this.province.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.province.Width = 87;
+            this.province.Width = 72;
             // 
             // district
             // 
@@ -345,7 +280,7 @@
             this.district.Name = "district";
             this.district.ReadOnly = true;
             this.district.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.district.Width = 84;
+            this.district.Width = 69;
             // 
             // address_detail
             // 
@@ -366,7 +301,7 @@
             this.created_date.Name = "created_date";
             this.created_date.ReadOnly = true;
             this.created_date.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.created_date.Width = 178;
+            this.created_date.Width = 146;
             // 
             // updated_date
             // 
@@ -376,6 +311,42 @@
             this.updated_date.Name = "updated_date";
             this.updated_date.ReadOnly = true;
             this.updated_date.Visible = false;
+            // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn1.HeaderText = "";
+            this.dataGridViewImageColumn1.Image = global::CarServiceManagement.Properties.Resources.pencil_24;
+            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn1.MinimumWidth = 6;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.ReadOnly = true;
+            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn1.Width = 8;
+            // 
+            // dataGridViewImageColumn2
+            // 
+            this.dataGridViewImageColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn2.HeaderText = "";
+            this.dataGridViewImageColumn2.Image = global::CarServiceManagement.Properties.Resources.delete_24;
+            this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn2.MinimumWidth = 6;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.dataGridViewImageColumn2.ReadOnly = true;
+            this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn2.Width = 8;
+            // 
+            // dataGridViewImageColumn3
+            // 
+            this.dataGridViewImageColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn3.HeaderText = "";
+            this.dataGridViewImageColumn3.Image = global::CarServiceManagement.Properties.Resources.delete_24;
+            this.dataGridViewImageColumn3.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn3.MinimumWidth = 6;
+            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
+            this.dataGridViewImageColumn3.ReadOnly = true;
+            this.dataGridViewImageColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn3.Width = 8;
             // 
             // addcar
             // 
@@ -413,21 +384,53 @@
             this.delete.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.delete.Width = 8;
             // 
+            // ImageButtonAdd
+            // 
+            this.ImageButtonAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ImageButtonAdd.BackColor = System.Drawing.Color.Transparent;
+            this.ImageButtonAdd.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.ImageButtonAdd.HoverState.ImageSize = new System.Drawing.Size(38, 38);
+            this.ImageButtonAdd.Image = global::CarServiceManagement.Properties.Resources.plus_green;
+            this.ImageButtonAdd.ImageOffset = new System.Drawing.Point(0, 0);
+            this.ImageButtonAdd.ImageRotate = 0F;
+            this.ImageButtonAdd.ImageSize = new System.Drawing.Size(40, 40);
+            this.ImageButtonAdd.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.ImageButtonAdd.Location = new System.Drawing.Point(556, 4);
+            this.ImageButtonAdd.Margin = new System.Windows.Forms.Padding(2);
+            this.ImageButtonAdd.Name = "ImageButtonAdd";
+            this.ImageButtonAdd.PressedState.ImageSize = new System.Drawing.Size(0, 0);
+            this.ImageButtonAdd.Size = new System.Drawing.Size(37, 38);
+            this.ImageButtonAdd.TabIndex = 0;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.White;
+            this.guna2PictureBox1.Image = global::CarServiceManagement.Properties.Resources.search;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(248, 13);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(22, 23);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 2;
+            this.guna2PictureBox1.TabStop = false;
+            // 
             // Customers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.guna2PanelBottom);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.gunaDtgvCustomers);
+            this.Controls.Add(this.guna2PanelBottom);
             this.Controls.Add(this.guna2Panel1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Customers";
             this.Text = "ຂໍ້ມູນລູກຄ້າ";
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaDtgvCustomers)).EndInit();
             this.guna2PanelBottom.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gunaDtgvCustomers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -438,12 +441,12 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
-        private Guna.UI2.WinForms.Guna2DataGridView gunaDtgvCustomers;
-        private Guna.UI2.WinForms.Guna2Panel guna2PanelBottom;
-        private Guna.UI2.WinForms.Guna2ImageButton ImageButtonAdd;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn3;
+        private Guna.UI2.WinForms.Guna2Panel guna2PanelBottom;
+        private Guna.UI2.WinForms.Guna2ImageButton ImageButtonAdd;
+        private Guna.UI2.WinForms.Guna2DataGridView gunaDtgvCustomers;
         private System.Windows.Forms.DataGridViewTextBoxColumn customerID;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.DataGridViewTextBoxColumn email;
