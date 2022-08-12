@@ -68,14 +68,6 @@ namespace CarServiceManagement
             this.Dispose();
         }
 
-        private void ImageButtonAdd_Click(object sender, EventArgs e)
-        {
-            //this.Hide();
-            PartImportBillDetailModule f = new PartImportBillDetailModule(this, partImportBills);
-            f.labelBillDetailID.Text = labelBillNumber.Text;
-            f.ShowDialog();
-        }
-
         private void PartImportBillDetail_Load(object sender, EventArgs e)
         {
             int id = Convert.ToInt32(labelBillNumber.Text.ToString());

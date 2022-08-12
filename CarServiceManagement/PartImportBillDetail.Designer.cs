@@ -58,8 +58,6 @@
             this.guna2PanelBottom = new Guna.UI2.WinForms.Guna2Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.btnPrint = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.label6 = new System.Windows.Forms.Label();
-            this.ImageButtonAdd = new Guna.UI2.WinForms.Guna2ImageButton();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
@@ -184,8 +182,9 @@
             this.dtpCreatedDate.Checked = true;
             this.dtpCreatedDate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dtpCreatedDate.Enabled = false;
-            this.dtpCreatedDate.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.dtpCreatedDate.FillColor = System.Drawing.Color.SteelBlue;
             this.dtpCreatedDate.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpCreatedDate.ForeColor = System.Drawing.Color.White;
             this.dtpCreatedDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpCreatedDate.Location = new System.Drawing.Point(554, 72);
             this.dtpCreatedDate.Margin = new System.Windows.Forms.Padding(4);
@@ -290,8 +289,6 @@
             // 
             this.guna2PanelBottom.Controls.Add(this.label7);
             this.guna2PanelBottom.Controls.Add(this.btnPrint);
-            this.guna2PanelBottom.Controls.Add(this.label6);
-            this.guna2PanelBottom.Controls.Add(this.ImageButtonAdd);
             this.guna2PanelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2PanelBottom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
             this.guna2PanelBottom.Location = new System.Drawing.Point(3, 640);
@@ -332,40 +329,6 @@
             this.btnPrint.PressedState.ImageSize = new System.Drawing.Size(0, 0);
             this.btnPrint.Size = new System.Drawing.Size(49, 47);
             this.btnPrint.TabIndex = 15;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(956, 15);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(199, 33);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "ເພີ່ມລາຍການເຄື່ອງເຂົ້າບິນ:";
-            // 
-            // ImageButtonAdd
-            // 
-            this.ImageButtonAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.ImageButtonAdd.BackColor = System.Drawing.Color.Transparent;
-            this.ImageButtonAdd.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.ImageButtonAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ImageButtonAdd.HoverState.ImageSize = new System.Drawing.Size(38, 38);
-            this.ImageButtonAdd.Image = global::CarServiceManagement.Properties.Resources.plus_green;
-            this.ImageButtonAdd.ImageOffset = new System.Drawing.Point(0, 0);
-            this.ImageButtonAdd.ImageRotate = 0F;
-            this.ImageButtonAdd.ImageSize = new System.Drawing.Size(40, 40);
-            this.ImageButtonAdd.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ImageButtonAdd.Location = new System.Drawing.Point(1172, 5);
-            this.ImageButtonAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ImageButtonAdd.Name = "ImageButtonAdd";
-            this.ImageButtonAdd.PressedState.ImageSize = new System.Drawing.Size(0, 0);
-            this.ImageButtonAdd.Size = new System.Drawing.Size(49, 47);
-            this.ImageButtonAdd.TabIndex = 0;
-            this.ImageButtonAdd.Click += new System.EventHandler(this.ImageButtonAdd_Click);
             // 
             // dataGridViewImageColumn1
             // 
@@ -424,11 +387,11 @@
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Noto Sans Lao", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(880, 14);
+            this.label3.Location = new System.Drawing.Point(885, 8);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 33);
+            this.label3.Size = new System.Drawing.Size(115, 36);
             this.label3.TabIndex = 20;
             this.label3.Text = "ຄົ້ນຫາອາໄຫຼ່:";
             // 
@@ -446,13 +409,13 @@
             this.txtSearch.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.ForeColor = System.Drawing.Color.Black;
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.Location = new System.Drawing.Point(1011, 9);
+            this.txtSearch.Location = new System.Drawing.Point(1011, 13);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
             this.txtSearch.PlaceholderText = "";
             this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(349, 43);
+            this.txtSearch.Size = new System.Drawing.Size(349, 31);
             this.txtSearch.TabIndex = 19;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
@@ -866,11 +829,9 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelBottom;
-        private Guna.UI2.WinForms.Guna2ImageButton ImageButtonAdd;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2ImageButton ImageButtonMaximize;
         private Guna.UI2.WinForms.Guna2ImageButton ImageButtonClose;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn3;
