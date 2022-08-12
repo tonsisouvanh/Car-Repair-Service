@@ -39,6 +39,7 @@
             this.picClose = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2PanelBottom = new Guna.UI2.WinForms.Guna2Panel();
+            this.labelBillDetailID = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -54,7 +55,6 @@
             this.brand = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.type_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.add = new System.Windows.Forms.DataGridViewImageColumn();
-            this.labelBillDetailID = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             this.guna2PanelBottom.SuspendLayout();
@@ -84,6 +84,7 @@
             // picClose
             // 
             this.picClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picClose.Image = global::CarServiceManagement.Properties.Resources.close;
             this.picClose.Location = new System.Drawing.Point(1084, 14);
             this.picClose.Margin = new System.Windows.Forms.Padding(4);
@@ -118,6 +119,16 @@
             this.guna2PanelBottom.Name = "guna2PanelBottom";
             this.guna2PanelBottom.Size = new System.Drawing.Size(1131, 58);
             this.guna2PanelBottom.TabIndex = 49;
+            // 
+            // labelBillDetailID
+            // 
+            this.labelBillDetailID.AutoSize = true;
+            this.labelBillDetailID.Location = new System.Drawing.Point(121, 23);
+            this.labelBillDetailID.Name = "labelBillDetailID";
+            this.labelBillDetailID.Size = new System.Drawing.Size(73, 16);
+            this.labelBillDetailID.TabIndex = 6;
+            this.labelBillDetailID.Text = "BillDetailID";
+            this.labelBillDetailID.Visible = false;
             // 
             // label2
             // 
@@ -378,16 +389,6 @@
             this.add.ReadOnly = true;
             this.add.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.add.Width = 6;
-            // 
-            // labelBillDetailID
-            // 
-            this.labelBillDetailID.AutoSize = true;
-            this.labelBillDetailID.Location = new System.Drawing.Point(121, 23);
-            this.labelBillDetailID.Name = "labelBillDetailID";
-            this.labelBillDetailID.Size = new System.Drawing.Size(73, 16);
-            this.labelBillDetailID.TabIndex = 6;
-            this.labelBillDetailID.Text = "BillDetailID";
-            this.labelBillDetailID.Visible = false;
             // 
             // PartImportBillDetailModule
             // 

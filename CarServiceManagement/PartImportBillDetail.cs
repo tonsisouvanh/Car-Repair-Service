@@ -228,5 +228,15 @@ namespace CarServiceManagement
             //    }
             //}
         }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            DataTable data = DataProvider.Instance.ExecuteQuery("select p.partID as partIDs,p.name,p.price as part_price,p.cal_unit " +
+                "from Part p where p.name like N'%" + txtSearch.Text + "%'");
+            gunaDtgvParts.DataSource = data;
+            gunaDtgvParts.Columns["part_price"].DefaultCellStyle.Format = "N0";
+        }
+
+
     }
 }

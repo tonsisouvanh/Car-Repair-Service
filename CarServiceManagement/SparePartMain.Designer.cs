@@ -35,16 +35,16 @@
             this.sidebar_SparePartType = new Guna.UI2.WinForms.Guna2Button();
             this.sidebar_SpareParts = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PanelLogo = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PanelTitle = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.PanelMain = new Guna.UI2.WinForms.Guna2Panel();
             this.ImageButtonMaximize = new Guna.UI2.WinForms.Guna2ImageButton();
             this.ImageButtonClose = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.PanelMain = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PanelSidebar.SuspendLayout();
             this.guna2PanelLogo.SuspendLayout();
-            this.guna2PanelTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.guna2PanelTitle.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -64,6 +64,7 @@
             this.guna2PanelSidebar.CustomBorderColor = System.Drawing.Color.Transparent;
             this.guna2PanelSidebar.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 1, 0);
             this.guna2PanelSidebar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2PanelSidebar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
             this.guna2PanelSidebar.Location = new System.Drawing.Point(0, 0);
             this.guna2PanelSidebar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2PanelSidebar.Name = "guna2PanelSidebar";
@@ -73,6 +74,7 @@
             // 
             // sidebar_SparePartType
             // 
+            this.sidebar_SparePartType.BackColor = System.Drawing.Color.Transparent;
             this.sidebar_SparePartType.BorderColor = System.Drawing.Color.White;
             this.sidebar_SparePartType.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.sidebar_SparePartType.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -92,6 +94,7 @@
             // 
             // sidebar_SpareParts
             // 
+            this.sidebar_SpareParts.BackColor = System.Drawing.Color.Transparent;
             this.sidebar_SpareParts.BorderColor = System.Drawing.Color.White;
             this.sidebar_SpareParts.CustomBorderColor = System.Drawing.Color.White;
             this.sidebar_SpareParts.CustomBorderThickness = new System.Windows.Forms.Padding(0, 1, 0, 0);
@@ -126,6 +129,20 @@
             this.guna2PanelLogo.Size = new System.Drawing.Size(221, 219);
             this.guna2PanelLogo.TabIndex = 0;
             // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2PictureBox1.Image = global::CarServiceManagement.Properties.Resources.maintenance;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(29, 30);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(163, 159);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
+            // 
             // guna2PanelTitle
             // 
             this.guna2PanelTitle.BorderColor = System.Drawing.Color.White;
@@ -135,7 +152,7 @@
             this.guna2PanelTitle.CustomBorderColor = System.Drawing.Color.White;
             this.guna2PanelTitle.CustomBorderThickness = new System.Windows.Forms.Padding(0, 1, 1, 1);
             this.guna2PanelTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2PanelTitle.FillColor = System.Drawing.Color.Firebrick;
+            this.guna2PanelTitle.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
             this.guna2PanelTitle.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2PanelTitle.ForeColor = System.Drawing.Color.White;
             this.guna2PanelTitle.Location = new System.Drawing.Point(235, 0);
@@ -143,31 +160,6 @@
             this.guna2PanelTitle.Name = "guna2PanelTitle";
             this.guna2PanelTitle.Size = new System.Drawing.Size(1095, 62);
             this.guna2PanelTitle.TabIndex = 5;
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitle.Font = new System.Drawing.Font("Noto Sans Lao", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(484, 10);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(73, 46);
-            this.lblTitle.TabIndex = 2;
-            this.lblTitle.Text = "ຫົວຂໍ້";
-            // 
-            // PanelMain
-            // 
-            this.PanelMain.BorderColor = System.Drawing.Color.Transparent;
-            this.PanelMain.CustomBorderColor = System.Drawing.Color.White;
-            this.PanelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelMain.Location = new System.Drawing.Point(235, 62);
-            this.PanelMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.PanelMain.Name = "PanelMain";
-            this.PanelMain.Padding = new System.Windows.Forms.Padding(0, 0, 1, 0);
-            this.PanelMain.Size = new System.Drawing.Size(1095, 794);
-            this.PanelMain.TabIndex = 6;
             // 
             // ImageButtonMaximize
             // 
@@ -203,19 +195,30 @@
             this.ImageButtonClose.TabIndex = 8;
             this.ImageButtonClose.Click += new System.EventHandler(this.ImageButtonClose_Click);
             // 
-            // guna2PictureBox1
+            // lblTitle
             // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2PictureBox1.Image = global::CarServiceManagement.Properties.Resources.maintenance;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(29, 30);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(163, 159);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
+            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitle.Font = new System.Drawing.Font("Noto Sans Lao", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(484, 10);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(73, 46);
+            this.lblTitle.TabIndex = 2;
+            this.lblTitle.Text = "ຫົວຂໍ້";
+            // 
+            // PanelMain
+            // 
+            this.PanelMain.BorderColor = System.Drawing.Color.Transparent;
+            this.PanelMain.CustomBorderColor = System.Drawing.Color.White;
+            this.PanelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelMain.Location = new System.Drawing.Point(235, 62);
+            this.PanelMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PanelMain.Name = "PanelMain";
+            this.PanelMain.Padding = new System.Windows.Forms.Padding(0, 0, 1, 0);
+            this.PanelMain.Size = new System.Drawing.Size(1095, 794);
+            this.PanelMain.TabIndex = 6;
             // 
             // SparePartMain
             // 
@@ -231,9 +234,9 @@
             this.Text = "SparePartMain";
             this.guna2PanelSidebar.ResumeLayout(false);
             this.guna2PanelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2PanelTitle.ResumeLayout(false);
             this.guna2PanelTitle.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

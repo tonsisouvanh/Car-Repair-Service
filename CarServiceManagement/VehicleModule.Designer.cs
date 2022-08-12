@@ -80,7 +80,7 @@
             this.label8.Location = new System.Drawing.Point(34, 193);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(80, 26);
+            this.label8.Size = new System.Drawing.Size(97, 33);
             this.label8.TabIndex = 113;
             this.label8.Text = "ຄຳອະທິບາຍ";
             // 
@@ -92,7 +92,7 @@
             this.label6.Location = new System.Drawing.Point(34, 136);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 26);
+            this.label6.Size = new System.Drawing.Size(72, 33);
             this.label6.TabIndex = 111;
             this.label6.Text = "ເລກລົດ";
             // 
@@ -104,7 +104,7 @@
             this.label4.Location = new System.Drawing.Point(577, 78);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(34, 26);
+            this.label4.Size = new System.Drawing.Size(42, 33);
             this.label4.TabIndex = 109;
             this.label4.Text = "ຍີ່ຫໍ້";
             // 
@@ -116,7 +116,7 @@
             this.label3.Location = new System.Drawing.Point(34, 78);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 26);
+            this.label3.Size = new System.Drawing.Size(68, 33);
             this.label3.TabIndex = 106;
             this.label3.Text = "ປະເພດ";
             // 
@@ -164,7 +164,7 @@
             this.label2.Location = new System.Drawing.Point(34, 22);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 26);
+            this.label2.Size = new System.Drawing.Size(53, 33);
             this.label2.TabIndex = 103;
             this.label2.Text = "ຊື່ລົດ";
             // 
@@ -201,7 +201,7 @@
             this.label1.Location = new System.Drawing.Point(4, 15);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(169, 31);
+            this.label1.Size = new System.Drawing.Size(203, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "ປ້ອນ / ແກ້ໄຂຂໍ່ມູນລົດ";
             // 
@@ -246,7 +246,7 @@
             this.label5.Location = new System.Drawing.Point(45, 152);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(42, 26);
+            this.label5.Size = new System.Drawing.Size(54, 33);
             this.label5.TabIndex = 117;
             this.label5.Text = "ເບີໂທ";
             // 
@@ -257,17 +257,17 @@
             this.txtVehicleName.Location = new System.Drawing.Point(161, 22);
             this.txtVehicleName.Margin = new System.Windows.Forms.Padding(4);
             this.txtVehicleName.Name = "txtVehicleName";
-            this.txtVehicleName.Size = new System.Drawing.Size(353, 31);
+            this.txtVehicleName.Size = new System.Drawing.Size(353, 37);
             this.txtVehicleName.TabIndex = 2;
             // 
             // txtCustInfo
             // 
-            this.txtCustInfo.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.txtCustInfo.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtCustInfo.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCustInfo.Location = new System.Drawing.Point(172, 152);
             this.txtCustInfo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCustInfo.Name = "txtCustInfo";
-            this.txtCustInfo.Size = new System.Drawing.Size(353, 31);
+            this.txtCustInfo.Size = new System.Drawing.Size(353, 37);
             this.txtCustInfo.TabIndex = 1;
             this.txtCustInfo.TextChanged += new System.EventHandler(this.txtCustInfo_TextChanged);
             // 
@@ -278,7 +278,7 @@
             this.label9.Location = new System.Drawing.Point(47, 94);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(290, 29);
+            this.label9.Size = new System.Drawing.Size(353, 36);
             this.label9.TabIndex = 119;
             this.label9.Text = "ໃສ່ເບີໂທ ຫຼື ອີເມວ ລູກຄ້າເພື່ອເພີ່ມຂໍ້ມູນລົດ";
             // 
@@ -290,7 +290,7 @@
             this.txtCustName.Location = new System.Drawing.Point(734, 152);
             this.txtCustName.Margin = new System.Windows.Forms.Padding(4);
             this.txtCustName.Name = "txtCustName";
-            this.txtCustName.Size = new System.Drawing.Size(285, 31);
+            this.txtCustName.Size = new System.Drawing.Size(285, 37);
             this.txtCustName.TabIndex = 121;
             // 
             // label10
@@ -300,7 +300,7 @@
             this.label10.Location = new System.Drawing.Point(588, 152);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(57, 26);
+            this.label10.Size = new System.Drawing.Size(70, 33);
             this.label10.TabIndex = 120;
             this.label10.Text = "ຊື່ລູກຄ້າ";
             // 
@@ -312,7 +312,7 @@
             this.label11.Location = new System.Drawing.Point(577, 22);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(42, 26);
+            this.label11.Size = new System.Drawing.Size(54, 33);
             this.label11.TabIndex = 123;
             this.label11.Text = "ສີລົດ";
             // 
@@ -323,7 +323,7 @@
             this.txtColor.Location = new System.Drawing.Point(723, 22);
             this.txtColor.Margin = new System.Windows.Forms.Padding(4);
             this.txtColor.Name = "txtColor";
-            this.txtColor.Size = new System.Drawing.Size(285, 31);
+            this.txtColor.Size = new System.Drawing.Size(285, 37);
             this.txtColor.TabIndex = 3;
             // 
             // txtPlateNumber
@@ -333,7 +333,7 @@
             this.txtPlateNumber.Location = new System.Drawing.Point(161, 136);
             this.txtPlateNumber.Margin = new System.Windows.Forms.Padding(4);
             this.txtPlateNumber.Name = "txtPlateNumber";
-            this.txtPlateNumber.Size = new System.Drawing.Size(353, 31);
+            this.txtPlateNumber.Size = new System.Drawing.Size(353, 37);
             this.txtPlateNumber.TabIndex = 6;
             // 
             // comboBoxType
@@ -346,7 +346,7 @@
             this.comboBoxType.Location = new System.Drawing.Point(161, 78);
             this.comboBoxType.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxType.Name = "comboBoxType";
-            this.comboBoxType.Size = new System.Drawing.Size(353, 31);
+            this.comboBoxType.Size = new System.Drawing.Size(353, 37);
             this.comboBoxType.TabIndex = 4;
             // 
             // comboBoxBrand
@@ -359,7 +359,7 @@
             this.comboBoxBrand.Location = new System.Drawing.Point(723, 78);
             this.comboBoxBrand.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxBrand.Name = "comboBoxBrand";
-            this.comboBoxBrand.Size = new System.Drawing.Size(285, 29);
+            this.comboBoxBrand.Size = new System.Drawing.Size(285, 36);
             this.comboBoxBrand.TabIndex = 5;
             // 
             // formInputPanel
