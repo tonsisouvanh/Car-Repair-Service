@@ -64,25 +64,22 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>0.33741in</Width>
+                  <Width>0.70702in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.06763in</Width>
+                  <Width>2.43724in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.93042in</Width>
+                  <Width>1.30003in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.951in</Width>
+                  <Width>1.11227in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.0093in</Width>
+                  <Width>1.29264in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.92303in</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>1.17597in</Width>
+                  <Width>1.54558in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -101,6 +98,7 @@
                                   <Value>ລ/ດ</Value>
                                   <Style>
                                     <FontFamily>phetsarath OT</FontFamily>
+                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -115,10 +113,10 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>LightGrey</BackgroundColor>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingLeft>3pt</PaddingLeft>
+                            <PaddingRight>3pt</PaddingRight>
+                            <PaddingTop>3pt</PaddingTop>
+                            <PaddingBottom>3pt</PaddingBottom>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -135,6 +133,7 @@
                                   <Value>ອາໄຫຼ່</Value>
                                   <Style>
                                     <FontFamily>phetsarath OT</FontFamily>
+                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -149,10 +148,10 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>LightGrey</BackgroundColor>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingLeft>3pt</PaddingLeft>
+                            <PaddingRight>3pt</PaddingRight>
+                            <PaddingTop>3pt</PaddingTop>
+                            <PaddingBottom>3pt</PaddingBottom>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -169,6 +168,7 @@
                                   <Value>ລາຄາ</Value>
                                   <Style>
                                     <FontFamily>phetsarath OT</FontFamily>
+                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -183,10 +183,10 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>LightGrey</BackgroundColor>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingLeft>3pt</PaddingLeft>
+                            <PaddingRight>3pt</PaddingRight>
+                            <PaddingTop>3pt</PaddingTop>
+                            <PaddingBottom>3pt</PaddingBottom>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -203,6 +203,7 @@
                                   <Value>ໜ່ວຍວັດ</Value>
                                   <Style>
                                     <FontFamily>phetsarath OT</FontFamily>
+                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -217,44 +218,10 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>LightGrey</BackgroundColor>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox7">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>ຈ/ນ ອາໄຫຼ່ໃນສາງ</Value>
-                                  <Style>
-                                    <FontFamily>phetsarath OT</FontFamily>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox7</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <BackgroundColor>LightGrey</BackgroundColor>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingLeft>3pt</PaddingLeft>
+                            <PaddingRight>3pt</PaddingRight>
+                            <PaddingTop>3pt</PaddingTop>
+                            <PaddingBottom>3pt</PaddingBottom>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -271,6 +238,7 @@
                                   <Value>ຈ/ນ ອາໄຫຼ່ນຳເຂົ້າ</Value>
                                   <Style>
                                     <FontFamily>phetsarath OT</FontFamily>
+                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -285,10 +253,10 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>LightGrey</BackgroundColor>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingLeft>3pt</PaddingLeft>
+                            <PaddingRight>3pt</PaddingRight>
+                            <PaddingTop>3pt</PaddingTop>
+                            <PaddingBottom>3pt</PaddingBottom>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -305,6 +273,7 @@
                                   <Value>ລວມລາຄາ</Value>
                                   <Style>
                                     <FontFamily>phetsarath OT</FontFamily>
+                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -319,10 +288,10 @@
                               <Style>Solid</Style>
                             </Border>
                             <BackgroundColor>LightGrey</BackgroundColor>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingLeft>3pt</PaddingLeft>
+                            <PaddingRight>3pt</PaddingRight>
+                            <PaddingTop>3pt</PaddingTop>
+                            <PaddingBottom>3pt</PaddingBottom>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -342,7 +311,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=RowNumber(nothing)</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -354,10 +325,10 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingLeft>3pt</PaddingLeft>
+                            <PaddingRight>3pt</PaddingRight>
+                            <PaddingTop>3pt</PaddingTop>
+                            <PaddingBottom>3pt</PaddingBottom>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -372,7 +343,10 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!name.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>phetsarath OT</FontFamily>
+                                    <FontSize>11pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -384,10 +358,10 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingLeft>3pt</PaddingLeft>
+                            <PaddingRight>3pt</PaddingRight>
+                            <PaddingTop>3pt</PaddingTop>
+                            <PaddingBottom>3pt</PaddingBottom>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -402,10 +376,16 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!price.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>phetsarath OT</FontFamily>
+                                    <FontSize>11pt</FontSize>
+                                    <Format>#,0 'LAK';(#,0 'LAK')</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>price</rd:DefaultName>
@@ -414,10 +394,10 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingLeft>3pt</PaddingLeft>
+                            <PaddingRight>3pt</PaddingRight>
+                            <PaddingTop>3pt</PaddingTop>
+                            <PaddingBottom>3pt</PaddingBottom>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -432,7 +412,10 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!cal_unit.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>phetsarath OT</FontFamily>
+                                    <FontSize>11pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -444,40 +427,10 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="qty_in_stock">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!qty_in_stock.Value</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>qty_in_stock</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingLeft>3pt</PaddingLeft>
+                            <PaddingRight>3pt</PaddingRight>
+                            <PaddingTop>3pt</PaddingTop>
+                            <PaddingBottom>3pt</PaddingBottom>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -492,10 +445,14 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!qty_imported.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>qty_imported</rd:DefaultName>
@@ -504,10 +461,10 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingLeft>3pt</PaddingLeft>
+                            <PaddingRight>3pt</PaddingRight>
+                            <PaddingTop>3pt</PaddingTop>
+                            <PaddingBottom>3pt</PaddingBottom>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -522,7 +479,10 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!subtotal.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                    <Format>#,0 'LAK';(#,0 'LAK')</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -534,10 +494,10 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingLeft>3pt</PaddingLeft>
+                            <PaddingRight>3pt</PaddingRight>
+                            <PaddingTop>3pt</PaddingTop>
+                            <PaddingBottom>3pt</PaddingBottom>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -548,7 +508,6 @@
             </TablixBody>
             <TablixColumnHierarchy>
               <TablixMembers>
-                <TablixMember />
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
@@ -571,7 +530,7 @@
             <Top>0.02778in</Top>
             <Left>0.5in</Left>
             <Height>0.5in</Height>
-            <Width>7.39476in</Width>
+            <Width>8.39476in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -599,9 +558,9 @@
             </Paragraphs>
             <rd:DefaultName>pPayment</rd:DefaultName>
             <Top>1.48444in</Top>
-            <Left>5.58392in</Left>
+            <Left>7.0006in</Left>
             <Height>0.35222in</Height>
-            <Width>2.31109in</Width>
+            <Width>1.89441in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -621,9 +580,10 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=Parameters!pTotal.Value</Value>
+                    <Value>=Parameters!pTotal.Value + " LAK"</Value>
                     <Style>
                       <FontSize>12pt</FontSize>
+                      <Format>#,0 'LAK';(#,0 'LAK')</Format>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -634,9 +594,9 @@
             </Paragraphs>
             <rd:DefaultName>pTotal</rd:DefaultName>
             <Top>1.13222in</Top>
-            <Left>5.58392in</Left>
+            <Left>7.0006in</Left>
             <Height>0.35222in</Height>
-            <Width>2.31108in</Width>
+            <Width>1.8944in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -670,9 +630,9 @@
             </Paragraphs>
             <rd:DefaultName>pSupplier</rd:DefaultName>
             <Top>0.78in</Top>
-            <Left>5.58393in</Left>
+            <Left>7.0006in</Left>
             <Height>0.35222in</Height>
-            <Width>2.31108in</Width>
+            <Width>1.89441in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -707,7 +667,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox15</rd:DefaultName>
             <Top>0.78in</Top>
-            <Left>3.40328in</Left>
+            <Left>4.90328in</Left>
             <Height>0.35222in</Height>
             <Width>1.99381in</Width>
             <ZIndex>4</ZIndex>
@@ -744,7 +704,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox15</rd:DefaultName>
             <Top>1.13222in</Top>
-            <Left>3.40328in</Left>
+            <Left>4.90328in</Left>
             <Height>0.35222in</Height>
             <Width>1.99381in</Width>
             <ZIndex>5</ZIndex>
@@ -781,7 +741,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox15</rd:DefaultName>
             <Top>1.48444in</Top>
-            <Left>3.40328in</Left>
+            <Left>4.90328in</Left>
             <Height>0.35222in</Height>
             <Width>1.99381in</Width>
             <ZIndex>6</ZIndex>
@@ -800,10 +760,10 @@
         <Height>2.01334in</Height>
         <Style />
       </Body>
-      <Width>8.27001in</Width>
+      <Width>9.37834in</Width>
       <Page>
         <PageHeader>
-          <Height>1.91444in</Height>
+          <Height>2.16444in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -828,8 +788,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox15</rd:DefaultName>
-              <Height>0.44667in</Height>
-              <Width>8.27in</Width>
+              <Height>0.62723in</Height>
+              <Width>9.37834in</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -837,8 +797,8 @@
                 <VerticalAlign>Middle</VerticalAlign>
                 <PaddingLeft>2pt</PaddingLeft>
                 <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
+                <PaddingTop>5pt</PaddingTop>
+                <PaddingBottom>5pt</PaddingBottom>
               </Style>
             </Textbox>
             <Textbox Name="Textbox16">
@@ -862,7 +822,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox15</rd:DefaultName>
-              <Top>0.46056in</Top>
+              <Top>0.71056in</Top>
               <Left>0.5in</Left>
               <Height>0.38333in</Height>
               <Width>1.99381in</Width>
@@ -899,7 +859,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox15</rd:DefaultName>
-              <Top>0.84389in</Top>
+              <Top>1.09389in</Top>
               <Left>0.5in</Left>
               <Height>0.35222in</Height>
               <Width>1.99381in</Width>
@@ -936,7 +896,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox15</rd:DefaultName>
-              <Top>1.21in</Top>
+              <Top>1.46in</Top>
               <Left>0.5in</Left>
               <Height>0.35222in</Height>
               <Width>2.97714in</Width>
@@ -980,7 +940,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox15</rd:DefaultName>
-              <Top>1.56222in</Top>
+              <Top>1.81222in</Top>
               <Left>0.5in</Left>
               <Height>0.35222in</Height>
               <Width>3.68547in</Width>
@@ -1017,8 +977,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox15</rd:DefaultName>
-              <Top>0.44667in</Top>
-              <Left>5.2982in</Left>
+              <Top>0.69667in</Top>
+              <Left>6.2982in</Left>
               <Height>0.35222in</Height>
               <Width>0.91047in</Width>
               <ZIndex>5</ZIndex>
@@ -1054,8 +1014,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox15</rd:DefaultName>
-              <Top>0.79889in</Top>
-              <Left>5.2982in</Left>
+              <Top>1.04889in</Top>
+              <Left>6.2982in</Left>
               <Height>0.35222in</Height>
               <Width>0.91047in</Width>
               <ZIndex>6</ZIndex>
@@ -1081,6 +1041,7 @@
                       <Style>
                         <FontSize>12pt</FontSize>
                         <FontWeight>Normal</FontWeight>
+                        <Format>d</Format>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -1090,8 +1051,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>pDate</rd:DefaultName>
-              <Top>0.79889in</Top>
-              <Left>6.20867in</Left>
+              <Top>1.04889in</Top>
+              <Left>7.20867in</Left>
               <Height>0.35222in</Height>
               <Width>1.68609in</Width>
               <ZIndex>7</ZIndex>
@@ -1126,8 +1087,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>pPartImportBillID</rd:DefaultName>
-              <Top>0.44667in</Top>
-              <Left>6.20867in</Left>
+              <Top>0.69667in</Top>
+              <Left>7.20867in</Left>
               <Height>0.35222in</Height>
               <Width>1.68609in</Width>
               <ZIndex>8</ZIndex>
@@ -1151,19 +1112,22 @@
                     <TextRun>
                       <Value>=Parameters!pStatus.Value</Value>
                       <Style>
-                        <FontSize>12pt</FontSize>
+                        <FontFamily>phetsarath OT</FontFamily>
+                        <FontSize>16pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
                     </TextRun>
                   </TextRuns>
-                  <Style />
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>pStatus</rd:DefaultName>
-              <Top>1.22055in</Top>
-              <Left>5.2982in</Left>
+              <Top>1.78444in</Top>
+              <Left>6.2982in</Left>
               <Height>0.35222in</Height>
-              <Width>1in</Width>
+              <Width>2.59656in</Width>
               <ZIndex>9</ZIndex>
               <Style>
                 <Border>
@@ -1210,7 +1174,7 @@
               <rd:DefaultName>Textbox15</rd:DefaultName>
               <Left>0.5in</Left>
               <Height>0.48555in</Height>
-              <Width>3.24381in</Width>
+              <Width>3.97714in</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -1243,9 +1207,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox15</rd:DefaultName>
-              <Left>4.65095in</Left>
+              <Left>4.94428in</Left>
               <Height>0.48555in</Height>
-              <Width>3.24381in</Width>
+              <Width>3.95048in</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>
@@ -1283,15 +1247,20 @@
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
     <ReportParameter Name="pDate">
-      <DataType>String</DataType>
+      <DataType>DateTime</DataType>
+      <Nullable>true</Nullable>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
     <ReportParameter Name="pTotal">
       <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
     <ReportParameter Name="pStatus">
       <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
     <ReportParameter Name="pSupplier">

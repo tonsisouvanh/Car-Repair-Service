@@ -56,7 +56,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2PanelBottom = new Guna.UI2.WinForms.Guna2Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.btnPrint = new Guna.UI2.WinForms.Guna2ImageButton();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
@@ -83,6 +82,8 @@
             this.subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.delete = new System.Windows.Forms.DataGridViewImageColumn();
+            this.labelPayment = new System.Windows.Forms.Label();
+            this.labelSupplier = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2PanelBottom.SuspendLayout();
@@ -287,7 +288,6 @@
             // 
             // guna2PanelBottom
             // 
-            this.guna2PanelBottom.Controls.Add(this.label7);
             this.guna2PanelBottom.Controls.Add(this.btnPrint);
             this.guna2PanelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2PanelBottom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
@@ -296,20 +296,6 @@
             this.guna2PanelBottom.Name = "guna2PanelBottom";
             this.guna2PanelBottom.Size = new System.Drawing.Size(1374, 58);
             this.guna2PanelBottom.TabIndex = 14;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(1248, 16);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 28);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "print";
             // 
             // btnPrint
             // 
@@ -369,6 +355,8 @@
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.Controls.Add(this.labelSupplier);
+            this.guna2Panel1.Controls.Add(this.labelPayment);
             this.guna2Panel1.Controls.Add(this.dtpCreatedDate);
             this.guna2Panel1.Controls.Add(this.labelBillNumber);
             this.guna2Panel1.Controls.Add(this.label2);
@@ -789,6 +777,30 @@
             this.delete.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.delete.Width = 8;
             // 
+            // labelPayment
+            // 
+            this.labelPayment.AutoSize = true;
+            this.labelPayment.Font = new System.Drawing.Font("Noto Sans Lao", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPayment.Location = new System.Drawing.Point(997, 16);
+            this.labelPayment.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelPayment.Name = "labelPayment";
+            this.labelPayment.Size = new System.Drawing.Size(80, 25);
+            this.labelPayment.TabIndex = 17;
+            this.labelPayment.Text = "payment";
+            this.labelPayment.Visible = false;
+            // 
+            // labelSupplier
+            // 
+            this.labelSupplier.AutoSize = true;
+            this.labelSupplier.Font = new System.Drawing.Font("Noto Sans Lao", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSupplier.Location = new System.Drawing.Point(997, 56);
+            this.labelSupplier.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelSupplier.Name = "labelSupplier";
+            this.labelSupplier.Size = new System.Drawing.Size(75, 25);
+            this.labelSupplier.TabIndex = 18;
+            this.labelSupplier.Text = "supplier";
+            this.labelSupplier.Visible = false;
+            // 
             // PartImportBillDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -810,7 +822,6 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.guna2PanelBottom.ResumeLayout(false);
-            this.guna2PanelBottom.PerformLayout();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
@@ -838,7 +849,6 @@
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn3;
         private Guna.UI2.WinForms.Guna2ImageButton btnPrint;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         public Guna.UI2.WinForms.Guna2DateTimePicker dtpCreatedDate;
@@ -867,5 +877,7 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
+        public System.Windows.Forms.Label labelSupplier;
+        public System.Windows.Forms.Label labelPayment;
     }
 }
