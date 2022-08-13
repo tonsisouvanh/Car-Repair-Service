@@ -329,6 +329,7 @@
             this.btnPrint.PressedState.ImageSize = new System.Drawing.Size(0, 0);
             this.btnPrint.Size = new System.Drawing.Size(49, 47);
             this.btnPrint.TabIndex = 15;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // dataGridViewImageColumn1
             // 
@@ -389,7 +390,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Noto Sans Lao", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(885, 8);
+            this.label3.Location = new System.Drawing.Point(892, 11);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(115, 36);
             this.label3.TabIndex = 20;
@@ -399,6 +400,7 @@
             // 
             this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSearch.BorderRadius = 15;
+            this.txtSearch.BorderThickness = 0;
             this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSearch.DefaultText = "";
             this.txtSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -406,16 +408,16 @@
             this.txtSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Font = new System.Drawing.Font("Noto Sans Lao", 12F);
             this.txtSearch.ForeColor = System.Drawing.Color.Black;
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.Location = new System.Drawing.Point(1011, 13);
+            this.txtSearch.Location = new System.Drawing.Point(1014, 8);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
-            this.txtSearch.PlaceholderText = "";
+            this.txtSearch.PlaceholderText = "ພິມຊື່ອາໄຫຼ່";
             this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(349, 31);
+            this.txtSearch.Size = new System.Drawing.Size(349, 43);
             this.txtSearch.TabIndex = 19;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 

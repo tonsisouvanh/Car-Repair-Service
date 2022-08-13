@@ -229,6 +229,10 @@ namespace CarServiceManagement
             gunaDtgvParts.Columns["part_price"].DefaultCellStyle.Format = "N0";
         }
 
-
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            PartImportBillReport f = new PartImportBillReport(this);
+            f.ShowDialog();
+        }
     }
 }

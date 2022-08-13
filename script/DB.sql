@@ -235,9 +235,9 @@ GO
 --select * from PartImportBill;
 --SELECT * FROM PartImportBill WHERE created_date BETWEEN '2021-08-08' and '2022-09-08'
 
-select * from PartImportBill
-select a.*, p.price from PartImportBillDetail a, Part p
-where a.partID = p.partID
+--select * from PartImportBill
+--select a.*, p.price from PartImportBillDetail a, Part p
+--where a.partID = p.partID
 
 --select pt.* from PartImportBillDetail pt inner join PartImportBill p on pt.importbillID = p.importbillID
 --where p.importbillID = 100
@@ -247,3 +247,35 @@ where a.partID = p.partID
 --select top(1) sum(subtotal) as total from PartImportBillDetail
 --where importbillID = 102
 --group by importbillID
+
+select 	
+		b.importbillID,
+		b.supplier,
+		b.status,
+		b.payment,
+		b.total,
+		b.created_date,
+		p.name,
+		p.price,
+		p.cal_unit,
+		bdt.quantity,
+		bdt.subtotal
+		from PartImportBill b
+inner join PartImportBillDetail bdt
+on b.importbillID = bdt.importbillID
+inner join Part p on bdt.partID = p.partID
+where b.importbillID = 101
+
+
+select 	
+		p.partID,
+		p.name,
+		p.price,
+		p.cal_unit,
+		p.stock as qty_in_stcok,
+		bdt.quantity as qty_imported,
+		bdt.subtotal
+		from PartImportBillDetail bdt
+		inner join Part p on bdt.partID = p.partID
+		--where bdt.importbillID = 101
+
