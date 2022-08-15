@@ -64,6 +64,7 @@
             this.guna2ImageButtonAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ImageButtonAdd.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButtonAdd.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButtonAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButtonAdd.HoverState.ImageSize = new System.Drawing.Size(38, 38);
             this.guna2ImageButtonAdd.Image = global::CarServiceManagement.Properties.Resources.plus_green;
             this.guna2ImageButtonAdd.ImageOffset = new System.Drawing.Point(0, 0);

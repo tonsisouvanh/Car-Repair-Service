@@ -141,6 +141,7 @@
             // picClose
             // 
             this.picClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picClose.Image = global::CarServiceManagement.Properties.Resources.close;
             this.picClose.Location = new System.Drawing.Point(659, 13);
             this.picClose.Margin = new System.Windows.Forms.Padding(4);

@@ -76,6 +76,7 @@
             // 
             this.sidebar_SparePartType.BackColor = System.Drawing.Color.Transparent;
             this.sidebar_SparePartType.BorderColor = System.Drawing.Color.White;
+            this.sidebar_SparePartType.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sidebar_SparePartType.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.sidebar_SparePartType.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.sidebar_SparePartType.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -96,6 +97,7 @@
             // 
             this.sidebar_SpareParts.BackColor = System.Drawing.Color.Transparent;
             this.sidebar_SpareParts.BorderColor = System.Drawing.Color.White;
+            this.sidebar_SpareParts.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sidebar_SpareParts.CustomBorderColor = System.Drawing.Color.White;
             this.sidebar_SpareParts.CustomBorderThickness = new System.Windows.Forms.Padding(0, 1, 0, 0);
             this.sidebar_SpareParts.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -166,7 +168,8 @@
             this.ImageButtonMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ImageButtonMaximize.BackColor = System.Drawing.Color.Transparent;
             this.ImageButtonMaximize.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.ImageButtonMaximize.HoverState.ImageSize = new System.Drawing.Size(25, 25);
+            this.ImageButtonMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ImageButtonMaximize.HoverState.ImageSize = new System.Drawing.Size(24, 24);
             this.ImageButtonMaximize.Image = global::CarServiceManagement.Properties.Resources.maximize;
             this.ImageButtonMaximize.ImageOffset = new System.Drawing.Point(0, 0);
             this.ImageButtonMaximize.ImageRotate = 0F;
@@ -184,7 +187,8 @@
             this.ImageButtonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ImageButtonClose.BackColor = System.Drawing.Color.Transparent;
             this.ImageButtonClose.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.ImageButtonClose.HoverState.ImageSize = new System.Drawing.Size(25, 25);
+            this.ImageButtonClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ImageButtonClose.HoverState.ImageSize = new System.Drawing.Size(24, 24);
             this.ImageButtonClose.Image = ((System.Drawing.Image)(resources.GetObject("ImageButtonClose.Image")));
             this.ImageButtonClose.ImageOffset = new System.Drawing.Point(0, 0);
             this.ImageButtonClose.ImageRotate = 0F;

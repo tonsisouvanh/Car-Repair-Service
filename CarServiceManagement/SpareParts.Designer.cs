@@ -68,7 +68,7 @@
             this.guna2PanelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2PanelBottom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2PanelBottom.Location = new System.Drawing.Point(0, 392);
-            this.guna2PanelBottom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PanelBottom.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PanelBottom.Name = "guna2PanelBottom";
             this.guna2PanelBottom.Size = new System.Drawing.Size(800, 58);
             this.guna2PanelBottom.TabIndex = 7;
@@ -78,6 +78,7 @@
             this.ImageButtonAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ImageButtonAdd.BackColor = System.Drawing.Color.Transparent;
             this.ImageButtonAdd.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.ImageButtonAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ImageButtonAdd.HoverState.ImageSize = new System.Drawing.Size(38, 38);
             this.ImageButtonAdd.Image = global::CarServiceManagement.Properties.Resources.plus_green;
             this.ImageButtonAdd.ImageOffset = new System.Drawing.Point(0, 0);
