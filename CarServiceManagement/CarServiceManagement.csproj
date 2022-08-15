@@ -139,6 +139,18 @@
     <Compile Include="Qty.Designer.cs">
       <DependentUpon>Qty.cs</DependentUpon>
     </Compile>
+    <Compile Include="RepairBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RepairBill.Designer.cs">
+      <DependentUpon>RepairBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RepairBillModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RepairBillModule.Designer.cs">
+      <DependentUpon>RepairBillModule.cs</DependentUpon>
+    </Compile>
     <Compile Include="SparePartDetial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -251,6 +263,12 @@
     </Compile>
     <EmbeddedResource Include="Qty.resx">
       <DependentUpon>Qty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepairBill.resx">
+      <DependentUpon>RepairBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepairBillModule.resx">
+      <DependentUpon>RepairBillModule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rptPartImportBill.rdlc" />
     <EmbeddedResource Include="Report2.rdlc" />

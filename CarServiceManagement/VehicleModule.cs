@@ -87,7 +87,7 @@ namespace CarServiceManagement
             }
             else
             {
-                txtCustName.Clear();
+                txtCustName.Text = "ບໍ່ພົບຂໍ້ມູນລູກຄ້າ";
                 formInputPanel.Enabled = false;
             }
 
@@ -189,6 +189,22 @@ namespace CarServiceManagement
         private void btnCancel_Click(object sender, EventArgs e)
         {
             Clear();
+        }
+
+        private void labelAddType_Click(object sender, EventArgs e)
+        {
+            VehicleTypes v = new VehicleTypes();
+            VehicleTypeModule f = new VehicleTypeModule(v);
+            f.ShowDialog();
+            load_Type();
+        }
+
+        private void labelAddBrand_Click(object sender, EventArgs e)
+        {
+            VehicleBrands v = new VehicleBrands();
+            VehicleBrandModule f = new VehicleBrandModule(v);
+            f.ShowDialog();
+            load_Brand();
         }
     }
 }

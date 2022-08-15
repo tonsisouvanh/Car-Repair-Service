@@ -25,8 +25,6 @@ namespace CarServiceManagement
            "concat(supplier,status,payment) LIKE N'%" + txtSearch.Text + "%'");
             gunaDtgvPartImportBill.DataSource = data;
             gunaDtgvPartImportBill.Columns["total"].DefaultCellStyle.Format = "N0";
-
-
         }
 
         private void ImageButtonAdd_Click(object sender, EventArgs e)

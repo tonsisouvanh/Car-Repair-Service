@@ -1,13 +1,7 @@
 ﻿using CarServiceManagement.DAO;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CarServiceManagement
@@ -105,7 +99,7 @@ namespace CarServiceManagement
                     }
 
                     string query = "exec sp_AddCustomer @name , @email , @phone , @province , @district , @address_detail";
-                    int result = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { txtCusName.Text, txtEmail.Text, txtPhone.Text, comboBoxProvince.SelectedValue.ToString(), comboBoxDistrict.Text.ToString(),txtAddressDetail.Text});
+                    int result = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { txtCusName.Text, txtEmail.Text, txtPhone.Text, comboBoxProvince.SelectedValue.ToString(), comboBoxDistrict.Text.ToString(), txtAddressDetail.Text });
 
                     if (result != 0)
                     {
@@ -141,7 +135,7 @@ namespace CarServiceManagement
                 }
                 if (MessageBox.Show("ຕ້ອງການແກ້ໄຂຂໍ້ມູນ", "Update Record!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    
+
                     if (!isNumber(txtPhone.Text.ToString()))
                     {
                         MessageBox.Show("ເບີໂທບໍ່ຖືກຕ້ອງ", "Warning Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -149,7 +143,7 @@ namespace CarServiceManagement
                     }
                     int customerID = Convert.ToInt32(labelID.Text.ToString());
                     string query = "exec sp_UpdateCustomer @name , @email , @phone , @province , @district , @address_detail , @customerID";
-                    int result = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { txtCusName.Text, txtEmail.Text, txtPhone.Text, comboBoxProvince.SelectedValue.ToString(), comboBoxDistrict.SelectedValue.ToString(),txtAddressDetail.Text, customerID});
+                    int result = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { txtCusName.Text, txtEmail.Text, txtPhone.Text, comboBoxProvince.SelectedValue.ToString(), comboBoxDistrict.SelectedValue.ToString(), txtAddressDetail.Text, customerID });
 
                     if (result != 0)
                     {
@@ -174,9 +168,11 @@ namespace CarServiceManagement
             }
         }
 
-        private void buttonAddCar_Click(object sender, EventArgs e)
+        private void btnAddCar_Click(object sender, EventArgs e)
         {
-            
+            Vehicles vehicles = new Vehicles();
+            VehicleModule f = new VehicleModule(vehicles);
+            f.ShowDialog();
         }
     }
 }

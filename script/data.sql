@@ -216,18 +216,18 @@ SET @Counter=1
 WHILE ( @Counter <= 10)
 BEGIN
    INSERT INTO Part(name,stock,price,currency,cal_unit,descriptions,part_type,brand)	
-			VALUES(N'ກົງລົດ d-max 4x4', 1,20,'KIP',N'ຄູ່',N'ອະທິບາຍ',100,'Zenko')
+			VALUES(N'ກົງລົດ d-max 4x4', 10,20,'KIP',N'ຄູ່',N'ອະທິບາຍ',100,'Zenko')
 			SET @Counter  = @Counter  + 1
 END
 
   INSERT INTO Part(name,stock,price,currency,cal_unit,descriptions,part_type,brand)	
-  VALUES(N'ດອກໄຟ ເກາະ 1 ຈຸດຂາວ', 1,90000,'KIP',N'ກັບ',N'',103,'');
+  VALUES(N'ດອກໄຟ ເກາະ 1 ຈຸດຂາວ', 10,90000,'KIP',N'ກັບ',N'',103,'');
   INSERT INTO Part(name,stock,price,currency,cal_unit,descriptions,part_type,brand)	
-  VALUES(N'ດອກໄຟ ສຽບ ສົ້ມ', 1,250000,'KIP',N'ກັບ',N'',103,'');
+  VALUES(N'ດອກໄຟ ສຽບ ສົ້ມ', 10,250000,'KIP',N'ກັບ',N'',103,'');
   INSERT INTO Part(name,stock,price,currency,cal_unit,descriptions,part_type,brand)	
-  VALUES(N'ດອກໄຟ HB 3', 1,880000,'KIP',N'ແພັກ',N'',103,'');
+  VALUES(N'ດອກໄຟ HB 3', 10,880000,'KIP',N'ແພັກ',N'',103,'');
   INSERT INTO Part(name,stock,price,currency,cal_unit,descriptions,part_type,brand)	
-  VALUES(N'ຟິວ 10,15,20,25,30', 1,200000,'KIP',N'ກັບ',N'',103,'');
+  VALUES(N'ຟິວ 10,15,20,25,30', 10,200000,'KIP',N'ກັບ',N'',103,'');
 
 --@@ Part Import Bill
 INSERT INTO PartImportBill(supplier,supplier_contact,status,payment,descriptions)
@@ -241,40 +241,53 @@ VALUES (N'ເສັງສ້ອມແປງລົດຍົນ','seng@gmail.com',
 --@@ Part Import Bill Detail
 -- partID - Bill - Quantity
 
---INSERT INTO PartImportBillDetail(partID,importbillID,quantity,subtotal)
---VALUES (102,102,2,3000000)
 exec sp_AddPartImportBillDetail 102,102,2;
---INSERT INTO PartImportBillDetail(partID,importbillID,quantity,subtotal)
---VALUES (105,102,3,4500000)
+
 exec sp_AddPartImportBillDetail 105,102,3;
---INSERT INTO PartImportBillDetail(partID,importbillID,quantity,subtotal)
---VALUES (108,102,2,3000000)
+
 exec sp_AddPartImportBillDetail 108,102,2;
 
-
-
-
-
-
---INSERT INTO PartImportBillDetail(partID,importbillID,quantity,subtotal)
---VALUES (111,101,2,500000)
 exec sp_AddPartImportBillDetail 111,101,2;
---INSERT INTO PartImportBillDetail(partID,importbillID,quantity,subtotal)
---VALUES (112,101,4,3520000)
+
 exec sp_AddPartImportBillDetail 112,101,4;
---INSERT INTO PartImportBillDetail(partID,importbillID,quantity,subtotal)
---VALUES (107,101,1,1500000)
+
 exec sp_AddPartImportBillDetail 107,101,1;
---INSERT INTO PartImportBillDetail(partID,importbillID,quantity,subtotal)
---VALUES (110,101,1,90000)
+
 exec sp_AddPartImportBillDetail 110,101,1;
 
-
-
---INSERT INTO PartImportBillDetail(partID,importbillID,quantity,subtotal)
---VALUES (113,100,2,400000)
 exec sp_AddPartImportBillDetail 113,100,2;
 
---INSERT INTO PartImportBillDetail(partID,importbillID,quantity,subtotal)
---VALUES (112,100,1,880000)
 exec sp_AddPartImportBillDetail 112,100,1;
+
+
+----@@ Repair Bill
+INSERT INTO RepairBill(customerID,status,payment,descriptions,created_date)
+VALUES(100,N'ຊຳລະແລ້ວ',N'ເງິນສົດ',N'','2021-08-14')
+
+INSERT INTO RepairBill(customerID,status,payment,descriptions,created_date)
+VALUES(101,N'ຊຳລະແລ້ວ',N'ເງິນສົດ',N'',N'2022-01-14')
+
+INSERT INTO RepairBill(customerID,status,payment,descriptions,created_date)
+VALUES(102,N'ຊຳລະແລ້ວ',N'ເງິນສົດ',N'',N'2020-02-14')
+
+select * from Part
+
+----@@ Repair Bill Detail
+---- partID - Bill - Quantity
+--exec sp_AddRepairBillDetail 102,102,2;
+
+--exec sp_AddRepairBillDetail 105,102,3;
+
+--exec sp_AddRepairBillDetail 108,102,2;
+
+--exec sp_AddRepairBillDetail 111,101,2;
+
+--exec sp_AddRepairBillDetail 112,101,4;
+
+--exec sp_AddRepairBillDetail 107,101,1;
+
+--exec sp_AddRepairBillDetail 110,101,1;
+
+--exec sp_AddRepairBillDetail 113,100,2;
+
+--exec sp_AddRepairBillDetail 112,100,1;

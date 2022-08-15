@@ -23,12 +23,6 @@ namespace CarServiceManagement
 
         }
 
-        private string priceStringFormat(string strPrice)
-        {
-            decimal total = Convert.ToDecimal(strPrice);
-            return total.ToString("N0");
-        }
-
         private void PartImportBillReport_Load(object sender, EventArgs e)
         {
             this.reportViewer1.RefreshReport();

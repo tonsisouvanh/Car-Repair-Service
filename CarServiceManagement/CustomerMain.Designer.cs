@@ -208,7 +208,7 @@
             this.guna2PanelTitle.Location = new System.Drawing.Point(235, 0);
             this.guna2PanelTitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2PanelTitle.Name = "guna2PanelTitle";
-            this.guna2PanelTitle.Size = new System.Drawing.Size(1095, 62);
+            this.guna2PanelTitle.Size = new System.Drawing.Size(1157, 62);
             this.guna2PanelTitle.TabIndex = 6;
             // 
             // ImageButtonMaximize
@@ -221,7 +221,7 @@
             this.ImageButtonMaximize.ImageOffset = new System.Drawing.Point(0, 0);
             this.ImageButtonMaximize.ImageRotate = 0F;
             this.ImageButtonMaximize.ImageSize = new System.Drawing.Size(25, 25);
-            this.ImageButtonMaximize.Location = new System.Drawing.Point(1001, 12);
+            this.ImageButtonMaximize.Location = new System.Drawing.Point(1063, 12);
             this.ImageButtonMaximize.Name = "ImageButtonMaximize";
             this.ImageButtonMaximize.PressedState.ImageSize = new System.Drawing.Size(25, 25);
             this.ImageButtonMaximize.Size = new System.Drawing.Size(38, 32);
@@ -238,7 +238,7 @@
             this.ImageButtonClose.ImageOffset = new System.Drawing.Point(0, 0);
             this.ImageButtonClose.ImageRotate = 0F;
             this.ImageButtonClose.ImageSize = new System.Drawing.Size(25, 25);
-            this.ImageButtonClose.Location = new System.Drawing.Point(1045, 12);
+            this.ImageButtonClose.Location = new System.Drawing.Point(1107, 12);
             this.ImageButtonClose.Name = "ImageButtonClose";
             this.ImageButtonClose.PressedState.ImageSize = new System.Drawing.Size(25, 25);
             this.ImageButtonClose.Size = new System.Drawing.Size(38, 32);
@@ -247,16 +247,16 @@
             // 
             // lblTitle
             // 
-            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblTitle.AutoSize = true;
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblTitle.Font = new System.Drawing.Font("Noto Sans Lao", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(484, 10);
+            this.lblTitle.Location = new System.Drawing.Point(0, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(73, 46);
+            this.lblTitle.Size = new System.Drawing.Size(1157, 62);
             this.lblTitle.TabIndex = 2;
             this.lblTitle.Text = "ຫົວຂໍ້";
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PanelMain
             // 
@@ -267,14 +267,14 @@
             this.PanelMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PanelMain.Name = "PanelMain";
             this.PanelMain.Padding = new System.Windows.Forms.Padding(0, 0, 1, 0);
-            this.PanelMain.Size = new System.Drawing.Size(1095, 794);
+            this.PanelMain.Size = new System.Drawing.Size(1157, 794);
             this.PanelMain.TabIndex = 7;
             // 
             // CustomerMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1330, 856);
+            this.ClientSize = new System.Drawing.Size(1392, 856);
             this.Controls.Add(this.PanelMain);
             this.Controls.Add(this.guna2PanelTitle);
             this.Controls.Add(this.guna2PanelSidebar);
@@ -286,7 +286,6 @@
             this.guna2PanelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2PanelTitle.ResumeLayout(false);
-            this.guna2PanelTitle.PerformLayout();
             this.ResumeLayout(false);
 
         }

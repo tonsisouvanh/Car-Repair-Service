@@ -130,7 +130,7 @@
             this.guna2PanelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2PanelBottom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
             this.guna2PanelBottom.Location = new System.Drawing.Point(0, 392);
-            this.guna2PanelBottom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PanelBottom.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PanelBottom.Name = "guna2PanelBottom";
             this.guna2PanelBottom.Size = new System.Drawing.Size(800, 58);
             this.guna2PanelBottom.TabIndex = 13;
@@ -152,6 +152,7 @@
             this.ImageButtonAdd.PressedState.ImageSize = new System.Drawing.Size(0, 0);
             this.ImageButtonAdd.Size = new System.Drawing.Size(49, 47);
             this.ImageButtonAdd.TabIndex = 0;
+            this.ImageButtonAdd.Click += new System.EventHandler(this.ImageButtonAdd_Click);
             // 
             // gunaDtgvCustomers
             // 

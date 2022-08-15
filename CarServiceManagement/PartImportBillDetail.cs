@@ -42,7 +42,7 @@ namespace CarServiceManagement
 
         public void load_SpareParts()
         {
-            DataTable data = DataProvider.Instance.ExecuteQuery("select p.partID as partIDs,p.name,p.price as part_price,p.cal_unit from Part p");
+            DataTable data = DataProvider.Instance.ExecuteQuery("select p.partID as partIDs,p.name,p.price as part_price,p.cal_unit,p.stock from Part p");
             gunaDtgvParts.DataSource = data;
             gunaDtgvParts.Columns["part_price"].DefaultCellStyle.Format = "N0";
 
@@ -223,10 +223,11 @@ namespace CarServiceManagement
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            DataTable data = DataProvider.Instance.ExecuteQuery("select p.partID as partIDs,p.name,p.price as part_price,p.cal_unit " +
-                "from Part p where p.name like N'%" + txtSearch.Text + "%'");
-            gunaDtgvParts.DataSource = data;
-            gunaDtgvParts.Columns["part_price"].DefaultCellStyle.Format = "N0";
+            //DataTable data = DataProvider.Instance.ExecuteQuery("select p.partID as partIDs,p.name,p.price as part_price,p.cal_unit " +
+            //    "from Part p where p.name like N'%" + txtSearch.Text + "%'");
+            //gunaDtgvParts.DataSource = data;
+            //gunaDtgvParts.Columns["part_price"].DefaultCellStyle.Format = "N0";
+            load_SpareParts();
         }
 
         private void btnPrint_Click(object sender, EventArgs e)

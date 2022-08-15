@@ -3,6 +3,7 @@ go
 
 
 /***************************************** CREATE TABLE **********************************************************/
+
 if(OBJECT_ID('Provinces') is not null)
 	drop table Provinces
 go
@@ -22,6 +23,38 @@ CREATE TABLE Districts
 	name nvarchar(55) unique,
 	primary key (districtID)
 )
+
+if(OBJECT_ID('RepairBillDetail') is not null)
+	drop table RepairBillDetail
+go
+CREATE TABLE RepairBillDetail
+(
+    repairbilldetailID int IDENTITY(100,1) NOT NULL,
+	partID int, --FK
+	repairbillID int, --FK
+	--vehicleID int, --FK
+	quantity int default 0,
+	subtotal money default 0, --calculated
+	primary key (repairbilldetailID,partID,repairbillID)
+)
+
+
+if(OBJECT_ID('RepairBill') is not null)
+	drop table RepairBill
+go
+CREATE TABLE RepairBill
+(
+    repairbillID int IDENTITY(100,1) NOT NULL,
+	customerID int, --FK
+	status nvarchar(125),
+	payment nvarchar(25),
+	descriptions nvarchar(255),
+	total money default 0, --calculated
+	created_date date default getdate(),
+	updated_date date default getdate(),
+	primary key (repairbillID)
+)
+
 
 if(OBJECT_ID('PartImportBillDetail') is not null)
 	drop table PartImportBillDetail
@@ -177,6 +210,31 @@ foreign key (importbillID) references PartImportBill(importbillID)
 on delete cascade;
 
 
+
+-- Repair Bill -> Customer
+alter table RepairBill 
+add constraint FK_RepairBill_Customer
+foreign key (customerID) references Customer(customerID);
+
+-- Repair Bill Detail -> Part
+alter table RepairBillDetail
+add constraint FK_RepairBillDetail_Part
+foreign key (partID) references Part(partID);
+
+-- Repair Bill Detail -> Repair Bill
+alter table RepairBillDetail
+add constraint FK_RepairBillDetail_RepairBill
+foreign key (repairbillID) references RepairBill(repairbillID);
+
+---- Repair Bill Detail -> Vehicle Bill
+--alter table RepairBillDetail
+--add constraint FK_RepairBillDetail_Vehicle
+--foreign key (vehicleID) references Vehicle(vehicleID);
+
+
+
+
+
 DBCC CHECKIDENT ('Part', RESEED, 100);
 GO
 DBCC CHECKIDENT ('PartType', RESEED, 100);
@@ -196,6 +254,10 @@ GO
 DBCC CHECKIDENT ('PartImportBill', RESEED, 100);
 GO
 DBCC CHECKIDENT ('PartImportBillDetail', RESEED, 100);
+GO
+DBCC CHECKIDENT ('RepairBill', RESEED, 100);
+GO
+DBCC CHECKIDENT ('RepairBillDetail', RESEED, 100);
 GO
 
 
@@ -248,34 +310,39 @@ GO
 --where importbillID = 102
 --group by importbillID
 
-select 	
-		b.importbillID,
-		b.supplier,
-		b.status,
-		b.payment,
-		b.total,
-		b.created_date,
-		p.name,
-		p.price,
-		p.cal_unit,
-		bdt.quantity,
-		bdt.subtotal
-		from PartImportBill b
-inner join PartImportBillDetail bdt
-on b.importbillID = bdt.importbillID
-inner join Part p on bdt.partID = p.partID
-where b.importbillID = 101
+--select 	
+--		b.importbillID,
+--		b.supplier,
+--		b.status,
+--		b.payment,
+--		b.total,
+--		b.created_date,
+--		p.name,
+--		p.price,
+--		p.cal_unit,
+--		bdt.quantity,
+--		bdt.subtotal
+--		from PartImportBill b
+--inner join PartImportBillDetail bdt
+--on b.importbillID = bdt.importbillID
+--inner join Part p on bdt.partID = p.partID
+--where b.importbillID = 101
 
 
-select 	
-		p.partID,
-		p.name,
-		p.price,
-		p.cal_unit,
-		p.stock as qty_in_stcok,
-		bdt.quantity as qty_imported,
-		bdt.subtotal
-		from PartImportBillDetail bdt
-		inner join Part p on bdt.partID = p.partID
-		--where bdt.importbillID = 101
+--select 	
+--		p.partID,
+--		p.name,
+--		p.price,
+--		p.cal_unit,
+--		p.stock as qty_in_stcok,
+--		bdt.quantity as qty_imported,
+--		bdt.subtotal
+--		from PartImportBillDetail bdt
+--		inner join Part p on bdt.partID = p.partID
+--		--where bdt.importbillID = 101
+
+
+--select b.repairbillID,b.customerID,c.name as cust_name,c.phone,c.email,b.status,b.payment,b.total,b.descriptions,b.created_date
+--from RepairBill b inner join Customer c on b.customerID = c.customerID
+--where concat(b.status,b.payment,c.name,c.phone,c.email) = N''
 

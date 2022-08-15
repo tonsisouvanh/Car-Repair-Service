@@ -4,3 +4,8 @@
 
 + Additional UI
 	- add icon infront title in module form
+
+
++ More feature
+	- Double click on cust row so user can view cust car info
+	- user can directly add new brand and type while on form adding new car for cust

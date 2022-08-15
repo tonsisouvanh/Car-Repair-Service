@@ -611,3 +611,184 @@ GO
 
 
 --====================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- @@@@@@@@@@@@@@@@@@@@@@ Repair Bill @@@@@@@@@@@@@@@@@@@@@@@
+-- @@ Add Repair Bill --===================================================================
+
+if(OBJECT_ID('sp_AddRepairBill') is not null)
+	drop proc sp_AddRepairBill
+go
+create procedure sp_AddRepairBill
+	@customerID int,@status nvarchar(125), @payment nvarchar(25),
+	@descriptions nvarchar(255)
+as
+begin
+
+	INSERT INTO RepairBill(customerID,status,payment,descriptions)
+	VALUES (@customerID,@status,@payment,@descriptions)
+
+end
+GO
+
+ --test
+--begin tran
+	
+--	exec sp_AddRepairBill 101,N'ຍັງບໍ່ຈ່າຍ',N'ສົດ',N'ກສາດ່ັຳນ ຍນຮັ່ຫກດນ'
+
+--commit tran
+
+--rollback tran
+
+--====================================================================================
+
+
+
+-- @@ update Bill --===================================================================
+
+if(OBJECT_ID('sp_UpdateRepairBill') is not null)
+	drop proc sp_UpdateRepairBill
+go
+create procedure sp_UpdateRepairBill
+	@status nvarchar(125), @payment nvarchar(25), @created_date date,
+	@descriptions nvarchar(255),@repairbillID int
+as
+begin
+
+	UPDATE RepairBill
+	SET status = @status,payment = @payment,descriptions = @descriptions, created_date = @created_date
+	WHERE repairbillID = @repairbillID
+
+end
+GO
+
+-- test
+--begin tran
+	
+--	exec sp_AddRepairBill 101,N'ຍັງບໍ່ຈ່າຍ',N'ສົດ',N'ກສາດ່ັຳນ ຍນຮັ່ຫກດນ'
+
+--commit tran
+
+--rollback tran
+
+--====================================================================================
+
+
+
+
+if(OBJECT_ID('sp_AddRepairBillDetail') is not null)
+	drop proc sp_AddRepairBillDetail
+go
+create procedure sp_AddRepairBillDetail
+	@partID int, @repairbillID int,@quantity int
+as
+begin
+	
+	declare @subtotal money;
+
+	-- add new item
+	IF NOT EXISTS(select * from RepairBillDetail where partID = @partID and repairbillID = @repairbillID)
+	BEGIN
+		set @subtotal = dbo.fn_CalPrice(@quantity,@partID);
+
+		INSERT INTO RepairBillDetail(partID, repairbillID, quantity, subtotal)
+		VALUES(@partID, @repairbillID, @quantity, @subtotal)
+	END
+	ELSE
+	BEGIN
+		UPDATE RepairBillDetail
+		SET quantity = quantity + @quantity, subtotal = subtotal + dbo.fn_CalPrice(@quantity, @partID)
+		where repairbillID = @repairbillID and partID = @partID;
+	END
+
+	IF(@@ROWCOUNT > 0)
+	BEGIN
+		--handle bill total
+		update RepairBill
+		set total = total + dbo.fn_CalPrice(@quantity,@partID)
+		--set total = total + @subtotal
+		where repairbillID = @repairbillID;
+
+
+		--handle part stock
+		update Part
+		set stock = stock - @quantity
+		where partID = @partID;
+	END
+end
+GO
+
+
+----select pibd.importbilldetailID, pibd.partID, pibd.importbillID, p.name, p.price, pibd.quantity,p.cal_unit, pibd.subtotal
+----from PartImportBillDetail pibd inner join Part p 
+----on pibd.partID = p.partID
+
+---- test
+--begin tran
+--	exec sp_AddPartImportBillDetail 102,102,1
+--commit tran
+--rollback tran
+
+--====================================================================================
+
+
+
+
+
+
+
+
+
+
+--if(OBJECT_ID('sp_DeletePartImportBillDetail') is not null)
+--	drop proc sp_DeletePartImportBillDetail
+--go
+--create procedure sp_DeletePartImportBillDetail
+--	@importbilldetailID int,@partID int, @importBillID int, @quantity int, @subtotal money
+--as
+--begin
+	
+--	DELETE PartImportBillDetail
+--	WHERE importbilldetailID = @importbilldetailID
+
+--	IF(@@ROWCOUNT > 0)
+--	BEGIN
+--		--handle bill total
+--		update PartImportBill
+--		set total = total - @subtotal
+--		--set total = total + @subtotal
+--		where importbillID = @importbillID;
+
+
+--		--handle part stock
+--		update Part
+--		set stock = stock - @quantity
+--		where partID = @partID;
+--	END
+--end
+--GO
+
+
+
+--select * from Part
+--select * from PartImportBill
+--select * from PartImportBillDetail
+
+--begin tran
+--exec sp_DeletePartImportBillDetail 100,102,102,2,40
+
+--rollback tran
+
+
+--====================================================================================
