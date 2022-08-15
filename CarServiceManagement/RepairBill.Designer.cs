@@ -77,8 +77,10 @@
             this.guna2Panel1.Controls.Add(this.dtpFrom);
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.txtSearch);
+            this.guna2Panel1.CustomBorderColor = System.Drawing.Color.White;
+            this.guna2Panel1.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel1.Name = "guna2Panel1";
@@ -206,8 +208,10 @@
             this.guna2PanelBottom.Controls.Add(this.label4);
             this.guna2PanelBottom.Controls.Add(this.cbbFilter);
             this.guna2PanelBottom.Controls.Add(this.ImageButtonAdd);
+            this.guna2PanelBottom.CustomBorderColor = System.Drawing.Color.White;
+            this.guna2PanelBottom.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.guna2PanelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2PanelBottom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.guna2PanelBottom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2PanelBottom.Location = new System.Drawing.Point(0, 490);
             this.guna2PanelBottom.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PanelBottom.Name = "guna2PanelBottom";

@@ -270,24 +270,23 @@ VALUES(101,N'ຊຳລະແລ້ວ',N'ເງິນສົດ',N'',N'2022-01-14
 INSERT INTO RepairBill(customerID,status,payment,descriptions,created_date)
 VALUES(102,N'ຊຳລະແລ້ວ',N'ເງິນສົດ',N'',N'2020-02-14')
 
-select * from Part
 
 ----@@ Repair Bill Detail
 ---- partID - Bill - Quantity
---exec sp_AddRepairBillDetail 102,102,2;
+exec sp_AddRepairBillDetail 102,102,2;
 
---exec sp_AddRepairBillDetail 105,102,3;
+exec sp_AddRepairBillDetail 105,102,3;
 
---exec sp_AddRepairBillDetail 108,102,2;
+exec sp_AddRepairBillDetail 108,102,2;
 
---exec sp_AddRepairBillDetail 111,101,2;
+exec sp_AddRepairBillDetail 111,101,2;
 
---exec sp_AddRepairBillDetail 112,101,4;
+exec sp_AddRepairBillDetail 112,101,4;
 
---exec sp_AddRepairBillDetail 107,101,1;
+exec sp_AddRepairBillDetail 107,101,1;
 
---exec sp_AddRepairBillDetail 110,101,1;
+exec sp_AddRepairBillDetail 110,101,1;
 
---exec sp_AddRepairBillDetail 113,100,2;
+exec sp_AddRepairBillDetail 113,100,2;
 
---exec sp_AddRepairBillDetail 112,100,1;
+exec sp_AddRepairBillDetail 112,100,1;

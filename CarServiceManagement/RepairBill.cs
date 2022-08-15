@@ -137,15 +137,16 @@ namespace CarServiceManagement
             }
             else if (colName == "detail")
             {
-                //int id = Convert.ToInt32(gunaDtgvRepairBill.Rows[e.RowIndex].Cells["repairbillID"].FormattedValue.ToString());
+                int id = Convert.ToInt32(gunaDtgvRepairBill.Rows[e.RowIndex].Cells["repairbillID"].FormattedValue.ToString());
                 //PartImportBillDetail f = new PartImportBillDetail(this, id);
-                //f.labelBillNumber.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["importbillID"].FormattedValue.ToString();
-                //f.labelBillStatus.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["status"].FormattedValue.ToString();
-                //f.labelTotal.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["total"].FormattedValue.ToString();
-                //f.dtpCreatedDate.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["created_date"].FormattedValue.ToString();
-                //f.labelSupplier.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["supplier"].FormattedValue.ToString();
-                //f.labelPayment.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["payment"].FormattedValue.ToString();
-                //f.ShowDialog();
+                RepairBillDetail f = new RepairBillDetail(this, id);
+
+                f.labelBillNumber.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["repairbillID"].FormattedValue.ToString();
+                f.labelBillStatus.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["status"].FormattedValue.ToString();
+                f.labelTotal.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["total"].FormattedValue.ToString();
+                f.dtpCreatedDate.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["created_date"].FormattedValue.ToString();
+                f.labelPayment.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["payment"].FormattedValue.ToString();
+                f.ShowDialog();
             }
         }
     }

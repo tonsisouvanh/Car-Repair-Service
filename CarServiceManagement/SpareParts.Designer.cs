@@ -63,11 +63,14 @@
             // guna2PanelBottom
             // 
             this.guna2PanelBottom.Controls.Add(this.ImageButtonAdd);
+            this.guna2PanelBottom.CustomBorderColor = System.Drawing.Color.White;
+            this.guna2PanelBottom.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.guna2PanelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2PanelBottom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
-            this.guna2PanelBottom.Location = new System.Drawing.Point(0, 319);
+            this.guna2PanelBottom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2PanelBottom.Location = new System.Drawing.Point(0, 392);
+            this.guna2PanelBottom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PanelBottom.Name = "guna2PanelBottom";
-            this.guna2PanelBottom.Size = new System.Drawing.Size(600, 47);
+            this.guna2PanelBottom.Size = new System.Drawing.Size(800, 58);
             this.guna2PanelBottom.TabIndex = 7;
             // 
             // ImageButtonAdd
@@ -81,11 +84,11 @@
             this.ImageButtonAdd.ImageRotate = 0F;
             this.ImageButtonAdd.ImageSize = new System.Drawing.Size(40, 40);
             this.ImageButtonAdd.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ImageButtonAdd.Location = new System.Drawing.Point(556, 4);
-            this.ImageButtonAdd.Margin = new System.Windows.Forms.Padding(2);
+            this.ImageButtonAdd.Location = new System.Drawing.Point(741, 5);
+            this.ImageButtonAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ImageButtonAdd.Name = "ImageButtonAdd";
             this.ImageButtonAdd.PressedState.ImageSize = new System.Drawing.Size(0, 0);
-            this.ImageButtonAdd.Size = new System.Drawing.Size(37, 38);
+            this.ImageButtonAdd.Size = new System.Drawing.Size(49, 47);
             this.ImageButtonAdd.TabIndex = 0;
             this.ImageButtonAdd.Click += new System.EventHandler(this.ImageButtonAdd_Click);
             // 
@@ -97,12 +100,14 @@
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.Controls.Add(this.txtPartName);
+            this.guna2Panel1.CustomBorderColor = System.Drawing.Color.White;
+            this.guna2Panel1.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(600, 49);
+            this.guna2Panel1.Size = new System.Drawing.Size(800, 60);
             this.guna2Panel1.TabIndex = 9;
             // 
             // label1
@@ -110,10 +115,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(9, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(12, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 26);
+            this.label1.Size = new System.Drawing.Size(65, 33);
             this.label1.TabIndex = 3;
             this.label1.Text = "ຄົ້ນຫາ:";
             // 
@@ -122,10 +126,10 @@
             this.guna2PictureBox1.BackColor = System.Drawing.Color.White;
             this.guna2PictureBox1.Image = global::CarServiceManagement.Properties.Resources.search;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(248, 13);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(331, 16);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(22, 23);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(29, 28);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 2;
             this.guna2PictureBox1.TabStop = false;
@@ -143,13 +147,13 @@
             this.txtPartName.Font = new System.Drawing.Font("Phetsarath OT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPartName.ForeColor = System.Drawing.Color.Black;
             this.txtPartName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPartName.Location = new System.Drawing.Point(66, 8);
-            this.txtPartName.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtPartName.Location = new System.Drawing.Point(88, 10);
+            this.txtPartName.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtPartName.Name = "txtPartName";
             this.txtPartName.PasswordChar = '\0';
             this.txtPartName.PlaceholderText = "";
             this.txtPartName.SelectedText = "";
-            this.txtPartName.Size = new System.Drawing.Size(209, 32);
+            this.txtPartName.Size = new System.Drawing.Size(279, 39);
             this.txtPartName.TabIndex = 1;
             this.txtPartName.TextChanged += new System.EventHandler(this.txtPartName_TextChanged);
             // 
@@ -167,7 +171,7 @@
             this.gunaDtgvParts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gunaDtgvParts.BackgroundColor = System.Drawing.Color.White;
             this.gunaDtgvParts.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gunaDtgvParts.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.gunaDtgvParts.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDtgvParts.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -202,8 +206,8 @@
             this.gunaDtgvParts.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaDtgvParts.EnableHeadersVisualStyles = false;
             this.gunaDtgvParts.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDtgvParts.Location = new System.Drawing.Point(0, 49);
-            this.gunaDtgvParts.Margin = new System.Windows.Forms.Padding(2);
+            this.gunaDtgvParts.Location = new System.Drawing.Point(0, 60);
+            this.gunaDtgvParts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaDtgvParts.Name = "gunaDtgvParts";
             this.gunaDtgvParts.ReadOnly = true;
             this.gunaDtgvParts.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -223,7 +227,7 @@
             this.gunaDtgvParts.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.gunaDtgvParts.RowTemplate.Height = 33;
             this.gunaDtgvParts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDtgvParts.Size = new System.Drawing.Size(600, 270);
+            this.gunaDtgvParts.Size = new System.Drawing.Size(800, 332);
             this.gunaDtgvParts.TabIndex = 10;
             this.gunaDtgvParts.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.gunaDtgvParts.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -277,7 +281,7 @@
             this.stock.Name = "stock";
             this.stock.ReadOnly = true;
             this.stock.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.stock.Width = 65;
+            this.stock.Width = 79;
             // 
             // price
             // 
@@ -288,7 +292,7 @@
             this.price.Name = "price";
             this.price.ReadOnly = true;
             this.price.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.price.Width = 70;
+            this.price.Width = 84;
             // 
             // currency
             // 
@@ -299,7 +303,7 @@
             this.currency.Name = "currency";
             this.currency.ReadOnly = true;
             this.currency.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.currency.Width = 95;
+            this.currency.Width = 117;
             // 
             // cal_unit
             // 
@@ -310,7 +314,7 @@
             this.cal_unit.Name = "cal_unit";
             this.cal_unit.ReadOnly = true;
             this.cal_unit.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.cal_unit.Width = 94;
+            this.cal_unit.Width = 113;
             // 
             // descriptions
             // 
@@ -341,7 +345,7 @@
             this.brand.Name = "brand";
             this.brand.ReadOnly = true;
             this.brand.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.brand.Width = 59;
+            this.brand.Width = 71;
             // 
             // type_name
             // 
@@ -352,7 +356,7 @@
             this.type_name.Name = "type_name";
             this.type_name.ReadOnly = true;
             this.type_name.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.type_name.Width = 81;
+            this.type_name.Width = 98;
             // 
             // edit
             // 
@@ -388,6 +392,7 @@
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             this.dataGridViewImageColumn1.ReadOnly = true;
             this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn1.Width = 125;
             // 
             // dataGridViewImageColumn2
             // 
@@ -399,17 +404,18 @@
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.ReadOnly = true;
             this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn2.Width = 125;
             // 
             // SpareParts
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.gunaDtgvParts);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2PanelBottom);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "SpareParts";
             this.Text = "ຈັດການຂໍ້ມູນອາໄຫຼ່";
             this.guna2PanelBottom.ResumeLayout(false);

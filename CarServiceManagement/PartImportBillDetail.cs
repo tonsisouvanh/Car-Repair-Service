@@ -1,12 +1,6 @@
 ﻿using CarServiceManagement.DAO;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CarServiceManagement
@@ -18,8 +12,10 @@ namespace CarServiceManagement
         public PartImportBillDetail(PartImportBills p, int tempid)
         {
             InitializeComponent();
+
             partImportBills = p;
             passedID = tempid;
+
             load_ImportBillDetail();
             load_SpareParts();
 
@@ -28,7 +24,7 @@ namespace CarServiceManagement
         private void reloadTotal(int billID)
         {
             DataTable data = DataProvider.Instance.ExecuteQuery("select top(1) sum(subtotal) as total from PartImportBillDetail " +
-                "where importbillID = "+billID+
+                "where importbillID = " + billID +
                 "group by importbillID");
 
             if (data.Rows.Count > 0)
@@ -42,7 +38,8 @@ namespace CarServiceManagement
 
         public void load_SpareParts()
         {
-            DataTable data = DataProvider.Instance.ExecuteQuery("select p.partID as partIDs,p.name,p.price as part_price,p.cal_unit,p.stock from Part p");
+            DataTable data = DataProvider.Instance.ExecuteQuery("select p.partID as partIDs,p.name,p.price as part_price,p.cal_unit,p.stock from Part p " +
+                "where p.name like N'%" + txtSearch.Text + "%'");
             gunaDtgvParts.DataSource = data;
             gunaDtgvParts.Columns["part_price"].DefaultCellStyle.Format = "N0";
 
@@ -50,7 +47,7 @@ namespace CarServiceManagement
         public void load_ImportBillDetail()
         {
             DataTable data = DataProvider.Instance.ExecuteQuery("select pibd.importbilldetailID, pibd.partID, pibd.importbillID, p.name, p.price, pibd.quantity,p.cal_unit, pibd.subtotal " +
-                "from PartImportBillDetail pibd inner join Part p on pibd.partID = p.partID where pibd.importbillID = "+ passedID);
+                "from PartImportBillDetail pibd inner join Part p on pibd.partID = p.partID where pibd.importbillID = " + passedID);
             gunaDtgvPartImportBillDetail.DataSource = data;
             gunaDtgvPartImportBillDetail.Columns["price"].DefaultCellStyle.Format = "N0";
             gunaDtgvPartImportBillDetail.Columns["subtotal"].DefaultCellStyle.Format = "N0";
@@ -88,7 +85,7 @@ namespace CarServiceManagement
                 {
                     try
                     {
-                        
+
 
                         string query = "exec sp_DeletePartImportBillDetail @importbilldetailID , @partID , @importBillID , @quantity , @subtotal";
 
@@ -110,6 +107,8 @@ namespace CarServiceManagement
                         MessageBox.Show(ex.Message);
                     }
                     load_ImportBillDetail();
+                    load_SpareParts();
+
                     partImportBills.Load_PartImportBill();
                     reloadTotal(billid);
 
@@ -152,10 +151,10 @@ namespace CarServiceManagement
                 {
                     try
                     {
-                
+
 
                         string query = "exec sp_AddPartImportBillDetail @partID , @importBillID , @quantity";
-                        int result = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { partid,billid,qty });
+                        int result = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { partid, billid, qty });
 
 
                         if (result != 0)
@@ -169,6 +168,8 @@ namespace CarServiceManagement
                         }
 
                         load_ImportBillDetail();
+                        load_SpareParts();
+
                         partImportBills.Load_PartImportBill();
 
                         reloadTotal(billid);

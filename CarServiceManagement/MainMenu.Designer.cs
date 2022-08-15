@@ -183,7 +183,7 @@
             this.guna2TileButton3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2TileButton3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2TileButton3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2TileButton3.FillColor = System.Drawing.Color.ForestGreen;
+            this.guna2TileButton3.FillColor = System.Drawing.Color.SteelBlue;
             this.guna2TileButton3.Font = new System.Drawing.Font("Noto Sans Lao", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TileButton3.ForeColor = System.Drawing.Color.White;
             this.guna2TileButton3.Image = global::CarServiceManagement.Properties.Resources.invoice;

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.picClose = new System.Windows.Forms.PictureBox();
             this.labelID = new System.Windows.Forms.Label();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.label1 = new System.Windows.Forms.Label();
@@ -49,23 +48,10 @@
             this.label8 = new System.Windows.Forms.Label();
             this.comboBoxProvince = new System.Windows.Forms.ComboBox();
             this.comboBoxDistrict = new System.Windows.Forms.ComboBox();
-            this.btnAddCar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
+            this.picClose = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             this.SuspendLayout();
-            // 
-            // picClose
-            // 
-            this.picClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picClose.Image = global::CarServiceManagement.Properties.Resources.close;
-            this.picClose.Location = new System.Drawing.Point(1020, 14);
-            this.picClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.picClose.Name = "picClose";
-            this.picClose.Size = new System.Drawing.Size(35, 34);
-            this.picClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picClose.TabIndex = 1;
-            this.picClose.TabStop = false;
-            this.picClose.Click += new System.EventHandler(this.picClose_Click);
             // 
             // labelID
             // 
@@ -287,30 +273,24 @@
             this.comboBoxDistrict.Size = new System.Drawing.Size(285, 37);
             this.comboBoxDistrict.TabIndex = 5;
             // 
-            // btnAddCar
+            // picClose
             // 
-            this.btnAddCar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddCar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
-            this.btnAddCar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddCar.FlatAppearance.BorderSize = 0;
-            this.btnAddCar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddCar.Font = new System.Drawing.Font("Dosis", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddCar.ForeColor = System.Drawing.Color.White;
-            this.btnAddCar.Location = new System.Drawing.Point(495, 391);
-            this.btnAddCar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAddCar.Name = "btnAddCar";
-            this.btnAddCar.Size = new System.Drawing.Size(125, 43);
-            this.btnAddCar.TabIndex = 96;
-            this.btnAddCar.Text = "add car";
-            this.btnAddCar.UseVisualStyleBackColor = false;
-            this.btnAddCar.Click += new System.EventHandler(this.btnAddCar_Click);
+            this.picClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picClose.Image = global::CarServiceManagement.Properties.Resources.close;
+            this.picClose.Location = new System.Drawing.Point(1020, 14);
+            this.picClose.Margin = new System.Windows.Forms.Padding(4);
+            this.picClose.Name = "picClose";
+            this.picClose.Size = new System.Drawing.Size(35, 34);
+            this.picClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picClose.TabIndex = 1;
+            this.picClose.TabStop = false;
+            this.picClose.Click += new System.EventHandler(this.picClose_Click);
             // 
             // CustomerModule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 460);
-            this.Controls.Add(this.btnAddCar);
             this.Controls.Add(this.comboBoxDistrict);
             this.Controls.Add(this.comboBoxProvince);
             this.Controls.Add(this.txtAddressDetail);
@@ -333,9 +313,9 @@
             this.Name = "CustomerModule";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CustomerModule";
-            ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -363,6 +343,5 @@
         private System.Windows.Forms.Label label7;
         public System.Windows.Forms.ComboBox comboBoxDistrict;
         public System.Windows.Forms.ComboBox comboBoxProvince;
-        public System.Windows.Forms.Button btnAddCar;
     }
 }

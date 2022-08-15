@@ -64,7 +64,7 @@
             this.guna2PanelSidebar.CustomBorderColor = System.Drawing.Color.Transparent;
             this.guna2PanelSidebar.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 1, 0);
             this.guna2PanelSidebar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2PanelSidebar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.guna2PanelSidebar.FillColor = System.Drawing.Color.Firebrick;
             this.guna2PanelSidebar.Location = new System.Drawing.Point(0, 0);
             this.guna2PanelSidebar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2PanelSidebar.Name = "guna2PanelSidebar";
@@ -176,6 +176,7 @@
             this.ImageButtonMaximize.PressedState.ImageSize = new System.Drawing.Size(25, 25);
             this.ImageButtonMaximize.Size = new System.Drawing.Size(38, 32);
             this.ImageButtonMaximize.TabIndex = 9;
+            this.ImageButtonMaximize.UseTransparentBackground = true;
             this.ImageButtonMaximize.Click += new System.EventHandler(this.ImageButtonMaximize_Click);
             // 
             // ImageButtonClose
@@ -193,11 +194,12 @@
             this.ImageButtonClose.PressedState.ImageSize = new System.Drawing.Size(25, 25);
             this.ImageButtonClose.Size = new System.Drawing.Size(38, 32);
             this.ImageButtonClose.TabIndex = 8;
+            this.ImageButtonClose.UseTransparentBackground = true;
             this.ImageButtonClose.Click += new System.EventHandler(this.ImageButtonClose_Click);
             // 
             // lblTitle
             // 
-            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitle.BackColor = System.Drawing.Color.Firebrick;
             this.lblTitle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblTitle.Font = new System.Drawing.Font("Noto Sans Lao", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;

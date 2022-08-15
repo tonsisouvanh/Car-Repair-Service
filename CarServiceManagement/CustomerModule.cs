@@ -104,7 +104,12 @@ namespace CarServiceManagement
                     if (result != 0)
                     {
                         MessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                        if (MessageBox.Show("ຕ້ອງການເພີ່ມຂໍ້ມູນລົດ ຫຼືບໍ່?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                        {
+                            Vehicles v = new Vehicles();
+                            VehicleModule f = new VehicleModule(v);
+                            f.ShowDialog();
+                        }
                     }
                     else
                     {
@@ -168,11 +173,5 @@ namespace CarServiceManagement
             }
         }
 
-        private void btnAddCar_Click(object sender, EventArgs e)
-        {
-            Vehicles vehicles = new Vehicles();
-            VehicleModule f = new VehicleModule(vehicles);
-            f.ShowDialog();
-        }
     }
 }

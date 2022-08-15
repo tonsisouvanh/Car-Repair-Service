@@ -52,9 +52,9 @@
             // 
             this.guna2PanelBottom.Controls.Add(this.guna2ImageButtonAdd);
             this.guna2PanelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2PanelBottom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.guna2PanelBottom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2PanelBottom.Location = new System.Drawing.Point(0, 392);
-            this.guna2PanelBottom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PanelBottom.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PanelBottom.Name = "guna2PanelBottom";
             this.guna2PanelBottom.Size = new System.Drawing.Size(800, 58);
             this.guna2PanelBottom.TabIndex = 9;
@@ -110,7 +110,7 @@
             this.DtgvPartTypes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DtgvPartTypes.BackgroundColor = System.Drawing.Color.White;
             this.DtgvPartTypes.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DtgvPartTypes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.DtgvPartTypes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DtgvPartTypes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));

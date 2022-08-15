@@ -574,12 +574,12 @@ if(OBJECT_ID('sp_DeletePartImportBillDetail') is not null)
 	drop proc sp_DeletePartImportBillDetail
 go
 create procedure sp_DeletePartImportBillDetail
-	@importbilldetailID int,@partID int, @importBillID int, @quantity int, @subtotal money
+	@repairbilldetailID int,@partID int, @repairbillID int, @quantity int, @subtotal money
 as
 begin
 	
-	DELETE PartImportBillDetail
-	WHERE importbilldetailID = @importbilldetailID
+	DELETE RepairBillDetail
+	WHERE repairbilldetailID = @repairbilldetailID
 
 	IF(@@ROWCOUNT > 0)
 	BEGIN
@@ -587,7 +587,7 @@ begin
 		update PartImportBill
 		set total = total - @subtotal
 		--set total = total + @subtotal
-		where importbillID = @importbillID;
+		where importbillID = @repairbillID;
 
 
 		--handle part stock
@@ -684,7 +684,7 @@ GO
 
 --====================================================================================
 
-
+select * from Customer where phone like '%02054433029%';
 
 
 if(OBJECT_ID('sp_AddRepairBillDetail') is not null)
@@ -747,37 +747,33 @@ GO
 
 
 
-
-
-
-
---if(OBJECT_ID('sp_DeletePartImportBillDetail') is not null)
---	drop proc sp_DeletePartImportBillDetail
---go
---create procedure sp_DeletePartImportBillDetail
---	@importbilldetailID int,@partID int, @importBillID int, @quantity int, @subtotal money
---as
---begin
+if(OBJECT_ID('sp_DeleteRepairBillDetail') is not null)
+	drop proc sp_DeleteRepairBillDetail
+go
+create procedure sp_DeleteRepairBillDetail
+	@importbilldetailID int,@partID int, @importBillID int, @quantity int, @subtotal money
+as
+begin
 	
---	DELETE PartImportBillDetail
---	WHERE importbilldetailID = @importbilldetailID
+	DELETE PartImportBillDetail
+	WHERE importbilldetailID = @importbilldetailID
 
---	IF(@@ROWCOUNT > 0)
---	BEGIN
---		--handle bill total
---		update PartImportBill
---		set total = total - @subtotal
---		--set total = total + @subtotal
---		where importbillID = @importbillID;
+	IF(@@ROWCOUNT > 0)
+	BEGIN
+		--handle bill total
+		update PartImportBill
+		set total = total - @subtotal
+		--set total = total + @subtotal
+		where importbillID = @importbillID;
 
 
---		--handle part stock
---		update Part
---		set stock = stock - @quantity
---		where partID = @partID;
---	END
---end
---GO
+		--handle part stock
+		update Part
+		set stock = stock + @quantity
+		where partID = @partID;
+	END
+end
+GO
 
 
 
