@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.picClose = new System.Windows.Forms.PictureBox();
             this.dtpCreatedDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.TextBox();
@@ -56,24 +55,10 @@
             this.labelAddNewCust = new System.Windows.Forms.Label();
             this.formInputPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.labelCustID = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
+            this.picClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.panel1.SuspendLayout();
             this.formInputPanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // picClose
-            // 
-            this.picClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picClose.Image = global::CarServiceManagement.Properties.Resources.close;
-            this.picClose.Location = new System.Drawing.Point(1020, 14);
-            this.picClose.Margin = new System.Windows.Forms.Padding(4);
-            this.picClose.Name = "picClose";
-            this.picClose.Size = new System.Drawing.Size(35, 34);
-            this.picClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picClose.TabIndex = 1;
-            this.picClose.TabStop = false;
-            this.picClose.Click += new System.EventHandler(this.picClose_Click);
             // 
             // dtpCreatedDate
             // 
@@ -407,6 +392,24 @@
             this.labelCustID.Text = "labelCustID";
             this.labelCustID.Visible = false;
             // 
+            // picClose
+            // 
+            this.picClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picClose.BackColor = System.Drawing.Color.Transparent;
+            this.picClose.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.picClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picClose.HoverState.ImageSize = new System.Drawing.Size(27, 27);
+            this.picClose.Image = global::CarServiceManagement.Properties.Resources.close_32;
+            this.picClose.ImageOffset = new System.Drawing.Point(0, 0);
+            this.picClose.ImageRotate = 0F;
+            this.picClose.ImageSize = new System.Drawing.Size(28, 28);
+            this.picClose.Location = new System.Drawing.Point(1017, 8);
+            this.picClose.Name = "picClose";
+            this.picClose.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.picClose.Size = new System.Drawing.Size(38, 45);
+            this.picClose.TabIndex = 13;
+            this.picClose.Click += new System.EventHandler(this.picClose_Click);
+            // 
             // RepairBillModule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -429,7 +432,6 @@
             this.Name = "RepairBillModule";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RepairBillModule";
-            ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.formInputPanel.ResumeLayout(false);
@@ -440,8 +442,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox picClose;
         public Guna.UI2.WinForms.Guna2DateTimePicker dtpCreatedDate;
         private System.Windows.Forms.Label label7;
         public System.Windows.Forms.TextBox txtTotal;
@@ -468,5 +468,6 @@
         public System.Windows.Forms.Label labelAddNewCust;
         public System.Windows.Forms.Label labelCustID;
         public Guna.UI2.WinForms.Guna2Panel formInputPanel;
+        private Guna.UI2.WinForms.Guna2ImageButton picClose;
     }
 }

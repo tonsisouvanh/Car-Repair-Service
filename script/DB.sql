@@ -3,6 +3,17 @@ go
 
 
 /***************************************** CREATE TABLE **********************************************************/
+if(OBJECT_ID('Account') is not null)
+	drop table Account
+go
+CREATE TABLE Account
+(
+	accountID int IDENTITY(100,1) NOT NULL,
+    username varchar(125) unique,
+	password varchar(8),
+	name nvarchar(125),
+	primary key (accountID)
+)
 
 if(OBJECT_ID('Provinces') is not null)
 	drop table Provinces
@@ -105,6 +116,21 @@ add constraint FK_Part_PartType
 foreign key (part_type) references PartType(parttypeID);
 
 
+--if(OBJECT_ID('Vehicle') is not null)
+--	drop table Vehicle
+--go
+--CREATE TABLE Vehicle
+--(
+--    vehicleID int IDENTITY(100,1) NOT NULL,
+--	name nvarchar(125),
+--	color nvarchar(55),
+--	typeID int, --FK
+--	brandID int, --FK
+--	plate_number nvarchar(15) unique,
+--	descriptions nvarchar(255),
+--	customerID int, --FK
+--	primary key (vehicleID)
+--)
 if(OBJECT_ID('Vehicle') is not null)
 	drop table Vehicle
 go
@@ -118,6 +144,8 @@ CREATE TABLE Vehicle
 	plate_number nvarchar(15) unique,
 	descriptions nvarchar(255),
 	customerID int, --FK
+	oilchange_date date,
+	required_oilchange_date date,
 	primary key (vehicleID)
 )
 
@@ -345,4 +373,3 @@ GO
 --select b.repairbillID,b.customerID,c.name as cust_name,c.phone,c.email,b.status,b.payment,b.total,b.descriptions,b.created_date
 --from RepairBill b inner join Customer c on b.customerID = c.customerID
 --where concat(b.status,b.payment,c.name,c.phone,c.email) = N''
-

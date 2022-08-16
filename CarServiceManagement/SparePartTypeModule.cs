@@ -1,12 +1,5 @@
 ﻿using CarServiceManagement.DAO;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CarServiceManagement
@@ -87,7 +80,7 @@ namespace CarServiceManagement
             {
                 if (MessageBox.Show("ຕ້ອງການແກ້ໄຂຂໍ້ມູນ", "Update Record!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    string query = "UPDATE PartType SET name = N'"+ txtPartTypeName.Text +"' WHERE parttypeID = "+Int16.Parse(labelID.Text.ToString());
+                    string query = "UPDATE PartType SET name = N'" + txtPartTypeName.Text + "' WHERE parttypeID = " + Int16.Parse(labelID.Text.ToString());
                     int result = DataProvider.Instance.ExecuteNoneQuery(query);
 
                     if (result != 0)
@@ -108,7 +101,7 @@ namespace CarServiceManagement
             {
                 MessageBox.Show(ex.Message);
             }
-            
+
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

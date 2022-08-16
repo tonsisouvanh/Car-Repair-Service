@@ -28,16 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2PanelBottom = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2TileButton1 = new Guna.UI2.WinForms.Guna2TileButton();
             this.ImageButtonAdd = new Guna.UI2.WinForms.Guna2ImageButton();
             this.gunaDtgvVehicles = new Guna.UI2.WinForms.Guna2DataGridView();
             this.vehicleID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,10 +53,13 @@
             this.brand_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.custname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.oilchange_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.required_oilchange_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.guna2TileButton2 = new Guna.UI2.WinForms.Guna2TileButton();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2PanelBottom.SuspendLayout();
@@ -67,6 +71,8 @@
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.BorderColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.BorderThickness = 2;
+            this.guna2Panel1.Controls.Add(this.guna2TileButton2);
+            this.guna2Panel1.Controls.Add(this.guna2TileButton1);
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.Controls.Add(this.txtSearch);
@@ -137,6 +143,30 @@
             this.guna2PanelBottom.Size = new System.Drawing.Size(800, 58);
             this.guna2PanelBottom.TabIndex = 15;
             // 
+            // guna2TileButton1
+            // 
+            this.guna2TileButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2TileButton1.Animated = true;
+            this.guna2TileButton1.AutoRoundedCorners = true;
+            this.guna2TileButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2TileButton1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2TileButton1.BorderRadius = 19;
+            this.guna2TileButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2TileButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2TileButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2TileButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2TileButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2TileButton1.FillColor = System.Drawing.Color.Teal;
+            this.guna2TileButton1.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TileButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2TileButton1.Location = new System.Drawing.Point(525, 10);
+            this.guna2TileButton1.Name = "guna2TileButton1";
+            this.guna2TileButton1.Size = new System.Drawing.Size(263, 41);
+            this.guna2TileButton1.TabIndex = 1;
+            this.guna2TileButton1.Text = "ລົດຕ້ອງການປ່ຽນນ້ຳມັນເຄື່ອງ";
+            this.guna2TileButton1.UseTransparentBackground = true;
+            this.guna2TileButton1.Click += new System.EventHandler(this.guna2TileButton1_Click);
+            // 
             // ImageButtonAdd
             // 
             this.ImageButtonAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -162,25 +192,25 @@
             this.gunaDtgvVehicles.AllowUserToAddRows = false;
             this.gunaDtgvVehicles.AllowUserToDeleteRows = false;
             this.gunaDtgvVehicles.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            this.gunaDtgvVehicles.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            this.gunaDtgvVehicles.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
             this.gunaDtgvVehicles.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gunaDtgvVehicles.BackgroundColor = System.Drawing.Color.White;
             this.gunaDtgvVehicles.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaDtgvVehicles.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDtgvVehicles.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Noto Sans Lao SemiCondensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDtgvVehicles.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Noto Sans Lao SemiCondensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDtgvVehicles.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.gunaDtgvVehicles.ColumnHeadersHeight = 35;
             this.gunaDtgvVehicles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.vehicleID,
@@ -195,16 +225,18 @@
             this.brand_name,
             this.custname,
             this.phone,
+            this.oilchange_date,
+            this.required_oilchange_date,
             this.edit,
             this.delete});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDtgvVehicles.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gunaDtgvVehicles.DefaultCellStyle = dataGridViewCellStyle13;
             this.gunaDtgvVehicles.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaDtgvVehicles.EnableHeadersVisualStyles = false;
             this.gunaDtgvVehicles.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -213,20 +245,20 @@
             this.gunaDtgvVehicles.Name = "gunaDtgvVehicles";
             this.gunaDtgvVehicles.ReadOnly = true;
             this.gunaDtgvVehicles.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Noto Sans Lao", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDtgvVehicles.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Noto Sans Lao", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDtgvVehicles.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.gunaDtgvVehicles.RowHeadersVisible = false;
             this.gunaDtgvVehicles.RowHeadersWidth = 51;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            this.gunaDtgvVehicles.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
+            this.gunaDtgvVehicles.RowsDefaultCellStyle = dataGridViewCellStyle15;
             this.gunaDtgvVehicles.RowTemplate.Height = 33;
             this.gunaDtgvVehicles.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gunaDtgvVehicles.Size = new System.Drawing.Size(800, 390);
@@ -379,6 +411,26 @@
             this.phone.ReadOnly = true;
             this.phone.Width = 84;
             // 
+            // oilchange_date
+            // 
+            this.oilchange_date.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.oilchange_date.DataPropertyName = "oilchange_date";
+            this.oilchange_date.HeaderText = "ວັນປ່ຽນນ້ຳມັນເຄຶ່ອງ";
+            this.oilchange_date.MinimumWidth = 6;
+            this.oilchange_date.Name = "oilchange_date";
+            this.oilchange_date.ReadOnly = true;
+            this.oilchange_date.Width = 193;
+            // 
+            // required_oilchange_date
+            // 
+            this.required_oilchange_date.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.required_oilchange_date.DataPropertyName = "required_oilchange_date";
+            this.required_oilchange_date.HeaderText = "ວັນກຳນົດປ່ຽນໃໝ່";
+            this.required_oilchange_date.MinimumWidth = 6;
+            this.required_oilchange_date.Name = "required_oilchange_date";
+            this.required_oilchange_date.ReadOnly = true;
+            this.required_oilchange_date.Width = 179;
+            // 
             // edit
             // 
             this.edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
@@ -427,6 +479,30 @@
             this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewImageColumn2.Width = 125;
             // 
+            // guna2TileButton2
+            // 
+            this.guna2TileButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2TileButton2.Animated = true;
+            this.guna2TileButton2.AutoRoundedCorners = true;
+            this.guna2TileButton2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2TileButton2.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2TileButton2.BorderRadius = 19;
+            this.guna2TileButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2TileButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2TileButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2TileButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2TileButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2TileButton2.FillColor = System.Drawing.Color.Teal;
+            this.guna2TileButton2.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TileButton2.ForeColor = System.Drawing.Color.White;
+            this.guna2TileButton2.Location = new System.Drawing.Point(397, 10);
+            this.guna2TileButton2.Name = "guna2TileButton2";
+            this.guna2TileButton2.Size = new System.Drawing.Size(102, 41);
+            this.guna2TileButton2.TabIndex = 4;
+            this.guna2TileButton2.Text = "ທັງໝົດ";
+            this.guna2TileButton2.UseTransparentBackground = true;
+            this.guna2TileButton2.Click += new System.EventHandler(this.guna2TileButton2_Click);
+            // 
             // Vehicles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -469,7 +545,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn brand_name;
         private System.Windows.Forms.DataGridViewTextBoxColumn custname;
         private System.Windows.Forms.DataGridViewTextBoxColumn phone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn oilchange_date;
+        private System.Windows.Forms.DataGridViewTextBoxColumn required_oilchange_date;
         private System.Windows.Forms.DataGridViewImageColumn edit;
         private System.Windows.Forms.DataGridViewImageColumn delete;
+        private Guna.UI2.WinForms.Guna2TileButton guna2TileButton1;
+        private Guna.UI2.WinForms.Guna2TileButton guna2TileButton2;
     }
 }

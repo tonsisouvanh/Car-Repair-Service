@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerMain));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2PanelSidebar = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
@@ -40,9 +39,11 @@
             this.guna2PanelTitle = new Guna.UI2.WinForms.Guna2Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.PanelMain = new Guna.UI2.WinForms.Guna2Panel();
+            this.picMinimize = new Guna.UI2.WinForms.Guna2ImageButton();
             this.ImageButtonMaximize = new Guna.UI2.WinForms.Guna2ImageButton();
             this.ImageButtonClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.labelTimer = new System.Windows.Forms.Label();
             this.guna2PanelSidebar.SuspendLayout();
             this.guna2PanelLogo.SuspendLayout();
             this.guna2PanelTitle.SuspendLayout();
@@ -60,6 +61,7 @@
             this.guna2PanelSidebar.BackColor = System.Drawing.Color.Teal;
             this.guna2PanelSidebar.BorderColor = System.Drawing.Color.White;
             this.guna2PanelSidebar.BorderThickness = 2;
+            this.guna2PanelSidebar.Controls.Add(this.labelTimer);
             this.guna2PanelSidebar.Controls.Add(this.guna2Button2);
             this.guna2PanelSidebar.Controls.Add(this.guna2Button1);
             this.guna2PanelSidebar.Controls.Add(this.sidebar_vehicles);
@@ -80,6 +82,7 @@
             // 
             this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
             this.guna2Button2.BorderColor = System.Drawing.Color.White;
+            this.guna2Button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2Button2.CustomBorderColor = System.Drawing.Color.White;
             this.guna2Button2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 1, 0, 0);
             this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -96,12 +99,14 @@
             this.guna2Button2.Size = new System.Drawing.Size(221, 46);
             this.guna2Button2.TabIndex = 4;
             this.guna2Button2.Text = "ຍີ່ຫໍ້ລົດ";
+            this.guna2Button2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2Button1
             // 
             this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Button1.BorderColor = System.Drawing.Color.White;
+            this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2Button1.CustomBorderColor = System.Drawing.Color.White;
             this.guna2Button1.CustomBorderThickness = new System.Windows.Forms.Padding(0, 1, 0, 0);
             this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -118,12 +123,14 @@
             this.guna2Button1.Size = new System.Drawing.Size(221, 46);
             this.guna2Button1.TabIndex = 3;
             this.guna2Button1.Text = "ປະເພດລົດ";
+            this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // sidebar_vehicles
             // 
             this.sidebar_vehicles.BackColor = System.Drawing.Color.Transparent;
             this.sidebar_vehicles.BorderColor = System.Drawing.Color.White;
+            this.sidebar_vehicles.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sidebar_vehicles.CustomBorderColor = System.Drawing.Color.White;
             this.sidebar_vehicles.CustomBorderThickness = new System.Windows.Forms.Padding(0, 1, 0, 0);
             this.sidebar_vehicles.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -140,12 +147,14 @@
             this.sidebar_vehicles.Size = new System.Drawing.Size(221, 46);
             this.sidebar_vehicles.TabIndex = 2;
             this.sidebar_vehicles.Text = "ລົດຂອງລູກຄ້າ";
+            this.sidebar_vehicles.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.sidebar_vehicles.Click += new System.EventHandler(this.sidebar_vehicles_Click);
             // 
             // sidebar_customers
             // 
             this.sidebar_customers.BackColor = System.Drawing.Color.Transparent;
             this.sidebar_customers.BorderColor = System.Drawing.Color.White;
+            this.sidebar_customers.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sidebar_customers.CustomBorderColor = System.Drawing.Color.White;
             this.sidebar_customers.CustomBorderThickness = new System.Windows.Forms.Padding(0, 1, 0, 0);
             this.sidebar_customers.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -154,7 +163,7 @@
             this.sidebar_customers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.sidebar_customers.Dock = System.Windows.Forms.DockStyle.Top;
             this.sidebar_customers.FillColor = System.Drawing.Color.Transparent;
-            this.sidebar_customers.Font = new System.Drawing.Font("Noto Sans Lao", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sidebar_customers.Font = new System.Drawing.Font("Noto Sans Lao", 13.8F);
             this.sidebar_customers.ForeColor = System.Drawing.Color.White;
             this.sidebar_customers.Location = new System.Drawing.Point(7, 225);
             this.sidebar_customers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -162,6 +171,7 @@
             this.sidebar_customers.Size = new System.Drawing.Size(221, 46);
             this.sidebar_customers.TabIndex = 1;
             this.sidebar_customers.Text = "ລາຍຊື່ລູກຄ້າ";
+            this.sidebar_customers.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.sidebar_customers.Click += new System.EventHandler(this.sidebar_customers_Click);
             // 
             // guna2PanelLogo
@@ -182,6 +192,7 @@
             // guna2PanelTitle
             // 
             this.guna2PanelTitle.BorderColor = System.Drawing.Color.White;
+            this.guna2PanelTitle.Controls.Add(this.picMinimize);
             this.guna2PanelTitle.Controls.Add(this.ImageButtonMaximize);
             this.guna2PanelTitle.Controls.Add(this.ImageButtonClose);
             this.guna2PanelTitle.Controls.Add(this.lblTitle);
@@ -199,8 +210,8 @@
             // 
             // lblTitle
             // 
+            this.lblTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblTitle.Font = new System.Drawing.Font("Noto Sans Lao", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(0, 0);
@@ -222,20 +233,39 @@
             this.PanelMain.Size = new System.Drawing.Size(1157, 794);
             this.PanelMain.TabIndex = 7;
             // 
+            // picMinimize
+            // 
+            this.picMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picMinimize.BackColor = System.Drawing.Color.Transparent;
+            this.picMinimize.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.picMinimize.HoverState.ImageSize = new System.Drawing.Size(27, 27);
+            this.picMinimize.Image = global::CarServiceManagement.Properties.Resources.minimize_32;
+            this.picMinimize.ImageOffset = new System.Drawing.Point(0, 0);
+            this.picMinimize.ImageRotate = 0F;
+            this.picMinimize.ImageSize = new System.Drawing.Size(28, 28);
+            this.picMinimize.Location = new System.Drawing.Point(1058, 8);
+            this.picMinimize.Name = "picMinimize";
+            this.picMinimize.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.picMinimize.Size = new System.Drawing.Size(43, 45);
+            this.picMinimize.TabIndex = 10;
+            this.picMinimize.UseTransparentBackground = true;
+            this.picMinimize.Click += new System.EventHandler(this.picMinimize_Click);
+            // 
             // ImageButtonMaximize
             // 
             this.ImageButtonMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ImageButtonMaximize.BackColor = System.Drawing.Color.Transparent;
             this.ImageButtonMaximize.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.ImageButtonMaximize.HoverState.ImageSize = new System.Drawing.Size(25, 25);
-            this.ImageButtonMaximize.Image = global::CarServiceManagement.Properties.Resources.maximize;
+            this.ImageButtonMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ImageButtonMaximize.HoverState.ImageSize = new System.Drawing.Size(27, 27);
+            this.ImageButtonMaximize.Image = global::CarServiceManagement.Properties.Resources.maximize_32;
             this.ImageButtonMaximize.ImageOffset = new System.Drawing.Point(0, 0);
             this.ImageButtonMaximize.ImageRotate = 0F;
-            this.ImageButtonMaximize.ImageSize = new System.Drawing.Size(25, 25);
-            this.ImageButtonMaximize.Location = new System.Drawing.Point(1063, 12);
+            this.ImageButtonMaximize.ImageSize = new System.Drawing.Size(28, 28);
+            this.ImageButtonMaximize.Location = new System.Drawing.Point(1014, 8);
             this.ImageButtonMaximize.Name = "ImageButtonMaximize";
-            this.ImageButtonMaximize.PressedState.ImageSize = new System.Drawing.Size(25, 25);
-            this.ImageButtonMaximize.Size = new System.Drawing.Size(38, 32);
+            this.ImageButtonMaximize.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.ImageButtonMaximize.Size = new System.Drawing.Size(38, 45);
             this.ImageButtonMaximize.TabIndex = 9;
             this.ImageButtonMaximize.Click += new System.EventHandler(this.ImageButtonMaximize_Click);
             // 
@@ -244,15 +274,16 @@
             this.ImageButtonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ImageButtonClose.BackColor = System.Drawing.Color.Transparent;
             this.ImageButtonClose.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.ImageButtonClose.HoverState.ImageSize = new System.Drawing.Size(25, 25);
-            this.ImageButtonClose.Image = ((System.Drawing.Image)(resources.GetObject("ImageButtonClose.Image")));
+            this.ImageButtonClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ImageButtonClose.HoverState.ImageSize = new System.Drawing.Size(27, 27);
+            this.ImageButtonClose.Image = global::CarServiceManagement.Properties.Resources.close_32;
             this.ImageButtonClose.ImageOffset = new System.Drawing.Point(0, 0);
             this.ImageButtonClose.ImageRotate = 0F;
-            this.ImageButtonClose.ImageSize = new System.Drawing.Size(25, 25);
-            this.ImageButtonClose.Location = new System.Drawing.Point(1107, 12);
+            this.ImageButtonClose.ImageSize = new System.Drawing.Size(28, 28);
+            this.ImageButtonClose.Location = new System.Drawing.Point(1107, 8);
             this.ImageButtonClose.Name = "ImageButtonClose";
-            this.ImageButtonClose.PressedState.ImageSize = new System.Drawing.Size(25, 25);
-            this.ImageButtonClose.Size = new System.Drawing.Size(38, 32);
+            this.ImageButtonClose.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.ImageButtonClose.Size = new System.Drawing.Size(38, 45);
             this.ImageButtonClose.TabIndex = 8;
             this.ImageButtonClose.Click += new System.EventHandler(this.ImageButtonClose_Click);
             // 
@@ -269,6 +300,18 @@
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
+            // 
+            // labelTimer
+            // 
+            this.labelTimer.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.labelTimer.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTimer.ForeColor = System.Drawing.Color.White;
+            this.labelTimer.Location = new System.Drawing.Point(7, 807);
+            this.labelTimer.Name = "labelTimer";
+            this.labelTimer.Size = new System.Drawing.Size(221, 43);
+            this.labelTimer.TabIndex = 11;
+            this.labelTimer.Text = "Time";
+            this.labelTimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CustomerMain
             // 
@@ -305,5 +348,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button sidebar_vehicles;
+        private Guna.UI2.WinForms.Guna2ImageButton picMinimize;
+        private System.Windows.Forms.Label labelTimer;
     }
 }

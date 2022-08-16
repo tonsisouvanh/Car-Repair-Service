@@ -1,13 +1,6 @@
 ﻿using CarServiceManagement.DAO;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CarServiceManagement
@@ -108,7 +101,7 @@ namespace CarServiceManagement
 
                     int billID = Convert.ToInt32(labelID.Text.ToString());
                     string query = "exec sp_UpdatePartImportBill @supplier , @supplier_contact , @status , @payment , @created_date , @descriptions , @billID";
-                    int result = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { txtSupplier.Text, txtSupplierContact.Text, cbbStatus.SelectedItem.ToString(), txtPayment.Text, dtpCreatedDate.Value.ToString(),txtDesc.Text,billID });
+                    int result = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { txtSupplier.Text, txtSupplierContact.Text, cbbStatus.SelectedItem.ToString(), txtPayment.Text, dtpCreatedDate.Value.ToString(), txtDesc.Text, billID });
 
                     if (result != 0)
                     {

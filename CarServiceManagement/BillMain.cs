@@ -1,20 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CarServiceManagement
 {
     public partial class BillMain : Form
     {
+        System.Windows.Forms.Timer t = null;
         public BillMain()
         {
             InitializeComponent();
+            StartTimer();
+        }
+        private void StartTimer()
+        {
+            t = new System.Windows.Forms.Timer();
+            t.Interval = 1000;
+            t.Tick += new EventHandler(t_Tick);
+            t.Enabled = true;
+        }
+
+        void t_Tick(object sender, EventArgs e)
+        {
+            this.labelTimer.Text = DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss tt");
         }
 
         private Form activeForm = null;
@@ -41,6 +48,8 @@ namespace CarServiceManagement
         private void ImageButtonClose_Click(object sender, EventArgs e)
         {
             this.Dispose();
+            MainMenu f = new MainMenu();
+            f.ShowDialog();
         }
 
         private void sidebar_importedPartsBill_Click(object sender, EventArgs e)
@@ -51,7 +60,11 @@ namespace CarServiceManagement
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             openChildForm(new RepairBill());
+        }
 
+        private void picMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

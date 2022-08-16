@@ -1,12 +1,6 @@
 ﻿using CarServiceManagement.DAO;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CarServiceManagement
@@ -75,7 +69,7 @@ namespace CarServiceManagement
 
         private void txtCustInfo_TextChanged(object sender, EventArgs e)
         {
-            DataTable data = DataProvider.Instance.ExecuteQuery("select TOP(1) customerID, name from customer where phone = '"+txtCustInfo.Text+"'");
+            DataTable data = DataProvider.Instance.ExecuteQuery("select TOP(1) customerID, name from customer where phone = '" + txtCustInfo.Text + "'");
             if (data.Rows.Count > 0)
             {
                 DataRow row = data.Rows[0];
@@ -116,7 +110,7 @@ namespace CarServiceManagement
                     int customerID = Convert.ToInt32(labelCustID.Text.ToString());
 
                     string query = "exec sp_AddVehicle @name , @color , @typeID , @brandID , @plate_number , @descriptions , @customerID";
-                    int result = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { txtVehicleName.Text, txtColor.Text, 
+                    int result = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { txtVehicleName.Text, txtColor.Text,
                         typeID, brandID, txtPlateNumber.Text, txtDescriptions.Text, customerID });
 
                     if (result != 0)

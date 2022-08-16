@@ -51,7 +51,7 @@
             this.btnCancel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnCancel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnCancel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCancel.FillColor = System.Drawing.Color.Tomato;
+            this.btnCancel.FillColor = System.Drawing.Color.OrangeRed;
             this.btnCancel.Font = new System.Drawing.Font("Noto Sans Lao", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.Location = new System.Drawing.Point(130, 123);
@@ -97,6 +97,7 @@
             this.numericQty.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.numericQty.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericQty.Location = new System.Drawing.Point(29, 56);
+            this.numericQty.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.numericQty.Name = "numericQty";
             this.numericQty.Size = new System.Drawing.Size(198, 48);
             this.numericQty.TabIndex = 3;

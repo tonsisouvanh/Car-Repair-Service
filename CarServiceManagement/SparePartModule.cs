@@ -1,12 +1,6 @@
 ﻿using CarServiceManagement.DAO;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CarServiceManagement
@@ -22,7 +16,7 @@ namespace CarServiceManagement
             load_PartType();
             btnUpdate.Enabled = false;
 
-            
+
         }
 
         private bool checkForm()
@@ -52,7 +46,7 @@ namespace CarServiceManagement
             //btnSave.Enabled = true;
             //btnUpdate.Enabled = false;
         }
-       
+
         private void load_PartType()
         {
             DataTable dtDept = DataProvider.Instance.ExecuteQuery("Select * from PartType");
@@ -63,7 +57,7 @@ namespace CarServiceManagement
 
             string temp = labelPartTypeName.Text.ToString();
         }
-        
+
 
         private void picClose_Click(object sender, EventArgs e)
         {
@@ -91,7 +85,7 @@ namespace CarServiceManagement
                     decimal price = Convert.ToDecimal(txtPrice.Text.ToString());
                     int typeId = Convert.ToInt32(comboBoxPartType.SelectedValue.ToString());
                     string query = "exec sp_AddPart @name , @stock , @price , @currency , @cal_unit , @description , @part_type , @brand";
-                    int result = DataProvider.Instance.ExecuteNoneQuery(query, new object[] {txtPartName.Text, stock, price,txtCurrency.Text, txtCalUnit.Text, txtPartDesc.Text,typeId,txtBrand.Text});
+                    int result = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { txtPartName.Text, stock, price, txtCurrency.Text, txtCalUnit.Text, txtPartDesc.Text, typeId, txtBrand.Text });
 
                     if (result != 0)
                     {

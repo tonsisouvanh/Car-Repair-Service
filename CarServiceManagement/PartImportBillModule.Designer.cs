@@ -40,7 +40,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtSupplier = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.picClose = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
@@ -52,15 +51,15 @@
             this.label7 = new System.Windows.Forms.Label();
             this.dtpCreatedDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
+            this.picClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             this.SuspendLayout();
             // 
             // txtDesc
             // 
             this.txtDesc.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDesc.Location = new System.Drawing.Point(221, 226);
-            this.txtDesc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDesc.Margin = new System.Windows.Forms.Padding(4);
             this.txtDesc.Multiline = true;
             this.txtDesc.Name = "txtDesc";
             this.txtDesc.Size = new System.Drawing.Size(799, 79);
@@ -92,7 +91,7 @@
             // 
             this.txtPayment.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPayment.Location = new System.Drawing.Point(735, 170);
-            this.txtPayment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPayment.Margin = new System.Windows.Forms.Padding(4);
             this.txtPayment.Name = "txtPayment";
             this.txtPayment.Size = new System.Drawing.Size(285, 37);
             this.txtPayment.TabIndex = 4;
@@ -128,7 +127,7 @@
             this.btnSave.Font = new System.Drawing.Font("Dosis", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Location = new System.Drawing.Point(628, 425);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(125, 43);
             this.btnSave.TabIndex = 103;
@@ -146,7 +145,7 @@
             this.btnCancel.Font = new System.Drawing.Font("Dosis", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
             this.btnCancel.Location = new System.Drawing.Point(893, 425);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(125, 43);
             this.btnCancel.TabIndex = 106;
@@ -169,7 +168,7 @@
             // 
             this.txtSupplier.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSupplier.Location = new System.Drawing.Point(221, 111);
-            this.txtSupplier.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSupplier.Margin = new System.Windows.Forms.Padding(4);
             this.txtSupplier.Name = "txtSupplier";
             this.txtSupplier.Size = new System.Drawing.Size(301, 37);
             this.txtSupplier.TabIndex = 1;
@@ -181,24 +180,10 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1067, 62);
             this.panel1.TabIndex = 102;
-            // 
-            // picClose
-            // 
-            this.picClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picClose.Image = global::CarServiceManagement.Properties.Resources.close;
-            this.picClose.Location = new System.Drawing.Point(1020, 14);
-            this.picClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.picClose.Name = "picClose";
-            this.picClose.Size = new System.Drawing.Size(35, 34);
-            this.picClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picClose.TabIndex = 1;
-            this.picClose.TabStop = false;
-            this.picClose.Click += new System.EventHandler(this.picClose_Click);
             // 
             // label1
             // 
@@ -222,7 +207,7 @@
             this.btnUpdate.Font = new System.Drawing.Font("Dosis", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
             this.btnUpdate.Location = new System.Drawing.Point(761, 425);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(125, 43);
             this.btnUpdate.TabIndex = 105;
@@ -251,7 +236,7 @@
             // 
             this.txtSupplierContact.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSupplierContact.Location = new System.Drawing.Point(735, 111);
-            this.txtSupplierContact.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSupplierContact.Margin = new System.Windows.Forms.Padding(4);
             this.txtSupplierContact.Name = "txtSupplierContact";
             this.txtSupplierContact.Size = new System.Drawing.Size(285, 37);
             this.txtSupplierContact.TabIndex = 2;
@@ -266,7 +251,7 @@
             "ຊຳລະແລ້ວ",
             "ຍັງບໍ່ຊຳລະ"});
             this.cbbStatus.Location = new System.Drawing.Point(221, 170);
-            this.cbbStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbStatus.Margin = new System.Windows.Forms.Padding(4);
             this.cbbStatus.Name = "cbbStatus";
             this.cbbStatus.Size = new System.Drawing.Size(301, 37);
             this.cbbStatus.TabIndex = 3;
@@ -286,7 +271,7 @@
             // 
             this.txtTotal.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotal.Location = new System.Drawing.Point(221, 325);
-            this.txtTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTotal.Margin = new System.Windows.Forms.Padding(4);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(251, 37);
             this.txtTotal.TabIndex = 6;
@@ -310,7 +295,7 @@
             this.dtpCreatedDate.ForeColor = System.Drawing.Color.White;
             this.dtpCreatedDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpCreatedDate.Location = new System.Drawing.Point(719, 325);
-            this.dtpCreatedDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpCreatedDate.Margin = new System.Windows.Forms.Padding(4);
             this.dtpCreatedDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpCreatedDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpCreatedDate.Name = "dtpCreatedDate";
@@ -328,6 +313,24 @@
             this.label9.Size = new System.Drawing.Size(98, 33);
             this.label9.TabIndex = 121;
             this.label9.Text = "ວັນຂຽນບິນ";
+            // 
+            // picClose
+            // 
+            this.picClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picClose.BackColor = System.Drawing.Color.Transparent;
+            this.picClose.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.picClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picClose.HoverState.ImageSize = new System.Drawing.Size(27, 27);
+            this.picClose.Image = global::CarServiceManagement.Properties.Resources.close_32;
+            this.picClose.ImageOffset = new System.Drawing.Point(0, 0);
+            this.picClose.ImageRotate = 0F;
+            this.picClose.ImageSize = new System.Drawing.Size(28, 28);
+            this.picClose.Location = new System.Drawing.Point(1017, 8);
+            this.picClose.Name = "picClose";
+            this.picClose.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.picClose.Size = new System.Drawing.Size(38, 45);
+            this.picClose.TabIndex = 12;
+            this.picClose.Click += new System.EventHandler(this.picClose_Click);
             // 
             // PartImportBillModule
             // 
@@ -355,21 +358,18 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnUpdate);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PartImportBillModule";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PartImportBillModule";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox picClose;
         public System.Windows.Forms.TextBox txtDesc;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label4;
@@ -392,5 +392,6 @@
         public System.Windows.Forms.TextBox txtSupplierContact;
         private System.Windows.Forms.Label label9;
         public Guna.UI2.WinForms.Guna2DateTimePicker dtpCreatedDate;
+        private Guna.UI2.WinForms.Guna2ImageButton picClose;
     }
 }

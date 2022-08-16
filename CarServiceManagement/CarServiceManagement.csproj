@@ -101,11 +101,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OilChangeAlert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OilChangeAlert.Designer.cs">
+      <DependentUpon>OilChangeAlert.cs</DependentUpon>
     </Compile>
     <Compile Include="PartImportBillDetail.cs">
       <SubType>Form</SubType>
@@ -248,8 +260,14 @@
     <EmbeddedResource Include="Customers.resx">
       <DependentUpon>Customers.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OilChangeAlert.resx">
+      <DependentUpon>OilChangeAlert.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PartImportBillDetail.resx">
       <DependentUpon>PartImportBillDetail.cs</DependentUpon>
@@ -427,9 +445,21 @@
     <None Include="Resources\printer.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\printer1.png" />
-  </ItemGroup>
-  <ItemGroup>
+    <None Include="Resources\close-white.png" />
+    <None Include="Resources\padlock.png" />
+    <None Include="Resources\user-blue.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\logout_triangle.png" />
+    <None Include="Resources\user-32.png" />
+    <None Include="Resources\user-24.png" />
+    <None Include="Resources\padlock-32.png" />
+    <None Include="Resources\maximize-32.png" />
+    <None Include="Resources\maximize-32-white.png" />
+    <None Include="Resources\minimize-32-white.png" />
+    <None Include="Resources\close-32-white.png" />
+    <None Include="Resources\close-32.png" />
+    <None Include="Resources\minimize-32.png" />
+    <None Include="Resources\refresh-32.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SparePartMain));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2PanelSidebar = new Guna.UI2.WinForms.Guna2Panel();
             this.sidebar_SparePartType = new Guna.UI2.WinForms.Guna2Button();
@@ -37,10 +36,12 @@
             this.guna2PanelLogo = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PanelTitle = new Guna.UI2.WinForms.Guna2Panel();
-            this.ImageButtonMaximize = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.ImageButtonClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.lblTitle = new System.Windows.Forms.Label();
             this.PanelMain = new Guna.UI2.WinForms.Guna2Panel();
+            this.picMinimize = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.ImageButtonMaximize = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.ImageButtonClose = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.labelTimer = new System.Windows.Forms.Label();
             this.guna2PanelSidebar.SuspendLayout();
             this.guna2PanelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -58,6 +59,7 @@
             this.guna2PanelSidebar.BackColor = System.Drawing.Color.Firebrick;
             this.guna2PanelSidebar.BorderColor = System.Drawing.Color.White;
             this.guna2PanelSidebar.BorderThickness = 2;
+            this.guna2PanelSidebar.Controls.Add(this.labelTimer);
             this.guna2PanelSidebar.Controls.Add(this.sidebar_SparePartType);
             this.guna2PanelSidebar.Controls.Add(this.sidebar_SpareParts);
             this.guna2PanelSidebar.Controls.Add(this.guna2PanelLogo);
@@ -77,6 +79,8 @@
             this.sidebar_SparePartType.BackColor = System.Drawing.Color.Transparent;
             this.sidebar_SparePartType.BorderColor = System.Drawing.Color.White;
             this.sidebar_SparePartType.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sidebar_SparePartType.CustomBorderColor = System.Drawing.Color.White;
+            this.sidebar_SparePartType.CustomBorderThickness = new System.Windows.Forms.Padding(0, 1, 0, 0);
             this.sidebar_SparePartType.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.sidebar_SparePartType.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.sidebar_SparePartType.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -148,6 +152,7 @@
             // guna2PanelTitle
             // 
             this.guna2PanelTitle.BorderColor = System.Drawing.Color.White;
+            this.guna2PanelTitle.Controls.Add(this.picMinimize);
             this.guna2PanelTitle.Controls.Add(this.ImageButtonMaximize);
             this.guna2PanelTitle.Controls.Add(this.ImageButtonClose);
             this.guna2PanelTitle.Controls.Add(this.lblTitle);
@@ -162,44 +167,6 @@
             this.guna2PanelTitle.Name = "guna2PanelTitle";
             this.guna2PanelTitle.Size = new System.Drawing.Size(1095, 62);
             this.guna2PanelTitle.TabIndex = 5;
-            // 
-            // ImageButtonMaximize
-            // 
-            this.ImageButtonMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ImageButtonMaximize.BackColor = System.Drawing.Color.Transparent;
-            this.ImageButtonMaximize.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.ImageButtonMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ImageButtonMaximize.HoverState.ImageSize = new System.Drawing.Size(24, 24);
-            this.ImageButtonMaximize.Image = global::CarServiceManagement.Properties.Resources.maximize;
-            this.ImageButtonMaximize.ImageOffset = new System.Drawing.Point(0, 0);
-            this.ImageButtonMaximize.ImageRotate = 0F;
-            this.ImageButtonMaximize.ImageSize = new System.Drawing.Size(25, 25);
-            this.ImageButtonMaximize.Location = new System.Drawing.Point(1001, 12);
-            this.ImageButtonMaximize.Name = "ImageButtonMaximize";
-            this.ImageButtonMaximize.PressedState.ImageSize = new System.Drawing.Size(25, 25);
-            this.ImageButtonMaximize.Size = new System.Drawing.Size(38, 32);
-            this.ImageButtonMaximize.TabIndex = 9;
-            this.ImageButtonMaximize.UseTransparentBackground = true;
-            this.ImageButtonMaximize.Click += new System.EventHandler(this.ImageButtonMaximize_Click);
-            // 
-            // ImageButtonClose
-            // 
-            this.ImageButtonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ImageButtonClose.BackColor = System.Drawing.Color.Transparent;
-            this.ImageButtonClose.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.ImageButtonClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ImageButtonClose.HoverState.ImageSize = new System.Drawing.Size(24, 24);
-            this.ImageButtonClose.Image = ((System.Drawing.Image)(resources.GetObject("ImageButtonClose.Image")));
-            this.ImageButtonClose.ImageOffset = new System.Drawing.Point(0, 0);
-            this.ImageButtonClose.ImageRotate = 0F;
-            this.ImageButtonClose.ImageSize = new System.Drawing.Size(25, 25);
-            this.ImageButtonClose.Location = new System.Drawing.Point(1045, 12);
-            this.ImageButtonClose.Name = "ImageButtonClose";
-            this.ImageButtonClose.PressedState.ImageSize = new System.Drawing.Size(25, 25);
-            this.ImageButtonClose.Size = new System.Drawing.Size(38, 32);
-            this.ImageButtonClose.TabIndex = 8;
-            this.ImageButtonClose.UseTransparentBackground = true;
-            this.ImageButtonClose.Click += new System.EventHandler(this.ImageButtonClose_Click);
             // 
             // lblTitle
             // 
@@ -225,6 +192,75 @@
             this.PanelMain.Padding = new System.Windows.Forms.Padding(0, 0, 1, 0);
             this.PanelMain.Size = new System.Drawing.Size(1095, 794);
             this.PanelMain.TabIndex = 6;
+            // 
+            // picMinimize
+            // 
+            this.picMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picMinimize.BackColor = System.Drawing.Color.Transparent;
+            this.picMinimize.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.picMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picMinimize.HoverState.ImageSize = new System.Drawing.Size(27, 27);
+            this.picMinimize.Image = global::CarServiceManagement.Properties.Resources.minimize_32;
+            this.picMinimize.ImageOffset = new System.Drawing.Point(0, 0);
+            this.picMinimize.ImageRotate = 0F;
+            this.picMinimize.ImageSize = new System.Drawing.Size(28, 28);
+            this.picMinimize.Location = new System.Drawing.Point(996, 6);
+            this.picMinimize.Name = "picMinimize";
+            this.picMinimize.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.picMinimize.Size = new System.Drawing.Size(43, 45);
+            this.picMinimize.TabIndex = 16;
+            this.picMinimize.UseTransparentBackground = true;
+            this.picMinimize.Click += new System.EventHandler(this.picMinimize_Click);
+            // 
+            // ImageButtonMaximize
+            // 
+            this.ImageButtonMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ImageButtonMaximize.BackColor = System.Drawing.Color.Transparent;
+            this.ImageButtonMaximize.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.ImageButtonMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ImageButtonMaximize.HoverState.ImageSize = new System.Drawing.Size(27, 27);
+            this.ImageButtonMaximize.Image = global::CarServiceManagement.Properties.Resources.maximize_32;
+            this.ImageButtonMaximize.ImageOffset = new System.Drawing.Point(0, 0);
+            this.ImageButtonMaximize.ImageRotate = 0F;
+            this.ImageButtonMaximize.ImageSize = new System.Drawing.Size(28, 28);
+            this.ImageButtonMaximize.Location = new System.Drawing.Point(952, 6);
+            this.ImageButtonMaximize.Name = "ImageButtonMaximize";
+            this.ImageButtonMaximize.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.ImageButtonMaximize.Size = new System.Drawing.Size(38, 45);
+            this.ImageButtonMaximize.TabIndex = 15;
+            this.ImageButtonMaximize.UseTransparentBackground = true;
+            this.ImageButtonMaximize.Click += new System.EventHandler(this.ImageButtonMaximize_Click);
+            // 
+            // ImageButtonClose
+            // 
+            this.ImageButtonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ImageButtonClose.BackColor = System.Drawing.Color.Transparent;
+            this.ImageButtonClose.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.ImageButtonClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ImageButtonClose.HoverState.ImageSize = new System.Drawing.Size(27, 27);
+            this.ImageButtonClose.Image = global::CarServiceManagement.Properties.Resources.close_32;
+            this.ImageButtonClose.ImageOffset = new System.Drawing.Point(0, 0);
+            this.ImageButtonClose.ImageRotate = 0F;
+            this.ImageButtonClose.ImageSize = new System.Drawing.Size(28, 28);
+            this.ImageButtonClose.Location = new System.Drawing.Point(1045, 6);
+            this.ImageButtonClose.Name = "ImageButtonClose";
+            this.ImageButtonClose.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.ImageButtonClose.Size = new System.Drawing.Size(38, 45);
+            this.ImageButtonClose.TabIndex = 14;
+            this.ImageButtonClose.UseTransparentBackground = true;
+            this.ImageButtonClose.Click += new System.EventHandler(this.ImageButtonClose_Click);
+            // 
+            // labelTimer
+            // 
+            this.labelTimer.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.labelTimer.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTimer.ForeColor = System.Drawing.Color.White;
+            this.labelTimer.Location = new System.Drawing.Point(7, 807);
+            this.labelTimer.Name = "labelTimer";
+            this.labelTimer.Size = new System.Drawing.Size(221, 43);
+            this.labelTimer.TabIndex = 12;
+            this.labelTimer.Text = "Time";
+            this.labelTimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SparePartMain
             // 
@@ -257,7 +293,9 @@
         private Guna.UI2.WinForms.Guna2Panel PanelMain;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelTitle;
         private System.Windows.Forms.Label lblTitle;
+        private Guna.UI2.WinForms.Guna2ImageButton picMinimize;
         private Guna.UI2.WinForms.Guna2ImageButton ImageButtonMaximize;
         private Guna.UI2.WinForms.Guna2ImageButton ImageButtonClose;
+        private System.Windows.Forms.Label labelTimer;
     }
 }

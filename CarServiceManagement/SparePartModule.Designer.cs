@@ -45,7 +45,6 @@
             this.txtPartDesc = new System.Windows.Forms.TextBox();
             this.txtPartName = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.picClose = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
@@ -53,9 +52,9 @@
             this.comboBoxPartType = new System.Windows.Forms.ComboBox();
             this.labelID = new System.Windows.Forms.Label();
             this.labelPartTypeName = new System.Windows.Forms.Label();
+            this.picClose = new Guna.UI2.WinForms.Guna2ImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.numberStock)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
@@ -255,20 +254,6 @@
             this.panel1.Size = new System.Drawing.Size(1067, 62);
             this.panel1.TabIndex = 46;
             // 
-            // picClose
-            // 
-            this.picClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picClose.Image = global::CarServiceManagement.Properties.Resources.close;
-            this.picClose.Location = new System.Drawing.Point(1020, 13);
-            this.picClose.Margin = new System.Windows.Forms.Padding(4);
-            this.picClose.Name = "picClose";
-            this.picClose.Size = new System.Drawing.Size(34, 35);
-            this.picClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picClose.TabIndex = 1;
-            this.picClose.TabStop = false;
-            this.picClose.Click += new System.EventHandler(this.picClose_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -346,6 +331,24 @@
             this.labelPartTypeName.Text = "PartTypeName";
             this.labelPartTypeName.Visible = false;
             // 
+            // picClose
+            // 
+            this.picClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picClose.BackColor = System.Drawing.Color.Transparent;
+            this.picClose.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.picClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picClose.HoverState.ImageSize = new System.Drawing.Size(27, 27);
+            this.picClose.Image = global::CarServiceManagement.Properties.Resources.close_32;
+            this.picClose.ImageOffset = new System.Drawing.Point(0, 0);
+            this.picClose.ImageRotate = 0F;
+            this.picClose.ImageSize = new System.Drawing.Size(28, 28);
+            this.picClose.Location = new System.Drawing.Point(1017, 8);
+            this.picClose.Name = "picClose";
+            this.picClose.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.picClose.Size = new System.Drawing.Size(38, 45);
+            this.picClose.TabIndex = 13;
+            this.picClose.Click += new System.EventHandler(this.picClose_Click);
+            // 
             // SparePartModule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -379,7 +382,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numberStock)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -402,7 +404,6 @@
         public System.Windows.Forms.TextBox txtPartDesc;
         public System.Windows.Forms.TextBox txtPartName;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox picClose;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.Button btnUpdate;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
@@ -410,5 +411,6 @@
         public System.Windows.Forms.ComboBox comboBoxPartType;
         public System.Windows.Forms.Label labelID;
         public System.Windows.Forms.Label labelPartTypeName;
+        private Guna.UI2.WinForms.Guna2ImageButton picClose;
     }
 }

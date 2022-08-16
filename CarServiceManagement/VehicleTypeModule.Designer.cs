@@ -36,11 +36,10 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.picClose = new System.Windows.Forms.PictureBox();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.labelVehicleTypeID = new System.Windows.Forms.Label();
+            this.picClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -138,20 +137,6 @@
             this.panel1.Size = new System.Drawing.Size(706, 62);
             this.panel1.TabIndex = 70;
             // 
-            // picClose
-            // 
-            this.picClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picClose.Image = global::CarServiceManagement.Properties.Resources.close;
-            this.picClose.Location = new System.Drawing.Point(659, 13);
-            this.picClose.Margin = new System.Windows.Forms.Padding(4);
-            this.picClose.Name = "picClose";
-            this.picClose.Size = new System.Drawing.Size(34, 35);
-            this.picClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picClose.TabIndex = 1;
-            this.picClose.TabStop = false;
-            this.picClose.Click += new System.EventHandler(this.picClose_Click);
-            // 
             // guna2BorderlessForm1
             // 
             this.guna2BorderlessForm1.ContainerControl = this;
@@ -167,6 +152,24 @@
             this.labelVehicleTypeID.TabIndex = 76;
             this.labelVehicleTypeID.Text = "ID";
             this.labelVehicleTypeID.Visible = false;
+            // 
+            // picClose
+            // 
+            this.picClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picClose.BackColor = System.Drawing.Color.Transparent;
+            this.picClose.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.picClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picClose.HoverState.ImageSize = new System.Drawing.Size(27, 27);
+            this.picClose.Image = global::CarServiceManagement.Properties.Resources.close_32;
+            this.picClose.ImageOffset = new System.Drawing.Point(0, 0);
+            this.picClose.ImageRotate = 0F;
+            this.picClose.ImageSize = new System.Drawing.Size(28, 28);
+            this.picClose.Location = new System.Drawing.Point(656, 8);
+            this.picClose.Name = "picClose";
+            this.picClose.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.picClose.Size = new System.Drawing.Size(38, 45);
+            this.picClose.TabIndex = 17;
+            this.picClose.Click += new System.EventHandler(this.picClose_Click);
             // 
             // VehicleTypeModule
             // 
@@ -186,7 +189,6 @@
             this.Text = "VehicleTypeModule";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,8 +203,8 @@
         public System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox picClose;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         public System.Windows.Forms.Label labelVehicleTypeID;
+        private Guna.UI2.WinForms.Guna2ImageButton picClose;
     }
 }

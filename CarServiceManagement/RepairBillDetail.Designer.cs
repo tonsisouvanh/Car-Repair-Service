@@ -29,21 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RepairBillDetail));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
-            this.ImageButtonMaximize = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.ImageButtonClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.lblUsername = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -83,6 +80,10 @@
             this.subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.delete = new System.Windows.Forms.DataGridViewImageColumn();
+            this.picMinimize = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.ImageButtonMaximize = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.ImageButtonClose = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -102,6 +103,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.panel2.Controls.Add(this.picMinimize);
             this.panel2.Controls.Add(this.ImageButtonMaximize);
             this.panel2.Controls.Add(this.ImageButtonClose);
             this.panel2.Controls.Add(this.lblUsername);
@@ -112,44 +114,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1380, 62);
             this.panel2.TabIndex = 7;
-            // 
-            // ImageButtonMaximize
-            // 
-            this.ImageButtonMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ImageButtonMaximize.BackColor = System.Drawing.Color.Transparent;
-            this.ImageButtonMaximize.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.ImageButtonMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ImageButtonMaximize.HoverState.ImageSize = new System.Drawing.Size(25, 25);
-            this.ImageButtonMaximize.Image = global::CarServiceManagement.Properties.Resources.maximize;
-            this.ImageButtonMaximize.ImageOffset = new System.Drawing.Point(0, 0);
-            this.ImageButtonMaximize.ImageRotate = 0F;
-            this.ImageButtonMaximize.ImageSize = new System.Drawing.Size(25, 25);
-            this.ImageButtonMaximize.Location = new System.Drawing.Point(1284, 16);
-            this.ImageButtonMaximize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ImageButtonMaximize.Name = "ImageButtonMaximize";
-            this.ImageButtonMaximize.PressedState.ImageSize = new System.Drawing.Size(25, 25);
-            this.ImageButtonMaximize.Size = new System.Drawing.Size(37, 32);
-            this.ImageButtonMaximize.TabIndex = 13;
-            this.ImageButtonMaximize.Click += new System.EventHandler(this.ImageButtonMaximize_Click);
-            // 
-            // ImageButtonClose
-            // 
-            this.ImageButtonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ImageButtonClose.BackColor = System.Drawing.Color.Transparent;
-            this.ImageButtonClose.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.ImageButtonClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ImageButtonClose.HoverState.ImageSize = new System.Drawing.Size(25, 25);
-            this.ImageButtonClose.Image = ((System.Drawing.Image)(resources.GetObject("ImageButtonClose.Image")));
-            this.ImageButtonClose.ImageOffset = new System.Drawing.Point(0, 0);
-            this.ImageButtonClose.ImageRotate = 0F;
-            this.ImageButtonClose.ImageSize = new System.Drawing.Size(25, 25);
-            this.ImageButtonClose.Location = new System.Drawing.Point(1329, 16);
-            this.ImageButtonClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ImageButtonClose.Name = "ImageButtonClose";
-            this.ImageButtonClose.PressedState.ImageSize = new System.Drawing.Size(25, 25);
-            this.ImageButtonClose.Size = new System.Drawing.Size(37, 32);
-            this.ImageButtonClose.TabIndex = 12;
-            this.ImageButtonClose.Click += new System.EventHandler(this.ImageButtonClose_Click);
             // 
             // lblUsername
             // 
@@ -176,6 +140,7 @@
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.Controls.Add(this.guna2ImageButton1);
             this.guna2Panel1.Controls.Add(this.labelPayment);
             this.guna2Panel1.Controls.Add(this.dtpCreatedDate);
             this.guna2Panel1.Controls.Add(this.labelBillNumber);
@@ -402,7 +367,7 @@
             this.btnPrint.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPrint.HoverState.ImageSize = new System.Drawing.Size(33, 33);
-            this.btnPrint.Image = global::CarServiceManagement.Properties.Resources.printer1;
+            this.btnPrint.Image = global::CarServiceManagement.Properties.Resources.printer;
             this.btnPrint.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnPrint.ImageRotate = 0F;
             this.btnPrint.ImageSize = new System.Drawing.Size(35, 35);
@@ -434,25 +399,25 @@
             this.gunaDtgvParts.AllowUserToAddRows = false;
             this.gunaDtgvParts.AllowUserToDeleteRows = false;
             this.gunaDtgvParts.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            this.gunaDtgvParts.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            this.gunaDtgvParts.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
             this.gunaDtgvParts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gunaDtgvParts.BackgroundColor = System.Drawing.Color.White;
             this.gunaDtgvParts.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaDtgvParts.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDtgvParts.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Noto Sans Lao SemiCondensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDtgvParts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Noto Sans Lao SemiCondensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDtgvParts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.gunaDtgvParts.ColumnHeadersHeight = 35;
             this.gunaDtgvParts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.partIDs,
@@ -461,14 +426,14 @@
             this.dataGridViewTextBoxColumn4,
             this.stock,
             this.add});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDtgvParts.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gunaDtgvParts.DefaultCellStyle = dataGridViewCellStyle13;
             this.gunaDtgvParts.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaDtgvParts.EnableHeadersVisualStyles = false;
             this.gunaDtgvParts.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -477,20 +442,20 @@
             this.gunaDtgvParts.Name = "gunaDtgvParts";
             this.gunaDtgvParts.ReadOnly = true;
             this.gunaDtgvParts.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Noto Sans Lao", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDtgvParts.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Noto Sans Lao", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDtgvParts.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.gunaDtgvParts.RowHeadersVisible = false;
             this.gunaDtgvParts.RowHeadersWidth = 51;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            this.gunaDtgvParts.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
+            this.gunaDtgvParts.RowsDefaultCellStyle = dataGridViewCellStyle15;
             this.gunaDtgvParts.RowTemplate.Height = 33;
             this.gunaDtgvParts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gunaDtgvParts.Size = new System.Drawing.Size(546, 391);
@@ -587,25 +552,25 @@
             this.gunaDtgvRepairBillDetail.AllowUserToAddRows = false;
             this.gunaDtgvRepairBillDetail.AllowUserToDeleteRows = false;
             this.gunaDtgvRepairBillDetail.AllowUserToResizeRows = false;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            this.gunaDtgvRepairBillDetail.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Black;
+            this.gunaDtgvRepairBillDetail.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
             this.gunaDtgvRepairBillDetail.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gunaDtgvRepairBillDetail.BackgroundColor = System.Drawing.Color.White;
             this.gunaDtgvRepairBillDetail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaDtgvRepairBillDetail.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDtgvRepairBillDetail.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Noto Sans Lao SemiCondensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDtgvRepairBillDetail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Noto Sans Lao SemiCondensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDtgvRepairBillDetail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.gunaDtgvRepairBillDetail.ColumnHeadersHeight = 35;
             this.gunaDtgvRepairBillDetail.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.repairbilldetailID,
@@ -618,15 +583,15 @@
             this.subtotal,
             this.edit,
             this.delete});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDtgvRepairBillDetail.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle18.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gunaDtgvRepairBillDetail.DefaultCellStyle = dataGridViewCellStyle18;
             this.gunaDtgvRepairBillDetail.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaDtgvRepairBillDetail.EnableHeadersVisualStyles = false;
             this.gunaDtgvRepairBillDetail.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -635,20 +600,20 @@
             this.gunaDtgvRepairBillDetail.Name = "gunaDtgvRepairBillDetail";
             this.gunaDtgvRepairBillDetail.ReadOnly = true;
             this.gunaDtgvRepairBillDetail.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Noto Sans Lao", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDtgvRepairBillDetail.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Noto Sans Lao", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDtgvRepairBillDetail.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
             this.gunaDtgvRepairBillDetail.RowHeadersVisible = false;
             this.gunaDtgvRepairBillDetail.RowHeadersWidth = 51;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
-            this.gunaDtgvRepairBillDetail.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Black;
+            this.gunaDtgvRepairBillDetail.RowsDefaultCellStyle = dataGridViewCellStyle20;
             this.gunaDtgvRepairBillDetail.RowTemplate.Height = 33;
             this.gunaDtgvRepairBillDetail.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gunaDtgvRepairBillDetail.Size = new System.Drawing.Size(822, 391);
@@ -780,6 +745,79 @@
             this.delete.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.delete.Width = 8;
             // 
+            // picMinimize
+            // 
+            this.picMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picMinimize.BackColor = System.Drawing.Color.Transparent;
+            this.picMinimize.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.picMinimize.HoverState.ImageSize = new System.Drawing.Size(27, 27);
+            this.picMinimize.Image = global::CarServiceManagement.Properties.Resources.minimize_32;
+            this.picMinimize.ImageOffset = new System.Drawing.Point(0, 0);
+            this.picMinimize.ImageRotate = 0F;
+            this.picMinimize.ImageSize = new System.Drawing.Size(28, 28);
+            this.picMinimize.Location = new System.Drawing.Point(1282, 8);
+            this.picMinimize.Name = "picMinimize";
+            this.picMinimize.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.picMinimize.Size = new System.Drawing.Size(43, 45);
+            this.picMinimize.TabIndex = 16;
+            this.picMinimize.UseTransparentBackground = true;
+            this.picMinimize.Click += new System.EventHandler(this.picMinimize_Click);
+            // 
+            // ImageButtonMaximize
+            // 
+            this.ImageButtonMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ImageButtonMaximize.BackColor = System.Drawing.Color.Transparent;
+            this.ImageButtonMaximize.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.ImageButtonMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ImageButtonMaximize.HoverState.ImageSize = new System.Drawing.Size(27, 27);
+            this.ImageButtonMaximize.Image = global::CarServiceManagement.Properties.Resources.maximize_32;
+            this.ImageButtonMaximize.ImageOffset = new System.Drawing.Point(0, 0);
+            this.ImageButtonMaximize.ImageRotate = 0F;
+            this.ImageButtonMaximize.ImageSize = new System.Drawing.Size(28, 28);
+            this.ImageButtonMaximize.Location = new System.Drawing.Point(1238, 8);
+            this.ImageButtonMaximize.Name = "ImageButtonMaximize";
+            this.ImageButtonMaximize.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.ImageButtonMaximize.Size = new System.Drawing.Size(38, 45);
+            this.ImageButtonMaximize.TabIndex = 15;
+            this.ImageButtonMaximize.Click += new System.EventHandler(this.ImageButtonMaximize_Click);
+            // 
+            // ImageButtonClose
+            // 
+            this.ImageButtonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ImageButtonClose.BackColor = System.Drawing.Color.Transparent;
+            this.ImageButtonClose.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.ImageButtonClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ImageButtonClose.HoverState.ImageSize = new System.Drawing.Size(27, 27);
+            this.ImageButtonClose.Image = global::CarServiceManagement.Properties.Resources.close_32;
+            this.ImageButtonClose.ImageOffset = new System.Drawing.Point(0, 0);
+            this.ImageButtonClose.ImageRotate = 0F;
+            this.ImageButtonClose.ImageSize = new System.Drawing.Size(28, 28);
+            this.ImageButtonClose.Location = new System.Drawing.Point(1331, 8);
+            this.ImageButtonClose.Name = "ImageButtonClose";
+            this.ImageButtonClose.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.ImageButtonClose.Size = new System.Drawing.Size(38, 45);
+            this.ImageButtonClose.TabIndex = 14;
+            this.ImageButtonClose.Click += new System.EventHandler(this.ImageButtonClose_Click);
+            // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(33, 33);
+            this.guna2ImageButton1.Image = global::CarServiceManagement.Properties.Resources.printer;
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(35, 35);
+            this.guna2ImageButton1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.guna2ImageButton1.Location = new System.Drawing.Point(1319, 72);
+            this.guna2ImageButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(0, 0);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(49, 47);
+            this.guna2ImageButton1.TabIndex = 18;
+            // 
             // RepairBillDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -813,8 +851,6 @@
 
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private System.Windows.Forms.Panel panel2;
-        private Guna.UI2.WinForms.Guna2ImageButton ImageButtonMaximize;
-        private Guna.UI2.WinForms.Guna2ImageButton ImageButtonClose;
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
@@ -854,5 +890,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn subtotal;
         private System.Windows.Forms.DataGridViewImageColumn edit;
         private System.Windows.Forms.DataGridViewImageColumn delete;
+        private Guna.UI2.WinForms.Guna2ImageButton picMinimize;
+        private Guna.UI2.WinForms.Guna2ImageButton ImageButtonMaximize;
+        private Guna.UI2.WinForms.Guna2ImageButton ImageButtonClose;
+        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
     }
 }

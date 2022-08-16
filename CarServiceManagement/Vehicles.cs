@@ -1,12 +1,6 @@
 ﻿using CarServiceManagement.DAO;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CarServiceManagement
@@ -21,10 +15,16 @@ namespace CarServiceManagement
 
         public void Load_Vehicles()
         {
-            DataTable data = DataProvider.Instance.ExecuteQuery("select v.*, vt.type_name, vb.brand_name, c.name as custname, c.phone " +
+            //DataTable data = DataProvider.Instance.ExecuteQuery("select v.*, vt.type_name, vb.brand_name, c.name as custname, c.phone " +
+            //    "from Vehicle v inner join Customer c on v.customerID = c.customerID " +
+            //    "inner join VehicleType vt on v.typeID = vt.typeID " +
+            //    "inner join VehicleBrand vb on v.brandID = vb.brandID");
+            //gunaDtgvVehicles.DataSource = data;
+            DataTable data = DataProvider.Instance.ExecuteQuery("select distinct v.vehicleID,v.name,v.color,v.typeID,v.brandID,v.plate_number,v.descriptions,v.customerID,vt.type_name,vb.brand_name, c.name as custname, c.phone,v.oilchange_date,v.required_oilchange_date " +
                 "from Vehicle v inner join Customer c on v.customerID = c.customerID " +
                 "inner join VehicleType vt on v.typeID = vt.typeID " +
-                "inner join VehicleBrand vb on v.brandID = vb.brandID");
+                "inner join VehicleBrand vb on v.brandID = vb.brandID " +
+                "where concat(v.name, v.color, v.plate_number, vt.type_name, vb.brand_name, c.name, c.phone) LIKE N'%" + txtSearch.Text + "%'");
             gunaDtgvVehicles.DataSource = data;
         }
 
@@ -36,12 +36,7 @@ namespace CarServiceManagement
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            DataTable data = DataProvider.Instance.ExecuteQuery("select distinct v.*,vt.type_name,vb.brand_name, c.name as custname, c.phone " +
-                "from Vehicle v inner join Customer c on v.customerID = c.customerID " +
-                "inner join VehicleType vt on v.typeID = vt.typeID " +
-                "inner join VehicleBrand vb on v.brandID = vb.brandID " +
-                "where concat(v.name, v.color, v.plate_number, vt.type_name, vb.brand_name, c.name, c.phone) LIKE N'%" + txtSearch.Text + "%'");
-            gunaDtgvVehicles.DataSource = data;
+            Load_Vehicles();
         }
 
         private void gunaDtgvVehicles_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -104,6 +99,21 @@ namespace CarServiceManagement
                 Load_Vehicles();
 
             }
+        }
+
+        private void guna2TileButton2_Click(object sender, EventArgs e)
+        {
+            Load_Vehicles();
+        }
+
+        private void guna2TileButton1_Click(object sender, EventArgs e)
+        {
+            DataTable data = DataProvider.Instance.ExecuteQuery("select distinct v.vehicleID,v.name,v.color,v.typeID,v.brandID,v.plate_number,v.descriptions,v.customerID,vt.type_name,vb.brand_name, c.name as custname, c.phone,v.oilchange_date,v.required_oilchange_date " +
+                "from Vehicle v inner join Customer c on v.customerID = c.customerID " +
+                "inner join VehicleType vt on v.typeID = vt.typeID " +
+                "inner join VehicleBrand vb on v.brandID = vb.brandID " +
+                "where concat(v.name, v.color, v.plate_number, vt.type_name, vb.brand_name, c.name, c.phone) LIKE N'%" + txtSearch.Text + "%' and cast(getdate() as date) >= v.oilchange_date and cast(getdate() as date) = v.required_oilchange_date");
+            gunaDtgvVehicles.DataSource = data;
         }
     }
 }

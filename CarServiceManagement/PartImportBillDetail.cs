@@ -236,5 +236,10 @@ namespace CarServiceManagement
             PartImportBillReport f = new PartImportBillReport(this);
             f.ShowDialog();
         }
+
+        private void picMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

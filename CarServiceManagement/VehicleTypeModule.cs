@@ -1,12 +1,5 @@
 ﻿using CarServiceManagement.DAO;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CarServiceManagement
@@ -47,7 +40,7 @@ namespace CarServiceManagement
                     }
 
 
-                    string query = "INSERT INTO VehicleType(type_name) VALUES(N'" + txtVehicleTypeName.Text+"')";
+                    string query = "INSERT INTO VehicleType(type_name) VALUES(N'" + txtVehicleTypeName.Text + "')";
                     int result = DataProvider.Instance.ExecuteNoneQuery(query);
 
                     if (result != 0)

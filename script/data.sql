@@ -1,5 +1,7 @@
 ﻿use GarageServiceDB
 go
+
+INSERT INTO Account(username,password,name) VALUES ('tonadmin','12345678',N'Tons');
 -- @@@@@@@@@@@@@@@@@@@ INSERT DATA @@@@@@@@@@@@@@@@@@@ --
 INSERT INTO Provinces(name) VALUES (N'ອັດຕະປື');
 INSERT INTO Provinces(name) VALUES (N'ບໍ່ແກ້ວ');
@@ -199,14 +201,14 @@ VALUES(N'Audi')
 
 
 --@@ VEHICLE
-INSERT INTO Vehicle(name,color,typeID,brandID,plate_number,descriptions,customerID) 
-VALUES(N'Toyota vios 2011',N'ຂາວ,ດຳ',100,101,N'ກຂ 4923',N'ອະທິບາຍ',101)
+INSERT INTO Vehicle(name,color,typeID,brandID,plate_number,descriptions,customerID,oilchange_date,required_oilchange_date) 
+VALUES(N'Toyota vios 2011',N'ຂາວ,ດຳ',100,101,N'ກຂ 4923',N'ອະທິບາຍ',101,'2022-01-01','2022-04-01')
 
-INSERT INTO Vehicle(name,color,typeID,brandID,plate_number,descriptions,customerID) 
-VALUES(N'Nissan 2011',N'ຂາວ,ດຳ',101,100,N'ກຂ 9923',N'ອະທິບາຍ',102)
+INSERT INTO Vehicle(name,color,typeID,brandID,plate_number,descriptions,customerID,oilchange_date,required_oilchange_date) 
+VALUES(N'Nissan 2011',N'ຂາວ,ດຳ',101,100,N'ກຂ 9923',N'ອະທິບາຍ',102,'2022-03-01','2022-07-01')
 
-INSERT INTO Vehicle(name,color,typeID,brandID,plate_number,descriptions,customerID) 
-VALUES(N'Nissan 2022',N'ຂາວ,ແດງ',101,100,N'ກຂ 9823',N'ອະທິບາຍ',100)
+INSERT INTO Vehicle(name,color,typeID,brandID,plate_number,descriptions,customerID,oilchange_date,required_oilchange_date) 
+VALUES(N'Nissan 2022',N'ຂາວ,ແດງ',101,100,N'ກຂ 9823',N'ອະທິບາຍ',100,'2022-08-01','2022-12-01')
 
 
 

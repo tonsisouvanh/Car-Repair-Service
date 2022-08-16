@@ -48,9 +48,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.comboBoxProvince = new System.Windows.Forms.ComboBox();
             this.comboBoxDistrict = new System.Windows.Forms.ComboBox();
-            this.picClose = new System.Windows.Forms.PictureBox();
+            this.ImageButtonClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             this.SuspendLayout();
             // 
             // labelID
@@ -102,7 +101,7 @@
             this.btnSave.Font = new System.Drawing.Font("Dosis", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Location = new System.Drawing.Point(628, 391);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(125, 43);
             this.btnSave.TabIndex = 76;
@@ -120,7 +119,7 @@
             this.btnCancel.Font = new System.Drawing.Font("Dosis", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
             this.btnCancel.Location = new System.Drawing.Point(893, 391);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(125, 43);
             this.btnCancel.TabIndex = 79;
@@ -143,7 +142,7 @@
             // 
             this.txtCusName.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCusName.Location = new System.Drawing.Point(172, 108);
-            this.txtCusName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCusName.Margin = new System.Windows.Forms.Padding(4);
             this.txtCusName.Name = "txtCusName";
             this.txtCusName.Size = new System.Drawing.Size(353, 37);
             this.txtCusName.TabIndex = 1;
@@ -151,11 +150,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
-            this.panel1.Controls.Add(this.picClose);
+            this.panel1.Controls.Add(this.ImageButtonClose);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1067, 62);
             this.panel1.TabIndex = 75;
@@ -170,7 +169,7 @@
             this.btnUpdate.Font = new System.Drawing.Font("Dosis", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
             this.btnUpdate.Location = new System.Drawing.Point(761, 391);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(125, 43);
             this.btnUpdate.TabIndex = 78;
@@ -182,7 +181,7 @@
             // 
             this.txtPhone.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhone.Location = new System.Drawing.Point(733, 164);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(4);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(285, 37);
             this.txtPhone.TabIndex = 3;
@@ -202,7 +201,7 @@
             // 
             this.txtEmail.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(172, 164);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(353, 37);
             this.txtEmail.TabIndex = 2;
@@ -233,7 +232,7 @@
             // 
             this.txtAddressDetail.Font = new System.Drawing.Font("Phetsarath OT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddressDetail.Location = new System.Drawing.Point(221, 279);
-            this.txtAddressDetail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAddressDetail.Margin = new System.Windows.Forms.Padding(4);
             this.txtAddressDetail.Name = "txtAddressDetail";
             this.txtAddressDetail.Size = new System.Drawing.Size(799, 37);
             this.txtAddressDetail.TabIndex = 6;
@@ -256,7 +255,7 @@
             this.comboBoxProvince.FormattingEnabled = true;
             this.comboBoxProvince.IntegralHeight = false;
             this.comboBoxProvince.Location = new System.Drawing.Point(172, 222);
-            this.comboBoxProvince.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxProvince.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxProvince.Name = "comboBoxProvince";
             this.comboBoxProvince.Size = new System.Drawing.Size(353, 37);
             this.comboBoxProvince.TabIndex = 4;
@@ -268,23 +267,28 @@
             this.comboBoxDistrict.FormattingEnabled = true;
             this.comboBoxDistrict.IntegralHeight = false;
             this.comboBoxDistrict.Location = new System.Drawing.Point(733, 222);
-            this.comboBoxDistrict.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxDistrict.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxDistrict.Name = "comboBoxDistrict";
             this.comboBoxDistrict.Size = new System.Drawing.Size(285, 37);
             this.comboBoxDistrict.TabIndex = 5;
             // 
-            // picClose
+            // ImageButtonClose
             // 
-            this.picClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picClose.Image = global::CarServiceManagement.Properties.Resources.close;
-            this.picClose.Location = new System.Drawing.Point(1020, 14);
-            this.picClose.Margin = new System.Windows.Forms.Padding(4);
-            this.picClose.Name = "picClose";
-            this.picClose.Size = new System.Drawing.Size(35, 34);
-            this.picClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picClose.TabIndex = 1;
-            this.picClose.TabStop = false;
-            this.picClose.Click += new System.EventHandler(this.picClose_Click);
+            this.ImageButtonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ImageButtonClose.BackColor = System.Drawing.Color.Transparent;
+            this.ImageButtonClose.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.ImageButtonClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ImageButtonClose.HoverState.ImageSize = new System.Drawing.Size(27, 27);
+            this.ImageButtonClose.Image = global::CarServiceManagement.Properties.Resources.close_32;
+            this.ImageButtonClose.ImageOffset = new System.Drawing.Point(0, 0);
+            this.ImageButtonClose.ImageRotate = 0F;
+            this.ImageButtonClose.ImageSize = new System.Drawing.Size(28, 28);
+            this.ImageButtonClose.Location = new System.Drawing.Point(1017, 7);
+            this.ImageButtonClose.Name = "ImageButtonClose";
+            this.ImageButtonClose.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.ImageButtonClose.Size = new System.Drawing.Size(38, 45);
+            this.ImageButtonClose.TabIndex = 11;
+            this.ImageButtonClose.Click += new System.EventHandler(this.picClose_Click);
             // 
             // CustomerModule
             // 
@@ -315,15 +319,12 @@
             this.Text = "CustomerModule";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox picClose;
         public System.Windows.Forms.Label labelID;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private System.Windows.Forms.Label label3;
@@ -343,5 +344,6 @@
         private System.Windows.Forms.Label label7;
         public System.Windows.Forms.ComboBox comboBoxDistrict;
         public System.Windows.Forms.ComboBox comboBoxProvince;
+        private Guna.UI2.WinForms.Guna2ImageButton ImageButtonClose;
     }
 }
