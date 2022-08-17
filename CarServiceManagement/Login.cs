@@ -81,5 +81,11 @@ namespace CarServiceManagement
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void labelConnectionSetting_Click(object sender, EventArgs e)
+        {
+            FormConnection f = new FormConnection();
+            f.ShowDialog();
+        }
     }
 }
