@@ -58,21 +58,19 @@
             // txtDesc
             // 
             this.txtDesc.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDesc.Location = new System.Drawing.Point(221, 226);
-            this.txtDesc.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDesc.Location = new System.Drawing.Point(166, 184);
             this.txtDesc.Multiline = true;
             this.txtDesc.Name = "txtDesc";
-            this.txtDesc.Size = new System.Drawing.Size(799, 79);
+            this.txtDesc.Size = new System.Drawing.Size(600, 65);
             this.txtDesc.TabIndex = 5;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(45, 226);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(34, 184);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(96, 33);
+            this.label8.Size = new System.Drawing.Size(76, 26);
             this.label8.TabIndex = 112;
             this.label8.Text = "ຄຳອະທິບາຍ";
             // 
@@ -80,28 +78,27 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(597, 170);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(448, 138);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 33);
+            this.label4.Size = new System.Drawing.Size(68, 26);
             this.label4.TabIndex = 109;
             this.label4.Text = "ຊຳລະດ້ວຍ";
             // 
             // txtPayment
             // 
             this.txtPayment.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPayment.Location = new System.Drawing.Point(735, 170);
-            this.txtPayment.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPayment.Location = new System.Drawing.Point(551, 138);
             this.txtPayment.Name = "txtPayment";
-            this.txtPayment.Size = new System.Drawing.Size(285, 40);
+            this.txtPayment.Size = new System.Drawing.Size(215, 33);
             this.txtPayment.TabIndex = 4;
             // 
             // labelID
             // 
             this.labelID.AutoSize = true;
-            this.labelID.Location = new System.Drawing.Point(48, 450);
+            this.labelID.Location = new System.Drawing.Point(36, 366);
+            this.labelID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelID.Name = "labelID";
-            this.labelID.Size = new System.Drawing.Size(38, 16);
+            this.labelID.Size = new System.Drawing.Size(31, 13);
             this.labelID.TabIndex = 108;
             this.labelID.Text = "BillID";
             this.labelID.Visible = false;
@@ -110,10 +107,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(45, 170);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(34, 138);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 33);
+            this.label3.Size = new System.Drawing.Size(88, 26);
             this.label3.TabIndex = 107;
             this.label3.Text = "ສະຖານະໃບບິນ";
             // 
@@ -126,10 +122,9 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Dosis", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(628, 425);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSave.Location = new System.Drawing.Point(471, 345);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(125, 43);
+            this.btnSave.Size = new System.Drawing.Size(94, 35);
             this.btnSave.TabIndex = 103;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -144,10 +139,9 @@
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Dosis", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
-            this.btnCancel.Location = new System.Drawing.Point(893, 425);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancel.Location = new System.Drawing.Point(670, 345);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(125, 43);
+            this.btnCancel.Size = new System.Drawing.Size(94, 35);
             this.btnCancel.TabIndex = 106;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -157,20 +151,18 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(45, 111);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(34, 90);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 33);
+            this.label2.Size = new System.Drawing.Size(44, 26);
             this.label2.TabIndex = 104;
             this.label2.Text = "ຊື້ຈາກ";
             // 
             // txtSupplier
             // 
             this.txtSupplier.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSupplier.Location = new System.Drawing.Point(221, 111);
-            this.txtSupplier.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSupplier.Location = new System.Drawing.Point(166, 90);
             this.txtSupplier.Name = "txtSupplier";
-            this.txtSupplier.Size = new System.Drawing.Size(301, 40);
+            this.txtSupplier.Size = new System.Drawing.Size(227, 33);
             this.txtSupplier.TabIndex = 1;
             // 
             // panel1
@@ -180,9 +172,8 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1067, 62);
+            this.panel1.Size = new System.Drawing.Size(800, 50);
             this.panel1.TabIndex = 102;
             // 
             // picClose
@@ -195,11 +186,12 @@
             this.picClose.Image = global::CarServiceManagement.Properties.Resources.close_32;
             this.picClose.ImageOffset = new System.Drawing.Point(0, 0);
             this.picClose.ImageRotate = 0F;
-            this.picClose.ImageSize = new System.Drawing.Size(28, 28);
-            this.picClose.Location = new System.Drawing.Point(1017, 8);
+            this.picClose.ImageSize = new System.Drawing.Size(23, 23);
+            this.picClose.Location = new System.Drawing.Point(763, 6);
+            this.picClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picClose.Name = "picClose";
             this.picClose.PressedState.ImageSize = new System.Drawing.Size(27, 27);
-            this.picClose.Size = new System.Drawing.Size(38, 45);
+            this.picClose.Size = new System.Drawing.Size(28, 37);
             this.picClose.TabIndex = 12;
             this.picClose.Click += new System.EventHandler(this.picClose_Click);
             // 
@@ -208,10 +200,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Defago Noto Sans", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(4, 15);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(3, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(287, 38);
+            this.label1.Size = new System.Drawing.Size(253, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "ປ້ອນ / ແກ້ໄຂຂໍ່ມູນບິນນຳເຂົ້າອາໄຫຼ່";
             // 
@@ -224,10 +215,9 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Dosis", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(761, 425);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUpdate.Location = new System.Drawing.Point(571, 345);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(125, 43);
+            this.btnUpdate.Size = new System.Drawing.Size(94, 35);
             this.btnUpdate.TabIndex = 105;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -243,20 +233,18 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(597, 111);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(448, 90);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 33);
+            this.label5.Size = new System.Drawing.Size(41, 26);
             this.label5.TabIndex = 114;
             this.label5.Text = "ຕິດຕໍ່";
             // 
             // txtSupplierContact
             // 
             this.txtSupplierContact.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSupplierContact.Location = new System.Drawing.Point(735, 111);
-            this.txtSupplierContact.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSupplierContact.Location = new System.Drawing.Point(551, 90);
             this.txtSupplierContact.Name = "txtSupplierContact";
-            this.txtSupplierContact.Size = new System.Drawing.Size(285, 40);
+            this.txtSupplierContact.Size = new System.Drawing.Size(215, 33);
             this.txtSupplierContact.TabIndex = 2;
             // 
             // cbbStatus
@@ -268,40 +256,36 @@
             this.cbbStatus.Items.AddRange(new object[] {
             "ຊຳລະແລ້ວ",
             "ຍັງບໍ່ຊຳລະ"});
-            this.cbbStatus.Location = new System.Drawing.Point(221, 170);
-            this.cbbStatus.Margin = new System.Windows.Forms.Padding(4);
+            this.cbbStatus.Location = new System.Drawing.Point(166, 138);
             this.cbbStatus.Name = "cbbStatus";
-            this.cbbStatus.Size = new System.Drawing.Size(301, 41);
+            this.cbbStatus.Size = new System.Drawing.Size(227, 34);
             this.cbbStatus.TabIndex = 3;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(45, 325);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(34, 264);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 33);
+            this.label6.Size = new System.Drawing.Size(58, 26);
             this.label6.TabIndex = 116;
             this.label6.Text = "ລວມເງິນ";
             // 
             // txtTotal
             // 
             this.txtTotal.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotal.Location = new System.Drawing.Point(221, 325);
-            this.txtTotal.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTotal.Location = new System.Drawing.Point(166, 264);
             this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(251, 40);
+            this.txtTotal.Size = new System.Drawing.Size(189, 33);
             this.txtTotal.TabIndex = 6;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(481, 325);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(361, 264);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(39, 33);
+            this.label7.Size = new System.Drawing.Size(30, 26);
             this.label7.TabIndex = 118;
             this.label7.Text = "ກີບ";
             // 
@@ -313,12 +297,11 @@
             this.dtpCreatedDate.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpCreatedDate.ForeColor = System.Drawing.Color.White;
             this.dtpCreatedDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpCreatedDate.Location = new System.Drawing.Point(719, 325);
-            this.dtpCreatedDate.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpCreatedDate.Location = new System.Drawing.Point(539, 264);
             this.dtpCreatedDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpCreatedDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpCreatedDate.Name = "dtpCreatedDate";
-            this.dtpCreatedDate.Size = new System.Drawing.Size(303, 38);
+            this.dtpCreatedDate.Size = new System.Drawing.Size(227, 31);
             this.dtpCreatedDate.TabIndex = 7;
             this.dtpCreatedDate.Value = new System.DateTime(2022, 8, 8, 13, 37, 7, 480);
             // 
@@ -326,18 +309,17 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(597, 325);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(448, 264);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(96, 33);
+            this.label9.Size = new System.Drawing.Size(75, 26);
             this.label9.TabIndex = 121;
             this.label9.Text = "ວັນຂຽນບິນ";
             // 
             // PartImportBillModule
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 487);
+            this.ClientSize = new System.Drawing.Size(800, 396);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.dtpCreatedDate);
             this.Controls.Add(this.label7);
@@ -359,7 +341,6 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnUpdate);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PartImportBillModule";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PartImportBillModule";

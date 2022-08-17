@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CarServiceManagement.DAO
@@ -29,8 +26,8 @@ namespace CarServiceManagement.DAO
             }
         }
         private DataProvider() { }
-        //private string connectionSTR = ConfigurationManager.ConnectionStrings["CarServiceManagement.configuration"].ConnectionString.ToString();
-        private string connectionSTR = @"Data Source=DESKTOP-0HN7NPR\SQLEXPRESS;Initial Catalog=GarageServiceDB;Integrated Security=True";
+        private string connectionSTR = ConfigurationManager.ConnectionStrings["CarServiceManagement.configuration"].ConnectionString.ToString();
+        //private string connectionSTR = @"Data Source=DESKTOP-0HN7NPR\SQLEXPRESS;Initial Catalog=GarageServiceDB;Integrated Security=True";
 
 
         public SqlCommand AddParameters(string query, SqlCommand command, object[] parameters)

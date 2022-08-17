@@ -67,10 +67,10 @@
             this.topPanel.Controls.Add(this.tableLayoutPanel1);
             this.topPanel.Controls.Add(this.panel2);
             this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.topPanel.Location = new System.Drawing.Point(5, 5);
-            this.topPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.topPanel.Location = new System.Drawing.Point(4, 4);
+            this.topPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.topPanel.Name = "topPanel";
-            this.topPanel.Size = new System.Drawing.Size(1790, 192);
+            this.topPanel.Size = new System.Drawing.Size(1342, 156);
             this.topPanel.TabIndex = 2;
             // 
             // picMinimize
@@ -82,11 +82,12 @@
             this.picMinimize.Image = global::CarServiceManagement.Properties.Resources.minimize_32;
             this.picMinimize.ImageOffset = new System.Drawing.Point(0, 0);
             this.picMinimize.ImageRotate = 0F;
-            this.picMinimize.ImageSize = new System.Drawing.Size(28, 28);
-            this.picMinimize.Location = new System.Drawing.Point(1693, 6);
+            this.picMinimize.ImageSize = new System.Drawing.Size(23, 23);
+            this.picMinimize.Location = new System.Drawing.Point(1269, 5);
+            this.picMinimize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picMinimize.Name = "picMinimize";
             this.picMinimize.PressedState.ImageSize = new System.Drawing.Size(27, 27);
-            this.picMinimize.Size = new System.Drawing.Size(43, 34);
+            this.picMinimize.Size = new System.Drawing.Size(32, 28);
             this.picMinimize.TabIndex = 13;
             this.picMinimize.UseTransparentBackground = true;
             this.picMinimize.Click += new System.EventHandler(this.picMinimize_Click);
@@ -101,11 +102,12 @@
             this.ImageButtonMaximize.Image = global::CarServiceManagement.Properties.Resources.maximize_32;
             this.ImageButtonMaximize.ImageOffset = new System.Drawing.Point(0, 0);
             this.ImageButtonMaximize.ImageRotate = 0F;
-            this.ImageButtonMaximize.ImageSize = new System.Drawing.Size(28, 28);
-            this.ImageButtonMaximize.Location = new System.Drawing.Point(1649, 6);
+            this.ImageButtonMaximize.ImageSize = new System.Drawing.Size(23, 23);
+            this.ImageButtonMaximize.Location = new System.Drawing.Point(1236, 5);
+            this.ImageButtonMaximize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ImageButtonMaximize.Name = "ImageButtonMaximize";
             this.ImageButtonMaximize.PressedState.ImageSize = new System.Drawing.Size(27, 27);
-            this.ImageButtonMaximize.Size = new System.Drawing.Size(38, 34);
+            this.ImageButtonMaximize.Size = new System.Drawing.Size(28, 28);
             this.ImageButtonMaximize.TabIndex = 12;
             this.ImageButtonMaximize.Click += new System.EventHandler(this.ImageButtonMaximize_Click);
             // 
@@ -119,11 +121,12 @@
             this.ImageButtonClose.Image = global::CarServiceManagement.Properties.Resources.close_32;
             this.ImageButtonClose.ImageOffset = new System.Drawing.Point(0, 0);
             this.ImageButtonClose.ImageRotate = 0F;
-            this.ImageButtonClose.ImageSize = new System.Drawing.Size(28, 28);
-            this.ImageButtonClose.Location = new System.Drawing.Point(1742, 6);
+            this.ImageButtonClose.ImageSize = new System.Drawing.Size(23, 23);
+            this.ImageButtonClose.Location = new System.Drawing.Point(1305, 5);
+            this.ImageButtonClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ImageButtonClose.Name = "ImageButtonClose";
             this.ImageButtonClose.PressedState.ImageSize = new System.Drawing.Size(27, 27);
-            this.ImageButtonClose.Size = new System.Drawing.Size(38, 34);
+            this.ImageButtonClose.Size = new System.Drawing.Size(28, 28);
             this.ImageButtonClose.TabIndex = 11;
             this.ImageButtonClose.Click += new System.EventHandler(this.ImageButtonClose_Click);
             // 
@@ -138,13 +141,13 @@
             this.tableLayoutPanel1.Controls.Add(this.guna2TileButton1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.guna2TileButton2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.guna2TileButton3, 2, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(295, 20);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(221, 16);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 150F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1327, 150);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 122F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(994, 122);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // guna2TileButton1
@@ -161,10 +164,10 @@
             this.guna2TileButton1.Image = global::CarServiceManagement.Properties.Resources.maintenance;
             this.guna2TileButton1.ImageOffset = new System.Drawing.Point(0, 20);
             this.guna2TileButton1.ImageSize = new System.Drawing.Size(70, 70);
-            this.guna2TileButton1.Location = new System.Drawing.Point(3, 2);
-            this.guna2TileButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2TileButton1.Location = new System.Drawing.Point(2, 2);
+            this.guna2TileButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2TileButton1.Name = "guna2TileButton1";
-            this.guna2TileButton1.Size = new System.Drawing.Size(436, 146);
+            this.guna2TileButton1.Size = new System.Drawing.Size(327, 118);
             this.guna2TileButton1.TabIndex = 7;
             this.guna2TileButton1.Text = "ຈັດການອາໄຫຼ່";
             this.guna2TileButton1.TextOffset = new System.Drawing.Point(0, 10);
@@ -184,10 +187,10 @@
             this.guna2TileButton2.Image = global::CarServiceManagement.Properties.Resources.customer;
             this.guna2TileButton2.ImageOffset = new System.Drawing.Point(0, 20);
             this.guna2TileButton2.ImageSize = new System.Drawing.Size(70, 70);
-            this.guna2TileButton2.Location = new System.Drawing.Point(445, 2);
-            this.guna2TileButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2TileButton2.Location = new System.Drawing.Point(333, 2);
+            this.guna2TileButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2TileButton2.Name = "guna2TileButton2";
-            this.guna2TileButton2.Size = new System.Drawing.Size(436, 146);
+            this.guna2TileButton2.Size = new System.Drawing.Size(327, 118);
             this.guna2TileButton2.TabIndex = 8;
             this.guna2TileButton2.Text = "ລູກຄ້າ/ລົດ";
             this.guna2TileButton2.TextOffset = new System.Drawing.Point(0, 10);
@@ -207,10 +210,10 @@
             this.guna2TileButton3.Image = global::CarServiceManagement.Properties.Resources.invoice;
             this.guna2TileButton3.ImageOffset = new System.Drawing.Point(0, 20);
             this.guna2TileButton3.ImageSize = new System.Drawing.Size(70, 70);
-            this.guna2TileButton3.Location = new System.Drawing.Point(887, 2);
-            this.guna2TileButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2TileButton3.Location = new System.Drawing.Point(664, 2);
+            this.guna2TileButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2TileButton3.Name = "guna2TileButton3";
-            this.guna2TileButton3.Size = new System.Drawing.Size(437, 146);
+            this.guna2TileButton3.Size = new System.Drawing.Size(328, 118);
             this.guna2TileButton3.TabIndex = 9;
             this.guna2TileButton3.Text = "ຈັດການບິນ";
             this.guna2TileButton3.TextOffset = new System.Drawing.Point(0, 10);
@@ -223,18 +226,18 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(271, 190);
+            this.panel2.Size = new System.Drawing.Size(203, 154);
             this.panel2.TabIndex = 3;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::CarServiceManagement.Properties.Resources.car_repair_white;
-            this.pictureBox1.Location = new System.Drawing.Point(59, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(44, 8);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(124, 98);
+            this.pictureBox1.Size = new System.Drawing.Size(93, 80);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -245,9 +248,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Defago Noto Sans", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(-4, 118);
+            this.label2.Location = new System.Drawing.Point(-3, 96);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(260, 61);
+            this.label2.Size = new System.Drawing.Size(211, 49);
             this.label2.TabIndex = 1;
             this.label2.Text = "ລວມອາໄຫຼ່ລົດຍົນ";
             // 
@@ -261,10 +265,10 @@
             this.guna2BottomPanel.Controls.Add(this.guna2PictureBox2);
             this.guna2BottomPanel.Controls.Add(this.labelTimer);
             this.guna2BottomPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2BottomPanel.Location = new System.Drawing.Point(5, 1054);
-            this.guna2BottomPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2BottomPanel.Location = new System.Drawing.Point(4, 855);
+            this.guna2BottomPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2BottomPanel.Name = "guna2BottomPanel";
-            this.guna2BottomPanel.Size = new System.Drawing.Size(1790, 43);
+            this.guna2BottomPanel.Size = new System.Drawing.Size(1342, 35);
             this.guna2BottomPanel.TabIndex = 6;
             // 
             // guna2ImageButton1
@@ -276,10 +280,11 @@
             this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton1.ImageRotate = 0F;
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(29, 29);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(8, 5);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(6, 4);
+            this.guna2ImageButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(28, 28);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(43, 31);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(32, 25);
             this.guna2ImageButton1.TabIndex = 8;
             this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click_1);
             // 
@@ -289,9 +294,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Dosis", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(1526, 7);
+            this.label3.Location = new System.Drawing.Point(1144, 6);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(238, 24);
+            this.label3.Size = new System.Drawing.Size(199, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Copy right reserved to Dev-Tons";
             // 
@@ -300,9 +306,10 @@
             this.labelName.AutoSize = true;
             this.labelName.Font = new System.Drawing.Font("Defago Noto Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelName.ForeColor = System.Drawing.Color.White;
-            this.labelName.Location = new System.Drawing.Point(96, 8);
+            this.labelName.Location = new System.Drawing.Point(72, 6);
+            this.labelName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(0, 29);
+            this.labelName.Size = new System.Drawing.Size(0, 23);
             this.labelName.TabIndex = 1;
             // 
             // guna2PictureBox2
@@ -310,10 +317,10 @@
             this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox2.Image = global::CarServiceManagement.Properties.Resources.user;
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(65, 8);
-            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(49, 6);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(24, 25);
+            this.guna2PictureBox2.Size = new System.Drawing.Size(18, 20);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox2.TabIndex = 0;
             this.guna2PictureBox2.TabStop = false;
@@ -324,8 +331,9 @@
             this.labelTimer.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTimer.ForeColor = System.Drawing.Color.White;
             this.labelTimer.Location = new System.Drawing.Point(0, 0);
+            this.labelTimer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTimer.Name = "labelTimer";
-            this.labelTimer.Size = new System.Drawing.Size(1790, 43);
+            this.labelTimer.Size = new System.Drawing.Size(1342, 35);
             this.labelTimer.TabIndex = 9;
             this.labelTimer.Text = "Time";
             this.labelTimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -336,11 +344,11 @@
             this.Middlepanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Middlepanel.Controls.Add(this.guna2PictureBox1);
             this.Middlepanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Middlepanel.Location = new System.Drawing.Point(5, 197);
-            this.Middlepanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Middlepanel.Location = new System.Drawing.Point(4, 160);
+            this.Middlepanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Middlepanel.Name = "Middlepanel";
-            this.Middlepanel.Padding = new System.Windows.Forms.Padding(20);
-            this.Middlepanel.Size = new System.Drawing.Size(1790, 857);
+            this.Middlepanel.Padding = new System.Windows.Forms.Padding(15, 16, 15, 16);
+            this.Middlepanel.Size = new System.Drawing.Size(1342, 695);
             this.Middlepanel.TabIndex = 7;
             // 
             // guna2PictureBox1
@@ -348,26 +356,26 @@
             this.guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2PictureBox1.Image = global::CarServiceManagement.Properties.Resources.car_service_bg;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(20, 20);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(15, 16);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(1748, 815);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(1310, 661);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             // 
             // MainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1800, 1102);
+            this.ClientSize = new System.Drawing.Size(1350, 894);
             this.Controls.Add(this.Middlepanel);
             this.Controls.Add(this.guna2BottomPanel);
             this.Controls.Add(this.topPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MainMenu";
-            this.Padding = new System.Windows.Forms.Padding(5);
+            this.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainMenu";
             this.topPanel.ResumeLayout(false);

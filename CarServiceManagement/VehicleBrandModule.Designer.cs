@@ -46,10 +46,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(45, 99);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(34, 80);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 33);
+            this.label3.Size = new System.Drawing.Size(50, 26);
             this.label3.TabIndex = 82;
             this.label3.Text = "ຍີ່ຫໍ້ລົດ";
             // 
@@ -61,10 +60,9 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Dosis", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(285, 156);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSave.Location = new System.Drawing.Point(214, 127);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(125, 43);
+            this.btnSave.Size = new System.Drawing.Size(94, 35);
             this.btnSave.TabIndex = 79;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -78,10 +76,9 @@
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Dosis", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
-            this.btnCancel.Location = new System.Drawing.Point(551, 156);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancel.Location = new System.Drawing.Point(413, 127);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(125, 43);
+            this.btnCancel.Size = new System.Drawing.Size(94, 35);
             this.btnCancel.TabIndex = 81;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -90,10 +87,9 @@
             // txtVehicleBrandName
             // 
             this.txtVehicleBrandName.Font = new System.Drawing.Font("Phetsarath OT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVehicleBrandName.Location = new System.Drawing.Point(168, 101);
-            this.txtVehicleBrandName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtVehicleBrandName.Location = new System.Drawing.Point(126, 82);
             this.txtVehicleBrandName.Name = "txtVehicleBrandName";
-            this.txtVehicleBrandName.Size = new System.Drawing.Size(508, 35);
+            this.txtVehicleBrandName.Size = new System.Drawing.Size(382, 30);
             this.txtVehicleBrandName.TabIndex = 78;
             // 
             // btnUpdate
@@ -104,10 +100,9 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Dosis", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(418, 156);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUpdate.Location = new System.Drawing.Point(314, 127);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(125, 43);
+            this.btnUpdate.Size = new System.Drawing.Size(94, 35);
             this.btnUpdate.TabIndex = 80;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -118,10 +113,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Defago Noto Sans", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(4, 15);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(3, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(224, 38);
+            this.label1.Size = new System.Drawing.Size(196, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "ປ້ອນ / ແກ້ໄຂຂໍ່ມູນຍີ່ຫໍ້ລົດ";
             // 
@@ -132,9 +126,8 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(706, 62);
+            this.panel1.Size = new System.Drawing.Size(530, 50);
             this.panel1.TabIndex = 77;
             // 
             // picClose
@@ -147,11 +140,12 @@
             this.picClose.Image = global::CarServiceManagement.Properties.Resources.close_32;
             this.picClose.ImageOffset = new System.Drawing.Point(0, 0);
             this.picClose.ImageRotate = 0F;
-            this.picClose.ImageSize = new System.Drawing.Size(28, 28);
-            this.picClose.Location = new System.Drawing.Point(656, 8);
+            this.picClose.ImageSize = new System.Drawing.Size(23, 23);
+            this.picClose.Location = new System.Drawing.Point(492, 6);
+            this.picClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picClose.Name = "picClose";
             this.picClose.PressedState.ImageSize = new System.Drawing.Size(27, 27);
-            this.picClose.Size = new System.Drawing.Size(38, 45);
+            this.picClose.Size = new System.Drawing.Size(28, 37);
             this.picClose.TabIndex = 15;
             this.picClose.Click += new System.EventHandler(this.picClose_Click);
             // 
@@ -164,18 +158,19 @@
             // labelVehicleBrandID
             // 
             this.labelVehicleBrandID.AutoSize = true;
-            this.labelVehicleBrandID.Location = new System.Drawing.Point(48, 161);
+            this.labelVehicleBrandID.Location = new System.Drawing.Point(36, 131);
+            this.labelVehicleBrandID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelVehicleBrandID.Name = "labelVehicleBrandID";
-            this.labelVehicleBrandID.Size = new System.Drawing.Size(20, 16);
+            this.labelVehicleBrandID.Size = new System.Drawing.Size(18, 13);
             this.labelVehicleBrandID.TabIndex = 83;
             this.labelVehicleBrandID.Text = "ID";
             this.labelVehicleBrandID.Visible = false;
             // 
             // VehicleBrandModule
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(706, 216);
+            this.ClientSize = new System.Drawing.Size(530, 176);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnCancel);
@@ -184,6 +179,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.labelVehicleBrandID);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "VehicleBrandModule";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VehicleBrandModule";

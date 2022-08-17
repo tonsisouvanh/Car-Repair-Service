@@ -110,9 +110,8 @@
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1380, 62);
+            this.panel2.Size = new System.Drawing.Size(1035, 50);
             this.panel2.TabIndex = 7;
             // 
             // picMinimize
@@ -124,11 +123,12 @@
             this.picMinimize.Image = global::CarServiceManagement.Properties.Resources.minimize_32;
             this.picMinimize.ImageOffset = new System.Drawing.Point(0, 0);
             this.picMinimize.ImageRotate = 0F;
-            this.picMinimize.ImageSize = new System.Drawing.Size(28, 28);
-            this.picMinimize.Location = new System.Drawing.Point(1282, 8);
+            this.picMinimize.ImageSize = new System.Drawing.Size(23, 23);
+            this.picMinimize.Location = new System.Drawing.Point(962, 6);
+            this.picMinimize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picMinimize.Name = "picMinimize";
             this.picMinimize.PressedState.ImageSize = new System.Drawing.Size(27, 27);
-            this.picMinimize.Size = new System.Drawing.Size(43, 45);
+            this.picMinimize.Size = new System.Drawing.Size(32, 37);
             this.picMinimize.TabIndex = 16;
             this.picMinimize.UseTransparentBackground = true;
             this.picMinimize.Click += new System.EventHandler(this.picMinimize_Click);
@@ -143,11 +143,12 @@
             this.ImageButtonMaximize.Image = global::CarServiceManagement.Properties.Resources.maximize_32;
             this.ImageButtonMaximize.ImageOffset = new System.Drawing.Point(0, 0);
             this.ImageButtonMaximize.ImageRotate = 0F;
-            this.ImageButtonMaximize.ImageSize = new System.Drawing.Size(28, 28);
-            this.ImageButtonMaximize.Location = new System.Drawing.Point(1238, 8);
+            this.ImageButtonMaximize.ImageSize = new System.Drawing.Size(23, 23);
+            this.ImageButtonMaximize.Location = new System.Drawing.Point(928, 6);
+            this.ImageButtonMaximize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ImageButtonMaximize.Name = "ImageButtonMaximize";
             this.ImageButtonMaximize.PressedState.ImageSize = new System.Drawing.Size(27, 27);
-            this.ImageButtonMaximize.Size = new System.Drawing.Size(38, 45);
+            this.ImageButtonMaximize.Size = new System.Drawing.Size(28, 37);
             this.ImageButtonMaximize.TabIndex = 15;
             this.ImageButtonMaximize.Click += new System.EventHandler(this.ImageButtonMaximize_Click);
             // 
@@ -161,11 +162,12 @@
             this.ImageButtonClose.Image = global::CarServiceManagement.Properties.Resources.close_32;
             this.ImageButtonClose.ImageOffset = new System.Drawing.Point(0, 0);
             this.ImageButtonClose.ImageRotate = 0F;
-            this.ImageButtonClose.ImageSize = new System.Drawing.Size(28, 28);
-            this.ImageButtonClose.Location = new System.Drawing.Point(1331, 8);
+            this.ImageButtonClose.ImageSize = new System.Drawing.Size(23, 23);
+            this.ImageButtonClose.Location = new System.Drawing.Point(998, 6);
+            this.ImageButtonClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ImageButtonClose.Name = "ImageButtonClose";
             this.ImageButtonClose.PressedState.ImageSize = new System.Drawing.Size(27, 27);
-            this.ImageButtonClose.Size = new System.Drawing.Size(38, 45);
+            this.ImageButtonClose.Size = new System.Drawing.Size(28, 37);
             this.ImageButtonClose.TabIndex = 14;
             this.ImageButtonClose.Click += new System.EventHandler(this.ImageButtonClose_Click);
             // 
@@ -174,20 +176,18 @@
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Defago Noto Sans", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.ForeColor = System.Drawing.Color.White;
-            this.lblUsername.Location = new System.Drawing.Point(75, 8);
-            this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUsername.Location = new System.Drawing.Point(56, 6);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(178, 46);
+            this.lblUsername.Size = new System.Drawing.Size(136, 36);
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "ລາຍລະອຽດບິນ";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::CarServiceManagement.Properties.Resources.billdetail;
-            this.pictureBox1.Location = new System.Drawing.Point(20, 8);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(15, 6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(47, 43);
+            this.pictureBox1.Size = new System.Drawing.Size(35, 35);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -206,9 +206,10 @@
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.labelTotal);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 62);
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 50);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1380, 127);
+            this.guna2Panel1.Size = new System.Drawing.Size(1035, 103);
             this.guna2Panel1.TabIndex = 59;
             // 
             // guna2ImageButton1
@@ -223,21 +224,20 @@
             this.guna2ImageButton1.ImageRotate = 0F;
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(35, 35);
             this.guna2ImageButton1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.guna2ImageButton1.Location = new System.Drawing.Point(1319, 72);
-            this.guna2ImageButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(989, 58);
+            this.guna2ImageButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(0, 0);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(49, 47);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(37, 38);
             this.guna2ImageButton1.TabIndex = 18;
             // 
             // labelPayment
             // 
             this.labelPayment.AutoSize = true;
             this.labelPayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPayment.Location = new System.Drawing.Point(997, 16);
-            this.labelPayment.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelPayment.Location = new System.Drawing.Point(748, 13);
             this.labelPayment.Name = "labelPayment";
-            this.labelPayment.Size = new System.Drawing.Size(64, 18);
+            this.labelPayment.Size = new System.Drawing.Size(54, 15);
             this.labelPayment.TabIndex = 17;
             this.labelPayment.Text = "payment";
             this.labelPayment.Visible = false;
@@ -253,12 +253,11 @@
             this.dtpCreatedDate.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpCreatedDate.ForeColor = System.Drawing.Color.White;
             this.dtpCreatedDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpCreatedDate.Location = new System.Drawing.Point(554, 72);
-            this.dtpCreatedDate.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpCreatedDate.Location = new System.Drawing.Point(416, 58);
             this.dtpCreatedDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpCreatedDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpCreatedDate.Name = "dtpCreatedDate";
-            this.dtpCreatedDate.Size = new System.Drawing.Size(267, 31);
+            this.dtpCreatedDate.Size = new System.Drawing.Size(200, 25);
             this.dtpCreatedDate.TabIndex = 9;
             this.dtpCreatedDate.Value = new System.DateTime(2022, 8, 9, 8, 45, 24, 887);
             // 
@@ -267,10 +266,9 @@
             this.labelBillNumber.AutoSize = true;
             this.labelBillNumber.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelBillNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
-            this.labelBillNumber.Location = new System.Drawing.Point(104, 17);
-            this.labelBillNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelBillNumber.Location = new System.Drawing.Point(78, 14);
             this.labelBillNumber.Name = "labelBillNumber";
-            this.labelBillNumber.Size = new System.Drawing.Size(25, 29);
+            this.labelBillNumber.Size = new System.Drawing.Size(20, 23);
             this.labelBillNumber.TabIndex = 16;
             this.labelBillNumber.Text = "0";
             // 
@@ -278,10 +276,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(444, 72);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(333, 58);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 33);
+            this.label2.Size = new System.Drawing.Size(79, 26);
             this.label2.TabIndex = 2;
             this.label2.Text = "ວັນຂຽນບິນ:";
             // 
@@ -289,10 +286,9 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(16, 13);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(12, 11);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(74, 33);
+            this.label9.Size = new System.Drawing.Size(57, 26);
             this.label9.TabIndex = 15;
             this.label9.Text = "ເລກບິນ:";
             // 
@@ -300,10 +296,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(444, 13);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(333, 11);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 33);
+            this.label4.Size = new System.Drawing.Size(78, 26);
             this.label4.TabIndex = 7;
             this.label4.Text = "ສະຖານະບິນ:";
             // 
@@ -311,10 +306,9 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(313, 72);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(235, 58);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(39, 33);
+            this.label8.Size = new System.Drawing.Size(30, 26);
             this.label8.TabIndex = 14;
             this.label8.Text = "ກີບ";
             // 
@@ -322,10 +316,9 @@
             // 
             this.labelBillStatus.AutoSize = true;
             this.labelBillStatus.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBillStatus.Location = new System.Drawing.Point(557, 13);
-            this.labelBillStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelBillStatus.Location = new System.Drawing.Point(418, 11);
             this.labelBillStatus.Name = "labelBillStatus";
-            this.labelBillStatus.Size = new System.Drawing.Size(30, 33);
+            this.labelBillStatus.Size = new System.Drawing.Size(24, 26);
             this.labelBillStatus.TabIndex = 8;
             this.labelBillStatus.Text = "...";
             // 
@@ -333,10 +326,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(16, 72);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(12, 58);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 33);
+            this.label1.Size = new System.Drawing.Size(102, 26);
             this.label1.TabIndex = 10;
             this.label1.Text = "ລວມເງິນທັງໝົດ:";
             // 
@@ -345,10 +337,9 @@
             this.labelTotal.AutoSize = true;
             this.labelTotal.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
-            this.labelTotal.Location = new System.Drawing.Point(169, 76);
-            this.labelTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelTotal.Location = new System.Drawing.Point(127, 62);
             this.labelTotal.Name = "labelTotal";
-            this.labelTotal.Size = new System.Drawing.Size(25, 29);
+            this.labelTotal.Size = new System.Drawing.Size(20, 23);
             this.labelTotal.TabIndex = 11;
             this.labelTotal.Text = "0";
             // 
@@ -362,17 +353,19 @@
             this.guna2Panel2.CustomBorderColor = System.Drawing.Color.DimGray;
             this.guna2Panel2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 1, 0, 0);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 189);
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 153);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1380, 58);
+            this.guna2Panel2.Size = new System.Drawing.Size(1035, 47);
             this.guna2Panel2.TabIndex = 60;
             // 
             // guna2VSeparator1
             // 
             this.guna2VSeparator1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2VSeparator1.Location = new System.Drawing.Point(822, 7);
+            this.guna2VSeparator1.Location = new System.Drawing.Point(616, 6);
+            this.guna2VSeparator1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2VSeparator1.Name = "guna2VSeparator1";
-            this.guna2VSeparator1.Size = new System.Drawing.Size(10, 44);
+            this.guna2VSeparator1.Size = new System.Drawing.Size(8, 36);
             this.guna2VSeparator1.TabIndex = 22;
             // 
             // label5
@@ -380,9 +373,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Defago Noto Sans", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(9, 11);
+            this.label5.Location = new System.Drawing.Point(7, 9);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(185, 38);
+            this.label5.Size = new System.Drawing.Size(138, 30);
             this.label5.TabIndex = 21;
             this.label5.Text = "ລາຍການເຄື່ອງໃນບິນ:";
             // 
@@ -392,9 +386,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Defago Noto Sans", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(892, 11);
+            this.label3.Location = new System.Drawing.Point(669, 9);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(119, 38);
+            this.label3.Size = new System.Drawing.Size(91, 30);
             this.label3.TabIndex = 20;
             this.label3.Text = "ຄົ້ນຫາອາໄຫຼ່:";
             // 
@@ -412,13 +407,13 @@
             this.txtSearch.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.ForeColor = System.Drawing.Color.Black;
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.Location = new System.Drawing.Point(1020, 8);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtSearch.Location = new System.Drawing.Point(765, 6);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
             this.txtSearch.PlaceholderText = "ພິມຊື່ອາໄຫຼ່";
             this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(349, 43);
+            this.txtSearch.Size = new System.Drawing.Size(262, 35);
             this.txtSearch.TabIndex = 19;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
@@ -427,10 +422,9 @@
             this.guna2PanelBottom.Controls.Add(this.btnPrint);
             this.guna2PanelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2PanelBottom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
-            this.guna2PanelBottom.Location = new System.Drawing.Point(0, 642);
-            this.guna2PanelBottom.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PanelBottom.Location = new System.Drawing.Point(0, 522);
             this.guna2PanelBottom.Name = "guna2PanelBottom";
-            this.guna2PanelBottom.Size = new System.Drawing.Size(1380, 58);
+            this.guna2PanelBottom.Size = new System.Drawing.Size(1035, 47);
             this.guna2PanelBottom.TabIndex = 61;
             // 
             // btnPrint
@@ -445,11 +439,11 @@
             this.btnPrint.ImageRotate = 0F;
             this.btnPrint.ImageSize = new System.Drawing.Size(35, 35);
             this.btnPrint.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnPrint.Location = new System.Drawing.Point(1316, 5);
-            this.btnPrint.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPrint.Location = new System.Drawing.Point(987, 4);
+            this.btnPrint.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.PressedState.ImageSize = new System.Drawing.Size(0, 0);
-            this.btnPrint.Size = new System.Drawing.Size(49, 47);
+            this.btnPrint.Size = new System.Drawing.Size(37, 38);
             this.btnPrint.TabIndex = 15;
             // 
             // tableLayoutPanel2
@@ -460,11 +454,12 @@
             this.tableLayoutPanel2.Controls.Add(this.gunaDtgvParts, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.gunaDtgvRepairBillDetail, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 247);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 200);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1380, 395);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1035, 322);
             this.tableLayoutPanel2.TabIndex = 68;
             // 
             // gunaDtgvParts
@@ -510,8 +505,8 @@
             this.gunaDtgvParts.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaDtgvParts.EnableHeadersVisualStyles = false;
             this.gunaDtgvParts.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDtgvParts.Location = new System.Drawing.Point(831, 2);
-            this.gunaDtgvParts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gunaDtgvParts.Location = new System.Drawing.Point(623, 2);
+            this.gunaDtgvParts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gunaDtgvParts.Name = "gunaDtgvParts";
             this.gunaDtgvParts.ReadOnly = true;
             this.gunaDtgvParts.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -531,7 +526,7 @@
             this.gunaDtgvParts.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.gunaDtgvParts.RowTemplate.Height = 33;
             this.gunaDtgvParts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDtgvParts.Size = new System.Drawing.Size(546, 391);
+            this.gunaDtgvParts.Size = new System.Drawing.Size(410, 318);
             this.gunaDtgvParts.TabIndex = 52;
             this.gunaDtgvParts.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.gunaDtgvParts.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -585,7 +580,7 @@
             this.part_price.Name = "part_price";
             this.part_price.ReadOnly = true;
             this.part_price.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.part_price.Width = 86;
+            this.part_price.Width = 73;
             // 
             // dataGridViewTextBoxColumn4
             // 
@@ -596,7 +591,7 @@
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
             this.dataGridViewTextBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewTextBoxColumn4.Width = 123;
+            this.dataGridViewTextBoxColumn4.Width = 98;
             // 
             // stock
             // 
@@ -606,7 +601,7 @@
             this.stock.MinimumWidth = 6;
             this.stock.Name = "stock";
             this.stock.ReadOnly = true;
-            this.stock.Width = 132;
+            this.stock.Width = 107;
             // 
             // add
             // 
@@ -668,8 +663,8 @@
             this.gunaDtgvRepairBillDetail.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaDtgvRepairBillDetail.EnableHeadersVisualStyles = false;
             this.gunaDtgvRepairBillDetail.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDtgvRepairBillDetail.Location = new System.Drawing.Point(3, 2);
-            this.gunaDtgvRepairBillDetail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gunaDtgvRepairBillDetail.Location = new System.Drawing.Point(2, 2);
+            this.gunaDtgvRepairBillDetail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gunaDtgvRepairBillDetail.Name = "gunaDtgvRepairBillDetail";
             this.gunaDtgvRepairBillDetail.ReadOnly = true;
             this.gunaDtgvRepairBillDetail.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -689,7 +684,7 @@
             this.gunaDtgvRepairBillDetail.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.gunaDtgvRepairBillDetail.RowTemplate.Height = 33;
             this.gunaDtgvRepairBillDetail.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDtgvRepairBillDetail.Size = new System.Drawing.Size(822, 391);
+            this.gunaDtgvRepairBillDetail.Size = new System.Drawing.Size(617, 318);
             this.gunaDtgvRepairBillDetail.TabIndex = 53;
             this.gunaDtgvRepairBillDetail.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.gunaDtgvRepairBillDetail.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -761,7 +756,7 @@
             this.price.Name = "price";
             this.price.ReadOnly = true;
             this.price.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.price.Width = 90;
+            this.price.Width = 77;
             // 
             // quantity
             // 
@@ -772,7 +767,7 @@
             this.quantity.Name = "quantity";
             this.quantity.ReadOnly = true;
             this.quantity.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.quantity.Width = 111;
+            this.quantity.Width = 89;
             // 
             // cal_unit
             // 
@@ -782,7 +777,7 @@
             this.cal_unit.MinimumWidth = 6;
             this.cal_unit.Name = "cal_unit";
             this.cal_unit.ReadOnly = true;
-            this.cal_unit.Width = 127;
+            this.cal_unit.Width = 102;
             // 
             // subtotal
             // 
@@ -792,7 +787,7 @@
             this.subtotal.MinimumWidth = 6;
             this.subtotal.Name = "subtotal";
             this.subtotal.ReadOnly = true;
-            this.subtotal.Width = 90;
+            this.subtotal.Width = 74;
             // 
             // edit
             // 
@@ -820,15 +815,16 @@
             // 
             // RepairBillDetail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1380, 700);
+            this.ClientSize = new System.Drawing.Size(1035, 569);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.guna2PanelBottom);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "RepairBillDetail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RepairBillDetail";

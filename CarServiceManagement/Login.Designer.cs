@@ -61,9 +61,8 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(950, 92);
+            this.panel1.Size = new System.Drawing.Size(712, 75);
             this.panel1.TabIndex = 47;
             // 
             // picClose
@@ -74,11 +73,12 @@
             this.picClose.Image = global::CarServiceManagement.Properties.Resources.close_32;
             this.picClose.ImageOffset = new System.Drawing.Point(0, 0);
             this.picClose.ImageRotate = 0F;
-            this.picClose.ImageSize = new System.Drawing.Size(28, 28);
-            this.picClose.Location = new System.Drawing.Point(895, 21);
+            this.picClose.ImageSize = new System.Drawing.Size(23, 23);
+            this.picClose.Location = new System.Drawing.Point(671, 17);
+            this.picClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picClose.Name = "picClose";
             this.picClose.PressedState.ImageSize = new System.Drawing.Size(27, 27);
-            this.picClose.Size = new System.Drawing.Size(43, 40);
+            this.picClose.Size = new System.Drawing.Size(32, 32);
             this.picClose.TabIndex = 6;
             this.picClose.Click += new System.EventHandler(this.picClose_Click);
             // 
@@ -90,21 +90,22 @@
             this.picMinimize.Image = global::CarServiceManagement.Properties.Resources.minimize_32;
             this.picMinimize.ImageOffset = new System.Drawing.Point(0, 0);
             this.picMinimize.ImageRotate = 0F;
-            this.picMinimize.ImageSize = new System.Drawing.Size(28, 28);
-            this.picMinimize.Location = new System.Drawing.Point(846, 21);
+            this.picMinimize.ImageSize = new System.Drawing.Size(23, 23);
+            this.picMinimize.Location = new System.Drawing.Point(634, 17);
+            this.picMinimize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picMinimize.Name = "picMinimize";
             this.picMinimize.PressedState.ImageSize = new System.Drawing.Size(27, 27);
-            this.picMinimize.Size = new System.Drawing.Size(43, 40);
+            this.picMinimize.Size = new System.Drawing.Size(32, 32);
             this.picMinimize.TabIndex = 5;
             this.picMinimize.Click += new System.EventHandler(this.picMinimize_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::CarServiceManagement.Properties.Resources.car_repair_white;
-            this.pictureBox1.Location = new System.Drawing.Point(15, 6);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(11, 5);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(77, 77);
+            this.pictureBox1.Size = new System.Drawing.Size(58, 63);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -115,9 +116,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Defago Noto Sans", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(98, 16);
+            this.label2.Location = new System.Drawing.Point(74, 13);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(260, 61);
+            this.label2.Size = new System.Drawing.Size(211, 49);
             this.label2.TabIndex = 2;
             this.label2.Text = "ລວມອາໄຫຼ່ລົດຍົນ";
             // 
@@ -127,9 +129,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Defago Noto Sans", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(320, 297);
+            this.label1.Location = new System.Drawing.Point(240, 241);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(294, 61);
+            this.label1.Size = new System.Drawing.Size(237, 49);
             this.label1.TabIndex = 4;
             this.label1.Text = "ລ໋ອກອິນເຂົ້າສູ່ລະບົບ";
             // 
@@ -142,9 +145,10 @@
             this.btnLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnLogin.Font = new System.Drawing.Font("Defago Noto Sans", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(306, 494);
+            this.btnLogin.Location = new System.Drawing.Point(230, 401);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(337, 45);
+            this.btnLogin.Size = new System.Drawing.Size(253, 37);
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Login";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -159,9 +163,10 @@
             this.btnCancel.FillColor = System.Drawing.Color.Red;
             this.btnCancel.Font = new System.Drawing.Font("Defago Noto Sans", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(306, 554);
+            this.btnCancel.Location = new System.Drawing.Point(230, 450);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(337, 45);
+            this.btnCancel.Size = new System.Drawing.Size(253, 37);
             this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -180,13 +185,12 @@
             this.txtUsername.IconLeft = global::CarServiceManagement.Properties.Resources.user_32;
             this.txtUsername.IconLeftSize = new System.Drawing.Size(23, 23);
             this.txtUsername.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txtUsername.Location = new System.Drawing.Point(306, 362);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUsername.Location = new System.Drawing.Point(230, 294);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.PasswordChar = '\0';
             this.txtUsername.PlaceholderText = "Username/Phone";
             this.txtUsername.SelectedText = "";
-            this.txtUsername.Size = new System.Drawing.Size(337, 45);
+            this.txtUsername.Size = new System.Drawing.Size(253, 37);
             this.txtUsername.TabIndex = 1;
             // 
             // txtPass
@@ -202,32 +206,31 @@
             this.txtPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPass.IconLeft = global::CarServiceManagement.Properties.Resources.padlock_32;
             this.txtPass.IconLeftSize = new System.Drawing.Size(23, 23);
-            this.txtPass.Location = new System.Drawing.Point(306, 424);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPass.Location = new System.Drawing.Point(230, 344);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
             this.txtPass.PlaceholderText = "Password";
             this.txtPass.SelectedText = "";
-            this.txtPass.Size = new System.Drawing.Size(337, 45);
+            this.txtPass.Size = new System.Drawing.Size(253, 37);
             this.txtPass.TabIndex = 2;
             this.txtPass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPass_KeyPress);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::CarServiceManagement.Properties.Resources.car_repair;
-            this.pictureBox2.Location = new System.Drawing.Point(398, 127);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(298, 103);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(148, 152);
+            this.pictureBox2.Size = new System.Drawing.Size(111, 124);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(950, 650);
+            this.ClientSize = new System.Drawing.Size(712, 528);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnLogin);
@@ -236,6 +239,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
