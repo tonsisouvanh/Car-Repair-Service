@@ -224,6 +224,12 @@
     <Compile Include="VehicleBrands.Designer.cs">
       <DependentUpon>VehicleBrands.cs</DependentUpon>
     </Compile>
+    <Compile Include="VehicleDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleDetail.Designer.cs">
+      <DependentUpon>VehicleDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="VehicleModule.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -329,6 +335,9 @@
     <EmbeddedResource Include="VehicleBrands.resx">
       <DependentUpon>VehicleBrands.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="VehicleDetail.resx">
+      <DependentUpon>VehicleDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VehicleModule.resx">
       <DependentUpon>VehicleModule.cs</DependentUpon>
     </EmbeddedResource>
@@ -394,16 +403,7 @@
     <None Include="Resources\edit.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\expand.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\full-screen.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\invoice.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\plus.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\plus-green.png" />
@@ -447,11 +447,9 @@
   <ItemGroup>
     <None Include="Resources\close-white.png" />
     <None Include="Resources\padlock.png" />
-    <None Include="Resources\user-blue.png" />
     <None Include="Resources\logout.png" />
     <None Include="Resources\logout_triangle.png" />
     <None Include="Resources\user-32.png" />
-    <None Include="Resources\user-24.png" />
     <None Include="Resources\padlock-32.png" />
     <None Include="Resources\maximize-32.png" />
     <None Include="Resources\maximize-32-white.png" />

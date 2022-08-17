@@ -31,17 +31,17 @@
             this.components = new System.ComponentModel.Container();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2PanelSidebar = new Guna.UI2.WinForms.Guna2Panel();
+            this.labelTimer = new System.Windows.Forms.Label();
             this.sidebar_SparePartType = new Guna.UI2.WinForms.Guna2Button();
             this.sidebar_SpareParts = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PanelLogo = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PanelTitle = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.PanelMain = new Guna.UI2.WinForms.Guna2Panel();
             this.picMinimize = new Guna.UI2.WinForms.Guna2ImageButton();
             this.ImageButtonMaximize = new Guna.UI2.WinForms.Guna2ImageButton();
             this.ImageButtonClose = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.labelTimer = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.PanelMain = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PanelSidebar.SuspendLayout();
             this.guna2PanelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -74,6 +74,18 @@
             this.guna2PanelSidebar.Size = new System.Drawing.Size(235, 856);
             this.guna2PanelSidebar.TabIndex = 4;
             // 
+            // labelTimer
+            // 
+            this.labelTimer.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.labelTimer.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTimer.ForeColor = System.Drawing.Color.White;
+            this.labelTimer.Location = new System.Drawing.Point(7, 807);
+            this.labelTimer.Name = "labelTimer";
+            this.labelTimer.Size = new System.Drawing.Size(221, 43);
+            this.labelTimer.TabIndex = 12;
+            this.labelTimer.Text = "Time";
+            this.labelTimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // sidebar_SparePartType
             // 
             this.sidebar_SparePartType.BackColor = System.Drawing.Color.Transparent;
@@ -87,7 +99,7 @@
             this.sidebar_SparePartType.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.sidebar_SparePartType.Dock = System.Windows.Forms.DockStyle.Top;
             this.sidebar_SparePartType.FillColor = System.Drawing.Color.Transparent;
-            this.sidebar_SparePartType.Font = new System.Drawing.Font("Noto Sans Lao", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sidebar_SparePartType.Font = new System.Drawing.Font("Defago Noto Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sidebar_SparePartType.ForeColor = System.Drawing.Color.White;
             this.sidebar_SparePartType.Location = new System.Drawing.Point(7, 271);
             this.sidebar_SparePartType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -110,7 +122,7 @@
             this.sidebar_SpareParts.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.sidebar_SpareParts.Dock = System.Windows.Forms.DockStyle.Top;
             this.sidebar_SpareParts.FillColor = System.Drawing.Color.Transparent;
-            this.sidebar_SpareParts.Font = new System.Drawing.Font("Noto Sans Lao", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sidebar_SpareParts.Font = new System.Drawing.Font("Defago Noto Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sidebar_SpareParts.ForeColor = System.Drawing.Color.White;
             this.sidebar_SpareParts.Location = new System.Drawing.Point(7, 225);
             this.sidebar_SpareParts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -167,31 +179,6 @@
             this.guna2PanelTitle.Name = "guna2PanelTitle";
             this.guna2PanelTitle.Size = new System.Drawing.Size(1095, 62);
             this.guna2PanelTitle.TabIndex = 5;
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.BackColor = System.Drawing.Color.Firebrick;
-            this.lblTitle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblTitle.Font = new System.Drawing.Font("Noto Sans Lao", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(0, 0);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(1095, 62);
-            this.lblTitle.TabIndex = 2;
-            this.lblTitle.Text = "ຫົວຂໍ້";
-            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // PanelMain
-            // 
-            this.PanelMain.BorderColor = System.Drawing.Color.Transparent;
-            this.PanelMain.CustomBorderColor = System.Drawing.Color.White;
-            this.PanelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelMain.Location = new System.Drawing.Point(235, 62);
-            this.PanelMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.PanelMain.Name = "PanelMain";
-            this.PanelMain.Padding = new System.Windows.Forms.Padding(0, 0, 1, 0);
-            this.PanelMain.Size = new System.Drawing.Size(1095, 794);
-            this.PanelMain.TabIndex = 6;
             // 
             // picMinimize
             // 
@@ -250,17 +237,30 @@
             this.ImageButtonClose.UseTransparentBackground = true;
             this.ImageButtonClose.Click += new System.EventHandler(this.ImageButtonClose_Click);
             // 
-            // labelTimer
+            // lblTitle
             // 
-            this.labelTimer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.labelTimer.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTimer.ForeColor = System.Drawing.Color.White;
-            this.labelTimer.Location = new System.Drawing.Point(7, 807);
-            this.labelTimer.Name = "labelTimer";
-            this.labelTimer.Size = new System.Drawing.Size(221, 43);
-            this.labelTimer.TabIndex = 12;
-            this.labelTimer.Text = "Time";
-            this.labelTimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTitle.BackColor = System.Drawing.Color.Firebrick;
+            this.lblTitle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTitle.Font = new System.Drawing.Font("Defago Noto Sans", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(0, 0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(1095, 62);
+            this.lblTitle.TabIndex = 2;
+            this.lblTitle.Text = "ຫົວຂໍ້";
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PanelMain
+            // 
+            this.PanelMain.BorderColor = System.Drawing.Color.Transparent;
+            this.PanelMain.CustomBorderColor = System.Drawing.Color.White;
+            this.PanelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelMain.Location = new System.Drawing.Point(235, 62);
+            this.PanelMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PanelMain.Name = "PanelMain";
+            this.PanelMain.Padding = new System.Windows.Forms.Padding(0, 0, 1, 0);
+            this.PanelMain.Size = new System.Drawing.Size(1095, 794);
+            this.PanelMain.TabIndex = 6;
             // 
             // SparePartMain
             // 

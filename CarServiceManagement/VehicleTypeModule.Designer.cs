@@ -36,20 +36,20 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.picClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.labelVehicleTypeID = new System.Windows.Forms.Label();
-            this.picClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(45, 94);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 33);
+            this.label3.Size = new System.Drawing.Size(91, 33);
             this.label3.TabIndex = 75;
             this.label3.Text = "ປະເພດລົດ";
             // 
@@ -116,12 +116,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Noto Sans Lao", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Defago Noto Sans", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(4, 15);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(263, 38);
+            this.label1.Size = new System.Drawing.Size(252, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "ປ້ອນ / ແກ້ໄຂຂໍ່ມູນປະເພດລົດ";
             // 
@@ -136,22 +136,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(706, 62);
             this.panel1.TabIndex = 70;
-            // 
-            // guna2BorderlessForm1
-            // 
-            this.guna2BorderlessForm1.ContainerControl = this;
-            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2BorderlessForm1.TransparentWhileDrag = true;
-            // 
-            // labelVehicleTypeID
-            // 
-            this.labelVehicleTypeID.AutoSize = true;
-            this.labelVehicleTypeID.Location = new System.Drawing.Point(48, 156);
-            this.labelVehicleTypeID.Name = "labelVehicleTypeID";
-            this.labelVehicleTypeID.Size = new System.Drawing.Size(20, 16);
-            this.labelVehicleTypeID.TabIndex = 76;
-            this.labelVehicleTypeID.Text = "ID";
-            this.labelVehicleTypeID.Visible = false;
             // 
             // picClose
             // 
@@ -170,6 +154,22 @@
             this.picClose.Size = new System.Drawing.Size(38, 45);
             this.picClose.TabIndex = 17;
             this.picClose.Click += new System.EventHandler(this.picClose_Click);
+            // 
+            // guna2BorderlessForm1
+            // 
+            this.guna2BorderlessForm1.ContainerControl = this;
+            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            // 
+            // labelVehicleTypeID
+            // 
+            this.labelVehicleTypeID.AutoSize = true;
+            this.labelVehicleTypeID.Location = new System.Drawing.Point(48, 156);
+            this.labelVehicleTypeID.Name = "labelVehicleTypeID";
+            this.labelVehicleTypeID.Size = new System.Drawing.Size(20, 16);
+            this.labelVehicleTypeID.TabIndex = 76;
+            this.labelVehicleTypeID.Text = "ID";
+            this.labelVehicleTypeID.Visible = false;
             // 
             // VehicleTypeModule
             // 

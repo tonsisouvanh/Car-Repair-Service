@@ -36,9 +36,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.picClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.labelID = new System.Windows.Forms.Label();
-            this.picClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,11 +61,11 @@
             // 
             // txtPartTypeName
             // 
-            this.txtPartTypeName.Font = new System.Drawing.Font("Phetsarath OT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPartTypeName.Font = new System.Drawing.Font("Defago Noto Sans", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPartTypeName.Location = new System.Drawing.Point(168, 86);
             this.txtPartTypeName.Margin = new System.Windows.Forms.Padding(4);
             this.txtPartTypeName.Name = "txtPartTypeName";
-            this.txtPartTypeName.Size = new System.Drawing.Size(508, 35);
+            this.txtPartTypeName.Size = new System.Drawing.Size(508, 37);
             this.txtPartTypeName.TabIndex = 64;
             // 
             // btnCancel
@@ -105,23 +105,23 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Noto Sans Lao", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(45, 84);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 33);
+            this.label3.Size = new System.Drawing.Size(67, 33);
             this.label3.TabIndex = 68;
             this.label3.Text = "ປະເພດ";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Noto Sans Lao", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Defago Noto Sans", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(4, 15);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(234, 38);
+            this.label1.Size = new System.Drawing.Size(224, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "ປ້ອນ / ແກ້ໄຂຂໍ່ມູນປະເພດ";
             // 
@@ -136,22 +136,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(706, 62);
             this.panel1.TabIndex = 63;
-            // 
-            // guna2BorderlessForm1
-            // 
-            this.guna2BorderlessForm1.ContainerControl = this;
-            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2BorderlessForm1.TransparentWhileDrag = true;
-            // 
-            // labelID
-            // 
-            this.labelID.AutoSize = true;
-            this.labelID.Location = new System.Drawing.Point(48, 146);
-            this.labelID.Name = "labelID";
-            this.labelID.Size = new System.Drawing.Size(20, 16);
-            this.labelID.TabIndex = 69;
-            this.labelID.Text = "ID";
-            this.labelID.Visible = false;
             // 
             // picClose
             // 
@@ -170,6 +154,22 @@
             this.picClose.Size = new System.Drawing.Size(38, 45);
             this.picClose.TabIndex = 14;
             this.picClose.Click += new System.EventHandler(this.picClose_Click);
+            // 
+            // guna2BorderlessForm1
+            // 
+            this.guna2BorderlessForm1.ContainerControl = this;
+            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            // 
+            // labelID
+            // 
+            this.labelID.AutoSize = true;
+            this.labelID.Location = new System.Drawing.Point(48, 146);
+            this.labelID.Name = "labelID";
+            this.labelID.Size = new System.Drawing.Size(20, 16);
+            this.labelID.TabIndex = 69;
+            this.labelID.Text = "ID";
+            this.labelID.Visible = false;
             // 
             // SparePartTypeModule
             // 

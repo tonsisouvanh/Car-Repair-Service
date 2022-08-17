@@ -23,8 +23,9 @@ namespace CarServiceManagement
             {
                 DataRow row = data.Rows[0];
 
-                labelStart.Text = row["oilchange_date"].ToString().Split(' ')[0];
-                labelEnd.Text = row["required_oilchange_date"].ToString().Split(' ')[0];
+                dtpStart.Text = row["oilchange_date"].ToString().Split(' ')[0];
+                dtpEnd.Text = row["required_oilchange_date"].ToString().Split(' ')[0];
+
             }
         }
         private void guna2ImageButton1_Click(object sender, EventArgs e)

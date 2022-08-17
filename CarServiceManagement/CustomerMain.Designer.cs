@@ -31,23 +31,23 @@
             this.components = new System.ComponentModel.Container();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2PanelSidebar = new Guna.UI2.WinForms.Guna2Panel();
+            this.labelTimer = new System.Windows.Forms.Label();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.sidebar_vehicles = new Guna.UI2.WinForms.Guna2Button();
             this.sidebar_customers = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PanelLogo = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PanelTitle = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.PanelMain = new Guna.UI2.WinForms.Guna2Panel();
             this.picMinimize = new Guna.UI2.WinForms.Guna2ImageButton();
             this.ImageButtonMaximize = new Guna.UI2.WinForms.Guna2ImageButton();
             this.ImageButtonClose = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.labelTimer = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.PanelMain = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PanelSidebar.SuspendLayout();
             this.guna2PanelLogo.SuspendLayout();
-            this.guna2PanelTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.guna2PanelTitle.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -75,8 +75,20 @@
             this.guna2PanelSidebar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2PanelSidebar.Name = "guna2PanelSidebar";
             this.guna2PanelSidebar.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.guna2PanelSidebar.Size = new System.Drawing.Size(235, 856);
+            this.guna2PanelSidebar.Size = new System.Drawing.Size(235, 956);
             this.guna2PanelSidebar.TabIndex = 5;
+            // 
+            // labelTimer
+            // 
+            this.labelTimer.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.labelTimer.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTimer.ForeColor = System.Drawing.Color.White;
+            this.labelTimer.Location = new System.Drawing.Point(7, 907);
+            this.labelTimer.Name = "labelTimer";
+            this.labelTimer.Size = new System.Drawing.Size(221, 43);
+            this.labelTimer.TabIndex = 11;
+            this.labelTimer.Text = "Time";
+            this.labelTimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2Button2
             // 
@@ -91,7 +103,7 @@
             this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2Button2.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.Font = new System.Drawing.Font("Noto Sans Lao", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button2.Font = new System.Drawing.Font("Defago Noto Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.Location = new System.Drawing.Point(7, 363);
             this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -115,7 +127,7 @@
             this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Noto Sans Lao", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.Font = new System.Drawing.Font("Defago Noto Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.Location = new System.Drawing.Point(7, 317);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -139,7 +151,7 @@
             this.sidebar_vehicles.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.sidebar_vehicles.Dock = System.Windows.Forms.DockStyle.Top;
             this.sidebar_vehicles.FillColor = System.Drawing.Color.Transparent;
-            this.sidebar_vehicles.Font = new System.Drawing.Font("Noto Sans Lao", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sidebar_vehicles.Font = new System.Drawing.Font("Defago Noto Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sidebar_vehicles.ForeColor = System.Drawing.Color.White;
             this.sidebar_vehicles.Location = new System.Drawing.Point(7, 271);
             this.sidebar_vehicles.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -163,7 +175,7 @@
             this.sidebar_customers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.sidebar_customers.Dock = System.Windows.Forms.DockStyle.Top;
             this.sidebar_customers.FillColor = System.Drawing.Color.Transparent;
-            this.sidebar_customers.Font = new System.Drawing.Font("Noto Sans Lao", 13.8F);
+            this.sidebar_customers.Font = new System.Drawing.Font("Defago Noto Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sidebar_customers.ForeColor = System.Drawing.Color.White;
             this.sidebar_customers.Location = new System.Drawing.Point(7, 225);
             this.sidebar_customers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -189,6 +201,20 @@
             this.guna2PanelLogo.Size = new System.Drawing.Size(221, 219);
             this.guna2PanelLogo.TabIndex = 0;
             // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2PictureBox1.Image = global::CarServiceManagement.Properties.Resources.customer;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(29, 30);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(163, 159);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
+            // 
             // guna2PanelTitle
             // 
             this.guna2PanelTitle.BorderColor = System.Drawing.Color.White;
@@ -207,31 +233,6 @@
             this.guna2PanelTitle.Name = "guna2PanelTitle";
             this.guna2PanelTitle.Size = new System.Drawing.Size(1157, 62);
             this.guna2PanelTitle.TabIndex = 6;
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitle.Font = new System.Drawing.Font("Noto Sans Lao", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(0, 0);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(1157, 62);
-            this.lblTitle.TabIndex = 2;
-            this.lblTitle.Text = "ຫົວຂໍ້";
-            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // PanelMain
-            // 
-            this.PanelMain.BorderColor = System.Drawing.Color.Transparent;
-            this.PanelMain.CustomBorderColor = System.Drawing.Color.White;
-            this.PanelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelMain.Location = new System.Drawing.Point(235, 62);
-            this.PanelMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.PanelMain.Name = "PanelMain";
-            this.PanelMain.Padding = new System.Windows.Forms.Padding(0, 0, 1, 0);
-            this.PanelMain.Size = new System.Drawing.Size(1157, 794);
-            this.PanelMain.TabIndex = 7;
             // 
             // picMinimize
             // 
@@ -287,37 +288,36 @@
             this.ImageButtonClose.TabIndex = 8;
             this.ImageButtonClose.Click += new System.EventHandler(this.ImageButtonClose_Click);
             // 
-            // guna2PictureBox1
+            // lblTitle
             // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2PictureBox1.Image = global::CarServiceManagement.Properties.Resources.customer;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(29, 30);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(163, 159);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
+            this.lblTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitle.Font = new System.Drawing.Font("Defago Noto Sans", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(0, 0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(1157, 62);
+            this.lblTitle.TabIndex = 2;
+            this.lblTitle.Text = "ຫົວຂໍ້";
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelTimer
+            // PanelMain
             // 
-            this.labelTimer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.labelTimer.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTimer.ForeColor = System.Drawing.Color.White;
-            this.labelTimer.Location = new System.Drawing.Point(7, 807);
-            this.labelTimer.Name = "labelTimer";
-            this.labelTimer.Size = new System.Drawing.Size(221, 43);
-            this.labelTimer.TabIndex = 11;
-            this.labelTimer.Text = "Time";
-            this.labelTimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.PanelMain.BorderColor = System.Drawing.Color.Transparent;
+            this.PanelMain.CustomBorderColor = System.Drawing.Color.White;
+            this.PanelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelMain.Location = new System.Drawing.Point(235, 62);
+            this.PanelMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PanelMain.Name = "PanelMain";
+            this.PanelMain.Padding = new System.Windows.Forms.Padding(0, 0, 1, 0);
+            this.PanelMain.Size = new System.Drawing.Size(1157, 894);
+            this.PanelMain.TabIndex = 7;
             // 
             // CustomerMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1392, 856);
+            this.ClientSize = new System.Drawing.Size(1392, 956);
             this.Controls.Add(this.PanelMain);
             this.Controls.Add(this.guna2PanelTitle);
             this.Controls.Add(this.guna2PanelSidebar);
@@ -327,8 +327,8 @@
             this.Text = "CustomerMain";
             this.guna2PanelSidebar.ResumeLayout(false);
             this.guna2PanelLogo.ResumeLayout(false);
-            this.guna2PanelTitle.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.guna2PanelTitle.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

@@ -1,12 +1,6 @@
 ﻿using CarServiceManagement.DAO;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CarServiceManagement
@@ -92,13 +86,19 @@ namespace CarServiceManagement
                 Load_Customers();
 
             }
-            else if(colName == "addcar")
+            else if (colName == "addcar")
             {
-                Vehicles v = new Vehicles();
-                VehicleModule vm = new VehicleModule(v);
-                vm.txtCustInfo.Text = gunaDtgvCustomers.Rows[e.RowIndex].Cells["phone"].FormattedValue.ToString();
-                vm.ShowDialog();
+                int id = Convert.ToInt32(gunaDtgvCustomers.Rows[e.RowIndex].Cells["customerID"].FormattedValue.ToString());
+                VehicleDetail v = new VehicleDetail(id);
+                v.ShowDialog();
             }
+            //else if(colName == "addcar")
+            //{
+            //    Vehicles v = new Vehicles();
+            //    VehicleModule vm = new VehicleModule(v);
+            //    vm.txtCustInfo.Text = gunaDtgvCustomers.Rows[e.RowIndex].Cells["phone"].FormattedValue.ToString();
+            //    vm.ShowDialog();
+            //}
         }
 
     }
