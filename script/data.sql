@@ -1,7 +1,7 @@
 ﻿use GarageServiceDB
 go
 
-INSERT INTO Account(username,password,name) VALUES ('tonadmin','12345678',N'Tons');
+INSERT INTO Account(username,password,name) VALUES ('admin','admin',N'Tons');
 -- @@@@@@@@@@@@@@@@@@@ INSERT DATA @@@@@@@@@@@@@@@@@@@ --
 INSERT INTO Provinces(name) VALUES (N'ອັດຕະປື');
 INSERT INTO Provinces(name) VALUES (N'ບໍ່ແກ້ວ');

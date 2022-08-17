@@ -85,8 +85,6 @@ namespace CarServiceManagement
                 {
                     try
                     {
-
-
                         string query = "exec sp_DeletePartImportBillDetail @importbilldetailID , @partID , @importBillID , @quantity , @subtotal";
 
                         int result = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { id, partid, billid, qty, subtotal });

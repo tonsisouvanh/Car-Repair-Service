@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using CarServiceManagement.DAO;
+﻿using CarServiceManagement.DAO;
 using Microsoft.Reporting.WinForms;
+using System;
+using System.Data;
+using System.Windows.Forms;
 
 namespace CarServiceManagement
 {
@@ -33,12 +27,16 @@ namespace CarServiceManagement
             ReportDataSource reportDataSource;
             try
             {
+                //string currPath = System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
                 this.reportViewer1.LocalReport.ReportPath = Application.StartupPath + @"\Reports\rptPartImportBill.rdlc";
+                //this.reportViewer1.LocalReport.ReportPath = currPath + @"\rptPartImportBill.rdlc";
+
+
                 this.reportViewer1.LocalReport.DataSources.Clear();
                 int id = Convert.ToInt32(partImportBillDetail.labelBillNumber.Text.ToString());
                 DataSet1 ds = new DataSet1();
                 DataTable data = DataProvider.Instance.ExecuteQuery("select p.partID,p.name,p.price,p.cal_unit,p.stock as qty_in_stcok,bdt.quantity as qty_imported,bdt.subtotal " +
-                    "from PartImportBillDetail bdt inner join Part p on bdt.partID = p.partID where importbillID = " + id) ;
+                    "from PartImportBillDetail bdt inner join Part p on bdt.partID = p.partID where importbillID = " + id);
 
 
 
@@ -65,6 +63,6 @@ namespace CarServiceManagement
             {
                 MessageBox.Show(ex.Message);
             }
-        } 
+        }
     }
 }

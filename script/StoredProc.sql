@@ -371,137 +371,7 @@ BEGIN
 
 END;
 go
---test
---select * from Part
---select dbo.fn_CalPrice(10,100)
 
-
-
---if(OBJECT_ID('trg_onPartImportBillDetail') is not null)
---	drop trigger trg_onPartImportBillDetail
---go
---create trigger trg_onPartImportBillDetail on PartImportBillDetail
---for insert,update,delete
---As
---Begin
---	DECLARE @Action as char(1);
---	DECLARE @importbillID as int;
---	DECLARE @quantity as int;
---	DECLARE @partID as int;
---	DECLARE @subtotal as money;
---	DECLARE @currqty as int;
-
-
-
---    SET @Action = (CASE WHEN EXISTS(SELECT * FROM INSERTED)
---                         AND EXISTS(SELECT * FROM DELETED)
---                        THEN 'U'  -- Set Action to Updated.
---                        WHEN EXISTS(SELECT * FROM INSERTED)
---                        THEN 'I'  -- Set Action to Insert.
---                        WHEN EXISTS(SELECT * FROM DELETED)
---                        THEN 'D'  -- Set Action to Deleted.
---                        ELSE NULL -- Skip. It may have been a "failed delete".   
---                    END)
-
-	
-
-
---	IF @Action = 'I' or @Action = 'U'
---	BEGIN
---		IF exists (select importbillID from inserted)
---		BEGIN
---			print 'Insert tran running'
---			select @importbillID = importbillID,@quantity = quantity,@partID = partID,@subtotal = subtotal from inserted;
---			select @currqty = quantity from PartImportBillDetail where partID = @partID and importbillID = @importbillID;
-			
---			--handle bill total
---			update PartImportBill
---			set total = total + dbo.fn_CalPrice(@quantity,@partID)
---			--set total = total + @subtotal
---			where importbillID = @importbillID;
-
-
---			--handle part stock
---			update Part
---			set stock = stock + @quantity
---			where partID = @partID;
-
---		END
---	END
---	--IF @Action = 'U'
---	--BEGIN
---	--	IF exists (select importbillID from inserted)
---	--	BEGIN
---	--		print 'udate tran running'
---	--		select @importbillID = importbillID,@quantity = quantity,@partID = partID,@subtotal = subtotal from inserted;
---	--		--select @currqty = quantity from PartImportBillDetail where partID = @partID and importbillID = @importbillID;
---	--		select @currqty = quantity from PartImportBillDetail where importbilldetailID = 107;
---	--		select quantity from PartImportBillDetail where importbilldetailID = 107;
-
---	--		print 'here' + cast(@partID as varchar) + ' - curren = ' + cast(@currqty as varchar) + ' - quantity = '+ cast(@quantity as varchar)
---	--		--Increase
---	--		IF @quantity > @currqty
---	--		BEGIN
---	--			print 'Increase';
---	--			--handle bill total
---	--			update PartImportBill
---	--			set total = total + dbo.fn_CalPrice(@quantity - @currqty,@partID)
---	--			where importbillID = @importbillID;
-
-
---	--			--handle part stock
---	--			update Part
---	--			set stock = stock + (@quantity - @currqty)
---	--			where partID = @partID;
---	--		END
---	--		--Decrease
---	--		IF @quantity < @currqty
---	--		BEGIN
---	--			print 'deacrease';
---	--			--handle bill total
---	--			update PartImportBill
---	--			set total = total - dbo.fn_CalPrice(@currqty - @quantity,@partID)
---	--			where importbillID = @importbillID;
-
-
---	--			--handle part stock
---	--			update Part
---	--			set stock = stock - (@currqty - @quantity)
---	--			where partID = @partID;
---	--		END
---	--	END
---	--END
---	IF @Action = 'D'
---	BEGIN
---		IF exists (select importbillID from deleted)
---		BEGIN
---			select @importbillID = importbillID,@quantity = quantity,@partID = partID,@subtotal = subtotal from deleted;
---			--select @currqty = quantity from PartImportBillDetail where partID = @partID and importbillID = @importbillID;
-
---				--handle bill total
---				update PartImportBill
---				set total = total - dbo.fn_CalPrice(@quantity,@partID)
---				where importbillID = @importbillID;
-
-
---				--handle part stock
---				update Part
---				set stock = stock - @quantity
---				where partID = @partID;
---		END
---	END
-
---End
---go
-
-
---begin tran
---update PartImportBillDetail
---set quantity = 1 where importbilldetailID = 107
-
-
---rollback tran
---commit tran
 
 if(OBJECT_ID('sp_AddPartImportBillDetail') is not null)
 	drop proc sp_AddPartImportBillDetail
@@ -564,22 +434,16 @@ GO
 
 
 
-
-
-
-
-
-
 if(OBJECT_ID('sp_DeletePartImportBillDetail') is not null)
 	drop proc sp_DeletePartImportBillDetail
 go
 create procedure sp_DeletePartImportBillDetail
-	@repairbilldetailID int,@partID int, @repairbillID int, @quantity int, @subtotal money
+	@importbilldetailID int,@partID int, @importBillID int, @quantity int, @subtotal money
 as
 begin
 	
-	DELETE RepairBillDetail
-	WHERE repairbilldetailID = @repairbilldetailID
+	DELETE PartImportBillDetail
+	WHERE importbilldetailID = @importbilldetailID
 
 	IF(@@ROWCOUNT > 0)
 	BEGIN
@@ -587,7 +451,7 @@ begin
 		update PartImportBill
 		set total = total - @subtotal
 		--set total = total + @subtotal
-		where importbillID = @repairbillID;
+		where importbillID = @importBillID;
 
 
 		--handle part stock
