@@ -44,8 +44,8 @@ namespace CarServiceManagement
         private void ImageButtonClose_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            MainMenu f = new MainMenu();
-            f.ShowDialog();
+            //MainMenu f = new MainMenu();
+            //f.ShowDialog();
         }
 
         private void ImageButtonMaximize_Click(object sender, EventArgs e)

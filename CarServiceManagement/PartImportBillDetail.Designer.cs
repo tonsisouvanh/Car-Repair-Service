@@ -63,21 +63,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnAddNewPart = new Guna.UI2.WinForms.Guna2Button();
             this.label5 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.gunaDtgvParts = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.partIDs = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.part_price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.add = new System.Windows.Forms.DataGridViewImageColumn();
             this.gunaDtgvPartImportBillDetail = new Guna.UI2.WinForms.Guna2DataGridView();
             this.importbilldetailID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.partID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.importbillID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.import_prices = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cal_unit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -86,6 +82,13 @@
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.partIDs = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.part_price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.import_price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.add = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -112,9 +115,9 @@
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(3, 2);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1374, 62);
+            this.panel2.Size = new System.Drawing.Size(1474, 62);
             this.panel2.TabIndex = 6;
             // 
             // picMinimize
@@ -127,7 +130,7 @@
             this.picMinimize.ImageOffset = new System.Drawing.Point(0, 0);
             this.picMinimize.ImageRotate = 0F;
             this.picMinimize.ImageSize = new System.Drawing.Size(23, 23);
-            this.picMinimize.Location = new System.Drawing.Point(1276, 7);
+            this.picMinimize.Location = new System.Drawing.Point(1334, 7);
             this.picMinimize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picMinimize.Name = "picMinimize";
             this.picMinimize.PressedState.ImageSize = new System.Drawing.Size(27, 27);
@@ -147,7 +150,7 @@
             this.ImageButtonMaximize.ImageOffset = new System.Drawing.Point(0, 0);
             this.ImageButtonMaximize.ImageRotate = 0F;
             this.ImageButtonMaximize.ImageSize = new System.Drawing.Size(23, 23);
-            this.ImageButtonMaximize.Location = new System.Drawing.Point(1232, 7);
+            this.ImageButtonMaximize.Location = new System.Drawing.Point(1383, 7);
             this.ImageButtonMaximize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ImageButtonMaximize.Name = "ImageButtonMaximize";
             this.ImageButtonMaximize.PressedState.ImageSize = new System.Drawing.Size(27, 27);
@@ -166,7 +169,7 @@
             this.ImageButtonClose.ImageOffset = new System.Drawing.Point(0, 0);
             this.ImageButtonClose.ImageRotate = 0F;
             this.ImageButtonClose.ImageSize = new System.Drawing.Size(23, 23);
-            this.ImageButtonClose.Location = new System.Drawing.Point(1326, 7);
+            this.ImageButtonClose.Location = new System.Drawing.Point(1426, 7);
             this.ImageButtonClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ImageButtonClose.Name = "ImageButtonClose";
             this.ImageButtonClose.PressedState.ImageSize = new System.Drawing.Size(27, 27);
@@ -182,7 +185,7 @@
             this.lblUsername.Location = new System.Drawing.Point(75, 7);
             this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(136, 36);
+            this.lblUsername.Size = new System.Drawing.Size(178, 46);
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "ລາຍລະອຽດບິນ";
             // 
@@ -190,7 +193,7 @@
             // 
             this.pictureBox1.Image = global::CarServiceManagement.Properties.Resources.billdetail;
             this.pictureBox1.Location = new System.Drawing.Point(20, 7);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(47, 43);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -210,7 +213,7 @@
             this.dtpCreatedDate.ForeColor = System.Drawing.Color.White;
             this.dtpCreatedDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpCreatedDate.Location = new System.Drawing.Point(555, 71);
-            this.dtpCreatedDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpCreatedDate.Margin = new System.Windows.Forms.Padding(4);
             this.dtpCreatedDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpCreatedDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpCreatedDate.Name = "dtpCreatedDate";
@@ -223,10 +226,10 @@
             this.labelBillNumber.AutoSize = true;
             this.labelBillNumber.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelBillNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
-            this.labelBillNumber.Location = new System.Drawing.Point(104, 17);
+            this.labelBillNumber.Location = new System.Drawing.Point(104, 15);
             this.labelBillNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelBillNumber.Name = "labelBillNumber";
-            this.labelBillNumber.Size = new System.Drawing.Size(20, 23);
+            this.labelBillNumber.Size = new System.Drawing.Size(25, 29);
             this.labelBillNumber.TabIndex = 16;
             this.labelBillNumber.Text = "0";
             // 
@@ -237,7 +240,7 @@
             this.label9.Location = new System.Drawing.Point(16, 14);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(57, 26);
+            this.label9.Size = new System.Drawing.Size(74, 33);
             this.label9.TabIndex = 15;
             this.label9.Text = "ເລກບິນ:";
             // 
@@ -248,7 +251,7 @@
             this.label8.Location = new System.Drawing.Point(313, 71);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(30, 26);
+            this.label8.Size = new System.Drawing.Size(39, 33);
             this.label8.TabIndex = 14;
             this.label8.Text = "ກີບ";
             // 
@@ -257,10 +260,10 @@
             this.labelTotal.AutoSize = true;
             this.labelTotal.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
-            this.labelTotal.Location = new System.Drawing.Point(169, 76);
+            this.labelTotal.Location = new System.Drawing.Point(169, 74);
             this.labelTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTotal.Name = "labelTotal";
-            this.labelTotal.Size = new System.Drawing.Size(20, 23);
+            this.labelTotal.Size = new System.Drawing.Size(25, 29);
             this.labelTotal.TabIndex = 11;
             this.labelTotal.Text = "0";
             // 
@@ -271,7 +274,7 @@
             this.label1.Location = new System.Drawing.Point(16, 71);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 26);
+            this.label1.Size = new System.Drawing.Size(133, 33);
             this.label1.TabIndex = 10;
             this.label1.Text = "ລວມເງິນທັງໝົດ:";
             // 
@@ -282,7 +285,7 @@
             this.labelBillStatus.Location = new System.Drawing.Point(557, 14);
             this.labelBillStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelBillStatus.Name = "labelBillStatus";
-            this.labelBillStatus.Size = new System.Drawing.Size(24, 26);
+            this.labelBillStatus.Size = new System.Drawing.Size(30, 33);
             this.labelBillStatus.TabIndex = 8;
             this.labelBillStatus.Text = "...";
             // 
@@ -293,7 +296,7 @@
             this.label4.Location = new System.Drawing.Point(444, 14);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 26);
+            this.label4.Size = new System.Drawing.Size(100, 33);
             this.label4.TabIndex = 7;
             this.label4.Text = "ສະຖານະບິນ:";
             // 
@@ -304,7 +307,7 @@
             this.label2.Location = new System.Drawing.Point(444, 71);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 26);
+            this.label2.Size = new System.Drawing.Size(101, 33);
             this.label2.TabIndex = 2;
             this.label2.Text = "ວັນຂຽນບິນ:";
             // 
@@ -312,10 +315,10 @@
             // 
             this.guna2PanelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2PanelBottom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
-            this.guna2PanelBottom.Location = new System.Drawing.Point(3, 640);
-            this.guna2PanelBottom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PanelBottom.Location = new System.Drawing.Point(3, 740);
+            this.guna2PanelBottom.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PanelBottom.Name = "guna2PanelBottom";
-            this.guna2PanelBottom.Size = new System.Drawing.Size(1374, 58);
+            this.guna2PanelBottom.Size = new System.Drawing.Size(1474, 58);
             this.guna2PanelBottom.TabIndex = 14;
             // 
             // btnPrint
@@ -330,7 +333,7 @@
             this.btnPrint.ImageRotate = 0F;
             this.btnPrint.ImageSize = new System.Drawing.Size(35, 35);
             this.btnPrint.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnPrint.Location = new System.Drawing.Point(1315, 71);
+            this.btnPrint.Location = new System.Drawing.Point(1415, 71);
             this.btnPrint.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.PressedState.ImageSize = new System.Drawing.Size(0, 0);
@@ -356,7 +359,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(3, 64);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1374, 127);
+            this.guna2Panel1.Size = new System.Drawing.Size(1474, 127);
             this.guna2Panel1.TabIndex = 58;
             // 
             // labelSupplier
@@ -366,7 +369,7 @@
             this.labelSupplier.Location = new System.Drawing.Point(997, 57);
             this.labelSupplier.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSupplier.Name = "labelSupplier";
-            this.labelSupplier.Size = new System.Drawing.Size(51, 15);
+            this.labelSupplier.Size = new System.Drawing.Size(59, 18);
             this.labelSupplier.TabIndex = 18;
             this.labelSupplier.Text = "supplier";
             this.labelSupplier.Visible = false;
@@ -378,7 +381,7 @@
             this.labelPayment.Location = new System.Drawing.Point(997, 16);
             this.labelPayment.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPayment.Name = "labelPayment";
-            this.labelPayment.Size = new System.Drawing.Size(54, 15);
+            this.labelPayment.Size = new System.Drawing.Size(64, 18);
             this.labelPayment.TabIndex = 17;
             this.labelPayment.Text = "payment";
             this.labelPayment.Visible = false;
@@ -389,9 +392,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Defago Noto Sans", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(886, 11);
+            this.label3.Location = new System.Drawing.Point(895, 13);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 30);
+            this.label3.Size = new System.Drawing.Size(114, 36);
             this.label3.TabIndex = 20;
             this.label3.Text = "ຄົ້ນຫາອາໄຫຼ່:";
             // 
@@ -409,19 +412,20 @@
             this.txtSearch.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.ForeColor = System.Drawing.Color.Black;
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.Location = new System.Drawing.Point(1014, 7);
+            this.txtSearch.Location = new System.Drawing.Point(1018, 10);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
             this.txtSearch.PlaceholderText = "ພິມຊື່ອາໄຫຼ່";
             this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(349, 43);
+            this.txtSearch.Size = new System.Drawing.Size(267, 40);
             this.txtSearch.TabIndex = 19;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // guna2Panel2
             // 
             this.guna2Panel2.BorderColor = System.Drawing.Color.DimGray;
+            this.guna2Panel2.Controls.Add(this.btnAddNewPart);
             this.guna2Panel2.Controls.Add(this.label5);
             this.guna2Panel2.Controls.Add(this.label3);
             this.guna2Panel2.Controls.Add(this.txtSearch);
@@ -431,26 +435,44 @@
             this.guna2Panel2.Location = new System.Drawing.Point(3, 191);
             this.guna2Panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1374, 58);
+            this.guna2Panel2.Size = new System.Drawing.Size(1474, 58);
             this.guna2Panel2.TabIndex = 59;
+            // 
+            // btnAddNewPart
+            // 
+            this.btnAddNewPart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddNewPart.Animated = true;
+            this.btnAddNewPart.BorderRadius = 5;
+            this.btnAddNewPart.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddNewPart.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddNewPart.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddNewPart.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddNewPart.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddNewPart.Font = new System.Drawing.Font("Defago Noto Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddNewPart.ForeColor = System.Drawing.Color.White;
+            this.btnAddNewPart.Location = new System.Drawing.Point(1318, 10);
+            this.btnAddNewPart.Name = "btnAddNewPart";
+            this.btnAddNewPart.Size = new System.Drawing.Size(146, 40);
+            this.btnAddNewPart.TabIndex = 22;
+            this.btnAddNewPart.Text = "ເພີ່ມອາໄຫຼ່ໃໝ່";
+            this.btnAddNewPart.Click += new System.EventHandler(this.btnAddNewPart_Click);
             // 
             // label5
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Defago Noto Sans", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(3, 11);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(133, 30);
+            this.label5.Size = new System.Drawing.Size(175, 36);
             this.label5.TabIndex = 21;
             this.label5.Text = "ລາຍການເຄື່ອງໃນບິນ";
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
             this.tableLayoutPanel2.Controls.Add(this.gunaDtgvParts, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.gunaDtgvPartImportBillDetail, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -459,7 +481,7 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1374, 391);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1474, 491);
             this.tableLayoutPanel2.TabIndex = 67;
             // 
             // gunaDtgvParts
@@ -491,6 +513,7 @@
             this.partIDs,
             this.dataGridViewTextBoxColumn2,
             this.part_price,
+            this.import_price,
             this.dataGridViewTextBoxColumn4,
             this.stock,
             this.add});
@@ -505,7 +528,7 @@
             this.gunaDtgvParts.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaDtgvParts.EnableHeadersVisualStyles = false;
             this.gunaDtgvParts.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDtgvParts.Location = new System.Drawing.Point(827, 2);
+            this.gunaDtgvParts.Location = new System.Drawing.Point(813, 2);
             this.gunaDtgvParts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaDtgvParts.Name = "gunaDtgvParts";
             this.gunaDtgvParts.ReadOnly = true;
@@ -526,7 +549,7 @@
             this.gunaDtgvParts.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.gunaDtgvParts.RowTemplate.Height = 33;
             this.gunaDtgvParts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDtgvParts.Size = new System.Drawing.Size(544, 387);
+            this.gunaDtgvParts.Size = new System.Drawing.Size(658, 487);
             this.gunaDtgvParts.TabIndex = 52;
             this.gunaDtgvParts.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.gunaDtgvParts.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -550,70 +573,6 @@
             this.gunaDtgvParts.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDtgvParts.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.gunaDtgvParts.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gunaDtgvParts_CellContentClick);
-            // 
-            // partIDs
-            // 
-            this.partIDs.DataPropertyName = "partIDs";
-            this.partIDs.HeaderText = "partID";
-            this.partIDs.MinimumWidth = 6;
-            this.partIDs.Name = "partIDs";
-            this.partIDs.ReadOnly = true;
-            this.partIDs.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.partIDs.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "name";
-            this.dataGridViewTextBoxColumn2.HeaderText = "ອາໄຫຼ່";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // part_price
-            // 
-            this.part_price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.part_price.DataPropertyName = "part_price";
-            this.part_price.HeaderText = "ລາຄາ";
-            this.part_price.MinimumWidth = 6;
-            this.part_price.Name = "part_price";
-            this.part_price.ReadOnly = true;
-            this.part_price.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.part_price.Width = 73;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "cal_unit";
-            this.dataGridViewTextBoxColumn4.HeaderText = "ໜ່ວຍວັດ";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewTextBoxColumn4.Width = 98;
-            // 
-            // stock
-            // 
-            this.stock.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.stock.DataPropertyName = "stock";
-            this.stock.HeaderText = "ຈ/ນໃນສາງ";
-            this.stock.MinimumWidth = 6;
-            this.stock.Name = "stock";
-            this.stock.ReadOnly = true;
-            this.stock.Width = 107;
-            // 
-            // add
-            // 
-            this.add.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.add.HeaderText = "";
-            this.add.Image = global::CarServiceManagement.Properties.Resources.plus_green;
-            this.add.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.add.MinimumWidth = 6;
-            this.add.Name = "add";
-            this.add.ReadOnly = true;
-            this.add.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.add.Width = 6;
             // 
             // gunaDtgvPartImportBillDetail
             // 
@@ -646,6 +605,7 @@
             this.importbillID,
             this.name,
             this.price,
+            this.import_prices,
             this.quantity,
             this.cal_unit,
             this.subtotal,
@@ -684,7 +644,7 @@
             this.gunaDtgvPartImportBillDetail.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.gunaDtgvPartImportBillDetail.RowTemplate.Height = 33;
             this.gunaDtgvPartImportBillDetail.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDtgvPartImportBillDetail.Size = new System.Drawing.Size(818, 387);
+            this.gunaDtgvPartImportBillDetail.Size = new System.Drawing.Size(804, 487);
             this.gunaDtgvPartImportBillDetail.TabIndex = 53;
             this.gunaDtgvPartImportBillDetail.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.gunaDtgvPartImportBillDetail.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -751,12 +711,24 @@
             // 
             this.price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.price.DataPropertyName = "price";
-            this.price.HeaderText = "ລາຄາ";
+            this.price.HeaderText = "ລາຄາຂາຍ";
             this.price.MinimumWidth = 6;
             this.price.Name = "price";
             this.price.ReadOnly = true;
             this.price.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.price.Width = 77;
+            this.price.Visible = false;
+            this.price.Width = 121;
+            // 
+            // import_prices
+            // 
+            this.import_prices.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.import_prices.DataPropertyName = "import_prices";
+            this.import_prices.HeaderText = "ລາຄາຕົ້ນທຶນ";
+            this.import_prices.MinimumWidth = 6;
+            this.import_prices.Name = "import_prices";
+            this.import_prices.ReadOnly = true;
+            this.import_prices.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.import_prices.Width = 150;
             // 
             // quantity
             // 
@@ -767,7 +739,7 @@
             this.quantity.Name = "quantity";
             this.quantity.ReadOnly = true;
             this.quantity.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.quantity.Width = 89;
+            this.quantity.Width = 111;
             // 
             // cal_unit
             // 
@@ -777,7 +749,7 @@
             this.cal_unit.MinimumWidth = 6;
             this.cal_unit.Name = "cal_unit";
             this.cal_unit.ReadOnly = true;
-            this.cal_unit.Width = 102;
+            this.cal_unit.Width = 127;
             // 
             // subtotal
             // 
@@ -787,7 +759,7 @@
             this.subtotal.MinimumWidth = 6;
             this.subtotal.Name = "subtotal";
             this.subtotal.ReadOnly = true;
-            this.subtotal.Width = 74;
+            this.subtotal.Width = 90;
             // 
             // edit
             // 
@@ -823,6 +795,7 @@
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             this.dataGridViewImageColumn1.ReadOnly = true;
             this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn1.Width = 125;
             // 
             // dataGridViewImageColumn2
             // 
@@ -834,6 +807,7 @@
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.ReadOnly = true;
             this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn2.Width = 125;
             // 
             // dataGridViewImageColumn3
             // 
@@ -845,19 +819,95 @@
             this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
             this.dataGridViewImageColumn3.ReadOnly = true;
             this.dataGridViewImageColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn3.Width = 125;
+            // 
+            // partIDs
+            // 
+            this.partIDs.DataPropertyName = "partIDs";
+            this.partIDs.HeaderText = "partID";
+            this.partIDs.MinimumWidth = 6;
+            this.partIDs.Name = "partIDs";
+            this.partIDs.ReadOnly = true;
+            this.partIDs.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.partIDs.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "name";
+            this.dataGridViewTextBoxColumn2.HeaderText = "ອາໄຫຼ່";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // part_price
+            // 
+            this.part_price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.part_price.DataPropertyName = "part_price";
+            this.part_price.HeaderText = "ລາຄາຂາຍ";
+            this.part_price.MinimumWidth = 6;
+            this.part_price.Name = "part_price";
+            this.part_price.ReadOnly = true;
+            this.part_price.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.part_price.Width = 121;
+            // 
+            // import_price
+            // 
+            this.import_price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.import_price.DataPropertyName = "import_price";
+            this.import_price.HeaderText = "ລາຄາຕົ້ນທຶນ";
+            this.import_price.MinimumWidth = 6;
+            this.import_price.Name = "import_price";
+            this.import_price.ReadOnly = true;
+            this.import_price.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.import_price.Width = 146;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "cal_unit";
+            this.dataGridViewTextBoxColumn4.HeaderText = "ໜ່ວຍວັດ";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewTextBoxColumn4.Width = 123;
+            // 
+            // stock
+            // 
+            this.stock.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.stock.DataPropertyName = "stock";
+            this.stock.HeaderText = "ຈ/ນໃນສາງ";
+            this.stock.MinimumWidth = 6;
+            this.stock.Name = "stock";
+            this.stock.ReadOnly = true;
+            this.stock.Width = 132;
+            // 
+            // add
+            // 
+            this.add.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.add.HeaderText = "";
+            this.add.Image = global::CarServiceManagement.Properties.Resources.plus_green;
+            this.add.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.add.MinimumWidth = 6;
+            this.add.Name = "add";
+            this.add.ReadOnly = true;
+            this.add.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.add.Width = 6;
             // 
             // PartImportBillDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1380, 700);
+            this.ClientSize = new System.Drawing.Size(1480, 800);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2PanelBottom);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PartImportBillDetail";
             this.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -901,30 +951,33 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private Guna.UI2.WinForms.Guna2DataGridView gunaDtgvParts;
         private Guna.UI2.WinForms.Guna2DataGridView gunaDtgvPartImportBillDetail;
-        private System.Windows.Forms.DataGridViewTextBoxColumn importbilldetailID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn partID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn importbillID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn price;
-        private System.Windows.Forms.DataGridViewTextBoxColumn quantity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cal_unit;
-        private System.Windows.Forms.DataGridViewTextBoxColumn subtotal;
-        private System.Windows.Forms.DataGridViewImageColumn edit;
-        private System.Windows.Forms.DataGridViewImageColumn delete;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         public System.Windows.Forms.Label labelSupplier;
         public System.Windows.Forms.Label labelPayment;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn partIDs;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn part_price;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn stock;
-        private System.Windows.Forms.DataGridViewImageColumn add;
         private Guna.UI2.WinForms.Guna2ImageButton picMinimize;
         private Guna.UI2.WinForms.Guna2ImageButton ImageButtonMaximize;
         private Guna.UI2.WinForms.Guna2ImageButton ImageButtonClose;
+        private Guna.UI2.WinForms.Guna2Button btnAddNewPart;
+        private System.Windows.Forms.DataGridViewTextBoxColumn importbilldetailID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn partID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn importbillID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn import_prices;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cal_unit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subtotal;
+        private System.Windows.Forms.DataGridViewImageColumn edit;
+        private System.Windows.Forms.DataGridViewImageColumn delete;
+        private System.Windows.Forms.DataGridViewTextBoxColumn partIDs;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn part_price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn import_price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn stock;
+        private System.Windows.Forms.DataGridViewImageColumn add;
     }
 }

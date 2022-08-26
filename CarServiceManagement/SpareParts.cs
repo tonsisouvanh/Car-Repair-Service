@@ -15,16 +15,19 @@ namespace CarServiceManagement
 
         public void Load_SpareParts()
         {
-            DataTable data = DataProvider.Instance.ExecuteQuery("select p.*,pt.name as type_name from PartType pt,Part p where pt.parttypeID = p.part_type " +
+            DataTable data = DataProvider.Instance.ExecuteQuery("select p.*,pt.name as type_name " +
+                "from PartType pt,Part p where pt.parttypeID = p.part_type " +
                 "and concat(p.name, pt.name, p.brand) LIKE '%" + txtPartName.Text + "%'");
             gunaDtgvParts.DataSource = data;
             gunaDtgvParts.Columns["price"].DefaultCellStyle.Format = "N0";
+            gunaDtgvParts.Columns["import_price"].DefaultCellStyle.Format = "N0";
+
         }
 
         private void ImageButtonAdd_Click(object sender, EventArgs e)
         {
-            SparePartModule sparePartModule = new SparePartModule(this);
-            sparePartModule.ShowDialog();
+            //SparePartModule sparePartModule = new SparePartModule(this);
+            //sparePartModule.ShowDialog();
         }
 
         private void gunaDtgvParts_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -71,11 +74,12 @@ namespace CarServiceManagement
                 spm.txtPartDesc.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["descriptions"].FormattedValue.ToString();
                 spm.txtCalUnit.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["cal_unit"].FormattedValue.ToString();
                 spm.txtPrice.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["price"].FormattedValue.ToString();
+                spm.txtImportPrice.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["import_price"].FormattedValue.ToString();
                 spm.txtCurrency.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["currency"].FormattedValue.ToString();
                 spm.txtBrand.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["brand"].FormattedValue.ToString();
                 spm.numberStock.Value = Convert.ToDecimal(gunaDtgvParts.Rows[e.RowIndex].Cells["stock"].FormattedValue.ToString());
                 spm.comboBoxPartType.SelectedIndex = spm.comboBoxPartType.FindStringExact(gunaDtgvParts.Rows[e.RowIndex].Cells["type_name"].FormattedValue.ToString());
-
+                spm.numberStock.Enabled = true;
                 spm.btnSave.Enabled = false;
                 spm.btnUpdate.Enabled = true;
 

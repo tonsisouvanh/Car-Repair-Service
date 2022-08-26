@@ -50,9 +50,10 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Dosis", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(314, 119);
+            this.btnUpdate.Location = new System.Drawing.Point(419, 146);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(94, 35);
+            this.btnUpdate.Size = new System.Drawing.Size(125, 43);
             this.btnUpdate.TabIndex = 66;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -61,9 +62,10 @@
             // txtPartTypeName
             // 
             this.txtPartTypeName.Font = new System.Drawing.Font("Defago Noto Sans", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPartTypeName.Location = new System.Drawing.Point(126, 70);
+            this.txtPartTypeName.Location = new System.Drawing.Point(168, 86);
+            this.txtPartTypeName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPartTypeName.Name = "txtPartTypeName";
-            this.txtPartTypeName.Size = new System.Drawing.Size(382, 31);
+            this.txtPartTypeName.Size = new System.Drawing.Size(508, 37);
             this.txtPartTypeName.TabIndex = 64;
             // 
             // btnCancel
@@ -74,9 +76,10 @@
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Dosis", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
-            this.btnCancel.Location = new System.Drawing.Point(413, 119);
+            this.btnCancel.Location = new System.Drawing.Point(551, 146);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(94, 35);
+            this.btnCancel.Size = new System.Drawing.Size(125, 43);
             this.btnCancel.TabIndex = 67;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -90,9 +93,10 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Dosis", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(214, 119);
+            this.btnSave.Location = new System.Drawing.Point(285, 146);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(94, 35);
+            this.btnSave.Size = new System.Drawing.Size(125, 43);
             this.btnSave.TabIndex = 65;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -102,9 +106,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(34, 68);
+            this.label3.Location = new System.Drawing.Point(45, 84);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 26);
+            this.label3.Size = new System.Drawing.Size(67, 33);
             this.label3.TabIndex = 68;
             this.label3.Text = "ປະເພດ";
             // 
@@ -113,9 +118,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Defago Noto Sans", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 12);
+            this.label1.Location = new System.Drawing.Point(4, 15);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(197, 32);
+            this.label1.Size = new System.Drawing.Size(224, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "ປ້ອນ / ແກ້ໄຂຂໍ່ມູນປະເພດ";
             // 
@@ -126,8 +132,9 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(530, 50);
+            this.panel1.Size = new System.Drawing.Size(707, 62);
             this.panel1.TabIndex = 63;
             // 
             // picClose
@@ -141,11 +148,11 @@
             this.picClose.ImageOffset = new System.Drawing.Point(0, 0);
             this.picClose.ImageRotate = 0F;
             this.picClose.ImageSize = new System.Drawing.Size(23, 23);
-            this.picClose.Location = new System.Drawing.Point(492, 6);
-            this.picClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picClose.Location = new System.Drawing.Point(656, 7);
+            this.picClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picClose.Name = "picClose";
             this.picClose.PressedState.ImageSize = new System.Drawing.Size(27, 27);
-            this.picClose.Size = new System.Drawing.Size(28, 37);
+            this.picClose.Size = new System.Drawing.Size(37, 46);
             this.picClose.TabIndex = 14;
             this.picClose.Click += new System.EventHandler(this.picClose_Click);
             // 
@@ -158,19 +165,18 @@
             // labelID
             // 
             this.labelID.AutoSize = true;
-            this.labelID.Location = new System.Drawing.Point(36, 119);
-            this.labelID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelID.Location = new System.Drawing.Point(48, 146);
             this.labelID.Name = "labelID";
-            this.labelID.Size = new System.Drawing.Size(18, 13);
+            this.labelID.Size = new System.Drawing.Size(20, 16);
             this.labelID.TabIndex = 69;
             this.labelID.Text = "ID";
             this.labelID.Visible = false;
             // 
             // SparePartTypeModule
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(530, 169);
+            this.ClientSize = new System.Drawing.Size(707, 208);
             this.Controls.Add(this.labelID);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);
@@ -179,7 +185,7 @@
             this.Controls.Add(this.txtPartTypeName);
             this.Controls.Add(this.btnUpdate);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "SparePartTypeModule";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SparePartTypeModule";

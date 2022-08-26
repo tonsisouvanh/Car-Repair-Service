@@ -1,0 +1,8 @@
++ Check is valid number
+	   private bool isNumber(string inputData)
+        {
+            if (Regex.IsMatch(inputData, @"^\d+$"))
+                return true;
+            return false;
+        }
++

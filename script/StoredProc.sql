@@ -1,6 +1,57 @@
 ﻿use GarageServiceDB
 go
 
+
+if(OBJECT_ID('fn_CalImportPrice') is not null)
+	drop function fn_CalImportPrice
+go
+CREATE FUNCTION fn_CalImportPrice
+(@quantity int, @partID int)
+RETURNS money
+AS
+BEGIN
+	declare @ImportPrice money;
+	declare @result money;
+	set @ImportPrice = 0;
+	set @result = 0;
+
+
+	select @ImportPrice = import_price from Part
+	where partID = @partID
+	
+	set @result = @result + (@ImportPrice * @quantity)
+
+	RETURN @result;
+
+END;
+go
+
+
+if(OBJECT_ID('fn_CalSellPrice') is not null)
+	drop function fn_CalSellPrice
+go
+CREATE FUNCTION fn_CalSellPrice
+(@quantity int, @partID int)
+RETURNS money
+AS
+BEGIN
+	declare @sellPrice money;
+	declare @result money;
+	set @sellPrice = 0;
+	set @result = 0;
+
+
+	select @sellPrice = price from Part
+	where partID = @partID
+	
+	set @result = @result + (@sellPrice * @quantity)
+
+	RETURN @result;
+
+END;
+go
+
+
 -- @@@@@@@@@@@@@@@@@@@@@@ Spare Parts @@@@@@@@@@@@@@@@@@@@@@@
 -- @@ Create Part
 if(OBJECT_ID('sp_AddPart') is not null)
@@ -8,17 +59,51 @@ if(OBJECT_ID('sp_AddPart') is not null)
 go
 create procedure sp_AddPart 
 	@name nvarchar(255), @stock int, 
-	@price money, @currency nvarchar(45), 
+	@price money,@import_price money,
 	@cal_unit nvarchar(55), @description nvarchar(255),
-	@part_type int, @brand nvarchar(150)
+	@part_type int, @brand nvarchar(150),
+	@importbillID int
 as
 begin
 
-	INSERT INTO Part(name,stock,price,currency,cal_unit,descriptions,part_type,brand)	
-	VALUES(@name, @stock,@price,@currency,@cal_unit,@description,@part_type,@brand)
+	INSERT INTO Part(name,stock,price,import_price,currency,cal_unit,descriptions,part_type,brand)	
+	VALUES(@name, @stock,@price,@import_price,N'KIP',@cal_unit,@description,@part_type,@brand)
 
+	Declare @partID int;
+	Declare @subtotal money;
+
+	IF(@@ROWCOUNT > 0)
+	BEGIN
+		set @partID = SCOPE_IDENTITY();
+		set @subtotal = dbo.fn_CalImportPrice(@stock,@partID);
+
+		--handle bill total
+		update PartImportBill
+		--set total = total + dbo.fn_CalImportPrice(@stock,@partID)
+		set total = total + @subtotal
+		where importbillID = @importbillID;
+
+
+		INSERT INTO PartImportBillDetail (partID, importbillID, quantity,import_price, subtotal)
+		VALUES(@partID, @importBillID, @stock,@import_price, @subtotal)
+
+		--UPDATE PartImportBillDetail
+		--SET quantity = quantity + @quantity, subtotal = subtotal + dbo.fn_CalImportPrice(@quantity, @partID)
+		--where importbillID = @importBillID and partID = @partID;
+
+	END
 end
 GO
+
+--select * from Part
+--select * from PartImportBillDetail
+
+--begin tran
+--exec sp_AddPart N'new item',3,200,150,N'ton',N'something',100,100,101
+--go
+
+--commit tran
+--rollback tran
 
 
 -- @@ Update Part
@@ -27,7 +112,7 @@ if(OBJECT_ID('sp_UpdatePart') is not null)
 go
 create procedure sp_UpdatePart 
 	@name nvarchar(255), @stock int, 
-	@price money, @currency nvarchar(45), 
+	@price money,@import_price money,
 	@cal_unit nvarchar(55), @description nvarchar(255),
 	@part_type int, @brand nvarchar(150), @partId int
 as
@@ -36,13 +121,12 @@ begin
 	UPDATE Part SET name = @name,
 					stock = @stock,
 					price = @price,
-					currency = @currency,
+					import_price = @import_price,
 					cal_unit = @cal_unit,
 					descriptions = @description,
 					part_type = @part_type,
 					brand = @brand
 	WHERE partID = @partId
-
 end
 GO
 
@@ -315,7 +399,6 @@ GO
 
 
 -- @@ update Bill --===================================================================
-
 if(OBJECT_ID('sp_UpdatePartImportBill') is not null)
 	drop proc sp_UpdatePartImportBill
 go
@@ -348,53 +431,26 @@ GO
 
 
 -- @@ Add Bill Detail --===================================================================
-if(OBJECT_ID('fn_CalPrice') is not null)
-	drop function fn_CalPrice
-go
-CREATE FUNCTION fn_CalPrice
-(@quantity int, @partID int)
-RETURNS money
-AS
-BEGIN
-	declare @price money;
-	declare @result money;
-	set @price = 0;
-	set @result = 0;
-
-
-	select @price = price from Part
-	where partID = @partID
-	
-	set @result = @result + (@price * @quantity)
-
-	RETURN @result;
-
-END;
-go
-
-
 if(OBJECT_ID('sp_AddPartImportBillDetail') is not null)
 	drop proc sp_AddPartImportBillDetail
 go
 create procedure sp_AddPartImportBillDetail
-	@partID int, @importBillID int, @quantity int
+	@partID int, @importBillID int, @quantity int, @import_price money
 as
 begin
-	
 	declare @subtotal money;
+	set @subtotal = @quantity * @import_price;
 
 	-- add new item
 	IF NOT EXISTS(select * from PartImportBillDetail where partID = @partID and importbillID = @importbillID)
 	BEGIN
-		set @subtotal = dbo.fn_CalPrice(@quantity,@partID);
-
-		INSERT INTO PartImportBillDetail (partID, importbillID, quantity, subtotal)
-		VALUES(@partID, @importBillID, @quantity, @subtotal)
+		INSERT INTO PartImportBillDetail (partID, importbillID, quantity,import_price, subtotal)
+		VALUES(@partID, @importBillID, @quantity,@import_price, @subtotal)
 	END
 	ELSE
 	BEGIN
 		UPDATE PartImportBillDetail
-		SET quantity = quantity + @quantity, subtotal = subtotal + dbo.fn_CalPrice(@quantity, @partID)
+		SET quantity = quantity + @quantity, subtotal = subtotal + @subtotal
 		where importbillID = @importBillID and partID = @partID;
 	END
 
@@ -402,7 +458,7 @@ begin
 	BEGIN
 		--handle bill total
 		update PartImportBill
-		set total = total + dbo.fn_CalPrice(@quantity,@partID)
+		set total = total + @subtotal
 		--set total = total + @subtotal
 		where importbillID = @importbillID;
 

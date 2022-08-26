@@ -213,31 +213,31 @@ VALUES(N'Nissan 2022',N'ຂາວ,ແດງ',101,100,N'ກຂ 9823',N'ອະທ�
 
 
 --@@ PARTS
-DECLARE @Counter INT 
-SET @Counter=1
-WHILE ( @Counter <= 10)
-BEGIN
-   INSERT INTO Part(name,stock,price,currency,cal_unit,descriptions,part_type,brand)	
-			VALUES(N'ກົງລົດ d-max 4x4', 10,20,'KIP',N'ຄູ່',N'ອະທິບາຍ',100,'Zenko')
-			SET @Counter  = @Counter  + 1
-END
+--DECLARE @Counter INT 
+--SET @Counter=1
+--WHILE ( @Counter <= 10)
+--BEGIN
+--   INSERT INTO Part(name,stock,price,import_price,currency,cal_unit,descriptions,part_type,brand)	
+--			VALUES(N'ກົງລົດ d-max 4x4', 10,20,15,'KIP',N'ຄູ່',N'ອະທິບາຍ',100,'Zenko')
+--			SET @Counter  = @Counter  + 1
+--END
 
-  INSERT INTO Part(name,stock,price,currency,cal_unit,descriptions,part_type,brand)	
-  VALUES(N'ດອກໄຟ ເກາະ 1 ຈຸດຂາວ', 10,90000,'KIP',N'ກັບ',N'',103,'');
-  INSERT INTO Part(name,stock,price,currency,cal_unit,descriptions,part_type,brand)	
-  VALUES(N'ດອກໄຟ ສຽບ ສົ້ມ', 10,250000,'KIP',N'ກັບ',N'',103,'');
-  INSERT INTO Part(name,stock,price,currency,cal_unit,descriptions,part_type,brand)	
-  VALUES(N'ດອກໄຟ HB 3', 10,880000,'KIP',N'ແພັກ',N'',103,'');
-  INSERT INTO Part(name,stock,price,currency,cal_unit,descriptions,part_type,brand)	
-  VALUES(N'ຟິວ 10,15,20,25,30', 10,200000,'KIP',N'ກັບ',N'',103,'');
+--  INSERT INTO Part(name,stock,price,import_price,currency,cal_unit,descriptions,part_type,brand)	
+--  VALUES(N'ດອກໄຟ ເກາະ 1 ຈຸດຂາວ', 10,90000,85000,'KIP',N'ກັບ',N'',103,'');
+--  INSERT INTO Part(name,stock,price,import_price,currency,cal_unit,descriptions,part_type,brand)	
+--  VALUES(N'ດອກໄຟ ສຽບ ສົ້ມ', 10,250000,230000,'KIP',N'ກັບ',N'',103,'');
+--  INSERT INTO Part(name,stock,price,import_price,currency,cal_unit,descriptions,part_type,brand)	
+--  VALUES(N'ດອກໄຟ HB 3', 10,880000,750000,'KIP',N'ແພັກ',N'',103,'');
+--  INSERT INTO Part(name,stock,price,import_price,currency,cal_unit,descriptions,part_type,brand)	
+--  VALUES(N'ຟິວ 10,15,20,25,30', 10,200000,150000,'KIP',N'ກັບ',N'',103,'');
 
---@@ Part Import Bill
-INSERT INTO PartImportBill(supplier,supplier_contact,status,payment,descriptions)
-VALUES (N'ຈິບ ອາໄຫຼ່','jip@gmail.com',N'ຍັງບໍ່ຈ່າຍ',N'ໂອນ',N'')
-INSERT INTO PartImportBill(supplier,supplier_contact,status,payment,descriptions)
-VALUES (N'ດາວວີປະດັບຍົນ','020553344291',N'ຈ່າຍແລ້ວ',N'ເງິນສົດ',N'')
-INSERT INTO PartImportBill(supplier,supplier_contact,status,payment,descriptions)
-VALUES (N'ເສັງສ້ອມແປງລົດຍົນ','seng@gmail.com',N'ຍັງບໍ່ຈ່າຍ',N'ໂອນ',N'')
+----@@ Part Import Bill
+--INSERT INTO PartImportBill(supplier,supplier_contact,status,payment,descriptions)
+--VALUES (N'ຈິບ ອາໄຫຼ່','jip@gmail.com',N'ຍັງບໍ່ຈ່າຍ',N'ໂອນ',N'')
+--INSERT INTO PartImportBill(supplier,supplier_contact,status,payment,descriptions)
+--VALUES (N'ດາວວີປະດັບຍົນ','020553344291',N'ຈ່າຍແລ້ວ',N'ເງິນສົດ',N'')
+--INSERT INTO PartImportBill(supplier,supplier_contact,status,payment,descriptions)
+--VALUES (N'ເສັງສ້ອມແປງລົດຍົນ','seng@gmail.com',N'ຍັງບໍ່ຈ່າຍ',N'ໂອນ',N'')
 
 
 --@@ Part Import Bill Detail

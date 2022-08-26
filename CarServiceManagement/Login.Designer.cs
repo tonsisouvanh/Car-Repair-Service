@@ -62,7 +62,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(949, 92);
             this.panel1.TabIndex = 47;
@@ -120,7 +120,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(99, 16);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(211, 49);
+            this.label2.Size = new System.Drawing.Size(260, 61);
             this.label2.TabIndex = 2;
             this.label2.Text = "ລວມອາໄຫຼ່ລົດຍົນ";
             // 
@@ -132,7 +132,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(320, 297);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(237, 49);
+            this.label1.Size = new System.Drawing.Size(294, 61);
             this.label1.TabIndex = 4;
             this.label1.Text = "ລ໋ອກອິນເຂົ້າສູ່ລະບົບ";
             // 
@@ -234,9 +234,9 @@
             this.labelConnectionSetting.AutoSize = true;
             this.labelConnectionSetting.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelConnectionSetting.Font = new System.Drawing.Font("Defago Noto Sans", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelConnectionSetting.Location = new System.Drawing.Point(12, 619);
+            this.labelConnectionSetting.Location = new System.Drawing.Point(15, 608);
             this.labelConnectionSetting.Name = "labelConnectionSetting";
-            this.labelConnectionSetting.Size = new System.Drawing.Size(125, 22);
+            this.labelConnectionSetting.Size = new System.Drawing.Size(161, 29);
             this.labelConnectionSetting.TabIndex = 48;
             this.labelConnectionSetting.Text = "Connection Setting";
             this.labelConnectionSetting.Click += new System.EventHandler(this.labelConnectionSetting_Click);

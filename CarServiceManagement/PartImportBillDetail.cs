@@ -38,21 +38,21 @@ namespace CarServiceManagement
 
         public void load_SpareParts()
         {
-            DataTable data = DataProvider.Instance.ExecuteQuery("select p.partID as partIDs,p.name,p.price as part_price,p.cal_unit,p.stock from Part p " +
+            DataTable data = DataProvider.Instance.ExecuteQuery("select p.partID as partIDs,p.name,p.price as part_price,p.import_price,p.cal_unit,p.stock from Part p " +
                 "where p.name like N'%" + txtSearch.Text + "%'");
             gunaDtgvParts.DataSource = data;
             gunaDtgvParts.Columns["part_price"].DefaultCellStyle.Format = "N0";
-
+            gunaDtgvParts.Columns["import_price"].DefaultCellStyle.Format = "N0";
         }
+
         public void load_ImportBillDetail()
         {
-            DataTable data = DataProvider.Instance.ExecuteQuery("select pibd.importbilldetailID, pibd.partID, pibd.importbillID, p.name, p.price, pibd.quantity,p.cal_unit, pibd.subtotal " +
+            DataTable data = DataProvider.Instance.ExecuteQuery("select pibd.importbilldetailID, pibd.partID, pibd.importbillID, p.name, p.price,pibd.import_price as import_prices, pibd.quantity,p.cal_unit, pibd.subtotal " +
                 "from PartImportBillDetail pibd inner join Part p on pibd.partID = p.partID where pibd.importbillID = " + passedID);
             gunaDtgvPartImportBillDetail.DataSource = data;
             gunaDtgvPartImportBillDetail.Columns["price"].DefaultCellStyle.Format = "N0";
             gunaDtgvPartImportBillDetail.Columns["subtotal"].DefaultCellStyle.Format = "N0";
-
-
+            gunaDtgvPartImportBillDetail.Columns["import_prices"].DefaultCellStyle.Format = "N0";
         }
 
         private void ImageButtonMaximize_Click(object sender, EventArgs e)
@@ -134,26 +134,52 @@ namespace CarServiceManagement
             }
         }
 
+
+        private void updatePrice(DataGridViewCellEventArgs e)
+        {
+            FormPriceUpdate spm = new FormPriceUpdate(this);
+
+            spm.labelID.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["partIDs"].FormattedValue.ToString();
+            spm.txtImportPrice.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["import_price"].FormattedValue.ToString();
+            spm.txtSellPrice.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["part_price"].FormattedValue.ToString();
+
+            //spm.txtPartName.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["name"].FormattedValue.ToString();
+            //spm.txtPartDesc.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["descriptions"].FormattedValue.ToString();
+            //spm.txtCalUnit.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["cal_unit"].FormattedValue.ToString();
+            //spm.txtPrice.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["price"].FormattedValue.ToString();
+            //spm.txtImportPrice.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["import_price"].FormattedValue.ToString();
+            //spm.txtCurrency.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["currency"].FormattedValue.ToString();
+            //spm.txtBrand.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["brand"].FormattedValue.ToString();
+            //spm.numberStock.Value = Convert.ToDecimal(gunaDtgvParts.Rows[e.RowIndex].Cells["stock"].FormattedValue.ToString());
+            //spm.comboBoxPartType.SelectedIndex = spm.comboBoxPartType.FindStringExact(gunaDtgvParts.Rows[e.RowIndex].Cells["type_name"].FormattedValue.ToString());
+            //spm.numberStock.Enabled = true;
+            //spm.btnSave.Enabled = false;
+            //spm.btnUpdate.Enabled = true;
+
+            spm.ShowDialog();
+        }
+
         private void gunaDtgvParts_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             string colName = gunaDtgvParts.Columns[e.ColumnIndex].Name;
 
             if (colName == "add")
             {
+                updatePrice(e);
+
                 Qty f = new Qty();
                 f.ShowDialog();
                 int qty = Convert.ToInt32(Math.Round(f.numericQty.Value, 0));
                 int billid = Convert.ToInt32(labelBillNumber.Text.ToString());
                 int partid = Convert.ToInt32(gunaDtgvParts.Rows[e.RowIndex].Cells["partIDs"].FormattedValue.ToString());
+                decimal importPrice = Convert.ToDecimal(gunaDtgvParts.Rows[e.RowIndex].Cells["import_price"].FormattedValue.ToString());
+
                 if (qty > 0)
                 {
                     try
                     {
-
-
-                        string query = "exec sp_AddPartImportBillDetail @partID , @importBillID , @quantity";
-                        int result = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { partid, billid, qty });
-
+                        string query = "exec sp_AddPartImportBillDetail @partID , @importBillID , @quantity , @import_price";
+                        int result = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { partid, billid, qty, importPrice });
 
                         if (result != 0)
                         {
@@ -171,15 +197,35 @@ namespace CarServiceManagement
                         partImportBills.Load_PartImportBill();
 
                         reloadTotal(billid);
-
-
-
                     }
                     catch (Exception ex)
                     {
                         MessageBox.Show(ex.Message);
                     }
                 }
+            }
+            else if (colName == "editprice")
+            {
+                FormPriceUpdate spm = new FormPriceUpdate(this);
+
+                spm.labelID.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["partIDs"].FormattedValue.ToString();
+                spm.txtImportPrice.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["import_price"].FormattedValue.ToString();
+                spm.txtSellPrice.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["part_price"].FormattedValue.ToString();
+
+                //spm.txtPartName.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["name"].FormattedValue.ToString();
+                //spm.txtPartDesc.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["descriptions"].FormattedValue.ToString();
+                //spm.txtCalUnit.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["cal_unit"].FormattedValue.ToString();
+                //spm.txtPrice.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["price"].FormattedValue.ToString();
+                //spm.txtImportPrice.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["import_price"].FormattedValue.ToString();
+                //spm.txtCurrency.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["currency"].FormattedValue.ToString();
+                //spm.txtBrand.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["brand"].FormattedValue.ToString();
+                //spm.numberStock.Value = Convert.ToDecimal(gunaDtgvParts.Rows[e.RowIndex].Cells["stock"].FormattedValue.ToString());
+                //spm.comboBoxPartType.SelectedIndex = spm.comboBoxPartType.FindStringExact(gunaDtgvParts.Rows[e.RowIndex].Cells["type_name"].FormattedValue.ToString());
+                //spm.numberStock.Enabled = true;
+                //spm.btnSave.Enabled = false;
+                //spm.btnUpdate.Enabled = true;
+
+                spm.ShowDialog();
 
             }
             //else if(colName == "delete")
@@ -222,10 +268,6 @@ namespace CarServiceManagement
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            //DataTable data = DataProvider.Instance.ExecuteQuery("select p.partID as partIDs,p.name,p.price as part_price,p.cal_unit " +
-            //    "from Part p where p.name like N'%" + txtSearch.Text + "%'");
-            //gunaDtgvParts.DataSource = data;
-            //gunaDtgvParts.Columns["part_price"].DefaultCellStyle.Format = "N0";
             load_SpareParts();
         }
 
@@ -238,6 +280,18 @@ namespace CarServiceManagement
         private void picMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnAddNewPart_Click(object sender, EventArgs e)
+        {
+            SpareParts sp = new SpareParts();
+            SparePartModule f = new SparePartModule(sp);
+            f.labelImportbillID.Text = passedID.ToString();
+            f.numberStock.Enabled = true;
+            f.ShowDialog();
+            load_SpareParts();
+            load_ImportBillDetail();
+            partImportBills.Load_PartImportBill();
         }
     }
 }

@@ -1,12 +1,6 @@
 ﻿using CarServiceManagement.DAO;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CarServiceManagement
@@ -20,7 +14,6 @@ namespace CarServiceManagement
         }
         public void Load_PartImportBill()
         {
-            //DataTable data = DataProvider.Instance.ExecuteQuery("select * from PartImportBill");
             DataTable data = DataProvider.Instance.ExecuteQuery("select * from PartImportBill where " +
            "concat(supplier,status,payment) LIKE N'%" + txtSearch.Text + "%'");
             gunaDtgvPartImportBill.DataSource = data;
@@ -122,21 +115,18 @@ namespace CarServiceManagement
                 module.dtpCreatedDate.Text = gunaDtgvPartImportBill.Rows[e.RowIndex].Cells["created_date"].FormattedValue.ToString();
 
 
-
                 module.btnSave.Enabled = false;
                 module.btnUpdate.Enabled = true;
-                //module.txtTotal.Enabled = true;
                 module.dtpCreatedDate.Enabled = true;
 
-
                 module.ShowDialog();
-                Load_PartImportBill();
+                //Load_PartImportBill();
 
             }
             else if (colName == "detail")
             {
                 int id = Convert.ToInt32(gunaDtgvPartImportBill.Rows[e.RowIndex].Cells["importbillID"].FormattedValue.ToString());
-                PartImportBillDetail f = new PartImportBillDetail(this,id);
+                PartImportBillDetail f = new PartImportBillDetail(this, id);
                 f.labelBillNumber.Text = gunaDtgvPartImportBill.Rows[e.RowIndex].Cells["importbillID"].FormattedValue.ToString();
                 f.labelBillStatus.Text = gunaDtgvPartImportBill.Rows[e.RowIndex].Cells["status"].FormattedValue.ToString();
                 f.labelTotal.Text = gunaDtgvPartImportBill.Rows[e.RowIndex].Cells["total"].FormattedValue.ToString();

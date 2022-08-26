@@ -9,6 +9,7 @@ namespace CarServiceManagement
         public MainMenu()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
             StartTimer();
         }
 
@@ -27,27 +28,27 @@ namespace CarServiceManagement
 
         private void ImageButtonMaximize_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
+            //this.WindowState = FormWindowState.Maximized;
 
         }
 
         private void guna2TileButton1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            //this.Hide();
             SparePartMain sppm = new SparePartMain();
             sppm.ShowDialog();
         }
 
         private void guna2TileButton2_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            //this.Hide();
             CustomerMain customer = new CustomerMain();
             customer.ShowDialog();
         }
 
         private void guna2TileButton3_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            //this.Hide();
             BillMain bill = new BillMain();
             bill.ShowDialog();
 
