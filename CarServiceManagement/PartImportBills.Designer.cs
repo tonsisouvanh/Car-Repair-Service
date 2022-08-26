@@ -519,6 +519,7 @@
             this.updated_date.MinimumWidth = 6;
             this.updated_date.Name = "updated_date";
             this.updated_date.ReadOnly = true;
+            this.updated_date.Visible = false;
             this.updated_date.Width = 119;
             // 
             // detail
@@ -555,6 +556,7 @@
             this.delete.Name = "delete";
             this.delete.ReadOnly = true;
             this.delete.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.delete.Visible = false;
             this.delete.Width = 8;
             // 
             // PartImportBills

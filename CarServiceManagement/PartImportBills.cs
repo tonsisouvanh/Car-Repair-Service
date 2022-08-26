@@ -125,6 +125,7 @@ namespace CarServiceManagement
             }
             else if (colName == "detail")
             {
+
                 int id = Convert.ToInt32(gunaDtgvPartImportBill.Rows[e.RowIndex].Cells["importbillID"].FormattedValue.ToString());
                 PartImportBillDetail f = new PartImportBillDetail(this, id);
                 f.labelBillNumber.Text = gunaDtgvPartImportBill.Rows[e.RowIndex].Cells["importbillID"].FormattedValue.ToString();

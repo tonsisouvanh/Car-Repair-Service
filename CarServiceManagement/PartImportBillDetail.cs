@@ -63,6 +63,7 @@ namespace CarServiceManagement
         private void ImageButtonClose_Click(object sender, EventArgs e)
         {
             this.Dispose();
+
         }
 
         private void PartImportBillDetail_Load(object sender, EventArgs e)
