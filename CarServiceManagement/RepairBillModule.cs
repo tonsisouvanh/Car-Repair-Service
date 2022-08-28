@@ -136,15 +136,15 @@ namespace CarServiceManagement
                 labelCustID.Text = row["customerID"].ToString();
                 formInputPanel.Enabled = true;
 
-                string query = "select * from Vehicle where cast(getdate() as date) >= oilchange_date and cast(getdate() as date) = required_oilchange_date and customerID = " + Convert.ToInt32(labelCustID.Text.ToString());
-                int result = DataProvider.Instance.ExecuteNoneQuery(query);
+                //string query = "select * from Vehicle where cast(getdate() as date) >= oilchange_date and cast(getdate() as date) = required_oilchange_date and customerID = " + Convert.ToInt32(labelCustID.Text.ToString());
+                //int result = DataProvider.Instance.ExecuteNoneQuery(query);
 
-                if (result != 0)
-                {
-                    int id = Convert.ToInt32(labelCustID.Text.ToString());
-                    OilChangeAlert f = new OilChangeAlert(id);
-                    f.ShowDialog();
-                }
+                //if (result != 0)
+                //{
+                //    int id = Convert.ToInt32(labelCustID.Text.ToString());
+                //    OilChangeAlert f = new OilChangeAlert(id);
+                //    f.ShowDialog();
+                //}
             }
             else
             {

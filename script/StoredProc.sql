@@ -75,7 +75,9 @@ begin
 	IF(@@ROWCOUNT > 0)
 	BEGIN
 		set @partID = SCOPE_IDENTITY();
-		set @subtotal = dbo.fn_CalImportPrice(@stock,@partID);
+		--set @subtotal = dbo.fn_CalImportPrice(@stock,@partID);
+		set @subtotal = @stock * @import_price;
+
 
 		--handle bill total
 		update PartImportBill
@@ -604,31 +606,28 @@ GO
 
 --====================================================================================
 
-select * from Customer where phone like '%02054433029%';
-
 
 if(OBJECT_ID('sp_AddRepairBillDetail') is not null)
 	drop proc sp_AddRepairBillDetail
 go
 create procedure sp_AddRepairBillDetail
-	@partID int, @repairbillID int,@quantity int
+	@partID int, @repairbillID int,@quantity int,@part_price money
 as
 begin
 	
 	declare @subtotal money;
+	set @subtotal = @quantity * @part_price;
 
 	-- add new item
 	IF NOT EXISTS(select * from RepairBillDetail where partID = @partID and repairbillID = @repairbillID)
 	BEGIN
-		set @subtotal = dbo.fn_CalPrice(@quantity,@partID);
-
-		INSERT INTO RepairBillDetail(partID, repairbillID, quantity, subtotal)
-		VALUES(@partID, @repairbillID, @quantity, @subtotal)
+		INSERT INTO RepairBillDetail(partID, repairbillID, quantity,part_price, subtotal)
+		VALUES(@partID, @repairbillID, @quantity,@part_price, @subtotal)
 	END
 	ELSE
 	BEGIN
 		UPDATE RepairBillDetail
-		SET quantity = quantity + @quantity, subtotal = subtotal + dbo.fn_CalPrice(@quantity, @partID)
+		SET quantity = quantity + @quantity, subtotal = subtotal + @subtotal
 		where repairbillID = @repairbillID and partID = @partID;
 	END
 
@@ -636,8 +635,7 @@ begin
 	BEGIN
 		--handle bill total
 		update RepairBill
-		set total = total + dbo.fn_CalPrice(@quantity,@partID)
-		--set total = total + @subtotal
+		set total = total + @subtotal
 		where repairbillID = @repairbillID;
 
 
@@ -671,20 +669,19 @@ if(OBJECT_ID('sp_DeleteRepairBillDetail') is not null)
 	drop proc sp_DeleteRepairBillDetail
 go
 create procedure sp_DeleteRepairBillDetail
-	@importbilldetailID int,@partID int, @importBillID int, @quantity int, @subtotal money
+	@repairbilldetailID int,@partID int, @repairbillID int, @quantity int, @subtotal money
 as
 begin
 	
-	DELETE PartImportBillDetail
-	WHERE importbilldetailID = @importbilldetailID
+	DELETE RepairBillDetail
+	WHERE repairbilldetailID = @repairbilldetailID
 
 	IF(@@ROWCOUNT > 0)
 	BEGIN
 		--handle bill total
-		update PartImportBill
+		update RepairBill
 		set total = total - @subtotal
-		--set total = total + @subtotal
-		where importbillID = @importbillID;
+		where repairbillID = @repairbillID;
 
 
 		--handle part stock
@@ -694,6 +691,7 @@ begin
 	END
 end
 GO
+
 
 
 
@@ -708,3 +706,72 @@ GO
 
 
 --====================================================================================
+
+
+
+if(OBJECT_ID('sp_addService') is not null)
+	drop proc sp_addService
+go
+create procedure sp_addService
+	@repairbillID int,
+	@service nvarchar(255),
+	@service_price money
+as
+begin
+	INSERT INTO Services(repairbillID,service,service_price)
+	VALUES(@repairbillID,@service,@service_price)
+
+	IF(@@ROWCOUNT > 0)
+	BEGIN
+		--handle bill total
+		update RepairBill
+		set total = total + @service_price
+		where repairbillID = @repairbillID;
+	END
+end
+GO
+
+--if(OBJECT_ID('sp_updateService') is not null)
+--	drop proc sp_updateService
+--go
+--create procedure sp_updateService
+--	@serviceID int,
+--	@repairbillID int,
+--	@new_service_price money
+--as
+--begin
+--	declare @prev_service_price money
+--	set @prev_service_price = @service_price
+
+--	DELETE Services where serviceID = @serviceID;
+
+--	IF(@@ROWCOUNT > 0)
+--	BEGIN
+--		--handle bill total
+--		update RepairBill
+--		set total = total - @service_price
+--		where repairbillID = @repairbillID;
+--	END
+--end
+--GO
+
+if(OBJECT_ID('sp_deleteService') is not null)
+	drop proc sp_deleteService
+go
+create procedure sp_deleteService
+	@serviceID int,
+	@repairbillID int,
+	@service_price money
+as
+begin
+	DELETE Services where serviceID = @serviceID;
+
+	IF(@@ROWCOUNT > 0)
+	BEGIN
+		--handle bill total
+		update RepairBill
+		set total = total - @service_price
+		where repairbillID = @repairbillID;
+	END
+end
+GO

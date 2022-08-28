@@ -3,7 +3,11 @@ go
 
 INSERT INTO Account(username,password,name) VALUES ('admin','admin',N'Tons');
 -- @@@@@@@@@@@@@@@@@@@ INSERT DATA @@@@@@@@@@@@@@@@@@@ --
-INSERT INTO Provinces(name) VALUES (N'ອັດຕະປື');
+
+
+BEGIN
+
+ INSERT INTO Provinces(name) VALUES (N'ອັດຕະປື');
 INSERT INTO Provinces(name) VALUES (N'ບໍ່ແກ້ວ');
 INSERT INTO Provinces(name) VALUES (N'ບໍລິຄຳໄຊ');
 INSERT INTO Provinces(name) VALUES (N'ຈຳປາສັກ');
@@ -168,6 +172,10 @@ INSERT INTO Districts(name) VALUES (N'ຊຽງຄໍ້');
 INSERT INTO Districts(name) VALUES (N'ຊ່ອນ');
 INSERT INTO Districts(name) VALUES (N'ຊົນບູລີ');
 
+END
+
+
+
 
 --@@ PART TYPE
 INSERT INTO PartType(name) VALUES(N'ກົງລົດ')
@@ -210,6 +218,13 @@ VALUES(N'Nissan 2011',N'ຂາວ,ດຳ',101,100,N'ກຂ 9923',N'ອະທິ�
 INSERT INTO Vehicle(name,color,typeID,brandID,plate_number,descriptions,customerID,oilchange_date,required_oilchange_date) 
 VALUES(N'Nissan 2022',N'ຂາວ,ແດງ',101,100,N'ກຂ 9823',N'ອະທິບາຍ',100,'2022-08-01','2022-12-01')
 
+----@@ Part Import Bill
+INSERT INTO PartImportBill(supplier,supplier_contact,status,payment,descriptions)
+VALUES (N'ຈິບ ອາໄຫຼ່','jip@gmail.com',N'ຍັງບໍ່ຈ່າຍ',N'ໂອນ',N'')
+INSERT INTO PartImportBill(supplier,supplier_contact,status,payment,descriptions)
+VALUES (N'ດາວວີປະດັບຍົນ','020553344291',N'ຈ່າຍແລ້ວ',N'ເງິນສົດ',N'')
+INSERT INTO PartImportBill(supplier,supplier_contact,status,payment,descriptions)
+VALUES (N'ເສັງສ້ອມແປງລົດຍົນ','seng@gmail.com',N'ຍັງບໍ່ຈ່າຍ',N'ໂອນ',N'')
 
 
 --@@ PARTS
@@ -231,64 +246,57 @@ VALUES(N'Nissan 2022',N'ຂາວ,ແດງ',101,100,N'ກຂ 9823',N'ອະທ�
 --  INSERT INTO Part(name,stock,price,import_price,currency,cal_unit,descriptions,part_type,brand)	
 --  VALUES(N'ຟິວ 10,15,20,25,30', 10,200000,150000,'KIP',N'ກັບ',N'',103,'');
 
-----@@ Part Import Bill
---INSERT INTO PartImportBill(supplier,supplier_contact,status,payment,descriptions)
---VALUES (N'ຈິບ ອາໄຫຼ່','jip@gmail.com',N'ຍັງບໍ່ຈ່າຍ',N'ໂອນ',N'')
---INSERT INTO PartImportBill(supplier,supplier_contact,status,payment,descriptions)
---VALUES (N'ດາວວີປະດັບຍົນ','020553344291',N'ຈ່າຍແລ້ວ',N'ເງິນສົດ',N'')
---INSERT INTO PartImportBill(supplier,supplier_contact,status,payment,descriptions)
---VALUES (N'ເສັງສ້ອມແປງລົດຍົນ','seng@gmail.com',N'ຍັງບໍ່ຈ່າຍ',N'ໂອນ',N'')
 
 
 --@@ Part Import Bill Detail
 -- partID - Bill - Quantity
 
-exec sp_AddPartImportBillDetail 102,102,2;
+--exec sp_AddPartImportBillDetail 102,102,2;
 
-exec sp_AddPartImportBillDetail 105,102,3;
+--exec sp_AddPartImportBillDetail 105,102,3;
 
-exec sp_AddPartImportBillDetail 108,102,2;
+--exec sp_AddPartImportBillDetail 108,102,2;
 
-exec sp_AddPartImportBillDetail 111,101,2;
+--exec sp_AddPartImportBillDetail 111,101,2;
 
-exec sp_AddPartImportBillDetail 112,101,4;
+--exec sp_AddPartImportBillDetail 112,101,4;
 
-exec sp_AddPartImportBillDetail 107,101,1;
+--exec sp_AddPartImportBillDetail 107,101,1;
 
-exec sp_AddPartImportBillDetail 110,101,1;
+--exec sp_AddPartImportBillDetail 110,101,1;
 
-exec sp_AddPartImportBillDetail 113,100,2;
+--exec sp_AddPartImportBillDetail 113,100,2;
 
-exec sp_AddPartImportBillDetail 112,100,1;
+--exec sp_AddPartImportBillDetail 112,100,1;
 
 
 ----@@ Repair Bill
-INSERT INTO RepairBill(customerID,status,payment,descriptions,created_date)
-VALUES(100,N'ຊຳລະແລ້ວ',N'ເງິນສົດ',N'','2021-08-14')
+--INSERT INTO RepairBill(customerID,status,payment,descriptions,created_date)
+--VALUES(100,N'ຊຳລະແລ້ວ',N'ເງິນສົດ',N'','2021-08-14')
 
-INSERT INTO RepairBill(customerID,status,payment,descriptions,created_date)
-VALUES(101,N'ຊຳລະແລ້ວ',N'ເງິນສົດ',N'',N'2022-01-14')
+--INSERT INTO RepairBill(customerID,status,payment,descriptions,created_date)
+--VALUES(101,N'ຊຳລະແລ້ວ',N'ເງິນສົດ',N'',N'2022-01-14')
 
-INSERT INTO RepairBill(customerID,status,payment,descriptions,created_date)
-VALUES(102,N'ຊຳລະແລ້ວ',N'ເງິນສົດ',N'',N'2020-02-14')
+--INSERT INTO RepairBill(customerID,status,payment,descriptions,created_date)
+--VALUES(102,N'ຊຳລະແລ້ວ',N'ເງິນສົດ',N'',N'2020-02-14')
 
 
 ----@@ Repair Bill Detail
 ---- partID - Bill - Quantity
-exec sp_AddRepairBillDetail 102,102,2;
+--exec sp_AddRepairBillDetail 102,102,2;
 
-exec sp_AddRepairBillDetail 105,102,3;
+--exec sp_AddRepairBillDetail 105,102,3;
 
-exec sp_AddRepairBillDetail 108,102,2;
+--exec sp_AddRepairBillDetail 108,102,2;
 
-exec sp_AddRepairBillDetail 111,101,2;
+--exec sp_AddRepairBillDetail 111,101,2;
 
-exec sp_AddRepairBillDetail 112,101,4;
+--exec sp_AddRepairBillDetail 112,101,4;
 
-exec sp_AddRepairBillDetail 107,101,1;
+--exec sp_AddRepairBillDetail 107,101,1;
 
-exec sp_AddRepairBillDetail 110,101,1;
+--exec sp_AddRepairBillDetail 110,101,1;
 
-exec sp_AddRepairBillDetail 113,100,2;
+--exec sp_AddRepairBillDetail 113,100,2;
 
-exec sp_AddRepairBillDetail 112,100,1;
+--exec sp_AddRepairBillDetail 112,100,1;

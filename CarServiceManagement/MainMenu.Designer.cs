@@ -109,6 +109,7 @@
             this.ImageButtonMaximize.PressedState.ImageSize = new System.Drawing.Size(27, 27);
             this.ImageButtonMaximize.Size = new System.Drawing.Size(37, 34);
             this.ImageButtonMaximize.TabIndex = 12;
+            this.ImageButtonMaximize.Visible = false;
             this.ImageButtonMaximize.Click += new System.EventHandler(this.ImageButtonMaximize_Click);
             // 
             // ImageButtonClose
@@ -250,7 +251,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(-4, 118);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(211, 49);
+            this.label2.Size = new System.Drawing.Size(260, 61);
             this.label2.TabIndex = 1;
             this.label2.Text = "ລວມອາໄຫຼ່ລົດຍົນ";
             // 
@@ -295,7 +296,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(1282, 7);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(199, 20);
+            this.label3.Size = new System.Drawing.Size(238, 24);
             this.label3.TabIndex = 2;
             this.label3.Text = "Copy right reserved to Dev-Tons";
             // 
@@ -306,7 +307,7 @@
             this.labelName.ForeColor = System.Drawing.Color.White;
             this.labelName.Location = new System.Drawing.Point(96, 7);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(0, 23);
+            this.labelName.Size = new System.Drawing.Size(0, 29);
             this.labelName.TabIndex = 1;
             // 
             // guna2PictureBox2
@@ -343,7 +344,7 @@
             this.Middlepanel.Location = new System.Drawing.Point(5, 197);
             this.Middlepanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Middlepanel.Name = "Middlepanel";
-            this.Middlepanel.Padding = new System.Windows.Forms.Padding(20, 20, 20, 20);
+            this.Middlepanel.Padding = new System.Windows.Forms.Padding(20);
             this.Middlepanel.Size = new System.Drawing.Size(1546, 639);
             this.Middlepanel.TabIndex = 7;
             // 
@@ -371,7 +372,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainMenu";
-            this.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Padding = new System.Windows.Forms.Padding(5);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainMenu";
             this.topPanel.ResumeLayout(false);

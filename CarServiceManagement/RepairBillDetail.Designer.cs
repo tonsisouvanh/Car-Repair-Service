@@ -29,16 +29,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.picMinimize = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -47,9 +52,8 @@
             this.lblUsername = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.labelCreatedDate = new System.Windows.Forms.Label();
             this.labelPayment = new System.Windows.Forms.Label();
-            this.dtpCreatedDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.labelBillNumber = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -59,12 +63,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.labelTotal = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2PanelBottom = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnPrint = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnAddService = new Guna.UI2.WinForms.Guna2TileButton();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.gunaDtgvParts = new Guna.UI2.WinForms.Guna2DataGridView();
             this.partIDs = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -73,6 +76,13 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.add = new System.Windows.Forms.DataGridViewImageColumn();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.dtgvServices = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.serviceID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.service = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.service_price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.deleteservice = new System.Windows.Forms.DataGridViewImageColumn();
             this.gunaDtgvRepairBillDetail = new Guna.UI2.WinForms.Guna2DataGridView();
             this.repairbilldetailID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.partID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -84,6 +94,7 @@
             this.subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.delete = new System.Windows.Forms.DataGridViewImageColumn();
+            this.btnPricnt = new Guna.UI2.WinForms.Guna2ImageButton();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -91,6 +102,8 @@
             this.guna2PanelBottom.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDtgvParts)).BeginInit();
+            this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvServices)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDtgvRepairBillDetail)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,8 +123,9 @@
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1035, 50);
+            this.panel2.Size = new System.Drawing.Size(1380, 62);
             this.panel2.TabIndex = 7;
             // 
             // picMinimize
@@ -124,11 +138,11 @@
             this.picMinimize.ImageOffset = new System.Drawing.Point(0, 0);
             this.picMinimize.ImageRotate = 0F;
             this.picMinimize.ImageSize = new System.Drawing.Size(23, 23);
-            this.picMinimize.Location = new System.Drawing.Point(962, 6);
-            this.picMinimize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picMinimize.Location = new System.Drawing.Point(1283, 7);
+            this.picMinimize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picMinimize.Name = "picMinimize";
             this.picMinimize.PressedState.ImageSize = new System.Drawing.Size(27, 27);
-            this.picMinimize.Size = new System.Drawing.Size(32, 37);
+            this.picMinimize.Size = new System.Drawing.Size(43, 46);
             this.picMinimize.TabIndex = 16;
             this.picMinimize.UseTransparentBackground = true;
             this.picMinimize.Click += new System.EventHandler(this.picMinimize_Click);
@@ -144,11 +158,11 @@
             this.ImageButtonMaximize.ImageOffset = new System.Drawing.Point(0, 0);
             this.ImageButtonMaximize.ImageRotate = 0F;
             this.ImageButtonMaximize.ImageSize = new System.Drawing.Size(23, 23);
-            this.ImageButtonMaximize.Location = new System.Drawing.Point(928, 6);
-            this.ImageButtonMaximize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ImageButtonMaximize.Location = new System.Drawing.Point(1237, 7);
+            this.ImageButtonMaximize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ImageButtonMaximize.Name = "ImageButtonMaximize";
             this.ImageButtonMaximize.PressedState.ImageSize = new System.Drawing.Size(27, 27);
-            this.ImageButtonMaximize.Size = new System.Drawing.Size(28, 37);
+            this.ImageButtonMaximize.Size = new System.Drawing.Size(37, 46);
             this.ImageButtonMaximize.TabIndex = 15;
             this.ImageButtonMaximize.Click += new System.EventHandler(this.ImageButtonMaximize_Click);
             // 
@@ -163,11 +177,11 @@
             this.ImageButtonClose.ImageOffset = new System.Drawing.Point(0, 0);
             this.ImageButtonClose.ImageRotate = 0F;
             this.ImageButtonClose.ImageSize = new System.Drawing.Size(23, 23);
-            this.ImageButtonClose.Location = new System.Drawing.Point(998, 6);
-            this.ImageButtonClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ImageButtonClose.Location = new System.Drawing.Point(1331, 7);
+            this.ImageButtonClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ImageButtonClose.Name = "ImageButtonClose";
             this.ImageButtonClose.PressedState.ImageSize = new System.Drawing.Size(27, 27);
-            this.ImageButtonClose.Size = new System.Drawing.Size(28, 37);
+            this.ImageButtonClose.Size = new System.Drawing.Size(37, 46);
             this.ImageButtonClose.TabIndex = 14;
             this.ImageButtonClose.Click += new System.EventHandler(this.ImageButtonClose_Click);
             // 
@@ -176,27 +190,29 @@
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Defago Noto Sans", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.ForeColor = System.Drawing.Color.White;
-            this.lblUsername.Location = new System.Drawing.Point(56, 6);
+            this.lblUsername.Location = new System.Drawing.Point(75, 7);
+            this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(136, 36);
+            this.lblUsername.Size = new System.Drawing.Size(178, 46);
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "ລາຍລະອຽດບິນ";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::CarServiceManagement.Properties.Resources.billdetail;
-            this.pictureBox1.Location = new System.Drawing.Point(15, 6);
+            this.pictureBox1.Location = new System.Drawing.Point(20, 7);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox1.Size = new System.Drawing.Size(47, 43);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Controls.Add(this.guna2ImageButton1);
+            this.guna2Panel1.Controls.Add(this.labelCreatedDate);
+            this.guna2Panel1.Controls.Add(this.btnPricnt);
             this.guna2Panel1.Controls.Add(this.labelPayment);
-            this.guna2Panel1.Controls.Add(this.dtpCreatedDate);
             this.guna2Panel1.Controls.Add(this.labelBillNumber);
             this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Controls.Add(this.label9);
@@ -206,69 +222,44 @@
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.labelTotal);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 50);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 62);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1035, 103);
+            this.guna2Panel1.Size = new System.Drawing.Size(1380, 127);
             this.guna2Panel1.TabIndex = 59;
             // 
-            // guna2ImageButton1
+            // labelCreatedDate
             // 
-            this.guna2ImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(33, 33);
-            this.guna2ImageButton1.Image = global::CarServiceManagement.Properties.Resources.printer;
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(35, 35);
-            this.guna2ImageButton1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.guna2ImageButton1.Location = new System.Drawing.Point(989, 58);
-            this.guna2ImageButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(0, 0);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(37, 38);
-            this.guna2ImageButton1.TabIndex = 18;
+            this.labelCreatedDate.AutoSize = true;
+            this.labelCreatedDate.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCreatedDate.Location = new System.Drawing.Point(583, 72);
+            this.labelCreatedDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCreatedDate.Name = "labelCreatedDate";
+            this.labelCreatedDate.Size = new System.Drawing.Size(30, 33);
+            this.labelCreatedDate.TabIndex = 19;
+            this.labelCreatedDate.Text = "...";
             // 
             // labelPayment
             // 
             this.labelPayment.AutoSize = true;
             this.labelPayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPayment.Location = new System.Drawing.Point(748, 13);
+            this.labelPayment.Location = new System.Drawing.Point(1023, 16);
+            this.labelPayment.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPayment.Name = "labelPayment";
-            this.labelPayment.Size = new System.Drawing.Size(54, 15);
+            this.labelPayment.Size = new System.Drawing.Size(64, 18);
             this.labelPayment.TabIndex = 17;
             this.labelPayment.Text = "payment";
             this.labelPayment.Visible = false;
-            // 
-            // dtpCreatedDate
-            // 
-            this.dtpCreatedDate.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.dtpCreatedDate.BorderRadius = 1;
-            this.dtpCreatedDate.Checked = true;
-            this.dtpCreatedDate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dtpCreatedDate.Enabled = false;
-            this.dtpCreatedDate.FillColor = System.Drawing.Color.SteelBlue;
-            this.dtpCreatedDate.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpCreatedDate.ForeColor = System.Drawing.Color.White;
-            this.dtpCreatedDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpCreatedDate.Location = new System.Drawing.Point(416, 58);
-            this.dtpCreatedDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpCreatedDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtpCreatedDate.Name = "dtpCreatedDate";
-            this.dtpCreatedDate.Size = new System.Drawing.Size(200, 25);
-            this.dtpCreatedDate.TabIndex = 9;
-            this.dtpCreatedDate.Value = new System.DateTime(2022, 8, 9, 8, 45, 24, 887);
             // 
             // labelBillNumber
             // 
             this.labelBillNumber.AutoSize = true;
             this.labelBillNumber.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelBillNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
-            this.labelBillNumber.Location = new System.Drawing.Point(78, 14);
+            this.labelBillNumber.Location = new System.Drawing.Point(104, 14);
+            this.labelBillNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelBillNumber.Name = "labelBillNumber";
-            this.labelBillNumber.Size = new System.Drawing.Size(20, 23);
+            this.labelBillNumber.Size = new System.Drawing.Size(25, 29);
             this.labelBillNumber.TabIndex = 16;
             this.labelBillNumber.Text = "0";
             // 
@@ -276,9 +267,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(333, 58);
+            this.label2.Location = new System.Drawing.Point(470, 71);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 26);
+            this.label2.Size = new System.Drawing.Size(101, 33);
             this.label2.TabIndex = 2;
             this.label2.Text = "ວັນຂຽນບິນ:";
             // 
@@ -286,9 +278,10 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(12, 11);
+            this.label9.Location = new System.Drawing.Point(16, 14);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(57, 26);
+            this.label9.Size = new System.Drawing.Size(74, 33);
             this.label9.TabIndex = 15;
             this.label9.Text = "ເລກບິນ:";
             // 
@@ -296,9 +289,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(333, 11);
+            this.label4.Location = new System.Drawing.Point(470, 14);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 26);
+            this.label4.Size = new System.Drawing.Size(100, 33);
             this.label4.TabIndex = 7;
             this.label4.Text = "ສະຖານະບິນ:";
             // 
@@ -306,9 +300,10 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(235, 58);
+            this.label8.Location = new System.Drawing.Point(313, 71);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(30, 26);
+            this.label8.Size = new System.Drawing.Size(39, 33);
             this.label8.TabIndex = 14;
             this.label8.Text = "ກີບ";
             // 
@@ -316,9 +311,10 @@
             // 
             this.labelBillStatus.AutoSize = true;
             this.labelBillStatus.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBillStatus.Location = new System.Drawing.Point(418, 11);
+            this.labelBillStatus.Location = new System.Drawing.Point(583, 14);
+            this.labelBillStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelBillStatus.Name = "labelBillStatus";
-            this.labelBillStatus.Size = new System.Drawing.Size(24, 26);
+            this.labelBillStatus.Size = new System.Drawing.Size(30, 33);
             this.labelBillStatus.TabIndex = 8;
             this.labelBillStatus.Text = "...";
             // 
@@ -326,9 +322,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 58);
+            this.label1.Location = new System.Drawing.Point(16, 71);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 26);
+            this.label1.Size = new System.Drawing.Size(133, 33);
             this.label1.TabIndex = 10;
             this.label1.Text = "ລວມເງິນທັງໝົດ:";
             // 
@@ -337,46 +334,36 @@
             this.labelTotal.AutoSize = true;
             this.labelTotal.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
-            this.labelTotal.Location = new System.Drawing.Point(127, 62);
+            this.labelTotal.Location = new System.Drawing.Point(169, 73);
+            this.labelTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTotal.Name = "labelTotal";
-            this.labelTotal.Size = new System.Drawing.Size(20, 23);
+            this.labelTotal.Size = new System.Drawing.Size(25, 29);
             this.labelTotal.TabIndex = 11;
             this.labelTotal.Text = "0";
             // 
             // guna2Panel2
             // 
             this.guna2Panel2.BorderColor = System.Drawing.Color.DimGray;
-            this.guna2Panel2.Controls.Add(this.guna2VSeparator1);
             this.guna2Panel2.Controls.Add(this.label5);
             this.guna2Panel2.Controls.Add(this.label3);
             this.guna2Panel2.Controls.Add(this.txtSearch);
             this.guna2Panel2.CustomBorderColor = System.Drawing.Color.DimGray;
             this.guna2Panel2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 1, 0, 0);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 153);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 189);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1035, 47);
+            this.guna2Panel2.Size = new System.Drawing.Size(1380, 58);
             this.guna2Panel2.TabIndex = 60;
-            // 
-            // guna2VSeparator1
-            // 
-            this.guna2VSeparator1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2VSeparator1.Location = new System.Drawing.Point(616, 6);
-            this.guna2VSeparator1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.guna2VSeparator1.Name = "guna2VSeparator1";
-            this.guna2VSeparator1.Size = new System.Drawing.Size(8, 36);
-            this.guna2VSeparator1.TabIndex = 22;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Defago Noto Sans", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(7, 9);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(9, 11);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(138, 30);
+            this.label5.Size = new System.Drawing.Size(181, 36);
             this.label5.TabIndex = 21;
             this.label5.Text = "ລາຍການເຄື່ອງໃນບິນ:";
             // 
@@ -386,10 +373,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Defago Noto Sans", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(669, 9);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(892, 11);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 30);
+            this.label3.Size = new System.Drawing.Size(114, 36);
             this.label3.TabIndex = 20;
             this.label3.Text = "ຄົ້ນຫາອາໄຫຼ່:";
             // 
@@ -407,44 +393,49 @@
             this.txtSearch.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.ForeColor = System.Drawing.Color.Black;
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.Location = new System.Drawing.Point(765, 6);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtSearch.Location = new System.Drawing.Point(1020, 7);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
             this.txtSearch.PlaceholderText = "ພິມຊື່ອາໄຫຼ່";
             this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(262, 35);
+            this.txtSearch.Size = new System.Drawing.Size(349, 43);
             this.txtSearch.TabIndex = 19;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // guna2PanelBottom
             // 
-            this.guna2PanelBottom.Controls.Add(this.btnPrint);
+            this.guna2PanelBottom.Controls.Add(this.btnAddService);
             this.guna2PanelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2PanelBottom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
-            this.guna2PanelBottom.Location = new System.Drawing.Point(0, 522);
+            this.guna2PanelBottom.Location = new System.Drawing.Point(0, 673);
+            this.guna2PanelBottom.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PanelBottom.Name = "guna2PanelBottom";
-            this.guna2PanelBottom.Size = new System.Drawing.Size(1035, 47);
+            this.guna2PanelBottom.Size = new System.Drawing.Size(1380, 58);
             this.guna2PanelBottom.TabIndex = 61;
             // 
-            // btnPrint
+            // btnAddService
             // 
-            this.btnPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPrint.BackColor = System.Drawing.Color.Transparent;
-            this.btnPrint.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPrint.HoverState.ImageSize = new System.Drawing.Size(33, 33);
-            this.btnPrint.Image = global::CarServiceManagement.Properties.Resources.printer;
-            this.btnPrint.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnPrint.ImageRotate = 0F;
-            this.btnPrint.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnPrint.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnPrint.Location = new System.Drawing.Point(987, 4);
-            this.btnPrint.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.PressedState.ImageSize = new System.Drawing.Size(0, 0);
-            this.btnPrint.Size = new System.Drawing.Size(37, 38);
-            this.btnPrint.TabIndex = 15;
+            this.btnAddService.Animated = true;
+            this.btnAddService.AutoRoundedCorners = true;
+            this.btnAddService.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddService.BorderColor = System.Drawing.Color.Transparent;
+            this.btnAddService.BorderRadius = 19;
+            this.btnAddService.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddService.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddService.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddService.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddService.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddService.FillColor = System.Drawing.Color.Teal;
+            this.btnAddService.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddService.ForeColor = System.Drawing.Color.White;
+            this.btnAddService.Location = new System.Drawing.Point(12, 8);
+            this.btnAddService.Name = "btnAddService";
+            this.btnAddService.Size = new System.Drawing.Size(200, 41);
+            this.btnAddService.TabIndex = 16;
+            this.btnAddService.Text = "ເພີ່ມຄ່າບໍລິການ";
+            this.btnAddService.UseTransparentBackground = true;
+            this.btnAddService.Click += new System.EventHandler(this.btnAddService_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -452,14 +443,14 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel2.Controls.Add(this.gunaDtgvParts, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.gunaDtgvRepairBillDetail, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 200);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 247);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1035, 322);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1380, 426);
             this.tableLayoutPanel2.TabIndex = 68;
             // 
             // gunaDtgvParts
@@ -467,25 +458,25 @@
             this.gunaDtgvParts.AllowUserToAddRows = false;
             this.gunaDtgvParts.AllowUserToDeleteRows = false;
             this.gunaDtgvParts.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            this.gunaDtgvParts.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Black;
+            this.gunaDtgvParts.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
             this.gunaDtgvParts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gunaDtgvParts.BackgroundColor = System.Drawing.Color.White;
             this.gunaDtgvParts.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaDtgvParts.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDtgvParts.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Defago Noto Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDtgvParts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Defago Noto Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDtgvParts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.gunaDtgvParts.ColumnHeadersHeight = 35;
             this.gunaDtgvParts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.partIDs,
@@ -494,39 +485,39 @@
             this.dataGridViewTextBoxColumn4,
             this.stock,
             this.add});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDtgvParts.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gunaDtgvParts.DefaultCellStyle = dataGridViewCellStyle18;
             this.gunaDtgvParts.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaDtgvParts.EnableHeadersVisualStyles = false;
             this.gunaDtgvParts.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDtgvParts.Location = new System.Drawing.Point(623, 2);
-            this.gunaDtgvParts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaDtgvParts.Location = new System.Drawing.Point(831, 2);
+            this.gunaDtgvParts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaDtgvParts.Name = "gunaDtgvParts";
             this.gunaDtgvParts.ReadOnly = true;
             this.gunaDtgvParts.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Defago Noto Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDtgvParts.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Defago Noto Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDtgvParts.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
             this.gunaDtgvParts.RowHeadersVisible = false;
             this.gunaDtgvParts.RowHeadersWidth = 51;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            this.gunaDtgvParts.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Black;
+            this.gunaDtgvParts.RowsDefaultCellStyle = dataGridViewCellStyle20;
             this.gunaDtgvParts.RowTemplate.Height = 33;
             this.gunaDtgvParts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDtgvParts.Size = new System.Drawing.Size(410, 318);
+            this.gunaDtgvParts.Size = new System.Drawing.Size(546, 422);
             this.gunaDtgvParts.TabIndex = 52;
             this.gunaDtgvParts.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.gunaDtgvParts.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -580,7 +571,7 @@
             this.part_price.Name = "part_price";
             this.part_price.ReadOnly = true;
             this.part_price.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.part_price.Width = 73;
+            this.part_price.Width = 86;
             // 
             // dataGridViewTextBoxColumn4
             // 
@@ -591,7 +582,7 @@
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
             this.dataGridViewTextBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewTextBoxColumn4.Width = 98;
+            this.dataGridViewTextBoxColumn4.Width = 123;
             // 
             // stock
             // 
@@ -601,7 +592,7 @@
             this.stock.MinimumWidth = 6;
             this.stock.Name = "stock";
             this.stock.ReadOnly = true;
-            this.stock.Width = 107;
+            this.stock.Width = 132;
             // 
             // add
             // 
@@ -615,30 +606,187 @@
             this.add.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.add.Width = 6;
             // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 1;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Controls.Add(this.dtgvServices, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.gunaDtgvRepairBillDetail, 0, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(822, 420);
+            this.tableLayoutPanel3.TabIndex = 70;
+            // 
+            // dtgvServices
+            // 
+            this.dtgvServices.AllowUserToAddRows = false;
+            this.dtgvServices.AllowUserToDeleteRows = false;
+            this.dtgvServices.AllowUserToResizeRows = false;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.Black;
+            this.dtgvServices.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
+            this.dtgvServices.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvServices.BackgroundColor = System.Drawing.Color.White;
+            this.dtgvServices.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgvServices.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dtgvServices.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Defago Noto Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvServices.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
+            this.dtgvServices.ColumnHeadersHeight = 35;
+            this.dtgvServices.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.serviceID,
+            this.service,
+            this.service_price,
+            this.dataGridViewImageColumn1,
+            this.deleteservice});
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle23.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvServices.DefaultCellStyle = dataGridViewCellStyle23;
+            this.dtgvServices.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgvServices.EnableHeadersVisualStyles = false;
+            this.dtgvServices.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgvServices.Location = new System.Drawing.Point(3, 254);
+            this.dtgvServices.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtgvServices.Name = "dtgvServices";
+            this.dtgvServices.ReadOnly = true;
+            this.dtgvServices.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Defago Noto Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvServices.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
+            this.dtgvServices.RowHeadersVisible = false;
+            this.dtgvServices.RowHeadersWidth = 51;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.Black;
+            this.dtgvServices.RowsDefaultCellStyle = dataGridViewCellStyle25;
+            this.dtgvServices.RowTemplate.Height = 33;
+            this.dtgvServices.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgvServices.Size = new System.Drawing.Size(816, 164);
+            this.dtgvServices.TabIndex = 54;
+            this.dtgvServices.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtgvServices.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dtgvServices.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dtgvServices.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dtgvServices.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dtgvServices.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dtgvServices.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgvServices.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dtgvServices.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dtgvServices.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dtgvServices.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dtgvServices.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dtgvServices.ThemeStyle.HeaderStyle.Height = 35;
+            this.dtgvServices.ThemeStyle.ReadOnly = true;
+            this.dtgvServices.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtgvServices.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dtgvServices.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dtgvServices.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dtgvServices.ThemeStyle.RowsStyle.Height = 33;
+            this.dtgvServices.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgvServices.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dtgvServices.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvServices_CellContentClick);
+            // 
+            // serviceID
+            // 
+            this.serviceID.DataPropertyName = "serviceID";
+            this.serviceID.HeaderText = "serviceID";
+            this.serviceID.MinimumWidth = 6;
+            this.serviceID.Name = "serviceID";
+            this.serviceID.ReadOnly = true;
+            this.serviceID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.serviceID.Visible = false;
+            // 
+            // service
+            // 
+            this.service.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.service.DataPropertyName = "service";
+            this.service.HeaderText = "ການບໍລິການສ້ອມແປງ";
+            this.service.MinimumWidth = 6;
+            this.service.Name = "service";
+            this.service.ReadOnly = true;
+            // 
+            // service_price
+            // 
+            this.service_price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.service_price.DataPropertyName = "service_price";
+            this.service_price.HeaderText = "ລາຄາ";
+            this.service_price.MinimumWidth = 6;
+            this.service_price.Name = "service_price";
+            this.service_price.ReadOnly = true;
+            // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn1.HeaderText = "";
+            this.dataGridViewImageColumn1.Image = global::CarServiceManagement.Properties.Resources.pencil_24;
+            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn1.MinimumWidth = 8;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.ReadOnly = true;
+            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn1.Visible = false;
+            this.dataGridViewImageColumn1.Width = 8;
+            // 
+            // deleteservice
+            // 
+            this.deleteservice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.deleteservice.HeaderText = "";
+            this.deleteservice.Image = global::CarServiceManagement.Properties.Resources.delete_24;
+            this.deleteservice.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.deleteservice.MinimumWidth = 8;
+            this.deleteservice.Name = "deleteservice";
+            this.deleteservice.ReadOnly = true;
+            this.deleteservice.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.deleteservice.Width = 8;
+            // 
             // gunaDtgvRepairBillDetail
             // 
             this.gunaDtgvRepairBillDetail.AllowUserToAddRows = false;
             this.gunaDtgvRepairBillDetail.AllowUserToDeleteRows = false;
             this.gunaDtgvRepairBillDetail.AllowUserToResizeRows = false;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            this.gunaDtgvRepairBillDetail.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.Black;
+            this.gunaDtgvRepairBillDetail.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle26;
             this.gunaDtgvRepairBillDetail.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gunaDtgvRepairBillDetail.BackgroundColor = System.Drawing.Color.White;
             this.gunaDtgvRepairBillDetail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaDtgvRepairBillDetail.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDtgvRepairBillDetail.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Defago Noto Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDtgvRepairBillDetail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Defago Noto Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDtgvRepairBillDetail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle27;
             this.gunaDtgvRepairBillDetail.ColumnHeadersHeight = 35;
             this.gunaDtgvRepairBillDetail.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.repairbilldetailID,
@@ -651,40 +799,40 @@
             this.subtotal,
             this.edit,
             this.delete});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDtgvRepairBillDetail.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle28.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle28.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle28.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gunaDtgvRepairBillDetail.DefaultCellStyle = dataGridViewCellStyle28;
             this.gunaDtgvRepairBillDetail.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaDtgvRepairBillDetail.EnableHeadersVisualStyles = false;
             this.gunaDtgvRepairBillDetail.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDtgvRepairBillDetail.Location = new System.Drawing.Point(2, 2);
-            this.gunaDtgvRepairBillDetail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaDtgvRepairBillDetail.Location = new System.Drawing.Point(3, 2);
+            this.gunaDtgvRepairBillDetail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaDtgvRepairBillDetail.Name = "gunaDtgvRepairBillDetail";
             this.gunaDtgvRepairBillDetail.ReadOnly = true;
             this.gunaDtgvRepairBillDetail.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Defago Noto Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDtgvRepairBillDetail.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle29.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Defago Noto Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDtgvRepairBillDetail.RowHeadersDefaultCellStyle = dataGridViewCellStyle29;
             this.gunaDtgvRepairBillDetail.RowHeadersVisible = false;
             this.gunaDtgvRepairBillDetail.RowHeadersWidth = 51;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
-            this.gunaDtgvRepairBillDetail.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.Black;
+            this.gunaDtgvRepairBillDetail.RowsDefaultCellStyle = dataGridViewCellStyle30;
             this.gunaDtgvRepairBillDetail.RowTemplate.Height = 33;
             this.gunaDtgvRepairBillDetail.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDtgvRepairBillDetail.Size = new System.Drawing.Size(617, 318);
+            this.gunaDtgvRepairBillDetail.Size = new System.Drawing.Size(816, 248);
             this.gunaDtgvRepairBillDetail.TabIndex = 53;
             this.gunaDtgvRepairBillDetail.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.gunaDtgvRepairBillDetail.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -756,7 +904,7 @@
             this.price.Name = "price";
             this.price.ReadOnly = true;
             this.price.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.price.Width = 77;
+            this.price.Width = 90;
             // 
             // quantity
             // 
@@ -767,7 +915,7 @@
             this.quantity.Name = "quantity";
             this.quantity.ReadOnly = true;
             this.quantity.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.quantity.Width = 89;
+            this.quantity.Width = 111;
             // 
             // cal_unit
             // 
@@ -777,7 +925,7 @@
             this.cal_unit.MinimumWidth = 6;
             this.cal_unit.Name = "cal_unit";
             this.cal_unit.ReadOnly = true;
-            this.cal_unit.Width = 102;
+            this.cal_unit.Width = 127;
             // 
             // subtotal
             // 
@@ -787,7 +935,7 @@
             this.subtotal.MinimumWidth = 6;
             this.subtotal.Name = "subtotal";
             this.subtotal.ReadOnly = true;
-            this.subtotal.Width = 74;
+            this.subtotal.Width = 90;
             // 
             // edit
             // 
@@ -813,18 +961,38 @@
             this.delete.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.delete.Width = 8;
             // 
+            // btnPricnt
+            // 
+            this.btnPricnt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPricnt.BackColor = System.Drawing.Color.Transparent;
+            this.btnPricnt.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnPricnt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPricnt.HoverState.ImageSize = new System.Drawing.Size(33, 33);
+            this.btnPricnt.Image = global::CarServiceManagement.Properties.Resources.printer;
+            this.btnPricnt.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnPricnt.ImageRotate = 0F;
+            this.btnPricnt.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnPricnt.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnPricnt.Location = new System.Drawing.Point(1319, 71);
+            this.btnPricnt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPricnt.Name = "btnPricnt";
+            this.btnPricnt.PressedState.ImageSize = new System.Drawing.Size(0, 0);
+            this.btnPricnt.Size = new System.Drawing.Size(49, 47);
+            this.btnPricnt.TabIndex = 18;
+            this.btnPricnt.Click += new System.EventHandler(this.btnPricnt_Click);
+            // 
             // RepairBillDetail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1035, 569);
+            this.ClientSize = new System.Drawing.Size(1380, 731);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.guna2PanelBottom);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "RepairBillDetail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RepairBillDetail";
@@ -838,6 +1006,8 @@
             this.guna2PanelBottom.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gunaDtgvParts)).EndInit();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvServices)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDtgvRepairBillDetail)).EndInit();
             this.ResumeLayout(false);
 
@@ -851,7 +1021,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         public System.Windows.Forms.Label labelPayment;
-        public Guna.UI2.WinForms.Guna2DateTimePicker dtpCreatedDate;
         public System.Windows.Forms.Label labelBillNumber;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label9;
@@ -861,12 +1030,10 @@
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label labelTotal;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelBottom;
-        private Guna.UI2.WinForms.Guna2ImageButton btnPrint;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private Guna.UI2.WinForms.Guna2DataGridView gunaDtgvParts;
         private System.Windows.Forms.DataGridViewTextBoxColumn partIDs;
@@ -889,6 +1056,15 @@
         private Guna.UI2.WinForms.Guna2ImageButton picMinimize;
         private Guna.UI2.WinForms.Guna2ImageButton ImageButtonMaximize;
         private Guna.UI2.WinForms.Guna2ImageButton ImageButtonClose;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private Guna.UI2.WinForms.Guna2TileButton btnAddService;
+        private Guna.UI2.WinForms.Guna2DataGridView dtgvServices;
+        public System.Windows.Forms.Label labelCreatedDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn serviceID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn service;
+        private System.Windows.Forms.DataGridViewTextBoxColumn service_price;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
+        private System.Windows.Forms.DataGridViewImageColumn deleteservice;
+        private Guna.UI2.WinForms.Guna2ImageButton btnPricnt;
     }
 }

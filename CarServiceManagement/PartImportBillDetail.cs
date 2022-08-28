@@ -23,9 +23,12 @@ namespace CarServiceManagement
 
         private void reloadTotal(int billID)
         {
-            DataTable data = DataProvider.Instance.ExecuteQuery("select top(1) sum(subtotal) as total from PartImportBillDetail " +
-                "where importbillID = " + billID +
-                "group by importbillID");
+            //DataTable data = DataProvider.Instance.ExecuteQuery("select top(1) sum(subtotal) as total from PartImportBillDetail " +
+            //    "where importbillID = " + billID +
+            //    "group by importbillID");
+
+            DataTable data = DataProvider.Instance.ExecuteQuery("select top(1) total from PartImportBill " +
+                "where importbillID = " + billID);
 
             if (data.Rows.Count > 0)
             {
@@ -290,9 +293,11 @@ namespace CarServiceManagement
             f.labelImportbillID.Text = passedID.ToString();
             f.numberStock.Enabled = true;
             f.ShowDialog();
+
             load_SpareParts();
             load_ImportBillDetail();
             partImportBills.Load_PartImportBill();
+            reloadTotal(passedID);
         }
     }
 }

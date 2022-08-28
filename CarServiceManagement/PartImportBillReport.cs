@@ -46,6 +46,8 @@ namespace CarServiceManagement
                 ReportParameter pStatus = new ReportParameter("pStatus", partImportBillDetail.labelBillStatus.Text);
                 ReportParameter pSupplier = new ReportParameter("pSupplier", partImportBillDetail.labelSupplier.Text);
                 ReportParameter pPayment = new ReportParameter("pPayment", partImportBillDetail.labelPayment.Text);
+                ReportParameter pDescription = new ReportParameter("pDescription", partImportBillDetail.labelDesc.Text);
+
 
                 reportViewer1.LocalReport.SetParameters(pPartImportBillID);
                 reportViewer1.LocalReport.SetParameters(pDate);
@@ -53,6 +55,8 @@ namespace CarServiceManagement
                 reportViewer1.LocalReport.SetParameters(pStatus);
                 reportViewer1.LocalReport.SetParameters(pSupplier);
                 reportViewer1.LocalReport.SetParameters(pPayment);
+                reportViewer1.LocalReport.SetParameters(pDescription);
+
 
 
                 reportViewer1.LocalReport.DataSources.Clear();

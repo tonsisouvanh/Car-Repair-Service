@@ -35,6 +35,18 @@ CREATE TABLE Districts
 	primary key (districtID)
 )
 
+if(OBJECT_ID('Services') is not null)
+	drop table Services
+go
+CREATE TABLE Services
+(
+    serviceID int IDENTITY(100,1) NOT NULL,
+	repairbillID int, --fk
+	service nvarchar(255), 
+	service_price money default 0, --calculated
+	primary key (serviceID,repairbillID)
+)
+
 if(OBJECT_ID('RepairBillDetail') is not null)
 	drop table RepairBillDetail
 go
@@ -43,8 +55,8 @@ CREATE TABLE RepairBillDetail
     repairbilldetailID int IDENTITY(100,1) NOT NULL,
 	partID int, --FK
 	repairbillID int, --FK
-	--vehicleID int, --FK
 	quantity int default 0,
+	part_price money default 0, --calculated
 	subtotal money default 0, --calculated
 	primary key (repairbilldetailID,partID,repairbillID)
 )
@@ -65,6 +77,8 @@ CREATE TABLE RepairBill
 	updated_date date default getdate(),
 	primary key (repairbillID)
 )
+
+
 
 
 if(OBJECT_ID('PartImportBillDetail') is not null)
@@ -262,6 +276,10 @@ foreign key (repairbillID) references RepairBill(repairbillID);
 --add constraint FK_RepairBillDetail_Vehicle
 --foreign key (vehicleID) references Vehicle(vehicleID);
 
+---- Repair Bill Detail -> Service
+alter table Services
+add constraint FK_Services_RepairBill
+foreign key (repairbillID) references RepairBill(repairbillID);
 
 
 
@@ -290,7 +308,8 @@ DBCC CHECKIDENT ('RepairBill', RESEED, 100);
 GO
 DBCC CHECKIDENT ('RepairBillDetail', RESEED, 100);
 GO
-
+DBCC CHECKIDENT ('Services', RESEED, 100);
+GO
 
 
 ---------------------- @@@ QUERY @@@ -------------------------------

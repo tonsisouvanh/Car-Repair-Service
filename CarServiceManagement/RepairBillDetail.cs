@@ -19,14 +19,17 @@ namespace CarServiceManagement
 
             load_RepairBillDetail();
             load_SpareParts();
+            load_Services();
 
         }
 
         private void reloadTotal(int billID)
         {
-            DataTable data = DataProvider.Instance.ExecuteQuery("select top(1) sum(subtotal) as total from RepairBillDetail " +
-                "where repairbillID = " + billID +
-                "group by repairbillID");
+            //DataTable data = DataProvider.Instance.ExecuteQuery("select top(1) sum(subtotal) as total from RepairBillDetail " +
+            //    "where repairbillID = " + billID +
+            //    "group by repairbillID");
+            DataTable data = DataProvider.Instance.ExecuteQuery("select top(1) total from RepairBill " +
+               "where repairbillID = " + billID);
 
             if (data.Rows.Count > 0)
             {
@@ -45,9 +48,16 @@ namespace CarServiceManagement
             gunaDtgvParts.Columns["part_price"].DefaultCellStyle.Format = "N0";
 
         }
+        public void load_Services()
+        {
+            DataTable data = DataProvider.Instance.ExecuteQuery("select serviceID,service,service_price from Services where repairbillID = " + passedID);
+            dtgvServices.DataSource = data;
+            dtgvServices.Columns["service_price"].DefaultCellStyle.Format = "N0";
+
+        }
         public void load_RepairBillDetail()
         {
-            DataTable data = DataProvider.Instance.ExecuteQuery("select pibd.repairbilldetailID, pibd.partID, pibd.repairbillID, p.name, p.price, pibd.quantity,p.cal_unit, pibd.subtotal " +
+            DataTable data = DataProvider.Instance.ExecuteQuery("select pibd.repairbilldetailID, pibd.partID, pibd.repairbillID, p.name, pibd.part_price as price, pibd.quantity,p.cal_unit, pibd.subtotal " +
                 "from RepairBillDetail pibd inner join Part p on pibd.partID = p.partID where pibd.repairbillID = " + passedID);
             gunaDtgvRepairBillDetail.DataSource = data;
             gunaDtgvRepairBillDetail.Columns["price"].DefaultCellStyle.Format = "N0";
@@ -147,14 +157,14 @@ namespace CarServiceManagement
                 int qty = Convert.ToInt32(Math.Round(f.numericQty.Value, 0));
                 int billid = Convert.ToInt32(labelBillNumber.Text.ToString());
                 int partid = Convert.ToInt32(gunaDtgvParts.Rows[e.RowIndex].Cells["partIDs"].FormattedValue.ToString());
+                decimal partPrice = Convert.ToDecimal(gunaDtgvParts.Rows[e.RowIndex].Cells["part_price"].FormattedValue.ToString());
+
                 if (qty > 0 && qty <= stockQty)
                 {
                     try
                     {
-
-
-                        string query = "exec sp_AddRepairBillDetail @partID , @importBillID , @quantity";
-                        int result = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { partid, billid, qty });
+                        string query = "exec sp_AddRepairBillDetail @partID , @importBillID , @quantity , @part_price";
+                        int result = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { partid, billid, qty, partPrice });
 
 
                         if (result != 0)
@@ -168,6 +178,7 @@ namespace CarServiceManagement
 
                         load_RepairBillDetail();
                         load_SpareParts();
+
                         repairBill.Load_RepairBill();
 
                         reloadTotal(billid);
@@ -189,6 +200,98 @@ namespace CarServiceManagement
         private void picMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+
+        }
+
+        private void btnAddService_Click(object sender, EventArgs e)
+        {
+            ServiceModule f = new ServiceModule();
+            f.labelID.Text = labelBillNumber.Text;
+            f.ShowDialog();
+
+            load_RepairBillDetail();
+            load_Services();
+            repairBill.Load_RepairBill();
+            reloadTotal(passedID);
+        }
+
+        private void dtgvServices_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string colName = dtgvServices.Columns[e.ColumnIndex].Name;
+
+            if (colName == "updateservice")
+            {
+                //int stockQty = Convert.ToInt32(gunaDtgvParts.Rows[e.RowIndex].Cells["stock"].FormattedValue.ToString());
+                //int qty = Convert.ToInt32(Math.Round(f.numericQty.Value, 0));
+                //int billid = Convert.ToInt32(labelBillNumber.Text.ToString());
+                //int partid = Convert.ToInt32(gunaDtgvParts.Rows[e.RowIndex].Cells["partIDs"].FormattedValue.ToString());
+                //decimal partPrice = Convert.ToDecimal(gunaDtgvParts.Rows[e.RowIndex].Cells["part_price"].FormattedValue.ToString());
+
+                //try
+                //{
+                //    string query = "exec sp_AddRepairBillDetail @partID , @importBillID , @quantity , @part_price";
+                //    int result = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { partid, billid, qty, partPrice });
+
+
+                //    if (result != 0)
+                //    {
+                //        MessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //    }
+                //    else
+                //    {
+                //        MessageBox.Show("ບໍ່ສາມາດເພີ່ມໄດ້", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //    }
+
+                //    load_RepairBillDetail();
+                //    load_SpareParts();
+
+                //    repairBill.Load_RepairBill();
+
+                //    reloadTotal(billid);
+
+                //}
+                //catch (Exception ex)
+                //{
+                //    MessageBox.Show(ex.Message);
+                //}
+            }
+            else if (colName == "deleteservice")
+            {
+                if (MessageBox.Show("ຕ້ອງການລົບຂໍ້ມູນ?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    try
+                    {
+                        int serviceID = Int32.Parse(dtgvServices.Rows[e.RowIndex].Cells["serviceID"].FormattedValue.ToString());
+                        decimal servicePrice = Convert.ToDecimal(dtgvServices.Rows[e.RowIndex].Cells["service_price"].FormattedValue.ToString());
+
+                        string query = "exec sp_deleteService @serviceID , @repairbillID , @service_price";
+                        int result = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { serviceID, passedID, servicePrice });
+
+                        if (result != 0)
+                        {
+                            MessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("ບໍ່ສາມາດລົບໄດ້ ຫຼື ລອງລົບຂໍ້ມູນລາຍລະອຽດບິນກ່ອນ ແລ້ວພະຍາຍາມໃໝ່", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+
+                    load_Services();
+                    reloadTotal(passedID);
+                    repairBill.Load_RepairBill();
+                }
+            }
+        }
+
+        private void btnPricnt_Click(object sender, EventArgs e)
+        {
 
         }
     }

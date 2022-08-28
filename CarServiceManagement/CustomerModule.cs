@@ -16,6 +16,8 @@ namespace CarServiceManagement
             load_District();
             customers = cust;
             btnUpdate.Enabled = false;
+            comboBoxDistrict.SelectedIndex = -1;
+            comboBoxProvince.SelectedIndex = -1;
 
         }
 
@@ -108,6 +110,7 @@ namespace CarServiceManagement
                         {
                             Vehicles v = new Vehicles();
                             VehicleModule f = new VehicleModule(v);
+                            f.txtCustInfo.Text = txtPhone.Text;
                             f.ShowDialog();
                         }
                     }
@@ -116,7 +119,7 @@ namespace CarServiceManagement
                         MessageBox.Show("ບໍ່ສາມາດເພີ່ມໄດ້", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
 
-                    Clear();
+                    //Clear();
 
                     customers.Load_Customers();
                 }

@@ -22,6 +22,14 @@
               <xs:element name="qty_in_stock" msprop:Generator_ColumnPropNameInTable="qty_in_stockColumn" msprop:Generator_ColumnPropNameInRow="qty_in_stock" msprop:Generator_UserColumnName="qty_in_stock" msprop:Generator_ColumnVarNameInTable="columnqty_in_stock" type="xs:string" minOccurs="0" />
               <xs:element name="qty_imported" msprop:Generator_ColumnPropNameInTable="qty_importedColumn" msprop:Generator_ColumnPropNameInRow="qty_imported" msprop:Generator_UserColumnName="qty_imported" msprop:Generator_ColumnVarNameInTable="columnqty_imported" type="xs:string" minOccurs="0" />
               <xs:element name="subtotal" msprop:Generator_ColumnPropNameInTable="subtotalColumn" msprop:Generator_ColumnPropNameInRow="subtotal" msprop:Generator_UserColumnName="subtotal" msprop:Generator_ColumnVarNameInTable="columnsubtotal" type="xs:string" minOccurs="0" />
+              <xs:element name="description" msprop:Generator_ColumnPropNameInRow="description" msprop:Generator_ColumnPropNameInTable="descriptionColumn" msprop:Generator_ColumnVarNameInTable="columndescription" msprop:Generator_UserColumnName="description" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DtRepairBill" msprop:Generator_RowEvHandlerName="DtRepairBillRowChangeEventHandler" msprop:Generator_RowDeletedName="DtRepairBillRowDeleted" msprop:Generator_RowDeletingName="DtRepairBillRowDeleting" msprop:Generator_RowEvArgName="DtRepairBillRowChangeEvent" msprop:Generator_TablePropName="DtRepairBill" msprop:Generator_RowChangedName="DtRepairBillRowChanged" msprop:Generator_RowChangingName="DtRepairBillRowChanging" msprop:Generator_TableClassName="DtRepairBillDataTable" msprop:Generator_RowClassName="DtRepairBillRow" msprop:Generator_TableVarName="tableDtRepairBill" msprop:Generator_UserTableName="DtRepairBill">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="pCustomer" msprop:Generator_ColumnPropNameInRow="pCustomer" msprop:Generator_ColumnPropNameInTable="pCustomerColumn" msprop:Generator_ColumnVarNameInTable="columnpCustomer" msprop:Generator_UserColumnName="pCustomer" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

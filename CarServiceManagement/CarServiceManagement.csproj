@@ -182,6 +182,18 @@
     <Compile Include="RepairBillModule.Designer.cs">
       <DependentUpon>RepairBillModule.cs</DependentUpon>
     </Compile>
+    <Compile Include="RepairbillReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RepairbillReport.Designer.cs">
+      <DependentUpon>RepairbillReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceModule.Designer.cs">
+      <DependentUpon>ServiceModule.cs</DependentUpon>
+    </Compile>
     <Compile Include="SparePartDetial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -329,8 +341,14 @@
     <EmbeddedResource Include="RepairBillModule.resx">
       <DependentUpon>RepairBillModule.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RepairbillReport.resx">
+      <DependentUpon>RepairbillReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="rptPartImportBill.rdlc" />
-    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="rptRepairBill.rdlc" />
+    <EmbeddedResource Include="ServiceModule.resx">
+      <DependentUpon>ServiceModule.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SparePartMain.resx">
       <DependentUpon>SparePartMain.cs</DependentUpon>
     </EmbeddedResource>

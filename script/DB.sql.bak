@@ -133,6 +133,7 @@ foreign key (part_type) references PartType(parttypeID);
 --	customerID int, --FK
 --	primary key (vehicleID)
 --)
+
 if(OBJECT_ID('Vehicle') is not null)
 	drop table Vehicle
 go

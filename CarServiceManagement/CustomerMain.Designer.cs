@@ -231,7 +231,7 @@
             this.guna2PanelTitle.Location = new System.Drawing.Point(235, 0);
             this.guna2PanelTitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2PanelTitle.Name = "guna2PanelTitle";
-            this.guna2PanelTitle.Size = new System.Drawing.Size(1157, 62);
+            this.guna2PanelTitle.Size = new System.Drawing.Size(1357, 62);
             this.guna2PanelTitle.TabIndex = 6;
             // 
             // picMinimize
@@ -244,7 +244,7 @@
             this.picMinimize.ImageOffset = new System.Drawing.Point(0, 0);
             this.picMinimize.ImageRotate = 0F;
             this.picMinimize.ImageSize = new System.Drawing.Size(23, 23);
-            this.picMinimize.Location = new System.Drawing.Point(1059, 7);
+            this.picMinimize.Location = new System.Drawing.Point(1259, 7);
             this.picMinimize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picMinimize.Name = "picMinimize";
             this.picMinimize.PressedState.ImageSize = new System.Drawing.Size(27, 27);
@@ -264,7 +264,7 @@
             this.ImageButtonMaximize.ImageOffset = new System.Drawing.Point(0, 0);
             this.ImageButtonMaximize.ImageRotate = 0F;
             this.ImageButtonMaximize.ImageSize = new System.Drawing.Size(23, 23);
-            this.ImageButtonMaximize.Location = new System.Drawing.Point(1013, 7);
+            this.ImageButtonMaximize.Location = new System.Drawing.Point(1213, 7);
             this.ImageButtonMaximize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ImageButtonMaximize.Name = "ImageButtonMaximize";
             this.ImageButtonMaximize.PressedState.ImageSize = new System.Drawing.Size(27, 27);
@@ -283,7 +283,7 @@
             this.ImageButtonClose.ImageOffset = new System.Drawing.Point(0, 0);
             this.ImageButtonClose.ImageRotate = 0F;
             this.ImageButtonClose.ImageSize = new System.Drawing.Size(23, 23);
-            this.ImageButtonClose.Location = new System.Drawing.Point(1107, 7);
+            this.ImageButtonClose.Location = new System.Drawing.Point(1307, 7);
             this.ImageButtonClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ImageButtonClose.Name = "ImageButtonClose";
             this.ImageButtonClose.PressedState.ImageSize = new System.Drawing.Size(27, 27);
@@ -299,7 +299,7 @@
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(0, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(1157, 62);
+            this.lblTitle.Size = new System.Drawing.Size(1357, 62);
             this.lblTitle.TabIndex = 2;
             this.lblTitle.Text = "ຫົວຂໍ້";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -313,14 +313,14 @@
             this.PanelMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PanelMain.Name = "PanelMain";
             this.PanelMain.Padding = new System.Windows.Forms.Padding(0, 0, 1, 0);
-            this.PanelMain.Size = new System.Drawing.Size(1157, 894);
+            this.PanelMain.Size = new System.Drawing.Size(1357, 894);
             this.PanelMain.TabIndex = 7;
             // 
             // CustomerMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1392, 956);
+            this.ClientSize = new System.Drawing.Size(1592, 956);
             this.Controls.Add(this.PanelMain);
             this.Controls.Add(this.guna2PanelTitle);
             this.Controls.Add(this.guna2PanelSidebar);

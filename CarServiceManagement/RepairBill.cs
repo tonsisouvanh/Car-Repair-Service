@@ -21,6 +21,8 @@ namespace CarServiceManagement
 
             gunaDtgvRepairBill.DataSource = data;
             gunaDtgvRepairBill.Columns["total"].DefaultCellStyle.Format = "N0";
+            gunaDtgvRepairBill.Columns["created_date"].DefaultCellStyle.Format = "dd/MM/yyyy";
+
         }
 
         private void ImageButtonAdd_Click(object sender, EventArgs e)
@@ -144,7 +146,9 @@ namespace CarServiceManagement
                 f.labelBillNumber.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["repairbillID"].FormattedValue.ToString();
                 f.labelBillStatus.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["status"].FormattedValue.ToString();
                 f.labelTotal.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["total"].FormattedValue.ToString();
-                f.dtpCreatedDate.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["created_date"].FormattedValue.ToString();
+                //f.dtpCreatedDate.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["created_date"].FormattedValue.ToString();
+                f.labelCreatedDate.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["created_date"].FormattedValue.ToString();
+
                 f.labelPayment.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["payment"].FormattedValue.ToString();
                 f.ShowDialog();
             }

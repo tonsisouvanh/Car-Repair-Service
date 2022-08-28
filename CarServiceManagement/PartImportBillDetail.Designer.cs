@@ -46,7 +46,6 @@
             this.ImageButtonClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.lblUsername = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dtpCreatedDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.labelBillNumber = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -89,6 +88,8 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.add = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dtpCreatedDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.labelDesc = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -199,27 +200,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // dtpCreatedDate
-            // 
-            this.dtpCreatedDate.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.dtpCreatedDate.BorderRadius = 1;
-            this.dtpCreatedDate.Checked = true;
-            this.dtpCreatedDate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dtpCreatedDate.CustomFormat = "dd/MM/yyyy";
-            this.dtpCreatedDate.Enabled = false;
-            this.dtpCreatedDate.FillColor = System.Drawing.Color.SteelBlue;
-            this.dtpCreatedDate.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpCreatedDate.ForeColor = System.Drawing.Color.White;
-            this.dtpCreatedDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpCreatedDate.Location = new System.Drawing.Point(555, 71);
-            this.dtpCreatedDate.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpCreatedDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpCreatedDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtpCreatedDate.Name = "dtpCreatedDate";
-            this.dtpCreatedDate.Size = new System.Drawing.Size(267, 31);
-            this.dtpCreatedDate.TabIndex = 9;
-            this.dtpCreatedDate.Value = new System.DateTime(2022, 8, 9, 8, 45, 24, 887);
             // 
             // labelBillNumber
             // 
@@ -343,6 +323,7 @@
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.Controls.Add(this.labelDesc);
             this.guna2Panel1.Controls.Add(this.btnPrint);
             this.guna2Panel1.Controls.Add(this.labelSupplier);
             this.guna2Panel1.Controls.Add(this.labelPayment);
@@ -843,46 +824,42 @@
             // 
             // part_price
             // 
-            this.part_price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.part_price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.part_price.DataPropertyName = "part_price";
             this.part_price.HeaderText = "ລາຄາຂາຍ";
             this.part_price.MinimumWidth = 6;
             this.part_price.Name = "part_price";
             this.part_price.ReadOnly = true;
             this.part_price.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.part_price.Width = 121;
             // 
             // import_price
             // 
-            this.import_price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.import_price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.import_price.DataPropertyName = "import_price";
             this.import_price.HeaderText = "ລາຄາຕົ້ນທຶນ";
             this.import_price.MinimumWidth = 6;
             this.import_price.Name = "import_price";
             this.import_price.ReadOnly = true;
             this.import_price.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.import_price.Width = 146;
             // 
             // dataGridViewTextBoxColumn4
             // 
-            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn4.DataPropertyName = "cal_unit";
             this.dataGridViewTextBoxColumn4.HeaderText = "ໜ່ວຍວັດ";
             this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
             this.dataGridViewTextBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewTextBoxColumn4.Width = 123;
             // 
             // stock
             // 
-            this.stock.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.stock.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.stock.DataPropertyName = "stock";
             this.stock.HeaderText = "ຈ/ນໃນສາງ";
             this.stock.MinimumWidth = 6;
             this.stock.Name = "stock";
             this.stock.ReadOnly = true;
-            this.stock.Width = 132;
             // 
             // add
             // 
@@ -895,6 +872,39 @@
             this.add.ReadOnly = true;
             this.add.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.add.Width = 6;
+            // 
+            // dtpCreatedDate
+            // 
+            this.dtpCreatedDate.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.dtpCreatedDate.BorderRadius = 1;
+            this.dtpCreatedDate.Checked = true;
+            this.dtpCreatedDate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dtpCreatedDate.CustomFormat = "dd/MM/yyyy";
+            this.dtpCreatedDate.Enabled = false;
+            this.dtpCreatedDate.FillColor = System.Drawing.Color.SteelBlue;
+            this.dtpCreatedDate.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpCreatedDate.ForeColor = System.Drawing.Color.White;
+            this.dtpCreatedDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpCreatedDate.Location = new System.Drawing.Point(555, 71);
+            this.dtpCreatedDate.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpCreatedDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpCreatedDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpCreatedDate.Name = "dtpCreatedDate";
+            this.dtpCreatedDate.Size = new System.Drawing.Size(267, 31);
+            this.dtpCreatedDate.TabIndex = 9;
+            this.dtpCreatedDate.Value = new System.DateTime(2022, 8, 9, 8, 45, 24, 887);
+            // 
+            // labelDesc
+            // 
+            this.labelDesc.AutoSize = true;
+            this.labelDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDesc.Location = new System.Drawing.Point(997, 100);
+            this.labelDesc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelDesc.Name = "labelDesc";
+            this.labelDesc.Size = new System.Drawing.Size(73, 18);
+            this.labelDesc.TabIndex = 19;
+            this.labelDesc.Text = "labelDesc";
+            this.labelDesc.Visible = false;
             // 
             // PartImportBillDetail
             // 
@@ -943,7 +953,6 @@
         private Guna.UI2.WinForms.Guna2ImageButton btnPrint;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        public Guna.UI2.WinForms.Guna2DateTimePicker dtpCreatedDate;
         public System.Windows.Forms.Label labelBillStatus;
         public System.Windows.Forms.Label labelTotal;
         public System.Windows.Forms.Label labelBillNumber;
@@ -979,5 +988,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn stock;
         private System.Windows.Forms.DataGridViewImageColumn add;
+        public Guna.UI2.WinForms.Guna2DateTimePicker dtpCreatedDate;
+        public System.Windows.Forms.Label labelDesc;
     }
 }
