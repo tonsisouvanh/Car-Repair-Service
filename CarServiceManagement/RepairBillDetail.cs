@@ -292,7 +292,8 @@ namespace CarServiceManagement
 
         private void btnPricnt_Click(object sender, EventArgs e)
         {
-
+            RepairbillReport f = new RepairbillReport(this);
+            f.ShowDialog();
         }
     }
 }

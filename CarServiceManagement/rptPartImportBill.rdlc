@@ -316,7 +316,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox24</rd:DefaultName>
@@ -814,7 +816,7 @@
             </Paragraphs>
             <rd:DefaultName>pDescription</rd:DefaultName>
             <Top>2.28056in</Top>
-            <Left>1.46881in</Left>
+            <Left>1.4827in</Left>
             <Height>0.35222in</Height>
             <Width>7.42595in</Width>
             <ZIndex>8</ZIndex>
