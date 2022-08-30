@@ -64,22 +64,22 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>0.70702in</Width>
+                  <Width>0.60251in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.43724in</Width>
+                  <Width>2.33273in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.30003in</Width>
+                  <Width>1.19552in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.11227in</Width>
+                  <Width>1.00776in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.29264in</Width>
+                  <Width>1.18813in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.54558in</Width>
+                  <Width>1.44107in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -529,10 +529,10 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>0.02778in</Top>
-            <Left>0.5in</Left>
+            <Top>0.04167in</Top>
+            <Left>0.25in</Left>
             <Height>0.5in</Height>
-            <Width>8.39478in</Width>
+            <Width>7.76772in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -559,8 +559,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>pPayment</rd:DefaultName>
-            <Top>1.48444in</Top>
-            <Left>7.0006in</Left>
+            <Top>1.36777in</Top>
+            <Left>6.12332in</Left>
             <Height>0.35222in</Height>
             <Width>1.89441in</Width>
             <ZIndex>1</ZIndex>
@@ -595,8 +595,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>pTotal</rd:DefaultName>
-            <Top>1.13222in</Top>
-            <Left>7.0006in</Left>
+            <Top>1.01555in</Top>
+            <Left>6.12332in</Left>
             <Height>0.35222in</Height>
             <Width>1.8944in</Width>
             <ZIndex>2</ZIndex>
@@ -631,8 +631,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>pSupplier</rd:DefaultName>
-            <Top>0.78in</Top>
-            <Left>7.0006in</Left>
+            <Top>0.66333in</Top>
+            <Left>6.12332in</Left>
             <Height>0.35222in</Height>
             <Width>1.89441in</Width>
             <ZIndex>3</ZIndex>
@@ -668,8 +668,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>0.78in</Top>
-            <Left>4.90328in</Left>
+            <Top>0.66333in</Top>
+            <Left>4.026in</Left>
             <Height>0.35222in</Height>
             <Width>1.99381in</Width>
             <ZIndex>4</ZIndex>
@@ -705,8 +705,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>1.13222in</Top>
-            <Left>4.90328in</Left>
+            <Top>1.01555in</Top>
+            <Left>4.026in</Left>
             <Height>0.35222in</Height>
             <Width>1.99381in</Width>
             <ZIndex>5</ZIndex>
@@ -742,8 +742,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>1.48444in</Top>
-            <Left>4.90328in</Left>
+            <Top>1.36777in</Top>
+            <Left>4.026in</Left>
             <Height>0.35222in</Height>
             <Width>1.99381in</Width>
             <ZIndex>6</ZIndex>
@@ -779,8 +779,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>2.28056in</Top>
-            <Left>0.5in</Left>
+            <Top>1.92501in</Top>
+            <Left>0.25in</Left>
             <Height>0.35222in</Height>
             <Width>0.92714in</Width>
             <ZIndex>7</ZIndex>
@@ -815,10 +815,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>pDescription</rd:DefaultName>
-            <Top>2.28056in</Top>
-            <Left>1.4827in</Left>
+            <Top>1.92501in</Top>
+            <Left>1.24658in</Left>
             <Height>0.35222in</Height>
-            <Width>7.42595in</Width>
+            <Width>6.77113in</Width>
             <ZIndex>8</ZIndex>
             <Style>
               <Border>
@@ -832,13 +832,13 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>2.68834in</Height>
+        <Height>6.65201cm</Height>
         <Style />
       </Body>
-      <Width>9.37834in</Width>
+      <Width>21.00001cm</Width>
       <Page>
         <PageHeader>
-          <Height>3.49778in</Height>
+          <Height>8.91964cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -849,7 +849,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>ໃບບິນນຳເຂົ້າອາໄຫຼ່</Value>
+                      <Value>ໃບບິນນຳເຂົ້າອາໄຫຼ່d</Value>
                       <Style>
                         <FontFamily>phetsarath OT</FontFamily>
                         <FontSize>16pt</FontSize>
@@ -863,9 +863,10 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox15</rd:DefaultName>
-              <Top>1.01667in</Top>
+              <Top>1.00278in</Top>
+              <Left>0.25in</Left>
               <Height>0.48556in</Height>
-              <Width>9.37834in</Width>
+              <Width>7.76772in</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -898,8 +899,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox15</rd:DefaultName>
-              <Top>1.58556in</Top>
-              <Left>0.5in</Left>
+              <Top>1.6189in</Top>
+              <Left>0.25in</Left>
               <Height>0.38333in</Height>
               <Width>1.99381in</Width>
               <ZIndex>1</ZIndex>
@@ -935,8 +936,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox15</rd:DefaultName>
-              <Top>2.36611in</Top>
-              <Left>0.5in</Left>
+              <Top>2.39945in</Top>
+              <Left>0.25in</Left>
               <Height>0.35222in</Height>
               <Width>1.99381in</Width>
               <ZIndex>2</ZIndex>
@@ -972,8 +973,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox15</rd:DefaultName>
-              <Top>2.73222in</Top>
-              <Left>0.5in</Left>
+              <Top>2.76556in</Top>
+              <Left>0.25in</Left>
               <Height>0.35222in</Height>
               <Width>2.97714in</Width>
               <ZIndex>3</ZIndex>
@@ -1016,8 +1017,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox15</rd:DefaultName>
-              <Top>3.08444in</Top>
-              <Left>0.5in</Left>
+              <Top>3.11778in</Top>
+              <Left>0.25in</Left>
               <Height>0.35222in</Height>
               <Width>3.68547in</Width>
               <ZIndex>4</ZIndex>
@@ -1053,8 +1054,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox15</rd:DefaultName>
-              <Top>1.57167in</Top>
-              <Left>6.2982in</Left>
+              <Top>1.60501in</Top>
+              <Left>5.42116in</Left>
               <Height>0.35222in</Height>
               <Width>0.91047in</Width>
               <ZIndex>5</ZIndex>
@@ -1090,8 +1091,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox15</rd:DefaultName>
-              <Top>1.92389in</Top>
-              <Left>6.2982in</Left>
+              <Top>1.95723in</Top>
+              <Left>5.42116in</Left>
               <Height>0.35222in</Height>
               <Width>0.91047in</Width>
               <ZIndex>6</ZIndex>
@@ -1115,6 +1116,7 @@
                     <TextRun>
                       <Value>=Parameters!pDate.Value</Value>
                       <Style>
+                        <FontFamily>phetsarath OT</FontFamily>
                         <FontSize>12pt</FontSize>
                         <FontWeight>Normal</FontWeight>
                         <Format>d</Format>
@@ -1127,8 +1129,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>pDate</rd:DefaultName>
-              <Top>1.92389in</Top>
-              <Left>7.20867in</Left>
+              <Top>1.95723in</Top>
+              <Left>6.33163in</Left>
               <Height>0.35222in</Height>
               <Width>1.68609in</Width>
               <ZIndex>7</ZIndex>
@@ -1152,6 +1154,7 @@
                     <TextRun>
                       <Value>=Parameters!pPartImportBillID.Value</Value>
                       <Style>
+                        <FontFamily>phetsarath OT</FontFamily>
                         <FontSize>12pt</FontSize>
                         <FontWeight>Normal</FontWeight>
                       </Style>
@@ -1163,8 +1166,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>pPartImportBillID</rd:DefaultName>
-              <Top>1.57167in</Top>
-              <Left>7.20867in</Left>
+              <Top>1.60501in</Top>
+              <Left>6.33163in</Left>
               <Height>0.35222in</Height>
               <Width>1.68609in</Width>
               <ZIndex>8</ZIndex>
@@ -1200,8 +1203,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>pStatus</rd:DefaultName>
-              <Top>2.65944in</Top>
-              <Left>6.2982in</Left>
+              <Top>2.71833in</Top>
+              <Left>5.42116in</Left>
               <Height>0.35222in</Height>
               <Width>2.59656in</Width>
               <ZIndex>9</ZIndex>
@@ -1240,8 +1243,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox15</rd:DefaultName>
+              <Left>0.25in</Left>
               <Height>0.94722in</Height>
-              <Width>9.37834in</Width>
+              <Width>7.76771in</Width>
               <ZIndex>10</ZIndex>
               <Style>
                 <Border>
@@ -1275,8 +1279,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox15</rd:DefaultName>
-              <Top>1.96889in</Top>
-              <Left>0.5in</Left>
+              <Top>2.00223in</Top>
+              <Left>0.25in</Left>
               <Height>0.38333in</Height>
               <Width>1.99381in</Width>
               <ZIndex>11</ZIndex>
@@ -1298,97 +1302,13 @@
             </Border>
           </Style>
         </PageHeader>
-        <PageFooter>
-          <Height>0.49944in</Height>
-          <PrintOnFirstPage>true</PrintOnFirstPage>
-          <PrintOnLastPage>true</PrintOnLastPage>
-          <ReportItems>
-            <Textbox Name="Textbox27">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>ຜູ້ຮັບເຄື່ອງ:..........................................</Value>
-                      <Style>
-                        <FontFamily>phetsarath OT</FontFamily>
-                        <FontSize>12pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Left</TextAlign>
-                  </Style>
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox15</rd:DefaultName>
-              <Top>0in</Top>
-              <Left>0.5in</Left>
-              <Height>0.48555in</Height>
-              <Width>3.97714in</Width>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <VerticalAlign>Middle</VerticalAlign>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Textbox Name="Textbox28">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>ຜູ້ສົ່ງເຄື່ອງ:..........................................</Value>
-                      <Style>
-                        <FontFamily>phetsarath OT</FontFamily>
-                        <FontSize>12pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Left</TextAlign>
-                  </Style>
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox15</rd:DefaultName>
-              <Top>0in</Top>
-              <Left>4.94428in</Left>
-              <Height>0.48555in</Height>
-              <Width>3.95048in</Width>
-              <ZIndex>1</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <VerticalAlign>Middle</VerticalAlign>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-          </ReportItems>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-          </Style>
-        </PageFooter>
-        <PageHeight>16.54in</PageHeight>
-        <PageWidth>11.69in</PageWidth>
-        <LeftMargin>0.25in</LeftMargin>
-        <RightMargin>0.25in</RightMargin>
-        <TopMargin>0.25in</TopMargin>
-        <BottomMargin>0.25in</BottomMargin>
+        <PageHeight>29.7cm</PageHeight>
+        <PageWidth>21cm</PageWidth>
+        <LeftMargin>0cm</LeftMargin>
+        <RightMargin>0cm</RightMargin>
+        <TopMargin>0cm</TopMargin>
+        <BottomMargin>0cm</BottomMargin>
+        <ColumnSpacing>1.27cm</ColumnSpacing>
         <Style />
       </Page>
     </ReportSection>
@@ -1479,6 +1399,6 @@
       </CellDefinitions>
     </GridLayoutDefinition>
   </ReportParametersLayout>
-  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>40534621-9fbd-41d6-8ea8-854fedcca367</rd:ReportID>
 </Report>

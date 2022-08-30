@@ -344,6 +344,7 @@
     <EmbeddedResource Include="RepairbillReport.resx">
       <DependentUpon>RepairbillReport.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="rptPartImportBill.rdlc" />
     <EmbeddedResource Include="rptRepairBill.rdlc" />
     <EmbeddedResource Include="ServiceModule.resx">

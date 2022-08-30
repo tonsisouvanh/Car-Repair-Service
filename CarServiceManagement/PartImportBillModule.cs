@@ -32,7 +32,7 @@ namespace CarServiceManagement
             string supplier = txtSupplier.Text.ToString();
             string suppierContact = txtSupplierContact.Text.ToString();
 
-            return supplier != "" && suppierContact != "";
+            return supplier != "";
         }
 
         public void Clear()

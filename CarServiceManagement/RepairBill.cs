@@ -21,7 +21,7 @@ namespace CarServiceManagement
 
             gunaDtgvRepairBill.DataSource = data;
             gunaDtgvRepairBill.Columns["total"].DefaultCellStyle.Format = "N0";
-            //gunaDtgvRepairBill.Columns["created_date"].DefaultCellStyle.Format = "dd/MM/yyyy";
+            gunaDtgvRepairBill.Columns["created_date"].DefaultCellStyle.Format = "dd/MM/yyyy";
 
         }
 
@@ -122,7 +122,8 @@ namespace CarServiceManagement
                 module.txtPayment.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["payment"].FormattedValue.ToString();
                 module.txtDesc.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["descriptions"].FormattedValue.ToString();
                 module.txtTotal.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["total"].FormattedValue.ToString();
-                module.dtpCreatedDate.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["created_date"].FormattedValue.ToString();
+                //module.dtpCreatedDate.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["created_date"].FormattedValue.ToString();
+                module.dtpCreatedDate.Value = Convert.ToDateTime(gunaDtgvRepairBill.Rows[e.RowIndex].Cells["created_date"].Value.ToString());
 
 
                 module.btnSave.Enabled = false;

@@ -18,7 +18,7 @@ namespace CarServiceManagement
            "concat(supplier,status,payment) LIKE N'%" + txtSearch.Text + "%'");
             gunaDtgvPartImportBill.DataSource = data;
             gunaDtgvPartImportBill.Columns["total"].DefaultCellStyle.Format = "N0";
-            //gunaDtgvPartImportBill.Columns["created_date"].DefaultCellStyle.Format = "dd/MM/yyyy";
+            gunaDtgvPartImportBill.Columns["created_date"].DefaultCellStyle.Format = "dd/MM/yyyy";
 
         }
 
@@ -114,7 +114,9 @@ namespace CarServiceManagement
                 module.txtPayment.Text = gunaDtgvPartImportBill.Rows[e.RowIndex].Cells["payment"].FormattedValue.ToString();
                 module.txtDesc.Text = gunaDtgvPartImportBill.Rows[e.RowIndex].Cells["descriptions"].FormattedValue.ToString();
                 module.txtTotal.Text = gunaDtgvPartImportBill.Rows[e.RowIndex].Cells["total"].FormattedValue.ToString();
-                module.dtpCreatedDate.Text = gunaDtgvPartImportBill.Rows[e.RowIndex].Cells["created_date"].FormattedValue.ToString();
+                //module.dtpCreatedDate.Text = gunaDtgvPartImportBill.Rows[e.RowIndex].Cells["created_date"].FormattedValue.ToString();
+                module.dtpCreatedDate.Value = Convert.ToDateTime(gunaDtgvPartImportBill.Rows[e.RowIndex].Cells["created_date"].Value.ToString());
+
 
 
                 module.btnSave.Enabled = false;

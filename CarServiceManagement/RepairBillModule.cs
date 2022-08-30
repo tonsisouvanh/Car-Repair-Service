@@ -120,8 +120,8 @@ namespace CarServiceManagement
 
         private void labelAddNewCust_Click(object sender, EventArgs e)
         {
-            Customers cust = new Customers();
-            CustomerModule f = new CustomerModule(cust);
+            //Customers cust = new Customers();
+            CustomerModule f = new CustomerModule(new Customers());
             f.ShowDialog();
         }
 

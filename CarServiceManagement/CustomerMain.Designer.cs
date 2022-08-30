@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2PanelSidebar = new Guna.UI2.WinForms.Guna2Panel();
-            this.labelTimer = new System.Windows.Forms.Label();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.sidebar_vehicles = new Guna.UI2.WinForms.Guna2Button();
@@ -61,7 +60,6 @@
             this.guna2PanelSidebar.BackColor = System.Drawing.Color.Teal;
             this.guna2PanelSidebar.BorderColor = System.Drawing.Color.White;
             this.guna2PanelSidebar.BorderThickness = 2;
-            this.guna2PanelSidebar.Controls.Add(this.labelTimer);
             this.guna2PanelSidebar.Controls.Add(this.guna2Button2);
             this.guna2PanelSidebar.Controls.Add(this.guna2Button1);
             this.guna2PanelSidebar.Controls.Add(this.sidebar_vehicles);
@@ -77,18 +75,6 @@
             this.guna2PanelSidebar.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.guna2PanelSidebar.Size = new System.Drawing.Size(235, 956);
             this.guna2PanelSidebar.TabIndex = 5;
-            // 
-            // labelTimer
-            // 
-            this.labelTimer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.labelTimer.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTimer.ForeColor = System.Drawing.Color.White;
-            this.labelTimer.Location = new System.Drawing.Point(7, 907);
-            this.labelTimer.Name = "labelTimer";
-            this.labelTimer.Size = new System.Drawing.Size(221, 43);
-            this.labelTimer.TabIndex = 11;
-            this.labelTimer.Text = "Time";
-            this.labelTimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2Button2
             // 
@@ -353,6 +339,5 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button sidebar_vehicles;
         private Guna.UI2.WinForms.Guna2ImageButton picMinimize;
-        private System.Windows.Forms.Label labelTimer;
     }
 }

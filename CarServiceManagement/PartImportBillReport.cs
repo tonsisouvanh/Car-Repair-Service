@@ -27,7 +27,9 @@ namespace CarServiceManagement
             //ReportDataSource reportDataSource;
             try
             {
-                this.reportViewer1.LocalReport.ReportPath = Application.StartupPath + @"\Reports\rptPartImportBill.rdlc";
+                //this.reportViewer1.LocalReport.ReportPath = Application.StartupPath + @"\Reports\rptPartImportBill.rdlc";
+                this.reportViewer1.LocalReport.ReportPath = @"C:\Users\tonsi\OneDrive\Desktop\C#_Project\CarServiceManagement\CarServiceManagement\rptPartImportBill.rdlc";
+
 
 
                 this.reportViewer1.LocalReport.DataSources.Clear();
