@@ -51,6 +51,7 @@
             this.labelBrand = new System.Windows.Forms.Label();
             this.labelType = new System.Windows.Forms.Label();
             this.labelPlateNO = new System.Windows.Forms.Label();
+            this.labelOilChangeNoti = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -185,7 +186,7 @@
             this.txtDescriptions.Enabled = false;
             this.txtDescriptions.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescriptions.Location = new System.Drawing.Point(139, 260);
-            this.txtDescriptions.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDescriptions.Margin = new System.Windows.Forms.Padding(4);
             this.txtDescriptions.Multiline = true;
             this.txtDescriptions.Name = "txtDescriptions";
             this.txtDescriptions.Size = new System.Drawing.Size(892, 107);
@@ -236,7 +237,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1061, 62);
             this.panel1.TabIndex = 133;
@@ -257,7 +258,7 @@
             // 
             this.labelName.AutoSize = true;
             this.labelName.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelName.Location = new System.Drawing.Point(135, 97);
+            this.labelName.Location = new System.Drawing.Point(135, 95);
             this.labelName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(74, 33);
@@ -268,7 +269,7 @@
             // 
             this.labelColor.AutoSize = true;
             this.labelColor.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelColor.Location = new System.Drawing.Point(696, 97);
+            this.labelColor.Location = new System.Drawing.Point(696, 95);
             this.labelColor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelColor.Name = "labelColor";
             this.labelColor.Size = new System.Drawing.Size(74, 33);
@@ -279,7 +280,7 @@
             // 
             this.labelBrand.AutoSize = true;
             this.labelBrand.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBrand.Location = new System.Drawing.Point(696, 150);
+            this.labelBrand.Location = new System.Drawing.Point(696, 148);
             this.labelBrand.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelBrand.Name = "labelBrand";
             this.labelBrand.Size = new System.Drawing.Size(74, 33);
@@ -290,7 +291,7 @@
             // 
             this.labelType.AutoSize = true;
             this.labelType.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelType.Location = new System.Drawing.Point(133, 150);
+            this.labelType.Location = new System.Drawing.Point(133, 148);
             this.labelType.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelType.Name = "labelType";
             this.labelType.Size = new System.Drawing.Size(74, 33);
@@ -301,18 +302,29 @@
             // 
             this.labelPlateNO.AutoSize = true;
             this.labelPlateNO.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPlateNO.Location = new System.Drawing.Point(133, 208);
+            this.labelPlateNO.Location = new System.Drawing.Point(133, 206);
             this.labelPlateNO.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPlateNO.Name = "labelPlateNO";
             this.labelPlateNO.Size = new System.Drawing.Size(74, 33);
             this.labelPlateNO.TabIndex = 139;
             this.labelPlateNO.Text = "ບໍ່ມີຂໍ້ມູນ";
             // 
+            // labelOilChangeNoti
+            // 
+            this.labelOilChangeNoti.AutoSize = true;
+            this.labelOilChangeNoti.Font = new System.Drawing.Font("Defago Noto Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelOilChangeNoti.Location = new System.Drawing.Point(23, 385);
+            this.labelOilChangeNoti.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelOilChangeNoti.Name = "labelOilChangeNoti";
+            this.labelOilChangeNoti.Size = new System.Drawing.Size(0, 49);
+            this.labelOilChangeNoti.TabIndex = 140;
+            // 
             // VehicleDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1061, 404);
+            this.ClientSize = new System.Drawing.Size(1061, 449);
+            this.Controls.Add(this.labelOilChangeNoti);
             this.Controls.Add(this.labelPlateNO);
             this.Controls.Add(this.labelType);
             this.Controls.Add(this.labelBrand);
@@ -366,5 +378,6 @@
         private System.Windows.Forms.Label labelColor;
         private System.Windows.Forms.Label labelName;
         public System.Windows.Forms.Label labelCustID;
+        private System.Windows.Forms.Label labelOilChangeNoti;
     }
 }

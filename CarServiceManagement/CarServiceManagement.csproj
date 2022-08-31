@@ -497,6 +497,7 @@
     <None Include="Resources\close-32.png" />
     <None Include="Resources\minimize-32.png" />
     <None Include="Resources\refresh-32.png" />
+    <None Include="Resources\car-oil.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

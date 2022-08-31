@@ -38,8 +38,6 @@ namespace CarServiceManagement
             comboBoxType.SelectedIndex = 0;
             comboBoxBrand.SelectedIndex = 0;
 
-            //btnSave.Enabled = true;
-            //btnUpdate.Enabled = false;
         }
 
         private void load_Type()
@@ -99,12 +97,6 @@ namespace CarServiceManagement
                         return;
                     }
 
-                    //if (!isNumber(txtPhone.Text.ToString()))
-                    //{
-                    //    MessageBox.Show("ເບີໂທບໍ່ຖືກຕ້ອງ", "Warning Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    //    return;
-                    //}
-
                     int typeID = Convert.ToInt32(comboBoxType.SelectedValue.ToString());
                     int brandID = Convert.ToInt32(comboBoxBrand.SelectedValue.ToString());
                     int customerID = Convert.ToInt32(labelCustID.Text.ToString());
@@ -116,7 +108,7 @@ namespace CarServiceManagement
                     if (result != 0)
                     {
                         MessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                        this.Dispose();
                     }
                     else
                     {
@@ -187,16 +179,14 @@ namespace CarServiceManagement
 
         private void labelAddType_Click(object sender, EventArgs e)
         {
-            VehicleTypes v = new VehicleTypes();
-            VehicleTypeModule f = new VehicleTypeModule(v);
+            VehicleTypeModule f = new VehicleTypeModule(new VehicleTypes());
             f.ShowDialog();
             load_Type();
         }
 
         private void labelAddBrand_Click(object sender, EventArgs e)
         {
-            VehicleBrands v = new VehicleBrands();
-            VehicleBrandModule f = new VehicleBrandModule(v);
+            VehicleBrandModule f = new VehicleBrandModule(new VehicleBrands());
             f.ShowDialog();
             load_Brand();
         }

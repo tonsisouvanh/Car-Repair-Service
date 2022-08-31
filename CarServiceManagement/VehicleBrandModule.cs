@@ -51,7 +51,7 @@ namespace CarServiceManagement
                     if (result != 0)
                     {
                         MessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                        this.Dispose();
                     }
                     else
                     {

@@ -46,14 +46,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
-            this.picMinimize = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.ImageButtonMaximize = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.ImageButtonClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.lblUsername = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.labelDesc = new System.Windows.Forms.Label();
             this.labelCreatedDate = new System.Windows.Forms.Label();
-            this.btnPricnt = new Guna.UI2.WinForms.Guna2ImageButton();
             this.labelPayment = new System.Windows.Forms.Label();
             this.labelBillNumber = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -76,14 +72,11 @@
             this.part_price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.add = new System.Windows.Forms.DataGridViewImageColumn();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.dtgvServices = new Guna.UI2.WinForms.Guna2DataGridView();
             this.serviceID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.service = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.service_price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.deleteservice = new System.Windows.Forms.DataGridViewImageColumn();
             this.gunaDtgvRepairBillDetail = new Guna.UI2.WinForms.Guna2DataGridView();
             this.repairbilldetailID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.partID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -93,11 +86,23 @@
             this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cal_unit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn5 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.add = new System.Windows.Forms.DataGridViewImageColumn();
+            this.deleteservice = new System.Windows.Forms.DataGridViewImageColumn();
             this.edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.delete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.labelDesc = new System.Windows.Forms.Label();
+            this.btnSetOliChangeDate = new Guna.UI2.WinForms.Guna2TileButton();
+            this.btnPricnt = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.picMinimize = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.ImageButtonMaximize = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.ImageButtonClose = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelCustID = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2PanelBottom.SuspendLayout();
@@ -106,6 +111,7 @@
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvServices)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDtgvRepairBillDetail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -129,63 +135,6 @@
             this.panel2.Size = new System.Drawing.Size(1380, 62);
             this.panel2.TabIndex = 7;
             // 
-            // picMinimize
-            // 
-            this.picMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picMinimize.BackColor = System.Drawing.Color.Transparent;
-            this.picMinimize.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.picMinimize.HoverState.ImageSize = new System.Drawing.Size(27, 27);
-            this.picMinimize.Image = global::CarServiceManagement.Properties.Resources.minimize_32;
-            this.picMinimize.ImageOffset = new System.Drawing.Point(0, 0);
-            this.picMinimize.ImageRotate = 0F;
-            this.picMinimize.ImageSize = new System.Drawing.Size(23, 23);
-            this.picMinimize.Location = new System.Drawing.Point(1283, 7);
-            this.picMinimize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.picMinimize.Name = "picMinimize";
-            this.picMinimize.PressedState.ImageSize = new System.Drawing.Size(27, 27);
-            this.picMinimize.Size = new System.Drawing.Size(43, 46);
-            this.picMinimize.TabIndex = 16;
-            this.picMinimize.UseTransparentBackground = true;
-            this.picMinimize.Click += new System.EventHandler(this.picMinimize_Click);
-            // 
-            // ImageButtonMaximize
-            // 
-            this.ImageButtonMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ImageButtonMaximize.BackColor = System.Drawing.Color.Transparent;
-            this.ImageButtonMaximize.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.ImageButtonMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ImageButtonMaximize.HoverState.ImageSize = new System.Drawing.Size(27, 27);
-            this.ImageButtonMaximize.Image = global::CarServiceManagement.Properties.Resources.maximize_32;
-            this.ImageButtonMaximize.ImageOffset = new System.Drawing.Point(0, 0);
-            this.ImageButtonMaximize.ImageRotate = 0F;
-            this.ImageButtonMaximize.ImageSize = new System.Drawing.Size(23, 23);
-            this.ImageButtonMaximize.Location = new System.Drawing.Point(1237, 7);
-            this.ImageButtonMaximize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ImageButtonMaximize.Name = "ImageButtonMaximize";
-            this.ImageButtonMaximize.PressedState.ImageSize = new System.Drawing.Size(27, 27);
-            this.ImageButtonMaximize.Size = new System.Drawing.Size(37, 46);
-            this.ImageButtonMaximize.TabIndex = 15;
-            this.ImageButtonMaximize.Click += new System.EventHandler(this.ImageButtonMaximize_Click);
-            // 
-            // ImageButtonClose
-            // 
-            this.ImageButtonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ImageButtonClose.BackColor = System.Drawing.Color.Transparent;
-            this.ImageButtonClose.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.ImageButtonClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ImageButtonClose.HoverState.ImageSize = new System.Drawing.Size(27, 27);
-            this.ImageButtonClose.Image = global::CarServiceManagement.Properties.Resources.close_32;
-            this.ImageButtonClose.ImageOffset = new System.Drawing.Point(0, 0);
-            this.ImageButtonClose.ImageRotate = 0F;
-            this.ImageButtonClose.ImageSize = new System.Drawing.Size(23, 23);
-            this.ImageButtonClose.Location = new System.Drawing.Point(1331, 7);
-            this.ImageButtonClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ImageButtonClose.Name = "ImageButtonClose";
-            this.ImageButtonClose.PressedState.ImageSize = new System.Drawing.Size(27, 27);
-            this.ImageButtonClose.Size = new System.Drawing.Size(37, 46);
-            this.ImageButtonClose.TabIndex = 14;
-            this.ImageButtonClose.Click += new System.EventHandler(this.ImageButtonClose_Click);
-            // 
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
@@ -198,19 +147,9 @@
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "ລາຍລະອຽດບິນ";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::CarServiceManagement.Properties.Resources.billdetail;
-            this.pictureBox1.Location = new System.Drawing.Point(20, 7);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(47, 43);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // guna2Panel1
             // 
+            this.guna2Panel1.Controls.Add(this.labelCustID);
             this.guna2Panel1.Controls.Add(this.labelDesc);
             this.guna2Panel1.Controls.Add(this.labelCreatedDate);
             this.guna2Panel1.Controls.Add(this.btnPricnt);
@@ -230,6 +169,18 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1380, 127);
             this.guna2Panel1.TabIndex = 59;
             // 
+            // labelDesc
+            // 
+            this.labelDesc.AutoSize = true;
+            this.labelDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDesc.Location = new System.Drawing.Point(1023, 55);
+            this.labelDesc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelDesc.Name = "labelDesc";
+            this.labelDesc.Size = new System.Drawing.Size(73, 18);
+            this.labelDesc.TabIndex = 20;
+            this.labelDesc.Text = "labelDesc";
+            this.labelDesc.Visible = false;
+            // 
             // labelCreatedDate
             // 
             this.labelCreatedDate.AutoSize = true;
@@ -240,26 +191,6 @@
             this.labelCreatedDate.Size = new System.Drawing.Size(30, 33);
             this.labelCreatedDate.TabIndex = 19;
             this.labelCreatedDate.Text = "...";
-            // 
-            // btnPricnt
-            // 
-            this.btnPricnt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPricnt.BackColor = System.Drawing.Color.Transparent;
-            this.btnPricnt.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnPricnt.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPricnt.HoverState.ImageSize = new System.Drawing.Size(33, 33);
-            this.btnPricnt.Image = global::CarServiceManagement.Properties.Resources.printer;
-            this.btnPricnt.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnPricnt.ImageRotate = 0F;
-            this.btnPricnt.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnPricnt.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnPricnt.Location = new System.Drawing.Point(1319, 71);
-            this.btnPricnt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnPricnt.Name = "btnPricnt";
-            this.btnPricnt.PressedState.ImageSize = new System.Drawing.Size(0, 0);
-            this.btnPricnt.Size = new System.Drawing.Size(49, 47);
-            this.btnPricnt.TabIndex = 18;
-            this.btnPricnt.Click += new System.EventHandler(this.btnPricnt_Click);
             // 
             // labelPayment
             // 
@@ -427,6 +358,7 @@
             // 
             // guna2PanelBottom
             // 
+            this.guna2PanelBottom.Controls.Add(this.btnSetOliChangeDate);
             this.guna2PanelBottom.Controls.Add(this.btnAddService);
             this.guna2PanelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2PanelBottom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
@@ -438,6 +370,7 @@
             // 
             // btnAddService
             // 
+            this.btnAddService.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnAddService.Animated = true;
             this.btnAddService.AutoRoundedCorners = true;
             this.btnAddService.BackColor = System.Drawing.Color.Transparent;
@@ -616,18 +549,6 @@
             this.stock.ReadOnly = true;
             this.stock.Width = 132;
             // 
-            // add
-            // 
-            this.add.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.add.HeaderText = "";
-            this.add.Image = global::CarServiceManagement.Properties.Resources.plus_green;
-            this.add.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.add.MinimumWidth = 6;
-            this.add.Name = "add";
-            this.add.ReadOnly = true;
-            this.add.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.add.Width = 6;
-            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
@@ -759,31 +680,6 @@
             this.service_price.MinimumWidth = 6;
             this.service_price.Name = "service_price";
             this.service_price.ReadOnly = true;
-            // 
-            // dataGridViewImageColumn1
-            // 
-            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewImageColumn1.HeaderText = "";
-            this.dataGridViewImageColumn1.Image = global::CarServiceManagement.Properties.Resources.pencil_24;
-            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dataGridViewImageColumn1.MinimumWidth = 8;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.ReadOnly = true;
-            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewImageColumn1.Visible = false;
-            this.dataGridViewImageColumn1.Width = 8;
-            // 
-            // deleteservice
-            // 
-            this.deleteservice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.deleteservice.HeaderText = "";
-            this.deleteservice.Image = global::CarServiceManagement.Properties.Resources.delete_24;
-            this.deleteservice.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.deleteservice.MinimumWidth = 8;
-            this.deleteservice.Name = "deleteservice";
-            this.deleteservice.ReadOnly = true;
-            this.deleteservice.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.deleteservice.Width = 8;
             // 
             // gunaDtgvRepairBillDetail
             // 
@@ -959,6 +855,88 @@
             this.subtotal.ReadOnly = true;
             this.subtotal.Width = 90;
             // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn1.HeaderText = "";
+            this.dataGridViewImageColumn1.Image = global::CarServiceManagement.Properties.Resources.pencil_24;
+            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn1.MinimumWidth = 8;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.ReadOnly = true;
+            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn1.Visible = false;
+            this.dataGridViewImageColumn1.Width = 8;
+            // 
+            // dataGridViewImageColumn2
+            // 
+            this.dataGridViewImageColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn2.HeaderText = "";
+            this.dataGridViewImageColumn2.Image = global::CarServiceManagement.Properties.Resources.pencil_24;
+            this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn2.MinimumWidth = 8;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn2.Visible = false;
+            this.dataGridViewImageColumn2.Width = 8;
+            // 
+            // dataGridViewImageColumn3
+            // 
+            this.dataGridViewImageColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn3.HeaderText = "";
+            this.dataGridViewImageColumn3.Image = global::CarServiceManagement.Properties.Resources.delete_24;
+            this.dataGridViewImageColumn3.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn3.MinimumWidth = 8;
+            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
+            this.dataGridViewImageColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn3.Width = 8;
+            // 
+            // dataGridViewImageColumn4
+            // 
+            this.dataGridViewImageColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn4.HeaderText = "";
+            this.dataGridViewImageColumn4.Image = global::CarServiceManagement.Properties.Resources.pencil_24;
+            this.dataGridViewImageColumn4.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn4.MinimumWidth = 8;
+            this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
+            this.dataGridViewImageColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn4.Width = 8;
+            // 
+            // dataGridViewImageColumn5
+            // 
+            this.dataGridViewImageColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn5.HeaderText = "";
+            this.dataGridViewImageColumn5.Image = global::CarServiceManagement.Properties.Resources.delete_24;
+            this.dataGridViewImageColumn5.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn5.MinimumWidth = 8;
+            this.dataGridViewImageColumn5.Name = "dataGridViewImageColumn5";
+            this.dataGridViewImageColumn5.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn5.Width = 8;
+            // 
+            // add
+            // 
+            this.add.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.add.HeaderText = "";
+            this.add.Image = global::CarServiceManagement.Properties.Resources.plus_green;
+            this.add.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.add.MinimumWidth = 6;
+            this.add.Name = "add";
+            this.add.ReadOnly = true;
+            this.add.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.add.Width = 6;
+            // 
+            // deleteservice
+            // 
+            this.deleteservice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.deleteservice.HeaderText = "";
+            this.deleteservice.Image = global::CarServiceManagement.Properties.Resources.delete_24;
+            this.deleteservice.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.deleteservice.MinimumWidth = 8;
+            this.deleteservice.Name = "deleteservice";
+            this.deleteservice.ReadOnly = true;
+            this.deleteservice.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.deleteservice.Width = 8;
+            // 
             // edit
             // 
             this.edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
@@ -983,17 +961,132 @@
             this.delete.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.delete.Width = 8;
             // 
-            // labelDesc
+            // btnSetOliChangeDate
             // 
-            this.labelDesc.AutoSize = true;
-            this.labelDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDesc.Location = new System.Drawing.Point(1023, 55);
-            this.labelDesc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelDesc.Name = "labelDesc";
-            this.labelDesc.Size = new System.Drawing.Size(73, 18);
-            this.labelDesc.TabIndex = 20;
-            this.labelDesc.Text = "labelDesc";
-            this.labelDesc.Visible = false;
+            this.btnSetOliChangeDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnSetOliChangeDate.Animated = true;
+            this.btnSetOliChangeDate.AutoRoundedCorners = true;
+            this.btnSetOliChangeDate.BackColor = System.Drawing.Color.Transparent;
+            this.btnSetOliChangeDate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSetOliChangeDate.BorderColor = System.Drawing.Color.Transparent;
+            this.btnSetOliChangeDate.BorderRadius = 19;
+            this.btnSetOliChangeDate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSetOliChangeDate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSetOliChangeDate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSetOliChangeDate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSetOliChangeDate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSetOliChangeDate.FillColor = System.Drawing.Color.Teal;
+            this.btnSetOliChangeDate.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSetOliChangeDate.ForeColor = System.Drawing.Color.White;
+            this.btnSetOliChangeDate.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnSetOliChangeDate.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnSetOliChangeDate.Location = new System.Drawing.Point(243, 8);
+            this.btnSetOliChangeDate.Name = "btnSetOliChangeDate";
+            this.btnSetOliChangeDate.Size = new System.Drawing.Size(327, 41);
+            this.btnSetOliChangeDate.TabIndex = 17;
+            this.btnSetOliChangeDate.Text = "ກຳນົດວັນປ່ຽນນ້ຳມັນເຄື່ອງ";
+            this.btnSetOliChangeDate.UseTransparentBackground = true;
+            this.btnSetOliChangeDate.Click += new System.EventHandler(this.btnSetOliChangeDate_Click);
+            // 
+            // btnPricnt
+            // 
+            this.btnPricnt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPricnt.BackColor = System.Drawing.Color.Transparent;
+            this.btnPricnt.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnPricnt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPricnt.HoverState.ImageSize = new System.Drawing.Size(33, 33);
+            this.btnPricnt.Image = global::CarServiceManagement.Properties.Resources.printer;
+            this.btnPricnt.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnPricnt.ImageRotate = 0F;
+            this.btnPricnt.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnPricnt.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnPricnt.Location = new System.Drawing.Point(1319, 71);
+            this.btnPricnt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPricnt.Name = "btnPricnt";
+            this.btnPricnt.PressedState.ImageSize = new System.Drawing.Size(0, 0);
+            this.btnPricnt.Size = new System.Drawing.Size(49, 47);
+            this.btnPricnt.TabIndex = 18;
+            this.btnPricnt.Click += new System.EventHandler(this.btnPricnt_Click);
+            // 
+            // picMinimize
+            // 
+            this.picMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picMinimize.BackColor = System.Drawing.Color.Transparent;
+            this.picMinimize.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.picMinimize.HoverState.ImageSize = new System.Drawing.Size(27, 27);
+            this.picMinimize.Image = global::CarServiceManagement.Properties.Resources.minimize_32;
+            this.picMinimize.ImageOffset = new System.Drawing.Point(0, 0);
+            this.picMinimize.ImageRotate = 0F;
+            this.picMinimize.ImageSize = new System.Drawing.Size(23, 23);
+            this.picMinimize.Location = new System.Drawing.Point(1283, 7);
+            this.picMinimize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picMinimize.Name = "picMinimize";
+            this.picMinimize.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.picMinimize.Size = new System.Drawing.Size(43, 46);
+            this.picMinimize.TabIndex = 16;
+            this.picMinimize.UseTransparentBackground = true;
+            this.picMinimize.Click += new System.EventHandler(this.picMinimize_Click);
+            // 
+            // ImageButtonMaximize
+            // 
+            this.ImageButtonMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ImageButtonMaximize.BackColor = System.Drawing.Color.Transparent;
+            this.ImageButtonMaximize.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.ImageButtonMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ImageButtonMaximize.HoverState.ImageSize = new System.Drawing.Size(27, 27);
+            this.ImageButtonMaximize.Image = global::CarServiceManagement.Properties.Resources.maximize_32;
+            this.ImageButtonMaximize.ImageOffset = new System.Drawing.Point(0, 0);
+            this.ImageButtonMaximize.ImageRotate = 0F;
+            this.ImageButtonMaximize.ImageSize = new System.Drawing.Size(23, 23);
+            this.ImageButtonMaximize.Location = new System.Drawing.Point(1237, 7);
+            this.ImageButtonMaximize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ImageButtonMaximize.Name = "ImageButtonMaximize";
+            this.ImageButtonMaximize.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.ImageButtonMaximize.Size = new System.Drawing.Size(37, 46);
+            this.ImageButtonMaximize.TabIndex = 15;
+            this.ImageButtonMaximize.Click += new System.EventHandler(this.ImageButtonMaximize_Click);
+            // 
+            // ImageButtonClose
+            // 
+            this.ImageButtonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ImageButtonClose.BackColor = System.Drawing.Color.Transparent;
+            this.ImageButtonClose.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.ImageButtonClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ImageButtonClose.HoverState.ImageSize = new System.Drawing.Size(27, 27);
+            this.ImageButtonClose.Image = global::CarServiceManagement.Properties.Resources.close_32;
+            this.ImageButtonClose.ImageOffset = new System.Drawing.Point(0, 0);
+            this.ImageButtonClose.ImageRotate = 0F;
+            this.ImageButtonClose.ImageSize = new System.Drawing.Size(23, 23);
+            this.ImageButtonClose.Location = new System.Drawing.Point(1331, 7);
+            this.ImageButtonClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ImageButtonClose.Name = "ImageButtonClose";
+            this.ImageButtonClose.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.ImageButtonClose.Size = new System.Drawing.Size(37, 46);
+            this.ImageButtonClose.TabIndex = 14;
+            this.ImageButtonClose.Click += new System.EventHandler(this.ImageButtonClose_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CarServiceManagement.Properties.Resources.billdetail;
+            this.pictureBox1.Location = new System.Drawing.Point(20, 7);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(47, 43);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // labelCustID
+            // 
+            this.labelCustID.AutoSize = true;
+            this.labelCustID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCustID.Location = new System.Drawing.Point(1023, 87);
+            this.labelCustID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCustID.Name = "labelCustID";
+            this.labelCustID.Size = new System.Drawing.Size(83, 18);
+            this.labelCustID.TabIndex = 21;
+            this.labelCustID.Text = "labelCustID";
+            this.labelCustID.Visible = false;
             // 
             // RepairBillDetail
             // 
@@ -1012,7 +1105,6 @@
             this.Text = "RepairBillDetail";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
@@ -1023,6 +1115,7 @@
             this.tableLayoutPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvServices)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDtgvRepairBillDetail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1081,5 +1174,11 @@
         public System.Windows.Forms.Label labelDesc;
         public Guna.UI2.WinForms.Guna2DataGridView gunaDtgvRepairBillDetail;
         public Guna.UI2.WinForms.Guna2DataGridView dtgvServices;
+        private Guna.UI2.WinForms.Guna2TileButton btnSetOliChangeDate;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn3;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn4;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn5;
+        public System.Windows.Forms.Label labelCustID;
     }
 }

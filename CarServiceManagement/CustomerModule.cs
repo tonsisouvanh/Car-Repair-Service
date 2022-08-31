@@ -18,6 +18,7 @@ namespace CarServiceManagement
             btnUpdate.Enabled = false;
             comboBoxDistrict.SelectedIndex = -1;
             comboBoxProvince.SelectedIndex = -1;
+            txtPhone.Text = "020";
 
         }
 
@@ -108,8 +109,7 @@ namespace CarServiceManagement
                         MessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         if (MessageBox.Show("ຕ້ອງການເພີ່ມຂໍ້ມູນລົດ ຫຼືບໍ່?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                         {
-                            Vehicles v = new Vehicles();
-                            VehicleModule f = new VehicleModule(v);
+                            VehicleModule f = new VehicleModule(new Vehicles());
                             f.txtCustInfo.Text = txtPhone.Text;
                             f.ShowDialog();
                         }

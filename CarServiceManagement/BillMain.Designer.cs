@@ -92,7 +92,7 @@
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(221, 46);
             this.guna2Button1.TabIndex = 2;
-            this.guna2Button1.Text = "ບິນສ້ອມແປງ/ຂາຍ";
+            this.guna2Button1.Text = "ບິນລູກຄ້າ";
             this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
@@ -165,7 +165,7 @@
             this.guna2PanelTitle.Location = new System.Drawing.Point(235, 0);
             this.guna2PanelTitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2PanelTitle.Name = "guna2PanelTitle";
-            this.guna2PanelTitle.Size = new System.Drawing.Size(1707, 62);
+            this.guna2PanelTitle.Size = new System.Drawing.Size(1707, 90);
             this.guna2PanelTitle.TabIndex = 7;
             // 
             // picMinimize
@@ -178,7 +178,7 @@
             this.picMinimize.ImageOffset = new System.Drawing.Point(0, 0);
             this.picMinimize.ImageRotate = 0F;
             this.picMinimize.ImageSize = new System.Drawing.Size(23, 23);
-            this.picMinimize.Location = new System.Drawing.Point(1564, 9);
+            this.picMinimize.Location = new System.Drawing.Point(1564, 20);
             this.picMinimize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picMinimize.Name = "picMinimize";
             this.picMinimize.PressedState.ImageSize = new System.Drawing.Size(27, 27);
@@ -198,7 +198,7 @@
             this.ImageButtonMaximize.ImageOffset = new System.Drawing.Point(0, 0);
             this.ImageButtonMaximize.ImageRotate = 0F;
             this.ImageButtonMaximize.ImageSize = new System.Drawing.Size(23, 23);
-            this.ImageButtonMaximize.Location = new System.Drawing.Point(1613, 9);
+            this.ImageButtonMaximize.Location = new System.Drawing.Point(1613, 20);
             this.ImageButtonMaximize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ImageButtonMaximize.Name = "ImageButtonMaximize";
             this.ImageButtonMaximize.PressedState.ImageSize = new System.Drawing.Size(27, 27);
@@ -217,7 +217,7 @@
             this.ImageButtonClose.ImageOffset = new System.Drawing.Point(0, 0);
             this.ImageButtonClose.ImageRotate = 0F;
             this.ImageButtonClose.ImageSize = new System.Drawing.Size(23, 23);
-            this.ImageButtonClose.Location = new System.Drawing.Point(1656, 9);
+            this.ImageButtonClose.Location = new System.Drawing.Point(1656, 20);
             this.ImageButtonClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ImageButtonClose.Name = "ImageButtonClose";
             this.ImageButtonClose.PressedState.ImageSize = new System.Drawing.Size(27, 27);
@@ -229,11 +229,11 @@
             // 
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTitle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblTitle.Font = new System.Drawing.Font("Defago Noto Sans", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Font = new System.Drawing.Font("Defago Noto Sans", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(0, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(1707, 62);
+            this.lblTitle.Size = new System.Drawing.Size(1707, 90);
             this.lblTitle.TabIndex = 2;
             this.lblTitle.Text = "ຫົວຂໍ້";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -243,11 +243,11 @@
             this.PanelMain.BorderColor = System.Drawing.Color.Transparent;
             this.PanelMain.CustomBorderColor = System.Drawing.Color.White;
             this.PanelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelMain.Location = new System.Drawing.Point(235, 62);
+            this.PanelMain.Location = new System.Drawing.Point(235, 90);
             this.PanelMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PanelMain.Name = "PanelMain";
             this.PanelMain.Padding = new System.Windows.Forms.Padding(0, 0, 1, 0);
-            this.PanelMain.Size = new System.Drawing.Size(1707, 1040);
+            this.PanelMain.Size = new System.Drawing.Size(1707, 1012);
             this.PanelMain.TabIndex = 8;
             // 
             // BillMain

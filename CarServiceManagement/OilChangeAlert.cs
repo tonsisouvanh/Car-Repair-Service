@@ -28,7 +28,39 @@ namespace CarServiceManagement
 
             }
         }
-        private void guna2ImageButton1_Click(object sender, EventArgs e)
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (MessageBox.Show("ຕ້ອງການບັນທິກຂໍ້ມູນ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    DateTime currDate = dtpStart.Value;
+                    DateTime nextChange = dtpEnd.Value;
+
+                    string query = "Update Vehicle set oilchange_date = '" + currDate + "', required_oilchange_date = '" + nextChange + "' " +
+                        "where CustomerID = " + custID;
+                    int result = DataProvider.Instance.ExecuteNoneQuery(query);
+
+                    if (result != 0)
+                    {
+                        MessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Dispose();
+                    }
+                    else
+                    {
+                        MessageBox.Show("ບໍ່ສາມາດເພີ່ມໄດ້", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Dispose();
         }

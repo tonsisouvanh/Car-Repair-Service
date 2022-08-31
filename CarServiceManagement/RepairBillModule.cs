@@ -15,14 +15,8 @@ namespace CarServiceManagement
             txtCustInfo.Focus();
             repairBill = rb;
             cbbStatus.SelectedIndex = 0;
+            txtCustInfo.Text = "020";
         }
-        //private bool checkForm()
-        //{
-        //    string supplier = txtSupplier.Text.ToString();
-        //    string suppierContact = txtSupplierContact.Text.ToString();
-
-        //    return supplier != "" && suppierContact != "";
-        //}
 
         public void Clear()
         {
@@ -78,11 +72,6 @@ namespace CarServiceManagement
         {
             try
             {
-                //if (!checkForm())
-                //{
-                //    MessageBox.Show("ກາລຸນາປ້ອນຂໍ້ມູນໃຫ້ຄົບຖ້ວນ!", "Warning Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                //    return;
-                //}
                 if (MessageBox.Show("ຕ້ອງການແກ້ໄຂຂໍ້ມູນ", "Update Record!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
 
@@ -120,7 +109,6 @@ namespace CarServiceManagement
 
         private void labelAddNewCust_Click(object sender, EventArgs e)
         {
-            //Customers cust = new Customers();
             CustomerModule f = new CustomerModule(new Customers());
             f.ShowDialog();
         }
@@ -135,16 +123,6 @@ namespace CarServiceManagement
                 txtCustName.Text = row["name"].ToString();
                 labelCustID.Text = row["customerID"].ToString();
                 formInputPanel.Enabled = true;
-
-                //string query = "select * from Vehicle where cast(getdate() as date) >= oilchange_date and cast(getdate() as date) = required_oilchange_date and customerID = " + Convert.ToInt32(labelCustID.Text.ToString());
-                //int result = DataProvider.Instance.ExecuteNoneQuery(query);
-
-                //if (result != 0)
-                //{
-                //    int id = Convert.ToInt32(labelCustID.Text.ToString());
-                //    OilChangeAlert f = new OilChangeAlert(id);
-                //    f.ShowDialog();
-                //}
             }
             else
             {

@@ -288,8 +288,7 @@ namespace CarServiceManagement
 
         private void btnAddNewPart_Click(object sender, EventArgs e)
         {
-            SpareParts sp = new SpareParts();
-            SparePartModule f = new SparePartModule(sp);
+            SparePartModule f = new SparePartModule(new SpareParts());
             f.labelImportbillID.Text = passedID.ToString();
             f.numberStock.Enabled = true;
             f.ShowDialog();

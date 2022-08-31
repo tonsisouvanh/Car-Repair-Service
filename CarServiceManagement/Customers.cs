@@ -18,6 +18,8 @@ namespace CarServiceManagement
             DataTable data = DataProvider.Instance.ExecuteQuery("select * from Customer where " +
              "concat(name,email,phone,province,district,created_date) LIKE N'%" + txtSearch.Text + "%'");
             gunaDtgvCustomers.DataSource = data;
+            gunaDtgvCustomers.Columns["created_date"].DefaultCellStyle.Format = "dd/MM/yyyy";
+
         }
 
         private void ImageButtonAdd_Click(object sender, EventArgs e)

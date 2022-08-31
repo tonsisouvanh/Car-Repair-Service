@@ -88,7 +88,7 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>0.32416in</Width>
+                  <Width>0.34537in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>3.69195in</Width>
@@ -504,7 +504,7 @@
             <Top>1.09666in</Top>
             <Left>0.25in</Left>
             <Height>0.5in</Height>
-            <Width>7.79718in</Width>
+            <Width>7.8184in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1000,7 +1000,7 @@
             <Top>3.51214in</Top>
             <Left>1.20492in</Left>
             <Height>0.35222in</Height>
-            <Width>6.84226in</Width>
+            <Width>4.64933in</Width>
             <ZIndex>7</ZIndex>
             <Style>
               <Border>
@@ -1298,7 +1298,7 @@
       <Width>21cm</Width>
       <Page>
         <PageHeader>
-          <Height>6.73239cm</Height>
+          <Height>6.7324cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>

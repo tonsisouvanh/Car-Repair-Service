@@ -252,7 +252,7 @@ foreign key (partID) references Part(partID);
 alter table PartImportBillDetail
 add constraint FK_PartImportBillDetail_PartImportBill
 foreign key (importbillID) references PartImportBill(importbillID)
-on delete cascade;
+--on delete cascade;
 
 
 

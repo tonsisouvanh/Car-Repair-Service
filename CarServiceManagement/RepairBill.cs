@@ -122,7 +122,6 @@ namespace CarServiceManagement
                 module.txtPayment.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["payment"].FormattedValue.ToString();
                 module.txtDesc.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["descriptions"].FormattedValue.ToString();
                 module.txtTotal.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["total"].FormattedValue.ToString();
-                //module.dtpCreatedDate.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["created_date"].FormattedValue.ToString();
                 module.dtpCreatedDate.Value = Convert.ToDateTime(gunaDtgvRepairBill.Rows[e.RowIndex].Cells["created_date"].Value.ToString());
 
 
@@ -141,16 +140,14 @@ namespace CarServiceManagement
             else if (colName == "detail")
             {
                 int id = Convert.ToInt32(gunaDtgvRepairBill.Rows[e.RowIndex].Cells["repairbillID"].FormattedValue.ToString());
-                //PartImportBillDetail f = new PartImportBillDetail(this, id);
                 RepairBillDetail f = new RepairBillDetail(this, id);
 
                 f.labelBillNumber.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["repairbillID"].FormattedValue.ToString();
                 f.labelBillStatus.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["status"].FormattedValue.ToString();
                 f.labelTotal.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["total"].FormattedValue.ToString();
-                //f.dtpCreatedDate.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["created_date"].FormattedValue.ToString();
                 f.labelCreatedDate.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["created_date"].FormattedValue.ToString();
                 f.labelDesc.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["descriptions"].FormattedValue.ToString();
-
+                f.labelCustID.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["customerID"].FormattedValue.ToString();
                 f.labelPayment.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["payment"].FormattedValue.ToString();
                 f.ShowDialog();
             }

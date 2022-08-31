@@ -26,6 +26,9 @@ namespace CarServiceManagement
                 "inner join VehicleBrand vb on v.brandID = vb.brandID " +
                 "where concat(v.name, v.color, v.plate_number, vt.type_name, vb.brand_name, c.name, c.phone) LIKE N'%" + txtSearch.Text + "%'");
             gunaDtgvVehicles.DataSource = data;
+            gunaDtgvVehicles.Columns["required_oilchange_date"].DefaultCellStyle.Format = "dd/MM/yyyy";
+
+
         }
 
         private void ImageButtonAdd_Click(object sender, EventArgs e)
@@ -112,7 +115,7 @@ namespace CarServiceManagement
                 "from Vehicle v inner join Customer c on v.customerID = c.customerID " +
                 "inner join VehicleType vt on v.typeID = vt.typeID " +
                 "inner join VehicleBrand vb on v.brandID = vb.brandID " +
-                "where concat(v.name, v.color, v.plate_number, vt.type_name, vb.brand_name, c.name, c.phone) LIKE N'%" + txtSearch.Text + "%' and cast(getdate() as date) >= v.oilchange_date and cast(getdate() as date) = v.required_oilchange_date");
+                "where concat(v.name, v.color, v.plate_number, vt.type_name, vb.brand_name, c.name, c.phone) LIKE N'%" + txtSearch.Text + "%' and cast(getdate() as date) >= v.required_oilchange_date");
             gunaDtgvVehicles.DataSource = data;
         }
     }

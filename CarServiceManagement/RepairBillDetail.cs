@@ -295,5 +295,12 @@ namespace CarServiceManagement
             RepairbillReport f = new RepairbillReport(this);
             f.ShowDialog();
         }
+
+        private void btnSetOliChangeDate_Click(object sender, EventArgs e)
+        {
+            int custID = Convert.ToInt32(this.labelCustID.Text.ToString());
+            OilChangeAlert f = new OilChangeAlert(custID);
+            f.ShowDialog();
+        }
     }
 }

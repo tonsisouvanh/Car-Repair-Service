@@ -135,7 +135,7 @@ namespace CarServiceManagement
                 f.labelBillNumber.Text = gunaDtgvPartImportBill.Rows[e.RowIndex].Cells["importbillID"].FormattedValue.ToString();
                 f.labelBillStatus.Text = gunaDtgvPartImportBill.Rows[e.RowIndex].Cells["status"].FormattedValue.ToString();
                 f.labelTotal.Text = gunaDtgvPartImportBill.Rows[e.RowIndex].Cells["total"].FormattedValue.ToString();
-                f.dtpCreatedDate.Text = gunaDtgvPartImportBill.Rows[e.RowIndex].Cells["created_date"].FormattedValue.ToString();
+                f.dtpCreatedDate.Value = Convert.ToDateTime(gunaDtgvPartImportBill.Rows[e.RowIndex].Cells["created_date"].Value.ToString());
                 f.labelSupplier.Text = gunaDtgvPartImportBill.Rows[e.RowIndex].Cells["supplier"].FormattedValue.ToString();
                 f.labelPayment.Text = gunaDtgvPartImportBill.Rows[e.RowIndex].Cells["payment"].FormattedValue.ToString();
                 f.labelDesc.Text = gunaDtgvPartImportBill.Rows[e.RowIndex].Cells["descriptions"].FormattedValue.ToString();

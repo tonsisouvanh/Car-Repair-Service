@@ -19,8 +19,20 @@ namespace CarServiceManagement
         {
             this.Dispose();
         }
+
+        private void isRequireOilChange()
+        {
+            DataTable data = DataProvider.Instance.ExecuteQuery("select * from Vehicle where cast(getdate() as date) >= required_oilchange_date and customerID = " + custID);
+            if (data.Rows.Count > 0)
+            {
+                this.labelOilChangeNoti.Text = "ລົດຮອດກຳນົດປ່ຽນນ້ຳມັນເຄື່ອງ";
+                this.labelOilChangeNoti.ForeColor = System.Drawing.Color.FromArgb(0, 70, 160);
+            }
+        }
+
         private void load_vehicle()
         {
+            isRequireOilChange();
             DataTable data = DataProvider.Instance.ExecuteQuery("select top(1) v.*,vt.type_name,vb.brand_name from Vehicle v " +
                 "inner join VehicleType vt on v.typeID = vt.typeID " +
                 "inner join VehicleBrand vb on v.brandID = vb.brandID " +
