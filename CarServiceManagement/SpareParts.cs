@@ -79,7 +79,7 @@ namespace CarServiceManagement
                 spm.txtBrand.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["brand"].FormattedValue.ToString();
                 spm.numberStock.Value = Convert.ToDecimal(gunaDtgvParts.Rows[e.RowIndex].Cells["stock"].FormattedValue.ToString());
                 spm.comboBoxPartType.SelectedIndex = spm.comboBoxPartType.FindStringExact(gunaDtgvParts.Rows[e.RowIndex].Cells["type_name"].FormattedValue.ToString());
-                spm.numberStock.Enabled = true;
+
                 spm.btnSave.Enabled = false;
                 spm.btnUpdate.Enabled = true;
 
@@ -89,57 +89,71 @@ namespace CarServiceManagement
             }
         }
 
-        //private void ImageButtonSearch_Click(object sender, EventArgs e)
-        //{
-        //    string strId = txtPartName.Text.ToString();
-        //    if (strId != "" || strId == null)
-        //    {
-        //        try
-        //        {
-        //            DataTable dtEmp = DataProvider.Instance.ExecuteQuery("select p.*,pt.name as type_name from PartType pt,Part p where pt.parttypeID = p.part_type and name LIKE '%" + txtPartName.Text + "%'");
-
-        //            gunaDtgvParts.DataSource = dtEmp;
-
-        //            gunaDtgvParts.Columns["price"].DefaultCellStyle.Format = "N0";
-
-        //        }
-        //        catch (Exception ex)
-        //        {
-        //            MessageBox.Show(ex.GetType().Name);
-        //        }
-        //        //if (Regex.IsMatch(strId, @"^\d+$"))
-        //        //{
-        //        //    int id = Int32.Parse(strId.Trim());
-        //        //    try
-        //        //    {
-        //        //        DataTable dtEmp = DataProvider.Instance.ExecuteQuery("SELECT * from EMPLOYEE WHERE empID = " + id);
-
-        //        //        dtgv_emp.DataSource = dtEmp;
-
-        //        //    }
-        //        //    catch (Exception ex)
-
-        //        //    {
-        //        //        MessageBox.Show(ex.GetType().Name);
-        //        //    }
-        //        //}
-        //        //else
-        //        //    MessageBox.Show("Input must be only number!", "Warning Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        //    }
-        //    else
-        //    {
-        //        //MessageBox.Show("Please enter id");
-        //        MessageBox.Show("ກາລຸນາໃສ່ຊື່ອາໄຫຼ່ທີ່ຕ້ອງການຄົ້ນຫາ", "Warnning Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-        //    }
-        //}
-
         private void txtPartName_TextChanged(object sender, EventArgs e)
         {
             DataTable dtDept = DataProvider.Instance.ExecuteQuery("select p.*,pt.name as type_name from PartType pt,Part p where pt.parttypeID = p.part_type " +
     "and concat(p.name, pt.name, p.brand) LIKE N'%" + txtPartName.Text + "%'");
             gunaDtgvParts.DataSource = dtDept;
             gunaDtgvParts.Columns["price"].DefaultCellStyle.Format = "N0";
+        }
+
+        private void btnExcelExport_Click(object sender, EventArgs e)
+        {
+            //DataTable spareParts = DataProvider.Instance.ExecuteQuery("select p.*,pt.name as type_name from PartType pt,Part p where pt.parttypeID = p.part_type");
+            //DataSet dset = new DataSet();
+            //dset.Tables.Add(spareParts);
+
+            //try
+            //{
+            //    SaveFileDialog savefile = new SaveFileDialog();
+            //    savefile.FileName = "Data.xls";
+            //    savefile.Filter = "Excel Files|*.xls;*.xlsx;*.xlsm";
+            //    if (dset.Tables[0].Rows.Count > 0)
+            //    {
+            //        if (savefile.ShowDialog() == DialogResult.OK)
+            //        {
+            //            StreamWriter wr = new StreamWriter(savefile.FileName);
+            //            for (int i = 0; i < dset.Tables[0].Columns.Count; i++)
+            //            {
+            //                wr.Write(dset.Tables[0].Columns[i].ToString().ToUpper() + "\t");
+            //            }
+
+            //            wr.WriteLine();
+
+            //            for (int i = 0; i < (dset.Tables[0].Rows.Count); i++)
+            //            {
+            //                for (int j = 0; j < dset.Tables[0].Columns.Count; j++)
+            //                {
+            //                    if (dset.Tables[0].Rows[i][j] != null)
+            //                    {
+            //                        wr.Write(Convert.ToString(dset.Tables[0].Rows[i][j]) + "\t");
+            //                    }
+            //                    else
+            //                    {
+            //                        wr.Write("\t");
+            //                    }
+            //                }
+            //                //go to next line
+            //                wr.WriteLine();
+            //            }
+            //            //close file
+            //            wr.Close();
+            //            MessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //        }
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show(this, "Zero record to export , perform a operation first", "Can't export file", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
+            //finally
+            //{
+
+            //}
         }
     }
 }

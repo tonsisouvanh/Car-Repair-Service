@@ -50,19 +50,15 @@ namespace CarServiceManagement
 
         public void LoadRepairBill()
         {
-
-            //ReportDataSource reportDataSource;
-
             try
             {
-                //this.reportViewer1.LocalReport.ReportPath = Application.StartupPath + @"\Reports\rptRepairBill.rdlc";
-                this.reportViewer1.LocalReport.ReportPath = @"C:\Users\tonsi\OneDrive\Desktop\C#_Project\CarServiceManagement\CarServiceManagement\rptRepairBill.rdlc";
+                this.reportViewer1.LocalReport.ReportPath = Application.StartupPath + @"\Reports\rptRepairBill.rdlc";
+                //this.reportViewer1.LocalReport.ReportPath = @"C:\Users\tonsi\OneDrive\Desktop\C#_Project\CarServiceManagement\CarServiceManagement\rptRepairBill.rdlc";
 
 
                 this.reportViewer1.LocalReport.DataSources.Clear();
 
                 int id = Convert.ToInt32(repairBillDetail.labelBillNumber.Text.ToString());
-                //DataSet1 ds = new DataSet1();
                 DataTable data = DataProvider.Instance.ExecuteQuery("select p.partID,p.name,p.price as part_price,p.cal_unit,rbdt.quantity,rbdt.subtotal " +
                     "from RepairBillDetail rbdt inner join Part p on rbdt.partID = p.partID where repairbillID = " + id);
 

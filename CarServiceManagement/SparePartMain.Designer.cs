@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SparePartMain));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2PanelSidebar = new Guna.UI2.WinForms.Guna2Panel();
             this.sidebar_SparePartType = new Guna.UI2.WinForms.Guna2Button();
@@ -260,6 +261,7 @@
             this.Controls.Add(this.guna2PanelTitle);
             this.Controls.Add(this.guna2PanelSidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "SparePartMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

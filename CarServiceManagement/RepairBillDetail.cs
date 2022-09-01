@@ -153,12 +153,17 @@ namespace CarServiceManagement
             {
                 Qty f = new Qty();
                 f.ShowDialog();
+
+                if (f.isCancel == true)
+                {
+                    return;
+                }
+
                 int stockQty = Convert.ToInt32(gunaDtgvParts.Rows[e.RowIndex].Cells["stock"].FormattedValue.ToString());
                 int qty = Convert.ToInt32(Math.Round(f.numericQty.Value, 0));
                 int billid = Convert.ToInt32(labelBillNumber.Text.ToString());
                 int partid = Convert.ToInt32(gunaDtgvParts.Rows[e.RowIndex].Cells["partIDs"].FormattedValue.ToString());
                 decimal partPrice = Convert.ToDecimal(gunaDtgvParts.Rows[e.RowIndex].Cells["part_price"].FormattedValue.ToString());
-
                 if (qty > 0 && qty <= stockQty)
                 {
                     try

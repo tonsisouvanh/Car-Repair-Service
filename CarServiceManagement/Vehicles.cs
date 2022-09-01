@@ -15,11 +15,6 @@ namespace CarServiceManagement
 
         public void Load_Vehicles()
         {
-            //DataTable data = DataProvider.Instance.ExecuteQuery("select v.*, vt.type_name, vb.brand_name, c.name as custname, c.phone " +
-            //    "from Vehicle v inner join Customer c on v.customerID = c.customerID " +
-            //    "inner join VehicleType vt on v.typeID = vt.typeID " +
-            //    "inner join VehicleBrand vb on v.brandID = vb.brandID");
-            //gunaDtgvVehicles.DataSource = data;
             DataTable data = DataProvider.Instance.ExecuteQuery("select distinct v.vehicleID,v.name,v.color,v.typeID,v.brandID,v.plate_number,v.descriptions,v.customerID,vt.type_name,vb.brand_name, c.name as custname, c.phone,v.oilchange_date,v.required_oilchange_date " +
                 "from Vehicle v inner join Customer c on v.customerID = c.customerID " +
                 "inner join VehicleType vt on v.typeID = vt.typeID " +

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
             this.topPanel = new System.Windows.Forms.Panel();
             this.picMinimize = new Guna.UI2.WinForms.Guna2ImageButton();
             this.ImageButtonMaximize = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -294,7 +295,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Dosis", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(1282, 7);
+            this.label3.Location = new System.Drawing.Point(1278, 7);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(238, 24);
             this.label3.TabIndex = 2;
@@ -370,6 +371,7 @@
             this.Controls.Add(this.guna2BottomPanel);
             this.Controls.Add(this.topPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainMenu";
             this.Padding = new System.Windows.Forms.Padding(5);

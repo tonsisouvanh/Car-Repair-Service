@@ -24,17 +24,15 @@ namespace CarServiceManagement
 
         public void LoadPartImportBill()
         {
-            //ReportDataSource reportDataSource;
             try
             {
-                //this.reportViewer1.LocalReport.ReportPath = Application.StartupPath + @"\Reports\rptPartImportBill.rdlc";
-                this.reportViewer1.LocalReport.ReportPath = @"C:\Users\tonsi\OneDrive\Desktop\C#_Project\CarServiceManagement\CarServiceManagement\rptPartImportBill.rdlc";
+                this.reportViewer1.LocalReport.ReportPath = Application.StartupPath + @"\Reports\rptPartImportBill.rdlc";
+                //this.reportViewer1.LocalReport.ReportPath = @"C:\Users\tonsi\OneDrive\Desktop\C#_Project\CarServiceManagement\CarServiceManagement\rptPartImportBill.rdlc";
 
 
 
                 this.reportViewer1.LocalReport.DataSources.Clear();
                 int id = Convert.ToInt32(partImportBillDetail.labelBillNumber.Text.ToString());
-                //DataSet1 ds = new DataSet1();
                 DataTable data = DataProvider.Instance.ExecuteQuery("select p.partID,p.name,p.price,p.cal_unit,p.stock as qty_in_stcok,bdt.quantity as qty_imported,bdt.subtotal " +
                     "from PartImportBillDetail bdt inner join Part p on bdt.partID = p.partID where importbillID = " + id);
 

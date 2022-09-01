@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.picClose = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -146,6 +147,7 @@
             this.btnLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnLogin.Font = new System.Drawing.Font("Defago Noto Sans", 10.8F);
             this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.IndicateFocus = true;
             this.btnLogin.Location = new System.Drawing.Point(307, 494);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogin.Name = "btnLogin";
@@ -165,6 +167,7 @@
             this.btnCancel.FillColor = System.Drawing.Color.Red;
             this.btnCancel.Font = new System.Drawing.Font("Defago Noto Sans", 10.8F);
             this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.IndicateFocus = true;
             this.btnCancel.Location = new System.Drawing.Point(307, 554);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancel.Name = "btnCancel";
@@ -257,6 +260,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

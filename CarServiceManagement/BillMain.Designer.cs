@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BillMain));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2PanelSidebar = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
@@ -259,6 +260,7 @@
             this.Controls.Add(this.guna2PanelTitle);
             this.Controls.Add(this.guna2PanelSidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "BillMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

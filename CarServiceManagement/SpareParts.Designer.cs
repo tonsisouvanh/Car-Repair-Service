@@ -28,19 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2PanelBottom = new Guna.UI2.WinForms.Guna2Panel();
-            this.ImageButtonAdd = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtPartName = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaDtgvParts = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.partID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,8 +48,13 @@
             this.part_type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.brand = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.type_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.delete = new System.Windows.Forms.DataGridViewImageColumn();
+            this.txtPartName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnExcelExport = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.ImageButtonAdd = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2PanelBottom.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDtgvParts)).BeginInit();
@@ -72,33 +73,12 @@
             this.guna2PanelBottom.Size = new System.Drawing.Size(800, 58);
             this.guna2PanelBottom.TabIndex = 7;
             // 
-            // ImageButtonAdd
-            // 
-            this.ImageButtonAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ImageButtonAdd.BackColor = System.Drawing.Color.Transparent;
-            this.ImageButtonAdd.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.ImageButtonAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ImageButtonAdd.Enabled = false;
-            this.ImageButtonAdd.HoverState.ImageSize = new System.Drawing.Size(38, 38);
-            this.ImageButtonAdd.Image = global::CarServiceManagement.Properties.Resources.plus_green;
-            this.ImageButtonAdd.ImageOffset = new System.Drawing.Point(0, 0);
-            this.ImageButtonAdd.ImageRotate = 0F;
-            this.ImageButtonAdd.ImageSize = new System.Drawing.Size(40, 40);
-            this.ImageButtonAdd.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ImageButtonAdd.Location = new System.Drawing.Point(741, 5);
-            this.ImageButtonAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ImageButtonAdd.Name = "ImageButtonAdd";
-            this.ImageButtonAdd.PressedState.ImageSize = new System.Drawing.Size(0, 0);
-            this.ImageButtonAdd.Size = new System.Drawing.Size(49, 47);
-            this.ImageButtonAdd.TabIndex = 0;
-            this.ImageButtonAdd.Visible = false;
-            this.ImageButtonAdd.Click += new System.EventHandler(this.ImageButtonAdd_Click);
-            // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.BorderColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.BorderThickness = 2;
+            this.guna2Panel1.Controls.Add(this.btnExcelExport);
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.txtPartName);
             this.guna2Panel1.CustomBorderColor = System.Drawing.Color.White;
@@ -122,55 +102,30 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "ຄົ້ນຫາ:";
             // 
-            // txtPartName
-            // 
-            this.txtPartName.BorderRadius = 2;
-            this.txtPartName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPartName.DefaultText = "";
-            this.txtPartName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPartName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPartName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPartName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPartName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPartName.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPartName.ForeColor = System.Drawing.Color.Black;
-            this.txtPartName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPartName.IconRight = global::CarServiceManagement.Properties.Resources.search;
-            this.txtPartName.IconRightSize = new System.Drawing.Size(25, 25);
-            this.txtPartName.Location = new System.Drawing.Point(94, 10);
-            this.txtPartName.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.txtPartName.Name = "txtPartName";
-            this.txtPartName.PasswordChar = '\0';
-            this.txtPartName.PlaceholderText = "ຊື່ອາໄຫຼ່, ປະເພດ, ຍີ່ຫໍ້";
-            this.txtPartName.SelectedText = "";
-            this.txtPartName.Size = new System.Drawing.Size(340, 39);
-            this.txtPartName.TabIndex = 1;
-            this.txtPartName.TextChanged += new System.EventHandler(this.txtPartName_TextChanged);
-            // 
             // gunaDtgvParts
             // 
             this.gunaDtgvParts.AllowUserToAddRows = false;
             this.gunaDtgvParts.AllowUserToDeleteRows = false;
             this.gunaDtgvParts.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            this.gunaDtgvParts.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.Black;
+            this.gunaDtgvParts.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
             this.gunaDtgvParts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gunaDtgvParts.BackgroundColor = System.Drawing.Color.White;
             this.gunaDtgvParts.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaDtgvParts.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDtgvParts.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Defago Noto Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDtgvParts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Defago Noto Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDtgvParts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
             this.gunaDtgvParts.ColumnHeadersHeight = 35;
             this.gunaDtgvParts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.partID,
@@ -186,14 +141,14 @@
             this.type_name,
             this.edit,
             this.delete});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDtgvParts.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gunaDtgvParts.DefaultCellStyle = dataGridViewCellStyle23;
             this.gunaDtgvParts.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaDtgvParts.EnableHeadersVisualStyles = false;
             this.gunaDtgvParts.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -202,20 +157,20 @@
             this.gunaDtgvParts.Name = "gunaDtgvParts";
             this.gunaDtgvParts.ReadOnly = true;
             this.gunaDtgvParts.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Defago Noto Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDtgvParts.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Defago Noto Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDtgvParts.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
             this.gunaDtgvParts.RowHeadersVisible = false;
             this.gunaDtgvParts.RowHeadersWidth = 51;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            this.gunaDtgvParts.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.Black;
+            this.gunaDtgvParts.RowsDefaultCellStyle = dataGridViewCellStyle25;
             this.gunaDtgvParts.RowTemplate.Height = 33;
             this.gunaDtgvParts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gunaDtgvParts.Size = new System.Drawing.Size(800, 332);
@@ -242,30 +197,6 @@
             this.gunaDtgvParts.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDtgvParts.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.gunaDtgvParts.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gunaDtgvParts_CellContentClick);
-            // 
-            // dataGridViewImageColumn1
-            // 
-            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewImageColumn1.HeaderText = "";
-            this.dataGridViewImageColumn1.Image = global::CarServiceManagement.Properties.Resources.pencil;
-            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dataGridViewImageColumn1.MinimumWidth = 6;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.ReadOnly = true;
-            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewImageColumn1.Width = 125;
-            // 
-            // dataGridViewImageColumn2
-            // 
-            this.dataGridViewImageColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewImageColumn2.HeaderText = "";
-            this.dataGridViewImageColumn2.Image = global::CarServiceManagement.Properties.Resources.delete_24;
-            this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dataGridViewImageColumn2.MinimumWidth = 6;
-            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-            this.dataGridViewImageColumn2.ReadOnly = true;
-            this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewImageColumn2.Width = 125;
             // 
             // partID
             // 
@@ -384,6 +315,30 @@
             this.type_name.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.type_name.Width = 104;
             // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn1.HeaderText = "";
+            this.dataGridViewImageColumn1.Image = global::CarServiceManagement.Properties.Resources.pencil;
+            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn1.MinimumWidth = 6;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.ReadOnly = true;
+            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn1.Width = 6;
+            // 
+            // dataGridViewImageColumn2
+            // 
+            this.dataGridViewImageColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn2.HeaderText = "";
+            this.dataGridViewImageColumn2.Image = global::CarServiceManagement.Properties.Resources.delete_24;
+            this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn2.MinimumWidth = 6;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.dataGridViewImageColumn2.ReadOnly = true;
+            this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn2.Width = 6;
+            // 
             // edit
             // 
             this.edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
@@ -407,6 +362,74 @@
             this.delete.ReadOnly = true;
             this.delete.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.delete.Width = 6;
+            // 
+            // txtPartName
+            // 
+            this.txtPartName.BorderRadius = 2;
+            this.txtPartName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPartName.DefaultText = "";
+            this.txtPartName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPartName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPartName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPartName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPartName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPartName.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPartName.ForeColor = System.Drawing.Color.Black;
+            this.txtPartName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPartName.IconRight = global::CarServiceManagement.Properties.Resources.search;
+            this.txtPartName.IconRightSize = new System.Drawing.Size(25, 25);
+            this.txtPartName.Location = new System.Drawing.Point(94, 10);
+            this.txtPartName.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtPartName.Name = "txtPartName";
+            this.txtPartName.PasswordChar = '\0';
+            this.txtPartName.PlaceholderText = "ຊື່ອາໄຫຼ່, ປະເພດ, ຍີ່ຫໍ້";
+            this.txtPartName.SelectedText = "";
+            this.txtPartName.Size = new System.Drawing.Size(340, 39);
+            this.txtPartName.TabIndex = 1;
+            this.txtPartName.TextChanged += new System.EventHandler(this.txtPartName_TextChanged);
+            // 
+            // btnExcelExport
+            // 
+            this.btnExcelExport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExcelExport.BackColor = System.Drawing.Color.Transparent;
+            this.btnExcelExport.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnExcelExport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExcelExport.HoverState.ImageSize = new System.Drawing.Size(32, 32);
+            this.btnExcelExport.Image = global::CarServiceManagement.Properties.Resources.excel;
+            this.btnExcelExport.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnExcelExport.ImageRotate = 0F;
+            this.btnExcelExport.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnExcelExport.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnExcelExport.Location = new System.Drawing.Point(739, 2);
+            this.btnExcelExport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnExcelExport.Name = "btnExcelExport";
+            this.btnExcelExport.PressedState.ImageSize = new System.Drawing.Size(0, 0);
+            this.btnExcelExport.Size = new System.Drawing.Size(49, 47);
+            this.btnExcelExport.TabIndex = 1;
+            this.btnExcelExport.Visible = false;
+            this.btnExcelExport.Click += new System.EventHandler(this.btnExcelExport_Click);
+            // 
+            // ImageButtonAdd
+            // 
+            this.ImageButtonAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.ImageButtonAdd.BackColor = System.Drawing.Color.Transparent;
+            this.ImageButtonAdd.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.ImageButtonAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ImageButtonAdd.Enabled = false;
+            this.ImageButtonAdd.HoverState.ImageSize = new System.Drawing.Size(38, 38);
+            this.ImageButtonAdd.Image = global::CarServiceManagement.Properties.Resources.plus_green;
+            this.ImageButtonAdd.ImageOffset = new System.Drawing.Point(0, 0);
+            this.ImageButtonAdd.ImageRotate = 0F;
+            this.ImageButtonAdd.ImageSize = new System.Drawing.Size(40, 40);
+            this.ImageButtonAdd.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.ImageButtonAdd.Location = new System.Drawing.Point(598, 5);
+            this.ImageButtonAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ImageButtonAdd.Name = "ImageButtonAdd";
+            this.ImageButtonAdd.PressedState.ImageSize = new System.Drawing.Size(0, 0);
+            this.ImageButtonAdd.Size = new System.Drawing.Size(49, 47);
+            this.ImageButtonAdd.TabIndex = 0;
+            this.ImageButtonAdd.Visible = false;
+            this.ImageButtonAdd.Click += new System.EventHandler(this.ImageButtonAdd_Click);
             // 
             // SpareParts
             // 
@@ -451,5 +474,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn type_name;
         private System.Windows.Forms.DataGridViewImageColumn edit;
         private System.Windows.Forms.DataGridViewImageColumn delete;
+        private Guna.UI2.WinForms.Guna2ImageButton btnExcelExport;
     }
 }

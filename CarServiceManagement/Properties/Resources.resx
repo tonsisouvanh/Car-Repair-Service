@@ -124,11 +124,11 @@
   <data name="logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="padlock-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\padlock-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="maintenance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\maintenance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maximize-32-white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maximize-32-white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,6 +181,9 @@
   <data name="car_service_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\car-service-bg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="car-oil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\car-oil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -199,14 +202,14 @@
   <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="refresh-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\refresh-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="printer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\printer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spare_parts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\spare-parts.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="car_repair_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\car-repair-white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,13 +220,13 @@
   <data name="car" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\car.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maximize-32-white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maximize-32-white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="refresh-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refresh-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="spare_parts" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\spare-parts.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="padlock-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\padlock-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="car-oil" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\car-oil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="excel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\excel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
