@@ -52,8 +52,8 @@ namespace CarServiceManagement
         {
             try
             {
-                //this.reportViewer1.LocalReport.ReportPath = Application.StartupPath + @"\Reports\rptRepairBill.rdlc";
-                this.reportViewer1.LocalReport.ReportPath = @"C:\Users\tonsi\OneDrive\Desktop\C#_Project\CarServiceManagement\CarServiceManagement\rptRepairBill.rdlc";
+                this.reportViewer1.LocalReport.ReportPath = Application.StartupPath + @"\Reports\rptRepairBill.rdlc";
+                //this.reportViewer1.LocalReport.ReportPath = @"C:\Users\tonsi\OneDrive\Desktop\C#_Project\CarServiceManagement\CarServiceManagement\rptRepairBill.rdlc";
 
 
                 this.reportViewer1.LocalReport.DataSources.Clear();

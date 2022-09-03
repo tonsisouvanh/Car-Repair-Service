@@ -16,6 +16,14 @@ namespace CarServiceManagement
             repairBill = rb;
             cbbStatus.SelectedIndex = 0;
             txtCustInfo.Text = "020";
+
+
+        }
+
+        public void Alert(string msg, FormAlert.enmType type)
+        {
+            FormAlert frm = new FormAlert();
+            frm.showAlert(msg, type);
         }
 
         public void Clear()
@@ -113,6 +121,16 @@ namespace CarServiceManagement
             f.ShowDialog();
         }
 
+        private bool isRequireOilChange(int custID)
+        {
+            DataTable data = DataProvider.Instance.ExecuteQuery("select * from Vehicle where cast(getdate() as date) >= required_oilchange_date and customerID = " + custID);
+            if (data.Rows.Count > 0)
+            {
+                return true;
+            }
+            return false;
+        }
+
         private void txtCustInfo_TextChanged(object sender, EventArgs e)
         {
             DataTable data = DataProvider.Instance.ExecuteQuery("select customerID, name from customer where phone = '" + txtCustInfo.Text + "'");
@@ -123,6 +141,15 @@ namespace CarServiceManagement
                 txtCustName.Text = row["name"].ToString();
                 labelCustID.Text = row["customerID"].ToString();
                 formInputPanel.Enabled = true;
+
+                //checkout to noti oil change
+                int custID = Convert.ToInt32(labelCustID.Text.ToString());
+                if (isRequireOilChange(custID))
+                {
+                    this.Alert("ລົດຮອດກຳນົດປ່ຽນນ້ຳມັນເຄື່ອງ", FormAlert.enmType.Warning);
+                }
+
+
             }
             else
             {

@@ -1946,6 +1946,7 @@
                         <FontFamily>phetsarath OT</FontFamily>
                         <FontSize>14pt</FontSize>
                         <FontWeight>Bold</FontWeight>
+                        <TextDecoration>Underline</TextDecoration>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -1964,7 +1965,7 @@
                   <Width>1.6pt</Width>
                 </Border>
                 <TopBorder>
-                  <Style>Solid</Style>
+                  <Style>None</Style>
                 </TopBorder>
                 <VerticalAlign>Middle</VerticalAlign>
                 <PaddingLeft>2pt</PaddingLeft>
