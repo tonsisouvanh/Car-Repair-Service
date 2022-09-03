@@ -41,15 +41,15 @@ namespace CarServiceManagement
             {
                 if (!checkForm())
                 {
-                    MessageBox.Show("ກາລຸນາປ້ອນຂໍ້ມູນໃຫ້ຄົບຖ້ວນ!", "Warning Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    TMessageBox.Show("ກາລຸນາປ້ອນຂໍ້ມູນໃຫ້ຄົບຖ້ວນ!", "Warning Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 if (!isNumber(txtImportPrice.Text) || !isNumber(txtSellPrice.Text))
                 {
-                    MessageBox.Show("ກາລຸນາປ້ອນຂໍ້ມູນເປັນໂຕເລກ!", "Warning Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    TMessageBox.Show("ກາລຸນາປ້ອນຂໍ້ມູນເປັນໂຕເລກ!", "Warning Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                if (MessageBox.Show("ຕ້ອງການແກ້ໄຂຂໍ້ມູນ", "Update Record!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (TMessageBox.Show("ຕ້ອງການແກ້ໄຂຂໍ້ມູນ", "Update Record!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     int partID = Convert.ToInt32(labelID.Text.ToString());
                     decimal importPrice = Convert.ToDecimal(txtImportPrice.Text.ToString());
@@ -60,22 +60,22 @@ namespace CarServiceManagement
 
                     if (result != 0)
                     {
-                        MessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        TMessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     }
                     else
                     {
-                        MessageBox.Show("ບໍ່ສາມາດເພີ່ມໄດ້", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        TMessageBox.Show("ບໍ່ສາມາດເພີ່ມໄດ້", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
 
 
                     partImportBillDetail.load_SpareParts();
-                    this.Dispose();// To close this form after update data
+                    this.Dispose();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                TMessageBox.Show(ex.Message);
             }
         }
 

@@ -44,15 +44,15 @@ namespace CarServiceManagement
             {
                 if (!checkForm())
                 {
-                    MessageBox.Show("ກາລຸນາປ້ອນຂໍ້ມູນໃຫ້ຄົບຖ້ວນ!", "Warning Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    TMessageBox.Show("ກາລຸນາປ້ອນຂໍ້ມູນໃຫ້ຄົບຖ້ວນ!", "Warning Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 if (!isNumber(txtServicePrice.Text))
                 {
-                    MessageBox.Show("ລາຄາຕ້ອງເປັນໂຕເລກ!", "Warning Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    TMessageBox.Show("ລາຄາຕ້ອງເປັນໂຕເລກ!", "Warning Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                if (MessageBox.Show("ຕ້ອງການບັນທິກຂໍ້ມູນ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (TMessageBox.Show("ຕ້ອງການບັນທິກຂໍ້ມູນ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     int repairbillID = Convert.ToInt32(labelID.Text.ToString());
                     decimal servicePrice = Convert.ToDecimal(txtServicePrice.Text.ToString());
@@ -61,12 +61,12 @@ namespace CarServiceManagement
 
                     if (result != 0)
                     {
-                        MessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        TMessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Dispose();
                     }
                     else
                     {
-                        MessageBox.Show("ບໍ່ສາມາດເພີ່ມໄດ້", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        TMessageBox.Show("ບໍ່ສາມາດເພີ່ມໄດ້", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
 
                     Clear();
@@ -76,7 +76,7 @@ namespace CarServiceManagement
             catch (Exception ex)
             {
 
-                MessageBox.Show(ex.Message);
+                TMessageBox.Show(ex.Message);
             }
         }
 

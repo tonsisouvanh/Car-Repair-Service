@@ -27,11 +27,11 @@ namespace CarServiceManagement
             {
                 SqlHelper helper = new SqlHelper(connectionString);
                 if (helper.IsConnection)
-                    MessageBox.Show("Text connection succeeded.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    TMessageBox.Show("Text connection succeeded.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                TMessageBox.Show(ex.Message);
             }
         }
 
@@ -46,12 +46,12 @@ namespace CarServiceManagement
                 {
                     AppSetting setting = new AppSetting();
                     setting.SaveConnectionString("CarServiceManagement.configuration", connectionString);
-                    MessageBox.Show("Your connection string has been saved.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    TMessageBox.Show("Your connection string has been saved.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                TMessageBox.Show(ex.Message);
             }
         }
     }

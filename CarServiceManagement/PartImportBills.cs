@@ -74,7 +74,7 @@ namespace CarServiceManagement
 
             if (colName == "delete")
             {
-                if (MessageBox.Show("ຕ້ອງການລົບຂໍ້ມູນ?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (TMessageBox.Show("ຕ້ອງການລົບຂໍ້ມູນ?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     try
                     {
@@ -85,18 +85,18 @@ namespace CarServiceManagement
 
                         if (result != 0)
                         {
-                            MessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            TMessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                         }
                         else
                         {
-                            MessageBox.Show("ບໍ່ສາມາດລົບໄດ້ ຫຼື ລອງລົບຂໍ້ມູນລາຍລະອຽດບິນກ່ອນ ແລ້ວພະຍາຍາມໃໝ່", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            TMessageBox.Show("ບໍ່ສາມາດລົບໄດ້ ຫຼື ລອງລົບຂໍ້ມູນລາຍລະອຽດບິນກ່ອນ ແລ້ວພະຍາຍາມໃໝ່", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
 
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message);
+                        TMessageBox.Show(ex.Message);
                     }
                     Load_PartImportBill();
 
@@ -114,7 +114,6 @@ namespace CarServiceManagement
                 module.txtPayment.Text = gunaDtgvPartImportBill.Rows[e.RowIndex].Cells["payment"].FormattedValue.ToString();
                 module.txtDesc.Text = gunaDtgvPartImportBill.Rows[e.RowIndex].Cells["descriptions"].FormattedValue.ToString();
                 module.txtTotal.Text = gunaDtgvPartImportBill.Rows[e.RowIndex].Cells["total"].FormattedValue.ToString();
-                //module.dtpCreatedDate.Text = gunaDtgvPartImportBill.Rows[e.RowIndex].Cells["created_date"].FormattedValue.ToString();
                 module.dtpCreatedDate.Value = Convert.ToDateTime(gunaDtgvPartImportBill.Rows[e.RowIndex].Cells["created_date"].Value.ToString());
 
 
@@ -124,7 +123,6 @@ namespace CarServiceManagement
                 module.dtpCreatedDate.Enabled = true;
 
                 module.ShowDialog();
-                //Load_PartImportBill();
 
             }
             else if (colName == "detail")
@@ -141,6 +139,28 @@ namespace CarServiceManagement
                 f.labelDesc.Text = gunaDtgvPartImportBill.Rows[e.RowIndex].Cells["descriptions"].FormattedValue.ToString();
                 f.ShowDialog();
 
+            }
+        }
+
+        private void btnExcelExport_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog savefile = new SaveFileDialog();
+            savefile.Title = "Export Excel";
+            savefile.FileName = "ImportBill.xls";
+            savefile.Filter = "Excel (*.xlsx)|*.xlsx|Excel 2003 (*.xls)|*.xls";
+
+            if (savefile.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    Excel.exportExcel(savefile.FileName, gunaDtgvPartImportBill);
+                    TMessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception)
+                {
+                    TMessageBox.Show("ລົ້ມເຫຼວ", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
             }
         }
     }

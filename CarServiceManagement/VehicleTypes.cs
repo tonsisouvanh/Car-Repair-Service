@@ -1,12 +1,6 @@
 ﻿using CarServiceManagement.DAO;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CarServiceManagement
@@ -33,12 +27,11 @@ namespace CarServiceManagement
 
         private void DtgvVehicleTypes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            //For update and delete brand by cell click from tbBrand
             string colName = DtgvVehicleTypes.Columns[e.ColumnIndex].Name;
 
             if (colName == "delete")
             {
-                if (MessageBox.Show("ຕ້ອງການລົບຂໍ້ມູນ?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (TMessageBox.Show("ຕ້ອງການລົບຂໍ້ມູນ?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     try
                     {
@@ -49,18 +42,18 @@ namespace CarServiceManagement
 
                         if (result != 0)
                         {
-                            MessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            TMessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                         }
                         else
                         {
-                            MessageBox.Show("ບໍ່ສາມາດລົບໄດ້", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            TMessageBox.Show("ບໍ່ສາມາດລົບໄດ້", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
 
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message);
+                        TMessageBox.Show(ex.Message);
                     }
                     load_VehicleTypes();
 

@@ -82,7 +82,7 @@ namespace CarServiceManagement
 
             if (colName == "delete")
             {
-                if (MessageBox.Show("ຕ້ອງການລົບຂໍ້ມູນ?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (TMessageBox.Show("ຕ້ອງການລົບຂໍ້ມູນ?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     try
                     {
@@ -93,18 +93,18 @@ namespace CarServiceManagement
 
                         if (result != 0)
                         {
-                            MessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            TMessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                         }
                         else
                         {
-                            MessageBox.Show("ບໍ່ສາມາດລົບໄດ້ ຫຼື ລອງລົບຂໍ້ມູນລາຍລະອຽດບິນກ່ອນ ແລ້ວພະຍາຍາມໃໝ່", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            TMessageBox.Show("ບໍ່ສາມາດລົບໄດ້ ຫຼື ລອງລົບຂໍ້ມູນລາຍລະອຽດບິນກ່ອນ ແລ້ວພະຍາຍາມໃໝ່", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
 
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message);
+                        TMessageBox.Show(ex.Message);
                     }
                     Load_RepairBill();
 
@@ -150,6 +150,29 @@ namespace CarServiceManagement
                 f.labelCustID.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["customerID"].FormattedValue.ToString();
                 f.labelPayment.Text = gunaDtgvRepairBill.Rows[e.RowIndex].Cells["payment"].FormattedValue.ToString();
                 f.ShowDialog();
+            }
+        }
+
+        private void btnExcelExport_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog savefile = new SaveFileDialog();
+            savefile.Title = "Export Excel";
+            savefile.FileName = "repairbill.xls";
+            savefile.Filter = "Excel (*.xlsx)|*.xlsx|Excel 2003 (*.xls)|*.xls";
+
+
+            if (savefile.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    Excel.exportExcel(savefile.FileName, gunaDtgvRepairBill);
+                    TMessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception)
+                {
+                    TMessageBox.Show("ລົ້ມເຫຼວ", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
             }
         }
     }

@@ -23,10 +23,6 @@ namespace CarServiceManagement
 
         private void reloadTotal(int billID)
         {
-            //DataTable data = DataProvider.Instance.ExecuteQuery("select top(1) sum(subtotal) as total from PartImportBillDetail " +
-            //    "where importbillID = " + billID +
-            //    "group by importbillID");
-
             DataTable data = DataProvider.Instance.ExecuteQuery("select top(1) total from PartImportBill " +
                 "where importbillID = " + billID);
 
@@ -85,7 +81,7 @@ namespace CarServiceManagement
 
             if (colName == "delete")
             {
-                if (MessageBox.Show("ຕ້ອງການລົບຂໍ້ມູນ?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (TMessageBox.Show("ຕ້ອງການລົບຂໍ້ມູນ?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     try
                     {
@@ -95,18 +91,18 @@ namespace CarServiceManagement
 
                         if (result != 0)
                         {
-                            MessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            TMessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                         }
                         else
                         {
-                            MessageBox.Show("ບໍ່ສາມາດລົບໄດ້ ຫຼື ລອງລົບຂໍ້ມູນລົດຂອງລູກຄ້າກ່ອນ ແລ້ວພະຍາຍາມໃໝ່", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            TMessageBox.Show("ບໍ່ສາມາດລົບໄດ້ ຫຼື ລອງລົບຂໍ້ມູນລົດຂອງລູກຄ້າກ່ອນ ແລ້ວພະຍາຍາມໃໝ່", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
 
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message);
+                        TMessageBox.Show(ex.Message);
                     }
                     load_ImportBillDetail();
                     load_SpareParts();
@@ -146,20 +142,6 @@ namespace CarServiceManagement
             spm.labelID.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["partIDs"].FormattedValue.ToString();
             spm.txtImportPrice.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["import_price"].FormattedValue.ToString();
             spm.txtSellPrice.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["part_price"].FormattedValue.ToString();
-
-            //spm.txtPartName.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["name"].FormattedValue.ToString();
-            //spm.txtPartDesc.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["descriptions"].FormattedValue.ToString();
-            //spm.txtCalUnit.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["cal_unit"].FormattedValue.ToString();
-            //spm.txtPrice.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["price"].FormattedValue.ToString();
-            //spm.txtImportPrice.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["import_price"].FormattedValue.ToString();
-            //spm.txtCurrency.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["currency"].FormattedValue.ToString();
-            //spm.txtBrand.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["brand"].FormattedValue.ToString();
-            //spm.numberStock.Value = Convert.ToDecimal(gunaDtgvParts.Rows[e.RowIndex].Cells["stock"].FormattedValue.ToString());
-            //spm.comboBoxPartType.SelectedIndex = spm.comboBoxPartType.FindStringExact(gunaDtgvParts.Rows[e.RowIndex].Cells["type_name"].FormattedValue.ToString());
-            //spm.numberStock.Enabled = true;
-            //spm.btnSave.Enabled = false;
-            //spm.btnUpdate.Enabled = true;
-
             spm.ShowDialog();
         }
 
@@ -187,12 +169,12 @@ namespace CarServiceManagement
 
                         if (result != 0)
                         {
-                            MessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            TMessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                         }
                         else
                         {
-                            MessageBox.Show("ບໍ່ສາມາດເພີ່ມໄດ້", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            TMessageBox.Show("ບໍ່ສາມາດເພີ່ມໄດ້", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
 
                         load_ImportBillDetail();
@@ -204,7 +186,7 @@ namespace CarServiceManagement
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message);
+                        TMessageBox.Show(ex.Message);
                     }
                 }
             }
@@ -216,58 +198,9 @@ namespace CarServiceManagement
                 spm.txtImportPrice.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["import_price"].FormattedValue.ToString();
                 spm.txtSellPrice.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["part_price"].FormattedValue.ToString();
 
-                //spm.txtPartName.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["name"].FormattedValue.ToString();
-                //spm.txtPartDesc.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["descriptions"].FormattedValue.ToString();
-                //spm.txtCalUnit.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["cal_unit"].FormattedValue.ToString();
-                //spm.txtPrice.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["price"].FormattedValue.ToString();
-                //spm.txtImportPrice.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["import_price"].FormattedValue.ToString();
-                //spm.txtCurrency.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["currency"].FormattedValue.ToString();
-                //spm.txtBrand.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["brand"].FormattedValue.ToString();
-                //spm.numberStock.Value = Convert.ToDecimal(gunaDtgvParts.Rows[e.RowIndex].Cells["stock"].FormattedValue.ToString());
-                //spm.comboBoxPartType.SelectedIndex = spm.comboBoxPartType.FindStringExact(gunaDtgvParts.Rows[e.RowIndex].Cells["type_name"].FormattedValue.ToString());
-                //spm.numberStock.Enabled = true;
-                //spm.btnSave.Enabled = false;
-                //spm.btnUpdate.Enabled = true;
-
                 spm.ShowDialog();
 
             }
-            //else if(colName == "delete")
-            //{
-            //    if (MessageBox.Show("ຕ້ອງການລົບຂໍ້ມູນ?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            //    {
-            //        try
-            //        {
-            //            int id = Convert.ToInt32(gunaDtgvPartImportBillDetail.Rows[e.RowIndex].Cells["importbilldetailID"].FormattedValue.ToString());
-            //            int billid = Convert.ToInt32(gunaDtgvPartImportBillDetail.Rows[e.RowIndex].Cells["importbillID"].FormattedValue.ToString());
-            //            int partid = Convert.ToInt32(gunaDtgvPartImportBillDetail.Rows[e.RowIndex].Cells["partID"].FormattedValue.ToString());
-            //            int qty = Convert.ToInt32(gunaDtgvPartImportBillDetail.Rows[e.RowIndex].Cells["quantity"].FormattedValue.ToString());
-            //            decimal subtotal = Convert.ToInt32(gunaDtgvPartImportBillDetail.Rows[e.RowIndex].Cells["subtotal"].FormattedValue.ToString());
-
-
-            //            string query = "exec sp_AddPartImportBillDetail @importbilldetailID ,@partID , @importBillID , @quantity , @subtotal";
-
-            //            int result = DataProvider.Instance.ExecuteNoneQuery(query, new object[] {id, partid, billid, qty, subtotal });
-
-            //            if (result != 0)
-            //            {
-            //                MessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            //            }
-            //            else
-            //            {
-            //                MessageBox.Show("ບໍ່ສາມາດລົບໄດ້ ຫຼື ລອງລົບຂໍ້ມູນລົດຂອງລູກຄ້າກ່ອນ ແລ້ວພະຍາຍາມໃໝ່", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //            }
-
-            //        }
-            //        catch (Exception ex)
-            //        {
-            //            MessageBox.Show(ex.Message);
-            //        }
-            //        load_ImportBillDetail();
-
-            //    }
-            //}
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
@@ -297,6 +230,29 @@ namespace CarServiceManagement
             load_ImportBillDetail();
             partImportBills.Load_PartImportBill();
             reloadTotal(passedID);
+        }
+
+        private void btnExcelExport_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog savefile = new SaveFileDialog();
+            savefile.Title = "Export Excel";
+            savefile.FileName = "ImportBillDetail.xls";
+            savefile.Filter = "Excel (*.xlsx)|*.xlsx|Excel 2003 (*.xls)|*.xls";
+
+
+            if (savefile.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    Excel.exportExcel(savefile.FileName, gunaDtgvPartImportBillDetail);
+                    TMessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception)
+                {
+                    TMessageBox.Show("ລົ້ມເຫຼວ", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+            }
         }
     }
 }

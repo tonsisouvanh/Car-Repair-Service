@@ -133,9 +133,21 @@
                           <rd:DefaultName>Textbox1</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>DimGray</Color>
                               <Style>Solid</Style>
+                              <Width>1.5pt</Width>
                             </Border>
+                            <TopBorder>
+                              <Style>None</Style>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Style>None</Style>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Style>None</Style>
+                            </RightBorder>
                             <BackgroundColor>White</BackgroundColor>
                             <PaddingLeft>3pt</PaddingLeft>
                             <PaddingRight>3pt</PaddingRight>
@@ -171,9 +183,21 @@
                           <rd:DefaultName>Textbox3</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>DimGray</Color>
                               <Style>Solid</Style>
+                              <Width>1.5pt</Width>
                             </Border>
+                            <TopBorder>
+                              <Style>None</Style>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Style>None</Style>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Style>None</Style>
+                            </RightBorder>
                             <BackgroundColor>White</BackgroundColor>
                             <PaddingLeft>3pt</PaddingLeft>
                             <PaddingRight>3pt</PaddingRight>
@@ -209,9 +233,21 @@
                           <rd:DefaultName>Textbox5</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>DimGray</Color>
                               <Style>Solid</Style>
+                              <Width>1.5pt</Width>
                             </Border>
+                            <TopBorder>
+                              <Style>None</Style>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Style>None</Style>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Style>None</Style>
+                            </RightBorder>
                             <BackgroundColor>White</BackgroundColor>
                             <PaddingLeft>3pt</PaddingLeft>
                             <PaddingRight>3pt</PaddingRight>
@@ -247,9 +283,21 @@
                           <rd:DefaultName>Textbox13</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>DimGray</Color>
                               <Style>Solid</Style>
+                              <Width>1.5pt</Width>
                             </Border>
+                            <TopBorder>
+                              <Style>None</Style>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Style>None</Style>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Style>None</Style>
+                            </RightBorder>
                             <BackgroundColor>White</BackgroundColor>
                             <PaddingLeft>3pt</PaddingLeft>
                             <PaddingRight>3pt</PaddingRight>
@@ -285,9 +333,21 @@
                           <rd:DefaultName>Textbox25</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>DimGray</Color>
                               <Style>Solid</Style>
+                              <Width>1.5pt</Width>
                             </Border>
+                            <TopBorder>
+                              <Style>None</Style>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Style>None</Style>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Style>None</Style>
+                            </RightBorder>
                             <BackgroundColor>White</BackgroundColor>
                             <PaddingLeft>3pt</PaddingLeft>
                             <PaddingRight>3pt</PaddingRight>
@@ -326,8 +386,20 @@
                           <Style>
                             <Border>
                               <Color>DimGray</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
+                            <TopBorder>
+                              <Style>None</Style>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>None</Style>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Style>None</Style>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Style>None</Style>
+                            </RightBorder>
                             <PaddingLeft>3pt</PaddingLeft>
                             <PaddingRight>3pt</PaddingRight>
                             <PaddingTop>3pt</PaddingTop>
@@ -361,8 +433,20 @@
                           <Style>
                             <Border>
                               <Color>DimGray</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
+                            <TopBorder>
+                              <Style>None</Style>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>None</Style>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Style>None</Style>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Style>None</Style>
+                            </RightBorder>
                             <PaddingLeft>3pt</PaddingLeft>
                             <PaddingRight>3pt</PaddingRight>
                             <PaddingTop>3pt</PaddingTop>
@@ -397,8 +481,20 @@
                           <Style>
                             <Border>
                               <Color>DimGray</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
+                            <TopBorder>
+                              <Style>None</Style>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>None</Style>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Style>None</Style>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Style>None</Style>
+                            </RightBorder>
                             <PaddingLeft>3pt</PaddingLeft>
                             <PaddingRight>3pt</PaddingRight>
                             <PaddingTop>3pt</PaddingTop>
@@ -432,8 +528,20 @@
                           <Style>
                             <Border>
                               <Color>DimGray</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
+                            <TopBorder>
+                              <Style>None</Style>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>None</Style>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Style>None</Style>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Style>None</Style>
+                            </RightBorder>
                             <PaddingLeft>3pt</PaddingLeft>
                             <PaddingRight>3pt</PaddingRight>
                             <PaddingTop>3pt</PaddingTop>
@@ -467,8 +575,20 @@
                           <Style>
                             <Border>
                               <Color>DimGray</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
+                            <TopBorder>
+                              <Style>None</Style>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>None</Style>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Style>None</Style>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Style>None</Style>
+                            </RightBorder>
                             <PaddingLeft>3pt</PaddingLeft>
                             <PaddingRight>3pt</PaddingRight>
                             <PaddingTop>3pt</PaddingTop>
@@ -508,7 +628,20 @@
             <Style>
               <Border>
                 <Style>None</Style>
+                <Width>1.5pt</Width>
               </Border>
+              <TopBorder>
+                <Style>Solid</Style>
+              </TopBorder>
+              <BottomBorder>
+                <Style>Solid</Style>
+              </BottomBorder>
+              <LeftBorder>
+                <Style>None</Style>
+              </LeftBorder>
+              <RightBorder>
+                <Style>None</Style>
+              </RightBorder>
             </Style>
           </Tablix>
           <Tablix Name="Tablix2">
@@ -554,10 +687,21 @@
                           <rd:DefaultName>Textbox7</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>DimGray</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
+                              <Width>1.5pt</Width>
                             </Border>
-                            <BackgroundColor>White</BackgroundColor>
+                            <TopBorder>
+                              <Style>None</Style>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Style>None</Style>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Style>None</Style>
+                            </RightBorder>
                             <PaddingLeft>3pt</PaddingLeft>
                             <PaddingRight>3pt</PaddingRight>
                             <PaddingTop>3pt</PaddingTop>
@@ -589,10 +733,21 @@
                           <rd:DefaultName>Textbox9</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>DimGray</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
+                              <Width>1.5pt</Width>
                             </Border>
-                            <BackgroundColor>White</BackgroundColor>
+                            <TopBorder>
+                              <Style>None</Style>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Style>None</Style>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Style>None</Style>
+                            </RightBorder>
                             <PaddingLeft>3pt</PaddingLeft>
                             <PaddingRight>3pt</PaddingRight>
                             <PaddingTop>3pt</PaddingTop>
@@ -624,10 +779,21 @@
                           <rd:DefaultName>Textbox11</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>DimGray</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
+                              <Width>1.5pt</Width>
                             </Border>
-                            <BackgroundColor>White</BackgroundColor>
+                            <TopBorder>
+                              <Style>None</Style>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Style>None</Style>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Style>None</Style>
+                            </RightBorder>
                             <PaddingLeft>3pt</PaddingLeft>
                             <PaddingRight>3pt</PaddingRight>
                             <PaddingTop>3pt</PaddingTop>
@@ -665,8 +831,20 @@
                           <Style>
                             <Border>
                               <Color>DimGray</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
+                            <TopBorder>
+                              <Style>None</Style>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>None</Style>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Style>None</Style>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Style>None</Style>
+                            </RightBorder>
                             <PaddingLeft>3pt</PaddingLeft>
                             <PaddingRight>3pt</PaddingRight>
                             <PaddingTop>3pt</PaddingTop>
@@ -700,8 +878,20 @@
                           <Style>
                             <Border>
                               <Color>DimGray</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
+                            <TopBorder>
+                              <Style>None</Style>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>None</Style>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Style>None</Style>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Style>None</Style>
+                            </RightBorder>
                             <PaddingLeft>3pt</PaddingLeft>
                             <PaddingRight>3pt</PaddingRight>
                             <PaddingTop>3pt</PaddingTop>
@@ -735,8 +925,20 @@
                           <Style>
                             <Border>
                               <Color>DimGray</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
+                            <TopBorder>
+                              <Style>None</Style>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>None</Style>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Style>None</Style>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Style>None</Style>
+                            </RightBorder>
                             <PaddingLeft>3pt</PaddingLeft>
                             <PaddingRight>3pt</PaddingRight>
                             <PaddingTop>3pt</PaddingTop>
@@ -775,7 +977,20 @@
             <Style>
               <Border>
                 <Style>None</Style>
+                <Width>1.5pt</Width>
               </Border>
+              <TopBorder>
+                <Style>Solid</Style>
+              </TopBorder>
+              <BottomBorder>
+                <Style>Solid</Style>
+              </BottomBorder>
+              <LeftBorder>
+                <Style>None</Style>
+              </LeftBorder>
+              <RightBorder>
+                <Style>None</Style>
+              </RightBorder>
             </Style>
           </Tablix>
           <Textbox Name="Textbox27">
@@ -852,7 +1067,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>2.13828in</Top>
+            <Top>2.26328in</Top>
             <Left>4.70892in</Left>
             <Height>0.35222in</Height>
             <Width>1.99381in</Width>
@@ -889,7 +1104,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>2.4905in</Top>
+            <Top>2.7405in</Top>
             <Left>4.70892in</Left>
             <Height>0.35222in</Height>
             <Width>1.99381in</Width>
@@ -963,7 +1178,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>3.51214in</Top>
+            <Top>3.76214in</Top>
             <Left>0.25in</Left>
             <Height>0.35222in</Height>
             <Width>0.92714in</Width>
@@ -997,7 +1212,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>pDescription</rd:DefaultName>
-            <Top>3.51214in</Top>
+            <Top>3.76214in</Top>
             <Left>1.20492in</Left>
             <Height>0.35222in</Height>
             <Width>4.64933in</Width>
@@ -1020,8 +1235,9 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=Parameters!pTotalService.Value</Value>
+                    <Value>=Parameters!pTotalService.Value + " ກີບ"</Value>
                     <Style>
+                      <FontFamily>phetsarath OT</FontFamily>
                       <FontSize>12pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1055,8 +1271,9 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=Parameters!pTotal.Value</Value>
+                    <Value>=Parameters!pTotal.Value + " ກີບ"</Value>
                     <Style>
+                      <FontFamily>phetsarath OT</FontFamily>
                       <FontSize>12pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1067,7 +1284,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>pTotal</rd:DefaultName>
-            <Top>2.13828in</Top>
+            <Top>2.26328in</Top>
             <Left>6.70273in</Left>
             <Height>0.35222in</Height>
             <Width>1.34445in</Width>
@@ -1103,7 +1320,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>pPayment</rd:DefaultName>
-            <Top>2.4905in</Top>
+            <Top>2.7405in</Top>
             <Left>6.70273in</Left>
             <Height>0.35222in</Height>
             <Width>1.34445in</Width>
@@ -1126,8 +1343,9 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=Parameters!pTotalPart.Value</Value>
+                    <Value>=Parameters!pTotalPart.Value + " ກີບ"</Value>
                     <Style>
+                      <FontFamily>phetsarath OT</FontFamily>
                       <FontSize>12pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1170,12 +1388,12 @@
                   </TextRun>
                 </TextRuns>
                 <Style>
-                  <TextAlign>Center</TextAlign>
+                  <TextAlign>Right</TextAlign>
                 </Style>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>pStatus</rd:DefaultName>
-            <Top>2.90586in</Top>
+            <Top>3.15586in</Top>
             <Left>6.51725in</Left>
             <Height>0.35525in</Height>
             <Width>1.52993in</Width>
@@ -1212,7 +1430,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>2.13828in</Top>
+            <Top>2.26328in</Top>
             <Left>0.52037in</Left>
             <Height>0.32112in</Height>
             <Width>0.92714in</Width>
@@ -1230,7 +1448,7 @@
           </Textbox>
           <Rectangle Name="Rectangle2">
             <KeepTogether>true</KeepTogether>
-            <Top>2.13828in</Top>
+            <Top>2.26328in</Top>
             <Left>1.86843in</Left>
             <Height>0.21279in</Height>
             <Width>0.20093in</Width>
@@ -1262,7 +1480,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>2.13828in</Top>
+            <Top>2.26328in</Top>
             <Left>2.1388in</Left>
             <Height>0.32112in</Height>
             <Width>0.92714in</Width>
@@ -1280,7 +1498,7 @@
           </Textbox>
           <Rectangle Name="Rectangle3">
             <KeepTogether>true</KeepTogether>
-            <Top>2.13828in</Top>
+            <Top>2.26328in</Top>
             <Left>0.25in</Left>
             <Height>0.21279in</Height>
             <Width>0.20093in</Width>
@@ -1291,8 +1509,34 @@
               </Border>
             </Style>
           </Rectangle>
+          <Line Name="Line1">
+            <Top>5.763cm</Top>
+            <Left>14.03499cm</Left>
+            <Height>0cm</Height>
+            <Width>6.40485cm</Width>
+            <ZIndex>17</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+                <Width>1.5pt</Width>
+              </Border>
+            </Style>
+          </Line>
+          <Line Name="Line2">
+            <Top>6.71274cm</Top>
+            <Left>14.03499cm</Left>
+            <Height>0cm</Height>
+            <Width>6.40485cm</Width>
+            <ZIndex>18</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+                <Width>1.5pt</Width>
+              </Border>
+            </Style>
+          </Line>
         </ReportItems>
-        <Height>9.81547cm</Height>
+        <Height>10.70447cm</Height>
         <Style />
       </Body>
       <Width>21cm</Width>
@@ -1711,14 +1955,17 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox15</rd:DefaultName>
-              <Top>0in</Top>
-              <Left>0.25in</Left>
+              <Left>1.20492in</Left>
               <Height>0.38333in</Height>
-              <Width>7.79718in</Width>
+              <Width>5.1751in</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
+                  <Width>1.6pt</Width>
                 </Border>
+                <TopBorder>
+                  <Style>Solid</Style>
+                </TopBorder>
                 <VerticalAlign>Middle</VerticalAlign>
                 <PaddingLeft>2pt</PaddingLeft>
                 <PaddingRight>2pt</PaddingRight>

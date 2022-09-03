@@ -35,8 +35,6 @@ namespace CarServiceManagement
         private void ImageButtonClose_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            //MainMenu f = new MainMenu();
-            //f.ShowDialog();
         }
 
         private void sidebar_importedPartsBill_Click(object sender, EventArgs e)

@@ -18,8 +18,6 @@ namespace CarServiceManagement
         public void Clear()
         {
             txtPartTypeName.Clear();
-            //btnUpdate.Enabled = false;
-            //btnSave.Enabled = true;
             txtPartTypeName.Focus();
         }
 
@@ -39,11 +37,11 @@ namespace CarServiceManagement
         {
             try
             {
-                if (MessageBox.Show("ຕ້ອງການບັນທິກຂໍ້ມູນ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (TMessageBox.Show("ຕ້ອງການບັນທິກຂໍ້ມູນ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     if (!checkForm())
                     {
-                        MessageBox.Show("ກາລຸນາປ້ອນຂໍ້ມູນ!", "Warning Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        TMessageBox.Show("ກາລຸນາປ້ອນຂໍ້ມູນ!", "Warning Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
 
@@ -52,12 +50,12 @@ namespace CarServiceManagement
 
                     if (result != 0)
                     {
-                        MessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        TMessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     }
                     else
                     {
-                        MessageBox.Show("ບໍ່ສາມາດເພີ່ມໄດ້", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        TMessageBox.Show("ບໍ່ສາມາດເພີ່ມໄດ້", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
 
                     Clear();
@@ -69,7 +67,7 @@ namespace CarServiceManagement
             catch (Exception ex)
             {
 
-                MessageBox.Show(ex.Message);
+                TMessageBox.Show(ex.Message);
             }
         }
 
@@ -78,28 +76,28 @@ namespace CarServiceManagement
 
             try
             {
-                if (MessageBox.Show("ຕ້ອງການແກ້ໄຂຂໍ້ມູນ", "Update Record!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (TMessageBox.Show("ຕ້ອງການແກ້ໄຂຂໍ້ມູນ", "Update Record!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     string query = "UPDATE PartType SET name = N'" + txtPartTypeName.Text + "' WHERE parttypeID = " + Int16.Parse(labelID.Text.ToString());
                     int result = DataProvider.Instance.ExecuteNoneQuery(query);
 
                     if (result != 0)
                     {
-                        MessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        TMessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     }
                     else
                     {
-                        MessageBox.Show("ບໍ່ສາມາດແກ້ໄຂໄດ້", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        TMessageBox.Show("ບໍ່ສາມາດແກ້ໄຂໄດ້", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
 
                     Clear();
-                    this.Dispose();// To close this form after update data
+                    this.Dispose();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                TMessageBox.Show(ex.Message);
             }
 
         }

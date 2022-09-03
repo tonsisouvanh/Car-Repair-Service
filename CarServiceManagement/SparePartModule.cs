@@ -47,15 +47,11 @@ namespace CarServiceManagement
             txtImportPrice.Clear();
             txtCalUnit.Clear();
             txtPartDesc.Clear();
-            //txtCurrency.Clear();
             txtBrand.Clear();
 
             comboBoxPartType.SelectedIndex = 0;
-            //comboBoxPartBrand.SelectedIndex = 0;
             numberStock.Value = 0;
 
-            //btnSave.Enabled = true;
-            //btnUpdate.Enabled = false;
         }
 
         private void load_PartType()
@@ -84,16 +80,16 @@ namespace CarServiceManagement
         {
             try
             {
-                if (MessageBox.Show("ຕ້ອງການບັນທິກຂໍ້ມູນ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (TMessageBox.Show("ຕ້ອງການບັນທິກຂໍ້ມູນ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     if (!checkForm())
                     {
-                        MessageBox.Show("ກາລຸນາປ້ອນຂໍ້ມູນໃຫ້ຄົບຖ້ວນ!", "Warning Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        TMessageBox.Show("ກາລຸນາປ້ອນຂໍ້ມູນໃຫ້ຄົບຖ້ວນ!", "Warning Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
                     if (!isNumber(txtPrice.Text) || !isNumber(txtImportPrice.Text))
                     {
-                        MessageBox.Show("ລາຄາຕ້ອງເປັນໂຕເລກ!", "Warning Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        TMessageBox.Show("ລາຄາຕ້ອງເປັນໂຕເລກ!", "Warning Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
 
@@ -109,12 +105,12 @@ namespace CarServiceManagement
 
                     if (result != 0)
                     {
-                        MessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        TMessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Dispose();
                     }
                     else
                     {
-                        MessageBox.Show("ບໍ່ສາມາດເພີ່ມໄດ້", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        TMessageBox.Show("ບໍ່ສາມາດເພີ່ມໄດ້", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
 
                     Clear();
@@ -124,7 +120,7 @@ namespace CarServiceManagement
             catch (Exception ex)
             {
 
-                MessageBox.Show(ex.Message);
+                TMessageBox.Show(ex.Message);
             }
         }
 
@@ -134,16 +130,12 @@ namespace CarServiceManagement
             {
                 if (!checkForm())
                 {
-                    MessageBox.Show("ກາລຸນາປ້ອນຂໍ້ມູນໃຫ້ຄົບຖ້ວນ!", "Warning Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    TMessageBox.Show("ກາລຸນາປ້ອນຂໍ້ມູນໃຫ້ຄົບຖ້ວນ!", "Warning Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                //if (!isNumber(txtPrice.Text))
-                //{
-                //    MessageBox.Show("ລາຄາຕ້ອງເປັນໂຕເລກ!", "Warning Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                //    return;
-                //}
 
-                if (MessageBox.Show("ຕ້ອງການແກ້ໄຂຂໍ້ມູນ", "Update Record!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+
+                if (TMessageBox.Show("ຕ້ອງການແກ້ໄຂຂໍ້ມູນ", "Update Record!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     int stock = Convert.ToInt32(Math.Round(numberStock.Value, 0));
                     decimal price = Convert.ToDecimal(txtPrice.Text.ToString());
@@ -156,24 +148,24 @@ namespace CarServiceManagement
 
                     if (result != 0)
                     {
-                        MessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        TMessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     }
                     else
                     {
-                        MessageBox.Show("ບໍ່ສາມາດເພີ່ມໄດ້", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        TMessageBox.Show("ບໍ່ສາມາດເພີ່ມໄດ້", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
 
                     Clear();
 
                     spareParts.Load_SpareParts();
 
-                    this.Dispose();// To close this form after update data
+                    this.Dispose();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                TMessageBox.Show(ex.Message);
             }
         }
 

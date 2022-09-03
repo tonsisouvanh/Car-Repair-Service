@@ -25,9 +25,6 @@ namespace CarServiceManagement
 
         private void reloadTotal(int billID)
         {
-            //DataTable data = DataProvider.Instance.ExecuteQuery("select top(1) sum(subtotal) as total from RepairBillDetail " +
-            //    "where repairbillID = " + billID +
-            //    "group by repairbillID");
             DataTable data = DataProvider.Instance.ExecuteQuery("select top(1) total from RepairBill " +
                "where repairbillID = " + billID);
 
@@ -91,7 +88,7 @@ namespace CarServiceManagement
 
             if (colName == "delete")
             {
-                if (MessageBox.Show("ຕ້ອງການລົບຂໍ້ມູນ?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (TMessageBox.Show("ຕ້ອງການລົບຂໍ້ມູນ?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     try
                     {
@@ -103,18 +100,18 @@ namespace CarServiceManagement
 
                         if (result != 0)
                         {
-                            MessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            TMessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                         }
                         else
                         {
-                            MessageBox.Show("ບໍ່ສາມາດລົບໄດ້ ຫຼື ລອງລົບຂໍ້ມູນລົດຂອງລູກຄ້າກ່ອນ ແລ້ວພະຍາຍາມໃໝ່", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            TMessageBox.Show("ບໍ່ສາມາດລົບໄດ້ ຫຼື ລອງລົບຂໍ້ມູນລົດຂອງລູກຄ້າກ່ອນ ແລ້ວພະຍາຍາມໃໝ່", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
 
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message);
+                        TMessageBox.Show(ex.Message);
                     }
                     load_RepairBillDetail();
                     load_SpareParts();
@@ -174,11 +171,11 @@ namespace CarServiceManagement
 
                         if (result != 0)
                         {
-                            MessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            TMessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                         else
                         {
-                            MessageBox.Show("ບໍ່ສາມາດເພີ່ມໄດ້", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            TMessageBox.Show("ບໍ່ສາມາດເພີ່ມໄດ້", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
 
                         load_RepairBillDetail();
@@ -191,12 +188,12 @@ namespace CarServiceManagement
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message);
+                        TMessageBox.Show(ex.Message);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("ຈຳນວນເຄື່ອງໃນສາງບໍ່ພຽງພໍ", "Warning Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    TMessageBox.Show("ຈຳນວນເຄື່ອງໃນສາງບໍ່ພຽງພໍ", "Warning Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
 
             }
@@ -226,43 +223,11 @@ namespace CarServiceManagement
 
             if (colName == "updateservice")
             {
-                //int stockQty = Convert.ToInt32(gunaDtgvParts.Rows[e.RowIndex].Cells["stock"].FormattedValue.ToString());
-                //int qty = Convert.ToInt32(Math.Round(f.numericQty.Value, 0));
-                //int billid = Convert.ToInt32(labelBillNumber.Text.ToString());
-                //int partid = Convert.ToInt32(gunaDtgvParts.Rows[e.RowIndex].Cells["partIDs"].FormattedValue.ToString());
-                //decimal partPrice = Convert.ToDecimal(gunaDtgvParts.Rows[e.RowIndex].Cells["part_price"].FormattedValue.ToString());
 
-                //try
-                //{
-                //    string query = "exec sp_AddRepairBillDetail @partID , @importBillID , @quantity , @part_price";
-                //    int result = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { partid, billid, qty, partPrice });
-
-
-                //    if (result != 0)
-                //    {
-                //        MessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //    }
-                //    else
-                //    {
-                //        MessageBox.Show("ບໍ່ສາມາດເພີ່ມໄດ້", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //    }
-
-                //    load_RepairBillDetail();
-                //    load_SpareParts();
-
-                //    repairBill.Load_RepairBill();
-
-                //    reloadTotal(billid);
-
-                //}
-                //catch (Exception ex)
-                //{
-                //    MessageBox.Show(ex.Message);
-                //}
             }
             else if (colName == "deleteservice")
             {
-                if (MessageBox.Show("ຕ້ອງການລົບຂໍ້ມູນ?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (TMessageBox.Show("ຕ້ອງການລົບຂໍ້ມູນ?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     try
                     {
@@ -274,18 +239,18 @@ namespace CarServiceManagement
 
                         if (result != 0)
                         {
-                            MessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            TMessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                         }
                         else
                         {
-                            MessageBox.Show("ບໍ່ສາມາດລົບໄດ້ ຫຼື ລອງລົບຂໍ້ມູນລາຍລະອຽດບິນກ່ອນ ແລ້ວພະຍາຍາມໃໝ່", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            TMessageBox.Show("ບໍ່ສາມາດລົບໄດ້ ຫຼື ລອງລົບຂໍ້ມູນລາຍລະອຽດບິນກ່ອນ ແລ້ວພະຍາຍາມໃໝ່", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
 
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message);
+                        TMessageBox.Show(ex.Message);
                     }
 
                     load_Services();
@@ -306,6 +271,29 @@ namespace CarServiceManagement
             int custID = Convert.ToInt32(this.labelCustID.Text.ToString());
             OilChangeAlert f = new OilChangeAlert(custID);
             f.ShowDialog();
+        }
+
+        private void btnExcelExport_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog savefile = new SaveFileDialog();
+            savefile.Title = "Export Excel";
+            savefile.FileName = "repairbilldetail.xls";
+            savefile.Filter = "Excel (*.xlsx)|*.xlsx|Excel 2003 (*.xls)|*.xls";
+
+
+            if (savefile.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    Excel.exportExcel(savefile.FileName, gunaDtgvRepairBillDetail);
+                    TMessageBox.Show("ສຳເລັດ", "Info Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception)
+                {
+                    TMessageBox.Show("ລົ້ມເຫຼວ", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+            }
         }
     }
 }

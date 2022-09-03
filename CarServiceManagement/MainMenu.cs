@@ -18,6 +18,7 @@ namespace CarServiceManagement
             t = new System.Windows.Forms.Timer();
             t.Interval = 1000;
             t.Tick += new EventHandler(t_Tick);
+            t.Tick += new EventHandler(t_Tick);
             t.Enabled = true;
         }
 
@@ -28,8 +29,6 @@ namespace CarServiceManagement
 
         private void ImageButtonMaximize_Click(object sender, EventArgs e)
         {
-            //this.WindowState = FormWindowState.Maximized;
-
         }
 
         private void guna2TileButton1_Click(object sender, EventArgs e)
@@ -41,14 +40,12 @@ namespace CarServiceManagement
 
         private void guna2TileButton2_Click(object sender, EventArgs e)
         {
-            //this.Hide();
             CustomerMain customer = new CustomerMain();
             customer.ShowDialog();
         }
 
         private void guna2TileButton3_Click(object sender, EventArgs e)
         {
-            //this.Hide();
             BillMain bill = new BillMain();
             bill.ShowDialog();
 
@@ -56,7 +53,7 @@ namespace CarServiceManagement
 
         private void guna2ImageButton1_Click_1(object sender, EventArgs e)
         {
-            if (MessageBox.Show("ລົງຊື່ອອກຈາກລະບົບ?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (TMessageBox.Show("ລົງຊື່ອອກຈາກລະບົບ?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 this.Dispose();
                 Login f = new Login();
@@ -72,7 +69,7 @@ namespace CarServiceManagement
 
         private void ImageButtonClose_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("ລົງຊື່ອອກຈາກລະບົບ?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (TMessageBox.Show("ລົງຊື່ອອກຈາກລະບົບ?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 this.Dispose();
                 Login f = new Login();
