@@ -581,6 +581,8 @@
     <None Include="Resources\question.png" />
     <None Include="Resources\warning.png" />
     <None Include="Resources\icons8_cancel_25px.png" />
+    <None Include="Resources\statistics.png" />
+    <None Include="Resources\statistics_solid.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

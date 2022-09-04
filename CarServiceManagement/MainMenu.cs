@@ -76,5 +76,11 @@ namespace CarServiceManagement
                 f.Show();
             }
         }
+
+        private void guna2TileButton4_Click(object sender, EventArgs e)
+        {
+            SaleReport f = new SaleReport();
+            f.ShowDialog();
+        }
     }
 }

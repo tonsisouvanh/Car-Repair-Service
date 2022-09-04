@@ -106,7 +106,7 @@ namespace CarServiceManagement
             LoadData();
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void ImageButtonClose_Click(object sender, EventArgs e)
         {
             this.Dispose();
         }
