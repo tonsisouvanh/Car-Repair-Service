@@ -43,6 +43,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2PanelBottom = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnExcelExport = new Guna.UI2.WinForms.Guna2ImageButton();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cbbFilter = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -61,10 +62,13 @@
             this.detail = new System.Windows.Forms.DataGridViewImageColumn();
             this.edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.delete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.btnExcelExport = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.labelTotalRepairbill = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.guna2PanelBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDtgvRepairBill)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -223,6 +227,26 @@
             this.guna2PanelBottom.Size = new System.Drawing.Size(1083, 58);
             this.guna2PanelBottom.TabIndex = 15;
             // 
+            // btnExcelExport
+            // 
+            this.btnExcelExport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnExcelExport.BackColor = System.Drawing.Color.Transparent;
+            this.btnExcelExport.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnExcelExport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExcelExport.HoverState.ImageSize = new System.Drawing.Size(32, 32);
+            this.btnExcelExport.Image = global::CarServiceManagement.Properties.Resources.excel;
+            this.btnExcelExport.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnExcelExport.ImageRotate = 0F;
+            this.btnExcelExport.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnExcelExport.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnExcelExport.Location = new System.Drawing.Point(3, 4);
+            this.btnExcelExport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnExcelExport.Name = "btnExcelExport";
+            this.btnExcelExport.PressedState.ImageSize = new System.Drawing.Size(0, 0);
+            this.btnExcelExport.Size = new System.Drawing.Size(49, 47);
+            this.btnExcelExport.TabIndex = 11;
+            this.btnExcelExport.Click += new System.EventHandler(this.btnExcelExport_Click);
+            // 
             // label5
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -342,7 +366,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.gunaDtgvRepairBill.DefaultCellStyle = dataGridViewCellStyle3;
-            this.gunaDtgvRepairBill.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gunaDtgvRepairBill.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaDtgvRepairBill.EnableHeadersVisualStyles = false;
             this.gunaDtgvRepairBill.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDtgvRepairBill.Location = new System.Drawing.Point(0, 60);
@@ -367,7 +391,7 @@
             this.gunaDtgvRepairBill.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.gunaDtgvRepairBill.RowTemplate.Height = 33;
             this.gunaDtgvRepairBill.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDtgvRepairBill.Size = new System.Drawing.Size(1083, 430);
+            this.gunaDtgvRepairBill.Size = new System.Drawing.Size(1083, 390);
             this.gunaDtgvRepairBill.TabIndex = 16;
             this.gunaDtgvRepairBill.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.gunaDtgvRepairBill.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -534,31 +558,48 @@
             this.delete.Visible = false;
             this.delete.Width = 8;
             // 
-            // btnExcelExport
+            // panel1
             // 
-            this.btnExcelExport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnExcelExport.BackColor = System.Drawing.Color.Transparent;
-            this.btnExcelExport.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnExcelExport.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExcelExport.HoverState.ImageSize = new System.Drawing.Size(32, 32);
-            this.btnExcelExport.Image = global::CarServiceManagement.Properties.Resources.excel;
-            this.btnExcelExport.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnExcelExport.ImageRotate = 0F;
-            this.btnExcelExport.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnExcelExport.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnExcelExport.Location = new System.Drawing.Point(3, 4);
-            this.btnExcelExport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnExcelExport.Name = "btnExcelExport";
-            this.btnExcelExport.PressedState.ImageSize = new System.Drawing.Size(0, 0);
-            this.btnExcelExport.Size = new System.Drawing.Size(49, 47);
-            this.btnExcelExport.TabIndex = 11;
-            this.btnExcelExport.Click += new System.EventHandler(this.btnExcelExport_Click);
+            this.panel1.Controls.Add(this.labelTotalRepairbill);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 450);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1083, 40);
+            this.panel1.TabIndex = 17;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(865, 3);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(55, 33);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "ລວມ:";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelTotalRepairbill
+            // 
+            this.labelTotalRepairbill.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTotalRepairbill.AutoSize = true;
+            this.labelTotalRepairbill.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotalRepairbill.ForeColor = System.Drawing.Color.Black;
+            this.labelTotalRepairbill.Location = new System.Drawing.Point(951, 3);
+            this.labelTotalRepairbill.Name = "labelTotalRepairbill";
+            this.labelTotalRepairbill.Size = new System.Drawing.Size(114, 33);
+            this.labelTotalRepairbill.TabIndex = 10;
+            this.labelTotalRepairbill.Text = "100000000";
+            this.labelTotalRepairbill.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // RepairBill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1083, 548);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.gunaDtgvRepairBill);
             this.Controls.Add(this.guna2PanelBottom);
             this.Controls.Add(this.guna2Panel1);
@@ -570,6 +611,8 @@
             this.guna2PanelBottom.ResumeLayout(false);
             this.guna2PanelBottom.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDtgvRepairBill)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -604,5 +647,8 @@
         private System.Windows.Forms.DataGridViewImageColumn edit;
         private System.Windows.Forms.DataGridViewImageColumn delete;
         private Guna.UI2.WinForms.Guna2ImageButton btnExcelExport;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label labelTotalRepairbill;
+        private System.Windows.Forms.Label label6;
     }
 }

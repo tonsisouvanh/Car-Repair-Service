@@ -12,6 +12,16 @@ namespace CarServiceManagement
             InitializeComponent();
             Load_PartImportBill();
         }
+        private void calTotalBill()
+        {
+            decimal sum = 0;
+            for (int i = 0; i < gunaDtgvPartImportBill.Rows.Count; ++i)
+            {
+                sum += Convert.ToDecimal(gunaDtgvPartImportBill.Rows[i].Cells["total"].FormattedValue.ToString());
+            }
+            labelTotalImportbill.Text = sum.ToString("N0");
+        }
+
         public void Load_PartImportBill()
         {
             DataTable data = DataProvider.Instance.ExecuteQuery("select * from PartImportBill where " +
@@ -20,6 +30,7 @@ namespace CarServiceManagement
             gunaDtgvPartImportBill.Columns["total"].DefaultCellStyle.Format = "N0";
             gunaDtgvPartImportBill.Columns["created_date"].DefaultCellStyle.Format = "dd/MM/yyyy";
 
+            calTotalBill();
         }
 
         private void ImageButtonAdd_Click(object sender, EventArgs e)
@@ -37,6 +48,8 @@ namespace CarServiceManagement
         {
             DataTable data = DataProvider.Instance.ExecuteQuery("SELECT * FROM PartImportBill WHERE cast(created_date AS date) BETWEEN '" + dtpFrom.Value.ToString() + "' AND '" + dtpTo.Value.ToString() + "'");
             gunaDtgvPartImportBill.DataSource = data;
+            calTotalBill();
+
         }
 
         private void btnReload_Click(object sender, EventArgs e)
@@ -66,6 +79,8 @@ namespace CarServiceManagement
 
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
             gunaDtgvPartImportBill.DataSource = data;
+            calTotalBill();
+
         }
 
         private void gunaDtgvPartImportBill_CellContentClick(object sender, DataGridViewCellEventArgs e)

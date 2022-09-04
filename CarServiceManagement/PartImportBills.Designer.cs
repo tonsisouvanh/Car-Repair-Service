@@ -42,6 +42,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2PanelBottom = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnExcelExport = new Guna.UI2.WinForms.Guna2ImageButton();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cbbFilter = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -62,10 +63,13 @@
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.btnExcelExport = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.labelTotalImportbill = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.guna2PanelBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDtgvPartImportBill)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -223,6 +227,26 @@
             this.guna2PanelBottom.Size = new System.Drawing.Size(1067, 58);
             this.guna2PanelBottom.TabIndex = 14;
             // 
+            // btnExcelExport
+            // 
+            this.btnExcelExport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnExcelExport.BackColor = System.Drawing.Color.Transparent;
+            this.btnExcelExport.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnExcelExport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExcelExport.HoverState.ImageSize = new System.Drawing.Size(32, 32);
+            this.btnExcelExport.Image = global::CarServiceManagement.Properties.Resources.excel;
+            this.btnExcelExport.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnExcelExport.ImageRotate = 0F;
+            this.btnExcelExport.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnExcelExport.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnExcelExport.Location = new System.Drawing.Point(3, 7);
+            this.btnExcelExport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnExcelExport.Name = "btnExcelExport";
+            this.btnExcelExport.PressedState.ImageSize = new System.Drawing.Size(0, 0);
+            this.btnExcelExport.Size = new System.Drawing.Size(49, 47);
+            this.btnExcelExport.TabIndex = 11;
+            this.btnExcelExport.Click += new System.EventHandler(this.btnExcelExport_Click);
+            // 
             // label5
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -341,7 +365,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.gunaDtgvPartImportBill.DefaultCellStyle = dataGridViewCellStyle3;
-            this.gunaDtgvPartImportBill.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gunaDtgvPartImportBill.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaDtgvPartImportBill.EnableHeadersVisualStyles = false;
             this.gunaDtgvPartImportBill.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDtgvPartImportBill.Location = new System.Drawing.Point(0, 60);
@@ -366,7 +390,7 @@
             this.gunaDtgvPartImportBill.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.gunaDtgvPartImportBill.RowTemplate.Height = 33;
             this.gunaDtgvPartImportBill.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDtgvPartImportBill.Size = new System.Drawing.Size(1067, 436);
+            this.gunaDtgvPartImportBill.Size = new System.Drawing.Size(1067, 396);
             this.gunaDtgvPartImportBill.TabIndex = 15;
             this.gunaDtgvPartImportBill.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.gunaDtgvPartImportBill.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -560,31 +584,48 @@
             this.dataGridViewImageColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewImageColumn3.Width = 125;
             // 
-            // btnExcelExport
+            // panel1
             // 
-            this.btnExcelExport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnExcelExport.BackColor = System.Drawing.Color.Transparent;
-            this.btnExcelExport.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnExcelExport.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExcelExport.HoverState.ImageSize = new System.Drawing.Size(32, 32);
-            this.btnExcelExport.Image = global::CarServiceManagement.Properties.Resources.excel;
-            this.btnExcelExport.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnExcelExport.ImageRotate = 0F;
-            this.btnExcelExport.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnExcelExport.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnExcelExport.Location = new System.Drawing.Point(3, 7);
-            this.btnExcelExport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnExcelExport.Name = "btnExcelExport";
-            this.btnExcelExport.PressedState.ImageSize = new System.Drawing.Size(0, 0);
-            this.btnExcelExport.Size = new System.Drawing.Size(49, 47);
-            this.btnExcelExport.TabIndex = 11;
-            this.btnExcelExport.Click += new System.EventHandler(this.btnExcelExport_Click);
+            this.panel1.Controls.Add(this.labelTotalImportbill);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 456);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1067, 40);
+            this.panel1.TabIndex = 18;
+            // 
+            // labelTotalImportbill
+            // 
+            this.labelTotalImportbill.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTotalImportbill.AutoSize = true;
+            this.labelTotalImportbill.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotalImportbill.ForeColor = System.Drawing.Color.Black;
+            this.labelTotalImportbill.Location = new System.Drawing.Point(935, 3);
+            this.labelTotalImportbill.Name = "labelTotalImportbill";
+            this.labelTotalImportbill.Size = new System.Drawing.Size(114, 33);
+            this.labelTotalImportbill.TabIndex = 10;
+            this.labelTotalImportbill.Text = "100000000";
+            this.labelTotalImportbill.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(849, 3);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(55, 33);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "ລວມ:";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // PartImportBills
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.gunaDtgvPartImportBill);
             this.Controls.Add(this.guna2PanelBottom);
             this.Controls.Add(this.guna2Panel1);
@@ -597,6 +638,8 @@
             this.guna2PanelBottom.ResumeLayout(false);
             this.guna2PanelBottom.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDtgvPartImportBill)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -633,5 +676,8 @@
         private System.Windows.Forms.DataGridViewImageColumn edit;
         private System.Windows.Forms.DataGridViewImageColumn delete;
         private Guna.UI2.WinForms.Guna2ImageButton btnExcelExport;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label labelTotalImportbill;
+        private System.Windows.Forms.Label label6;
     }
 }

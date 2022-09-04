@@ -28,8 +28,8 @@ namespace CarServiceManagement
             if (refreshData == true)
             {
                 lblNumOrders.Text = model.NumOrders.ToString();
-                lblTotalRevenue.Text = model.TotalRevenue.ToString("N0") + "KIP";
-                lblTotalProfit.Text = model.TotalProfit.ToString("N0") + "KIP";
+                lblTotalRevenue.Text = model.TotalRevenue.ToString("N0") + " ກີບ";
+                lblTotalProfit.Text = model.TotalProfit.ToString("N0") + " ກີບ";
 
                 lblNumCustomers.Text = model.NumCustomers.ToString();
                 lblNumSuppliers.Text = model.NumImportBill.ToString();

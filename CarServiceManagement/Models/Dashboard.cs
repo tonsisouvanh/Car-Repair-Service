@@ -96,16 +96,19 @@ namespace CarServiceManagement.Models
             TotalRevenue = 0;
             string query = "";
 
+            // sum total of revenue with defined date
             query = "select created_date, sum(total) as total from RepairBill where created_date between '" + startDate + "' and '" + endDate + "' group by created_date";
             var resultTable = new List<KeyValuePair<DateTime, decimal>>();
             resultTable = DataProvider.Instance.ExecuteReaderDatetimeDecimal(query);
+            TotalRevenue = resultTable.Sum(x => Convert.ToDecimal(x.Value));
 
+            //Sum total of part import bill
             query = "select sum(total) as total from PartImportBill";
             decimal invest = (decimal)DataProvider.Instance.ExecuteScalar(query);
 
-
-            TotalRevenue = resultTable.Sum(x => Convert.ToDecimal(x.Value));
-            TotalProfit = TotalRevenue - invest;
+            query = "select sum(total) as total from RepairBill";
+            decimal revenue = (decimal)DataProvider.Instance.ExecuteScalar(query);
+            TotalProfit = revenue - invest;
 
             //Group by Hours
             if (numberDays <= 1)

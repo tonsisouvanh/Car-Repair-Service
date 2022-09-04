@@ -13,6 +13,16 @@ namespace CarServiceManagement
             Load_RepairBill();
         }
 
+        private void calTotalBill()
+        {
+            decimal sum = 0;
+            for (int i = 0; i < gunaDtgvRepairBill.Rows.Count; ++i)
+            {
+                sum += Convert.ToDecimal(gunaDtgvRepairBill.Rows[i].Cells["total"].FormattedValue.ToString());
+            }
+            labelTotalRepairbill.Text = sum.ToString("N0");
+        }
+
         public void Load_RepairBill()
         {
             DataTable data = DataProvider.Instance.ExecuteQuery("select b.repairbillID,b.customerID,c.name as cust_name,c.phone,c.email,b.status,b.payment,b.total,b.descriptions,b.created_date " +
@@ -23,6 +33,7 @@ namespace CarServiceManagement
             gunaDtgvRepairBill.Columns["total"].DefaultCellStyle.Format = "N0";
             gunaDtgvRepairBill.Columns["created_date"].DefaultCellStyle.Format = "dd/MM/yyyy";
 
+            calTotalBill();
         }
 
         private void ImageButtonAdd_Click(object sender, EventArgs e)
@@ -40,6 +51,8 @@ namespace CarServiceManagement
             DataTable data = DataProvider.Instance.ExecuteQuery("select b.repairbillID,b.customerID,c.name as cust_name,c.phone,c.email,b.status,b.payment,b.total,b.descriptions,b.created_date " +
            "from RepairBill b inner join Customer c on b.customerID = c.customerID WHERE cast(b.created_date AS date) BETWEEN '" + dtpFrom.Value.ToString() + "' AND '" + dtpTo.Value.ToString() + "'");
             gunaDtgvRepairBill.DataSource = data;
+
+            calTotalBill();
         }
 
         private void btnReload_Click(object sender, EventArgs e)
@@ -74,6 +87,8 @@ namespace CarServiceManagement
 
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
             gunaDtgvRepairBill.DataSource = data;
+
+            calTotalBill();
         }
 
         private void gunaDtgvRepairBill_CellContentClick(object sender, DataGridViewCellEventArgs e)

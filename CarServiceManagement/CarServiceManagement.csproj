@@ -583,6 +583,13 @@
     <None Include="Resources\icons8_cancel_25px.png" />
     <None Include="Resources\statistics.png" />
     <None Include="Resources\statistics_solid.png" />
+    <None Include="Resources\invoice1.png" />
+    <None Include="Resources\growth.png" />
+    <None Include="Resources\trade.png" />
+    <None Include="Resources\trade64.png" />
+    <None Include="Resources\trade32.png" />
+    <None Include="Resources\growth64.png" />
+    <None Include="Resources\invoice64.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
