@@ -406,7 +406,7 @@ if(OBJECT_ID('sp_UpdatePartImportBill') is not null)
 go
 create procedure sp_UpdatePartImportBill
 	@supplier nvarchar(255), @supplier_contact varchar(125),
-	@status nvarchar(125), @payment nvarchar(25), @created_date date,
+	@status nvarchar(125), @payment nvarchar(25), @created_date datetime,
 	@descriptions nvarchar(255), @billID int
 as
 begin
@@ -583,7 +583,7 @@ if(OBJECT_ID('sp_UpdateRepairBill') is not null)
 	drop proc sp_UpdateRepairBill
 go
 create procedure sp_UpdateRepairBill
-	@status nvarchar(125), @payment nvarchar(25), @created_date date,
+	@status nvarchar(125), @payment nvarchar(25), @created_date datetime,
 	@descriptions nvarchar(255),@repairbillID int
 as
 begin

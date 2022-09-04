@@ -73,12 +73,13 @@ CREATE TABLE RepairBill
 	payment nvarchar(25),
 	descriptions nvarchar(255),
 	total money default 0, --calculated
-	created_date date default getdate(),
-	updated_date date default getdate(),
+	--created_date date default getdate(),
+	created_date datetime default getdate(),
+	--updated_date date default getdate(),
+	updated_date datetime default getdate(),
+
 	primary key (repairbillID)
 )
-
-
 
 
 if(OBJECT_ID('PartImportBillDetail') is not null)
@@ -235,9 +236,10 @@ CREATE TABLE PartImportBill
 	payment nvarchar(25),
 	descriptions nvarchar(255),
 	total money default 0, --calculated
-	created_date date default getdate(),
-	updated_date date default getdate(),
-
+	--created_date date default getdate(),
+	--updated_date date default getdate(),
+		created_date datetime default getdate(),
+	updated_date datetime default getdate(),
 	primary key (importbillID)
 )
 

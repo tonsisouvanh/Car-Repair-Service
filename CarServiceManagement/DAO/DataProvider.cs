@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
@@ -46,7 +47,6 @@ namespace CarServiceManagement.DAO
 
         public DataTable ExecuteQuery(string query, object[] parameters = null)
         {
-
             DataTable data = new DataTable();
             try
             {
@@ -62,7 +62,7 @@ namespace CarServiceManagement.DAO
             }
             catch (Exception e)
             {
-                //Console.WriteLine(e.ToString());
+                Console.WriteLine(e.ToString());
                 MessageBox.Show("Fail to connect to database!");
             }
 
@@ -117,6 +117,72 @@ namespace CarServiceManagement.DAO
             }
 
             return data;
+        }
+
+
+        public List<KeyValuePair<DateTime, decimal>> ExecuteReaderDatetimeDecimal(string query, object[] parameters = null)
+        {
+            SqlDataReader reader = null;
+            var resultTable = new List<KeyValuePair<DateTime, decimal>>();
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionSTR))
+                {
+
+                    connection.Open();
+                    SqlCommand command = new SqlCommand(query, connection);
+                    command = AddParameters(query, command, parameters);
+                    reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        resultTable.Add(new KeyValuePair<DateTime, decimal>((DateTime)reader[0], (decimal)reader[1]));
+                    }
+
+                    connection.Close();
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+
+            return resultTable;
+        }
+
+
+
+        public List<KeyValuePair<string, int>> ExecuteReaderStringInt(string query, object[] parameters = null)
+        {
+            SqlDataReader reader = null;
+            var resultTable = new List<KeyValuePair<string, int>>();
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionSTR))
+                {
+
+                    connection.Open();
+                    SqlCommand command = new SqlCommand(query, connection);
+                    command = AddParameters(query, command, parameters);
+                    reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        resultTable.Add(
+                    new KeyValuePair<string, int>(reader[0].ToString(), (int)reader[1]));
+                    }
+
+                    connection.Close();
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+
+            return resultTable;
         }
     }
 }

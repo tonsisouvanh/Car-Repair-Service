@@ -209,7 +209,7 @@
             this.guna2TileButton3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2TileButton3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2TileButton3.FillColor = System.Drawing.Color.DarkSlateBlue;
-            this.guna2TileButton3.Font = new System.Drawing.Font("Defago Noto Sans", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TileButton3.Font = new System.Drawing.Font("Defago Noto Sans", 16.2F, System.Drawing.FontStyle.Bold);
             this.guna2TileButton3.ForeColor = System.Drawing.Color.White;
             this.guna2TileButton3.Image = global::CarServiceManagement.Properties.Resources.invoice;
             this.guna2TileButton3.ImageOffset = new System.Drawing.Point(0, 20);
