@@ -59,7 +59,7 @@ namespace CarServiceManagement
                 this.reportViewer1.LocalReport.DataSources.Clear();
 
                 int id = Convert.ToInt32(repairBillDetail.labelBillNumber.Text.ToString());
-                DataTable data = DataProvider.Instance.ExecuteQuery("select p.partID,p.name,p.price as part_price,p.cal_unit,rbdt.quantity,rbdt.subtotal " +
+                DataTable data = DataProvider.Instance.ExecuteQuery("select p.partID,p.code,p.name,p.price as part_price,p.cal_unit,rbdt.quantity,rbdt.subtotal " +
                     "from RepairBillDetail rbdt inner join Part p on rbdt.partID = p.partID where repairbillID = " + id);
 
                 DataTable serviceData = DataProvider.Instance.ExecuteQuery("select * from Services where repairbillID = " + id);

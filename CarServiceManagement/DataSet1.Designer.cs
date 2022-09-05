@@ -706,6 +706,8 @@ namespace CarServiceManagement {
             
             private global::System.Data.DataColumn columnsubtotal;
             
+            private global::System.Data.DataColumn columncode;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public DtRepairBillDataTable() {
@@ -789,6 +791,14 @@ namespace CarServiceManagement {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn codeColumn {
+                get {
+                    return this.columncode;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -824,7 +834,7 @@ namespace CarServiceManagement {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public DtRepairBillRow AddDtRepairBillRow(string partID, string name, string quantity, string part_price, string cal_unit, string subtotal) {
+            public DtRepairBillRow AddDtRepairBillRow(string partID, string name, string quantity, string part_price, string cal_unit, string subtotal, string code) {
                 DtRepairBillRow rowDtRepairBillRow = ((DtRepairBillRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         partID,
@@ -832,7 +842,8 @@ namespace CarServiceManagement {
                         quantity,
                         part_price,
                         cal_unit,
-                        subtotal};
+                        subtotal,
+                        code};
                 rowDtRepairBillRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDtRepairBillRow);
                 return rowDtRepairBillRow;
@@ -861,6 +872,7 @@ namespace CarServiceManagement {
                 this.columnpart_price = base.Columns["part_price"];
                 this.columncal_unit = base.Columns["cal_unit"];
                 this.columnsubtotal = base.Columns["subtotal"];
+                this.columncode = base.Columns["code"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -878,6 +890,8 @@ namespace CarServiceManagement {
                 base.Columns.Add(this.columncal_unit);
                 this.columnsubtotal = new global::System.Data.DataColumn("subtotal", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnsubtotal);
+                this.columncode = new global::System.Data.DataColumn("code", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncode);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1630,6 +1644,22 @@ namespace CarServiceManagement {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string code {
+                get {
+                    try {
+                        return ((string)(this[this.tableDtRepairBill.codeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'code\' in table \'DtRepairBill\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDtRepairBill.codeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IspartIDNull() {
                 return this.IsNull(this.tableDtRepairBill.partIDColumn);
             }
@@ -1698,6 +1728,18 @@ namespace CarServiceManagement {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetsubtotalNull() {
                 this[this.tableDtRepairBill.subtotalColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IscodeNull() {
+                return this.IsNull(this.tableDtRepairBill.codeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetcodeNull() {
+                this[this.tableDtRepairBill.codeColumn] = global::System.Convert.DBNull;
             }
         }
         

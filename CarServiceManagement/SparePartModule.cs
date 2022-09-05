@@ -27,10 +27,11 @@ namespace CarServiceManagement
             string cal_unit = txtCalUnit.Text.ToString();
             string price = txtPrice.Text.ToString();
             string importPrice = txtImportPrice.Text.ToString();
+            string code = txtCode.Text.ToString();
 
 
 
-            return partName != "" && cal_unit != "" && price != "" && importPrice != "";
+            return partName != "" && cal_unit != "" && price != "" && importPrice != "" && code != "";
         }
 
         private bool isNumber(string inputData)
@@ -48,6 +49,8 @@ namespace CarServiceManagement
             txtCalUnit.Clear();
             txtPartDesc.Clear();
             txtBrand.Clear();
+            txtCode.Clear();
+
 
             comboBoxPartType.SelectedIndex = 0;
             numberStock.Value = 0;
@@ -100,8 +103,8 @@ namespace CarServiceManagement
                     int typeId = Convert.ToInt32(comboBoxPartType.SelectedValue.ToString());
                     int importbillID = Convert.ToInt32(labelImportbillID.Text.ToString());
 
-                    string query = "exec sp_AddPart @name , @stock , @price , @import_price , @cal_unit , @description , @part_type , @brand , @importbillID";
-                    int result = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { txtPartName.Text, stock, price, importPrice, txtCalUnit.Text, txtPartDesc.Text, typeId, txtBrand.Text, importbillID });
+                    string query = "exec sp_AddPart @code , @name , @stock , @price , @import_price , @cal_unit , @description , @part_type , @brand , @importbillID";
+                    int result = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { txtCode.Text, txtPartName.Text, stock, price, importPrice, txtCalUnit.Text, txtPartDesc.Text, typeId, txtBrand.Text, importbillID });
 
                     if (result != 0)
                     {
@@ -113,7 +116,7 @@ namespace CarServiceManagement
                         TMessageBox.Show("ບໍ່ສາມາດເພີ່ມໄດ້", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
 
-                    Clear();
+                    //Clear();
                 }
 
             }
@@ -143,8 +146,8 @@ namespace CarServiceManagement
 
                     int typeId = Convert.ToInt32(comboBoxPartType.SelectedValue.ToString());
                     int partId = Convert.ToInt32(labelID.Text.ToString());
-                    string query = "exec sp_UpdatePart @name , @stock , @price , @import_price , @cal_unit , @description , @part_type , @brand , @partId";
-                    int result = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { txtPartName.Text, stock, price, importPrice, txtCalUnit.Text, txtPartDesc.Text, typeId, txtBrand.Text, partId });
+                    string query = "exec sp_UpdatePart @code , @name , @stock , @price , @import_price , @cal_unit , @description , @part_type , @brand , @partId";
+                    int result = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { txtCode.Text, txtPartName.Text, stock, price, importPrice, txtCalUnit.Text, txtPartDesc.Text, typeId, txtBrand.Text, partId });
 
                     if (result != 0)
                     {
@@ -153,10 +156,10 @@ namespace CarServiceManagement
                     }
                     else
                     {
-                        TMessageBox.Show("ບໍ່ສາມາດເພີ່ມໄດ້", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        TMessageBox.Show("ບໍ່ສາມາດແກ້ໄຂໄດ້", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
 
-                    Clear();
+                    //Clear();
 
                     spareParts.Load_SpareParts();
 

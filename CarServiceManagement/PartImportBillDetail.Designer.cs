@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.picMinimize = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -57,6 +57,7 @@
             this.guna2PanelBottom = new Guna.UI2.WinForms.Guna2Panel();
             this.btnPrint = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnExcelExport = new Guna.UI2.WinForms.Guna2ImageButton();
             this.labelDesc = new System.Windows.Forms.Label();
             this.labelSupplier = new System.Windows.Forms.Label();
             this.labelPayment = new System.Windows.Forms.Label();
@@ -68,13 +69,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.gunaDtgvParts = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.partIDs = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.part_price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.import_price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.add = new System.Windows.Forms.DataGridViewImageColumn();
             this.gunaDtgvPartImportBillDetail = new Guna.UI2.WinForms.Guna2DataGridView();
             this.importbilldetailID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.partID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -90,7 +84,14 @@
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.btnExcelExport = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.partIDs = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.code = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.part_price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.import_price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.add = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -345,6 +346,26 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1474, 127);
             this.guna2Panel1.TabIndex = 58;
             // 
+            // btnExcelExport
+            // 
+            this.btnExcelExport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExcelExport.BackColor = System.Drawing.Color.Transparent;
+            this.btnExcelExport.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnExcelExport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExcelExport.HoverState.ImageSize = new System.Drawing.Size(32, 32);
+            this.btnExcelExport.Image = global::CarServiceManagement.Properties.Resources.excel;
+            this.btnExcelExport.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnExcelExport.ImageRotate = 0F;
+            this.btnExcelExport.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnExcelExport.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnExcelExport.Location = new System.Drawing.Point(1355, 74);
+            this.btnExcelExport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnExcelExport.Name = "btnExcelExport";
+            this.btnExcelExport.PressedState.ImageSize = new System.Drawing.Size(0, 0);
+            this.btnExcelExport.Size = new System.Drawing.Size(49, 47);
+            this.btnExcelExport.TabIndex = 20;
+            this.btnExcelExport.Click += new System.EventHandler(this.btnExcelExport_Click);
+            // 
             // labelDesc
             // 
             this.labelDesc.AutoSize = true;
@@ -432,7 +453,7 @@
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
-            this.txtSearch.PlaceholderText = "ພິມຊື່ອາໄຫຼ່";
+            this.txtSearch.PlaceholderText = "ພິມຊື່ອາໄຫຼ່, ລະຫັດ";
             this.txtSearch.SelectedText = "";
             this.txtSearch.Size = new System.Drawing.Size(267, 40);
             this.txtSearch.TabIndex = 19;
@@ -505,42 +526,43 @@
             this.gunaDtgvParts.AllowUserToAddRows = false;
             this.gunaDtgvParts.AllowUserToDeleteRows = false;
             this.gunaDtgvParts.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            this.gunaDtgvParts.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            this.gunaDtgvParts.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
             this.gunaDtgvParts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gunaDtgvParts.BackgroundColor = System.Drawing.Color.White;
             this.gunaDtgvParts.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaDtgvParts.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDtgvParts.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Defago Noto Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDtgvParts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Defago Noto Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDtgvParts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.gunaDtgvParts.ColumnHeadersHeight = 35;
             this.gunaDtgvParts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.partIDs,
+            this.code,
             this.dataGridViewTextBoxColumn2,
             this.part_price,
             this.import_price,
             this.dataGridViewTextBoxColumn4,
             this.stock,
             this.add});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDtgvParts.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gunaDtgvParts.DefaultCellStyle = dataGridViewCellStyle13;
             this.gunaDtgvParts.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaDtgvParts.EnableHeadersVisualStyles = false;
             this.gunaDtgvParts.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -549,20 +571,20 @@
             this.gunaDtgvParts.Name = "gunaDtgvParts";
             this.gunaDtgvParts.ReadOnly = true;
             this.gunaDtgvParts.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Defago Noto Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDtgvParts.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Defago Noto Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDtgvParts.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.gunaDtgvParts.RowHeadersVisible = false;
             this.gunaDtgvParts.RowHeadersWidth = 51;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            this.gunaDtgvParts.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
+            this.gunaDtgvParts.RowsDefaultCellStyle = dataGridViewCellStyle15;
             this.gunaDtgvParts.RowTemplate.Height = 33;
             this.gunaDtgvParts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gunaDtgvParts.Size = new System.Drawing.Size(658, 487);
@@ -590,101 +612,30 @@
             this.gunaDtgvParts.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.gunaDtgvParts.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gunaDtgvParts_CellContentClick);
             // 
-            // partIDs
-            // 
-            this.partIDs.DataPropertyName = "partIDs";
-            this.partIDs.HeaderText = "partID";
-            this.partIDs.MinimumWidth = 6;
-            this.partIDs.Name = "partIDs";
-            this.partIDs.ReadOnly = true;
-            this.partIDs.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.partIDs.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "name";
-            this.dataGridViewTextBoxColumn2.HeaderText = "ອາໄຫຼ່";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // part_price
-            // 
-            this.part_price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.part_price.DataPropertyName = "part_price";
-            this.part_price.HeaderText = "ລາຄາຂາຍ";
-            this.part_price.MinimumWidth = 6;
-            this.part_price.Name = "part_price";
-            this.part_price.ReadOnly = true;
-            this.part_price.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // import_price
-            // 
-            this.import_price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.import_price.DataPropertyName = "import_price";
-            this.import_price.HeaderText = "ລາຄາຕົ້ນທຶນ";
-            this.import_price.MinimumWidth = 6;
-            this.import_price.Name = "import_price";
-            this.import_price.ReadOnly = true;
-            this.import_price.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "cal_unit";
-            this.dataGridViewTextBoxColumn4.HeaderText = "ໜ່ວຍວັດ";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // stock
-            // 
-            this.stock.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.stock.DataPropertyName = "stock";
-            this.stock.HeaderText = "ຈ/ນໃນສາງ";
-            this.stock.MinimumWidth = 6;
-            this.stock.Name = "stock";
-            this.stock.ReadOnly = true;
-            // 
-            // add
-            // 
-            this.add.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.add.HeaderText = "";
-            this.add.Image = global::CarServiceManagement.Properties.Resources.plus_green;
-            this.add.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.add.MinimumWidth = 6;
-            this.add.Name = "add";
-            this.add.ReadOnly = true;
-            this.add.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.add.Width = 6;
-            // 
             // gunaDtgvPartImportBillDetail
             // 
             this.gunaDtgvPartImportBillDetail.AllowUserToAddRows = false;
             this.gunaDtgvPartImportBillDetail.AllowUserToDeleteRows = false;
             this.gunaDtgvPartImportBillDetail.AllowUserToResizeRows = false;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            this.gunaDtgvPartImportBillDetail.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Black;
+            this.gunaDtgvPartImportBillDetail.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
             this.gunaDtgvPartImportBillDetail.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gunaDtgvPartImportBillDetail.BackgroundColor = System.Drawing.Color.White;
             this.gunaDtgvPartImportBillDetail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaDtgvPartImportBillDetail.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDtgvPartImportBillDetail.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Defago Noto Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDtgvPartImportBillDetail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Defago Noto Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDtgvPartImportBillDetail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.gunaDtgvPartImportBillDetail.ColumnHeadersHeight = 35;
             this.gunaDtgvPartImportBillDetail.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.importbilldetailID,
@@ -698,15 +649,15 @@
             this.subtotal,
             this.edit,
             this.delete});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDtgvPartImportBillDetail.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle18.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gunaDtgvPartImportBillDetail.DefaultCellStyle = dataGridViewCellStyle18;
             this.gunaDtgvPartImportBillDetail.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaDtgvPartImportBillDetail.EnableHeadersVisualStyles = false;
             this.gunaDtgvPartImportBillDetail.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -715,20 +666,20 @@
             this.gunaDtgvPartImportBillDetail.Name = "gunaDtgvPartImportBillDetail";
             this.gunaDtgvPartImportBillDetail.ReadOnly = true;
             this.gunaDtgvPartImportBillDetail.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Defago Noto Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDtgvPartImportBillDetail.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Defago Noto Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDtgvPartImportBillDetail.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
             this.gunaDtgvPartImportBillDetail.RowHeadersVisible = false;
             this.gunaDtgvPartImportBillDetail.RowHeadersWidth = 51;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
-            this.gunaDtgvPartImportBillDetail.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Black;
+            this.gunaDtgvPartImportBillDetail.RowsDefaultCellStyle = dataGridViewCellStyle20;
             this.gunaDtgvPartImportBillDetail.RowTemplate.Height = 33;
             this.gunaDtgvPartImportBillDetail.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gunaDtgvPartImportBillDetail.Size = new System.Drawing.Size(804, 487);
@@ -909,25 +860,86 @@
             this.dataGridViewImageColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewImageColumn3.Width = 125;
             // 
-            // btnExcelExport
+            // partIDs
             // 
-            this.btnExcelExport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnExcelExport.BackColor = System.Drawing.Color.Transparent;
-            this.btnExcelExport.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnExcelExport.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExcelExport.HoverState.ImageSize = new System.Drawing.Size(32, 32);
-            this.btnExcelExport.Image = global::CarServiceManagement.Properties.Resources.excel;
-            this.btnExcelExport.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnExcelExport.ImageRotate = 0F;
-            this.btnExcelExport.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnExcelExport.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnExcelExport.Location = new System.Drawing.Point(1355, 74);
-            this.btnExcelExport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnExcelExport.Name = "btnExcelExport";
-            this.btnExcelExport.PressedState.ImageSize = new System.Drawing.Size(0, 0);
-            this.btnExcelExport.Size = new System.Drawing.Size(49, 47);
-            this.btnExcelExport.TabIndex = 20;
-            this.btnExcelExport.Click += new System.EventHandler(this.btnExcelExport_Click);
+            this.partIDs.DataPropertyName = "partIDs";
+            this.partIDs.HeaderText = "partID";
+            this.partIDs.MinimumWidth = 6;
+            this.partIDs.Name = "partIDs";
+            this.partIDs.ReadOnly = true;
+            this.partIDs.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.partIDs.Visible = false;
+            // 
+            // code
+            // 
+            this.code.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.code.DataPropertyName = "code";
+            this.code.HeaderText = "Code";
+            this.code.MinimumWidth = 6;
+            this.code.Name = "code";
+            this.code.ReadOnly = true;
+            this.code.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "name";
+            this.dataGridViewTextBoxColumn2.HeaderText = "ອາໄຫຼ່";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // part_price
+            // 
+            this.part_price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.part_price.DataPropertyName = "part_price";
+            this.part_price.HeaderText = "ລາຄາຂາຍ";
+            this.part_price.MinimumWidth = 6;
+            this.part_price.Name = "part_price";
+            this.part_price.ReadOnly = true;
+            this.part_price.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // import_price
+            // 
+            this.import_price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.import_price.DataPropertyName = "import_price";
+            this.import_price.HeaderText = "ລາຄາຕົ້ນທຶນ";
+            this.import_price.MinimumWidth = 6;
+            this.import_price.Name = "import_price";
+            this.import_price.ReadOnly = true;
+            this.import_price.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "cal_unit";
+            this.dataGridViewTextBoxColumn4.HeaderText = "ໜ່ວຍວັດ";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // stock
+            // 
+            this.stock.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.stock.DataPropertyName = "stock";
+            this.stock.HeaderText = "ຈ/ນໃນສາງ";
+            this.stock.MinimumWidth = 6;
+            this.stock.Name = "stock";
+            this.stock.ReadOnly = true;
+            // 
+            // add
+            // 
+            this.add.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.add.HeaderText = "";
+            this.add.Image = global::CarServiceManagement.Properties.Resources.plus_green;
+            this.add.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.add.MinimumWidth = 6;
+            this.add.Name = "add";
+            this.add.ReadOnly = true;
+            this.add.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.add.Width = 6;
             // 
             // PartImportBillDetail
             // 
@@ -993,13 +1005,6 @@
         private Guna.UI2.WinForms.Guna2ImageButton ImageButtonMaximize;
         private Guna.UI2.WinForms.Guna2ImageButton ImageButtonClose;
         private Guna.UI2.WinForms.Guna2Button btnAddNewPart;
-        private System.Windows.Forms.DataGridViewTextBoxColumn partIDs;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn part_price;
-        private System.Windows.Forms.DataGridViewTextBoxColumn import_price;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn stock;
-        private System.Windows.Forms.DataGridViewImageColumn add;
         public Guna.UI2.WinForms.Guna2DateTimePicker dtpCreatedDate;
         public System.Windows.Forms.Label labelDesc;
         private System.Windows.Forms.DataGridViewTextBoxColumn importbilldetailID;
@@ -1014,5 +1019,13 @@
         private System.Windows.Forms.DataGridViewImageColumn edit;
         private System.Windows.Forms.DataGridViewImageColumn delete;
         private Guna.UI2.WinForms.Guna2ImageButton btnExcelExport;
+        private System.Windows.Forms.DataGridViewTextBoxColumn partIDs;
+        private System.Windows.Forms.DataGridViewTextBoxColumn code;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn part_price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn import_price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn stock;
+        private System.Windows.Forms.DataGridViewImageColumn add;
     }
 }

@@ -56,15 +56,22 @@
             this.lblTotalProfit = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblTotalRevenue = new System.Windows.Forms.Label();
             this.chartGrossRevenue = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblNumOrders = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.picMinimize = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.ImageButtonMaximize = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.ImageButtonClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.lblUsername = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dtpStartDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.dtpEndDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.btnCustomDate = new Guna.UI2.WinForms.Guna2Button();
@@ -72,27 +79,20 @@
             this.btnLast7Days = new Guna.UI2.WinForms.Guna2Button();
             this.btnLast30Days = new Guna.UI2.WinForms.Guna2Button();
             this.btnThisMonth = new Guna.UI2.WinForms.Guna2Button();
-            this.picMinimize = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.ImageButtonMaximize = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.ImageButtonClose = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnOkCustomDate = new System.Windows.Forms.Button();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUnderstock)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartTopProducts)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartGrossRevenue)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -115,7 +115,6 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.dgvUnderstock);
             this.panel5.Controls.Add(this.label13);
             this.panel5.Location = new System.Drawing.Point(270, 561);
@@ -235,7 +234,6 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.lblNumProducts);
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.lblNumSuppliers);
@@ -252,7 +250,6 @@
             // chartTopProducts
             // 
             this.chartTopProducts.BorderlineColor = System.Drawing.Color.Black;
-            this.chartTopProducts.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
             chartArea1.Name = "ChartArea1";
             this.chartTopProducts.ChartAreas.Add(chartArea1);
             legend1.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
@@ -305,7 +302,6 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.guna2PictureBox3);
             this.panel3.Controls.Add(this.lblTotalProfit);
             this.panel3.Controls.Add(this.label5);
@@ -314,6 +310,17 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(520, 93);
             this.panel3.TabIndex = 27;
+            // 
+            // guna2PictureBox3
+            // 
+            this.guna2PictureBox3.Image = global::CarServiceManagement.Properties.Resources.trade64;
+            this.guna2PictureBox3.ImageRotate = 0F;
+            this.guna2PictureBox3.Location = new System.Drawing.Point(14, 12);
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.Size = new System.Drawing.Size(73, 68);
+            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox3.TabIndex = 3;
+            this.guna2PictureBox3.TabStop = false;
             // 
             // lblTotalRevenue
             // 
@@ -328,7 +335,6 @@
             // chartGrossRevenue
             // 
             this.chartGrossRevenue.BorderlineColor = System.Drawing.Color.Black;
-            this.chartGrossRevenue.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
             chartArea2.Name = "ChartArea1";
             this.chartGrossRevenue.ChartAreas.Add(chartArea2);
             legend2.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Top;
@@ -355,7 +361,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.guna2PictureBox1);
             this.panel2.Controls.Add(this.lblTotalRevenue);
             this.panel2.Controls.Add(this.label4);
@@ -364,6 +369,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(631, 93);
             this.panel2.TabIndex = 25;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::CarServiceManagement.Properties.Resources.growth64;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(14, 11);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(73, 68);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 4;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // label4
             // 
@@ -379,7 +395,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.guna2PictureBox2);
             this.panel1.Controls.Add(this.lblNumOrders);
             this.panel1.Controls.Add(this.label2);
@@ -388,6 +403,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(278, 93);
             this.panel1.TabIndex = 23;
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.Image = global::CarServiceManagement.Properties.Resources.invoice64;
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(12, 12);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(73, 68);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox2.TabIndex = 5;
+            this.guna2PictureBox2.TabStop = false;
             // 
             // lblNumOrders
             // 
@@ -425,6 +451,61 @@
             this.panel6.Size = new System.Drawing.Size(1501, 62);
             this.panel6.TabIndex = 30;
             // 
+            // picMinimize
+            // 
+            this.picMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picMinimize.BackColor = System.Drawing.Color.Transparent;
+            this.picMinimize.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.picMinimize.HoverState.ImageSize = new System.Drawing.Size(27, 27);
+            this.picMinimize.Image = global::CarServiceManagement.Properties.Resources.minimize_32;
+            this.picMinimize.ImageOffset = new System.Drawing.Point(0, 0);
+            this.picMinimize.ImageRotate = 0F;
+            this.picMinimize.ImageSize = new System.Drawing.Size(23, 23);
+            this.picMinimize.Location = new System.Drawing.Point(1404, 7);
+            this.picMinimize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picMinimize.Name = "picMinimize";
+            this.picMinimize.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.picMinimize.Size = new System.Drawing.Size(43, 46);
+            this.picMinimize.TabIndex = 16;
+            this.picMinimize.UseTransparentBackground = true;
+            // 
+            // ImageButtonMaximize
+            // 
+            this.ImageButtonMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ImageButtonMaximize.BackColor = System.Drawing.Color.Transparent;
+            this.ImageButtonMaximize.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.ImageButtonMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ImageButtonMaximize.HoverState.ImageSize = new System.Drawing.Size(27, 27);
+            this.ImageButtonMaximize.Image = global::CarServiceManagement.Properties.Resources.maximize_32;
+            this.ImageButtonMaximize.ImageOffset = new System.Drawing.Point(0, 0);
+            this.ImageButtonMaximize.ImageRotate = 0F;
+            this.ImageButtonMaximize.ImageSize = new System.Drawing.Size(23, 23);
+            this.ImageButtonMaximize.Location = new System.Drawing.Point(1358, 7);
+            this.ImageButtonMaximize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ImageButtonMaximize.Name = "ImageButtonMaximize";
+            this.ImageButtonMaximize.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.ImageButtonMaximize.Size = new System.Drawing.Size(37, 46);
+            this.ImageButtonMaximize.TabIndex = 15;
+            // 
+            // ImageButtonClose
+            // 
+            this.ImageButtonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ImageButtonClose.BackColor = System.Drawing.Color.Transparent;
+            this.ImageButtonClose.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.ImageButtonClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ImageButtonClose.HoverState.ImageSize = new System.Drawing.Size(27, 27);
+            this.ImageButtonClose.Image = global::CarServiceManagement.Properties.Resources.close_32;
+            this.ImageButtonClose.ImageOffset = new System.Drawing.Point(0, 0);
+            this.ImageButtonClose.ImageRotate = 0F;
+            this.ImageButtonClose.ImageSize = new System.Drawing.Size(23, 23);
+            this.ImageButtonClose.Location = new System.Drawing.Point(1452, 7);
+            this.ImageButtonClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ImageButtonClose.Name = "ImageButtonClose";
+            this.ImageButtonClose.PressedState.ImageSize = new System.Drawing.Size(27, 27);
+            this.ImageButtonClose.Size = new System.Drawing.Size(37, 46);
+            this.ImageButtonClose.TabIndex = 14;
+            this.ImageButtonClose.Click += new System.EventHandler(this.ImageButtonClose_Click);
+            // 
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
@@ -436,6 +517,17 @@
             this.lblUsername.Size = new System.Drawing.Size(326, 46);
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "ລາຍງານລາຍຮັບ ແລະ ລາຍຈ່າຍ";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CarServiceManagement.Properties.Resources.billdetail;
+            this.pictureBox1.Location = new System.Drawing.Point(20, 7);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(47, 43);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // dtpStartDate
             // 
@@ -558,105 +650,6 @@
             this.btnThisMonth.Text = "ເດືອນນີ້";
             this.btnThisMonth.Click += new System.EventHandler(this.btnThisMonth_Click);
             // 
-            // picMinimize
-            // 
-            this.picMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picMinimize.BackColor = System.Drawing.Color.Transparent;
-            this.picMinimize.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.picMinimize.HoverState.ImageSize = new System.Drawing.Size(27, 27);
-            this.picMinimize.Image = global::CarServiceManagement.Properties.Resources.minimize_32;
-            this.picMinimize.ImageOffset = new System.Drawing.Point(0, 0);
-            this.picMinimize.ImageRotate = 0F;
-            this.picMinimize.ImageSize = new System.Drawing.Size(23, 23);
-            this.picMinimize.Location = new System.Drawing.Point(1404, 7);
-            this.picMinimize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.picMinimize.Name = "picMinimize";
-            this.picMinimize.PressedState.ImageSize = new System.Drawing.Size(27, 27);
-            this.picMinimize.Size = new System.Drawing.Size(43, 46);
-            this.picMinimize.TabIndex = 16;
-            this.picMinimize.UseTransparentBackground = true;
-            // 
-            // ImageButtonMaximize
-            // 
-            this.ImageButtonMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ImageButtonMaximize.BackColor = System.Drawing.Color.Transparent;
-            this.ImageButtonMaximize.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.ImageButtonMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ImageButtonMaximize.HoverState.ImageSize = new System.Drawing.Size(27, 27);
-            this.ImageButtonMaximize.Image = global::CarServiceManagement.Properties.Resources.maximize_32;
-            this.ImageButtonMaximize.ImageOffset = new System.Drawing.Point(0, 0);
-            this.ImageButtonMaximize.ImageRotate = 0F;
-            this.ImageButtonMaximize.ImageSize = new System.Drawing.Size(23, 23);
-            this.ImageButtonMaximize.Location = new System.Drawing.Point(1358, 7);
-            this.ImageButtonMaximize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ImageButtonMaximize.Name = "ImageButtonMaximize";
-            this.ImageButtonMaximize.PressedState.ImageSize = new System.Drawing.Size(27, 27);
-            this.ImageButtonMaximize.Size = new System.Drawing.Size(37, 46);
-            this.ImageButtonMaximize.TabIndex = 15;
-            // 
-            // ImageButtonClose
-            // 
-            this.ImageButtonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ImageButtonClose.BackColor = System.Drawing.Color.Transparent;
-            this.ImageButtonClose.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.ImageButtonClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ImageButtonClose.HoverState.ImageSize = new System.Drawing.Size(27, 27);
-            this.ImageButtonClose.Image = global::CarServiceManagement.Properties.Resources.close_32;
-            this.ImageButtonClose.ImageOffset = new System.Drawing.Point(0, 0);
-            this.ImageButtonClose.ImageRotate = 0F;
-            this.ImageButtonClose.ImageSize = new System.Drawing.Size(23, 23);
-            this.ImageButtonClose.Location = new System.Drawing.Point(1452, 7);
-            this.ImageButtonClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ImageButtonClose.Name = "ImageButtonClose";
-            this.ImageButtonClose.PressedState.ImageSize = new System.Drawing.Size(27, 27);
-            this.ImageButtonClose.Size = new System.Drawing.Size(37, 46);
-            this.ImageButtonClose.TabIndex = 14;
-            this.ImageButtonClose.Click += new System.EventHandler(this.ImageButtonClose_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::CarServiceManagement.Properties.Resources.billdetail;
-            this.pictureBox1.Location = new System.Drawing.Point(20, 7);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(47, 43);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // guna2PictureBox3
-            // 
-            this.guna2PictureBox3.Image = global::CarServiceManagement.Properties.Resources.trade64;
-            this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(14, 12);
-            this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(73, 68);
-            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox3.TabIndex = 3;
-            this.guna2PictureBox3.TabStop = false;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = global::CarServiceManagement.Properties.Resources.growth64;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(14, 11);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(73, 68);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 4;
-            this.guna2PictureBox1.TabStop = false;
-            // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.Image = global::CarServiceManagement.Properties.Resources.invoice64;
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(12, 12);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(73, 68);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox2.TabIndex = 5;
-            this.guna2PictureBox2.TabStop = false;
-            // 
             // btnOkCustomDate
             // 
             this.btnOkCustomDate.BackColor = System.Drawing.Color.White;
@@ -707,17 +700,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.chartTopProducts)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartGrossRevenue)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

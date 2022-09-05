@@ -37,8 +37,8 @@ namespace CarServiceManagement
 
         public void load_SpareParts()
         {
-            DataTable data = DataProvider.Instance.ExecuteQuery("select p.partID as partIDs,p.name,p.price as part_price,p.import_price,p.cal_unit,p.stock from Part p " +
-                "where p.name like N'%" + txtSearch.Text + "%'");
+            DataTable data = DataProvider.Instance.ExecuteQuery("select p.partID as partIDs,p.code,p.name,p.price as part_price,p.import_price,p.cal_unit,p.stock from Part p " +
+                "where concat(p.name,p.code) like N'%" + txtSearch.Text + "%'");
             gunaDtgvParts.DataSource = data;
             gunaDtgvParts.Columns["part_price"].DefaultCellStyle.Format = "N0";
             gunaDtgvParts.Columns["import_price"].DefaultCellStyle.Format = "N0";

@@ -58,7 +58,7 @@ if(OBJECT_ID('sp_AddPart') is not null)
 	drop proc sp_AddPart
 go
 create procedure sp_AddPart 
-	@name nvarchar(255), @stock int, 
+	@code varchar(25), @name nvarchar(255), @stock int, 
 	@price money,@import_price money,
 	@cal_unit nvarchar(55), @description nvarchar(255),
 	@part_type int, @brand nvarchar(150),
@@ -66,8 +66,8 @@ create procedure sp_AddPart
 as
 begin
 
-	INSERT INTO Part(name,stock,price,import_price,currency,cal_unit,descriptions,part_type,brand)	
-	VALUES(@name, @stock,@price,@import_price,N'KIP',@cal_unit,@description,@part_type,@brand)
+	INSERT INTO Part(code,name,stock,price,import_price,currency,cal_unit,descriptions,part_type,brand)	
+	VALUES(@code,@name, @stock,@price,@import_price,N'KIP',@cal_unit,@description,@part_type,@brand)
 
 	Declare @partID int;
 	Declare @subtotal money;
@@ -113,14 +113,14 @@ if(OBJECT_ID('sp_UpdatePart') is not null)
 	drop proc sp_UpdatePart
 go
 create procedure sp_UpdatePart 
-	@name nvarchar(255), @stock int, 
+	@code varchar(25),@name nvarchar(255), @stock int, 
 	@price money,@import_price money,
 	@cal_unit nvarchar(55), @description nvarchar(255),
 	@part_type int, @brand nvarchar(150), @partId int
 as
 begin
 
-	UPDATE Part SET name = @name,
+	UPDATE Part SET code = @code, name = @name,
 					stock = @stock,
 					price = @price,
 					import_price = @import_price,

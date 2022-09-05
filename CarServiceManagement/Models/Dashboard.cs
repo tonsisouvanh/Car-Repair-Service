@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using System.Windows.Forms;
 
 namespace CarServiceManagement.Models
 {
@@ -96,85 +97,94 @@ namespace CarServiceManagement.Models
             TotalRevenue = 0;
             string query = "";
 
-            // sum total of revenue with defined date
-            query = "select created_date, sum(total) as total from RepairBill where created_date between '" + startDate + "' and '" + endDate + "' group by created_date";
-            var resultTable = new List<KeyValuePair<DateTime, decimal>>();
-            resultTable = DataProvider.Instance.ExecuteReaderDatetimeDecimal(query);
-            TotalRevenue = resultTable.Sum(x => Convert.ToDecimal(x.Value));
-
-            //Sum total of part import bill
-            query = "select sum(total) as total from PartImportBill";
-            decimal invest = (decimal)DataProvider.Instance.ExecuteScalar(query);
-
-            query = "select sum(total) as total from RepairBill";
-            decimal revenue = (decimal)DataProvider.Instance.ExecuteScalar(query);
-            TotalProfit = revenue - invest;
-
-            //Group by Hours
-            if (numberDays <= 1)
+            try
             {
-                GrossRevenueList = (from orderList in resultTable
-                                    group orderList by orderList.Key.ToString("hh tt")
-                                   into order
-                                    select new RevenueByDate
-                                    {
-                                        Date = order.Key,
-                                        TotalAmount = order.Sum(amount => amount.Value)
-                                    }).ToList();
+                // sum total of revenue with defined date
+                query = "select created_date, sum(total) as total from RepairBill where created_date between '" + startDate + "' and '" + endDate + "' group by created_date";
+                var resultTable = new List<KeyValuePair<DateTime, decimal>>();
+                resultTable = DataProvider.Instance.ExecuteReaderDatetimeDecimal(query);
+                TotalRevenue = resultTable.Sum(x => Convert.ToDecimal(x.Value));
+
+                //Sum total of part import bill
+                query = "select sum(total) as total from PartImportBill";
+                decimal invest = (decimal)DataProvider.Instance.ExecuteScalar(query);
+
+                query = "select sum(total) as total from RepairBill";
+                decimal revenue = (decimal)DataProvider.Instance.ExecuteScalar(query);
+                TotalProfit = revenue - invest;
+
+                //Group by Hours
+                if (numberDays <= 1)
+                {
+                    GrossRevenueList = (from orderList in resultTable
+                                        group orderList by orderList.Key.ToString("hh tt")
+                                       into order
+                                        select new RevenueByDate
+                                        {
+                                            Date = order.Key,
+                                            TotalAmount = order.Sum(amount => amount.Value)
+                                        }).ToList();
+                }
+                //Group by Days
+                else if (numberDays <= 30)
+                {
+                    GrossRevenueList = (from orderList in resultTable
+                                        group orderList by orderList.Key.ToString("dd MMM")
+                                       into order
+                                        select new RevenueByDate
+                                        {
+                                            Date = order.Key,
+                                            TotalAmount = order.Sum(amount => amount.Value)
+                                        }).ToList();
+                }
+
+                //Group by Weeks
+                else if (numberDays <= 92)
+                {
+                    GrossRevenueList = (from orderList in resultTable
+                                        group orderList by CultureInfo.CurrentCulture.Calendar.GetWeekOfYear(
+                                            orderList.Key, CalendarWeekRule.FirstDay, DayOfWeek.Monday)
+                                       into order
+                                        select new RevenueByDate
+                                        {
+                                            Date = "Week " + order.Key.ToString(),
+                                            TotalAmount = order.Sum(amount => amount.Value)
+                                        }).ToList();
+                }
+
+                //Group by Months
+                else if (numberDays <= (365 * 2))
+                {
+                    bool isYear = numberDays <= 365 ? true : false;
+                    GrossRevenueList = (from orderList in resultTable
+                                        group orderList by orderList.Key.ToString("MMM yyyy")
+                                       into order
+                                        select new RevenueByDate
+                                        {
+                                            Date = isYear ? order.Key.Substring(0, order.Key.IndexOf(" ")) : order.Key,
+                                            TotalAmount = order.Sum(amount => amount.Value)
+                                        }).ToList();
+                }
+
+                //Group by Years
+                else
+                {
+                    GrossRevenueList = (from orderList in resultTable
+                                        group orderList by orderList.Key.ToString("yyyy")
+                                       into order
+                                        select new RevenueByDate
+                                        {
+                                            Date = order.Key,
+                                            TotalAmount = order.Sum(amount => amount.Value)
+                                        }).ToList();
+                }
             }
-            //Group by Days
-            else if (numberDays <= 30)
+            catch (Exception ex)
             {
-                GrossRevenueList = (from orderList in resultTable
-                                    group orderList by orderList.Key.ToString("dd MMM")
-                                   into order
-                                    select new RevenueByDate
-                                    {
-                                        Date = order.Key,
-                                        TotalAmount = order.Sum(amount => amount.Value)
-                                    }).ToList();
+                TMessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            //Group by Weeks
-            else if (numberDays <= 92)
-            {
-                GrossRevenueList = (from orderList in resultTable
-                                    group orderList by CultureInfo.CurrentCulture.Calendar.GetWeekOfYear(
-                                        orderList.Key, CalendarWeekRule.FirstDay, DayOfWeek.Monday)
-                                   into order
-                                    select new RevenueByDate
-                                    {
-                                        Date = "Week " + order.Key.ToString(),
-                                        TotalAmount = order.Sum(amount => amount.Value)
-                                    }).ToList();
-            }
 
-            //Group by Months
-            else if (numberDays <= (365 * 2))
-            {
-                bool isYear = numberDays <= 365 ? true : false;
-                GrossRevenueList = (from orderList in resultTable
-                                    group orderList by orderList.Key.ToString("MMM yyyy")
-                                   into order
-                                    select new RevenueByDate
-                                    {
-                                        Date = isYear ? order.Key.Substring(0, order.Key.IndexOf(" ")) : order.Key,
-                                        TotalAmount = order.Sum(amount => amount.Value)
-                                    }).ToList();
-            }
-
-            //Group by Years
-            else
-            {
-                GrossRevenueList = (from orderList in resultTable
-                                    group orderList by orderList.Key.ToString("yyyy")
-                                   into order
-                                    select new RevenueByDate
-                                    {
-                                        Date = order.Key,
-                                        TotalAmount = order.Sum(amount => amount.Value)
-                                    }).ToList();
-            }
         }
 
         //Public methods

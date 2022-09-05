@@ -57,6 +57,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtImportPrice = new System.Windows.Forms.TextBox();
             this.labelImportbillID = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtCode = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.numberStock)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -76,7 +78,7 @@
             // 
             this.txtCurrency.Enabled = false;
             this.txtCurrency.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCurrency.Location = new System.Drawing.Point(970, 327);
+            this.txtCurrency.Location = new System.Drawing.Point(548, 420);
             this.txtCurrency.Margin = new System.Windows.Forms.Padding(4);
             this.txtCurrency.Name = "txtCurrency";
             this.txtCurrency.Size = new System.Drawing.Size(48, 40);
@@ -398,11 +400,33 @@
             this.labelImportbillID.Text = "labelImportbillID";
             this.labelImportbillID.Visible = false;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(637, 332);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(62, 33);
+            this.label10.TabIndex = 134;
+            this.label10.Text = "Code";
+            // 
+            // txtCode
+            // 
+            this.txtCode.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCode.Location = new System.Drawing.Point(775, 327);
+            this.txtCode.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCode.Name = "txtCode";
+            this.txtCode.Size = new System.Drawing.Size(247, 40);
+            this.txtCode.TabIndex = 135;
+            // 
             // SparePartModule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 476);
+            this.Controls.Add(this.txtCode);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.labelImportbillID);
             this.Controls.Add(this.txtImportPrice);
             this.Controls.Add(this.label6);
@@ -470,5 +494,7 @@
         public System.Windows.Forms.TextBox txtImportPrice;
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.Label labelImportbillID;
+        public System.Windows.Forms.TextBox txtCode;
+        private System.Windows.Forms.Label label10;
     }
 }

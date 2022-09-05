@@ -41,6 +41,10 @@
           <DataField>subtotal</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="code">
+          <DataField>code</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DataSet1</rd:DataSetName>
@@ -91,16 +95,19 @@
                   <Width>0.34537in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>3.69195in</Width>
+                  <Width>1.65236in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.58814in</Width>
+                  <Width>3.09186in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.04043in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>0.50456in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.68838in</Width>
+                  <Width>1.1626in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -131,6 +138,56 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox1</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>1.5pt</Width>
+                            </Border>
+                            <TopBorder>
+                              <Style>None</Style>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Style>None</Style>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Style>None</Style>
+                            </RightBorder>
+                            <BackgroundColor>White</BackgroundColor>
+                            <PaddingLeft>3pt</PaddingLeft>
+                            <PaddingRight>3pt</PaddingRight>
+                            <PaddingTop>3pt</PaddingTop>
+                            <PaddingBottom>3pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox4">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>ລະຫັດ</Value>
+                                  <Style>
+                                    <FontStyle>Normal</FontStyle>
+                                    <FontFamily>phetsarath OT</FontFamily>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox4</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -410,6 +467,52 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
+                        <Textbox Name="code">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!code.Value</Value>
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>code</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>DimGray</Color>
+                              <Style>None</Style>
+                            </Border>
+                            <TopBorder>
+                              <Style>None</Style>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>None</Style>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Style>None</Style>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Style>None</Style>
+                            </RightBorder>
+                            <PaddingLeft>3pt</PaddingLeft>
+                            <PaddingRight>3pt</PaddingRight>
+                            <PaddingTop>3pt</PaddingTop>
+                            <PaddingBottom>3pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
                         <Textbox Name="name">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -608,6 +711,7 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
+                <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
@@ -624,7 +728,7 @@
             <Top>1.09666in</Top>
             <Left>0.25in</Left>
             <Height>0.5in</Height>
-            <Width>7.8184in</Width>
+            <Width>7.79718in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1539,7 +1643,7 @@
         <Height>10.70447cm</Height>
         <Style />
       </Body>
-      <Width>21cm</Width>
+      <Width>22.99374cm</Width>
       <Page>
         <PageHeader>
           <Height>6.7324cm</Height>
@@ -1956,6 +2060,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox15</rd:DefaultName>
+              <Top>0in</Top>
               <Left>1.20492in</Left>
               <Height>0.38333in</Height>
               <Width>5.1751in</Width>

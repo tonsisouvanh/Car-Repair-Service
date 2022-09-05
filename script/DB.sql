@@ -104,6 +104,7 @@ go
 CREATE TABLE Part
 (
     partID int IDENTITY(100,1) NOT NULL,
+	code varchar(25) unique NOT NULL,
 	name nvarchar(255),
 	stock int default 0,
 	import_price money,

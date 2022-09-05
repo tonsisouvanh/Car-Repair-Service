@@ -74,9 +74,9 @@ namespace CarServiceManagement
                 spm.txtImportPrice.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["import_price"].FormattedValue.ToString();
                 spm.txtCurrency.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["currency"].FormattedValue.ToString();
                 spm.txtBrand.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["brand"].FormattedValue.ToString();
+                spm.txtCode.Text = gunaDtgvParts.Rows[e.RowIndex].Cells["code"].FormattedValue.ToString();
                 spm.numberStock.Value = Convert.ToDecimal(gunaDtgvParts.Rows[e.RowIndex].Cells["stock"].FormattedValue.ToString());
                 spm.comboBoxPartType.SelectedIndex = spm.comboBoxPartType.FindStringExact(gunaDtgvParts.Rows[e.RowIndex].Cells["type_name"].FormattedValue.ToString());
-
                 spm.btnSave.Enabled = false;
                 spm.btnUpdate.Enabled = true;
 
@@ -89,7 +89,7 @@ namespace CarServiceManagement
         private void txtPartName_TextChanged(object sender, EventArgs e)
         {
             DataTable dtDept = DataProvider.Instance.ExecuteQuery("select p.*,pt.name as type_name from PartType pt,Part p where pt.parttypeID = p.part_type " +
-    "and concat(p.name, pt.name, p.brand) LIKE N'%" + txtPartName.Text + "%'");
+    "and concat(p.name, pt.name, p.brand,p.code) LIKE N'%" + txtPartName.Text + "%'");
             gunaDtgvParts.DataSource = dtDept;
             gunaDtgvParts.Columns["price"].DefaultCellStyle.Format = "N0";
         }
