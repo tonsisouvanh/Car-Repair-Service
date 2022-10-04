@@ -8,6 +8,8 @@ namespace CarServiceManagement
         public BillMain()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
+
         }
 
 

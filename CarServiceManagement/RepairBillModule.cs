@@ -121,15 +121,17 @@ namespace CarServiceManagement
             f.ShowDialog();
         }
 
-        private bool isRequireOilChange(int custID)
-        {
-            DataTable data = DataProvider.Instance.ExecuteQuery("select * from Vehicle where cast(getdate() as date) >= required_oilchange_date and customerID = " + custID);
-            if (data.Rows.Count > 0)
-            {
-                return true;
-            }
-            return false;
-        }
+        //private bool isRequireOilChange(int custID)
+        //{
+        //    //DataTable data = DataProvider.Instance.ExecuteQuery("select * from Vehicle where cast(getdate() as date) >= required_oilchange_date and customerID = " + custID);
+        //    DataTable data = DataProvider.Instance.ExecuteQuery("select * from Vehicle where end_kms <= " + Convert.ToInt32(txtKmageCheck.Text) + " and customerID = " + custID);
+
+        //    if (data.Rows.Count > 0)
+        //    {
+        //        return true;
+        //    }
+        //    return false;
+        //}
 
         private void txtCustInfo_TextChanged(object sender, EventArgs e)
         {
@@ -143,11 +145,11 @@ namespace CarServiceManagement
                 formInputPanel.Enabled = true;
 
                 //checkout to noti oil change
-                int custID = Convert.ToInt32(labelCustID.Text.ToString());
-                if (isRequireOilChange(custID))
-                {
-                    this.Alert("ລົດຮອດກຳນົດປ່ຽນນ້ຳມັນເຄື່ອງ", FormAlert.enmType.Warning);
-                }
+                //int custID = Convert.ToInt32(labelCustID.Text.ToString());
+                //if (isRequireOilChange(custID))
+                //{
+                //    this.Alert("ລົດຮອດກຳນົດປ່ຽນນ້ຳມັນເຄື່ອງ", FormAlert.enmType.Warning);
+                //}
 
 
             }
@@ -156,6 +158,25 @@ namespace CarServiceManagement
                 txtCustName.Text = "ບໍ່ພົບຂໍ້ມູນລູກຄ້າ";
                 formInputPanel.Enabled = false;
             }
+        }
+
+        private void btnKmageCheck_Click(object sender, EventArgs e)
+        {
+            if (txtKmageCheck.Text != "")
+            {
+                int custID = Convert.ToInt32(labelCustID.Text.ToString());
+                DataTable data = DataProvider.Instance.ExecuteQuery("select * from Vehicle where end_kms <= " + Convert.ToInt32(txtKmageCheck.Text) + " and customerID = " + custID);
+                if (data.Rows.Count > 0)
+                {
+                    // noti show up
+                    OilChangeAlert f = new OilChangeAlert(custID);
+                    f.btnSave.Enabled = false;
+                    f.labelTitle.Text = "ລົດຮອກກຳນົດປ່ຽນນ້ຳມັນເຄື່ອງແລ້ວ";
+                    f.labelTitle.ForeColor = System.Drawing.Color.Yellow;
+                    f.ShowDialog();
+                }
+            }
+
         }
     }
 }

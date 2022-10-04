@@ -94,25 +94,25 @@ namespace CarServiceManagement
             }
             this.x = Screen.PrimaryScreen.WorkingArea.Width - base.Width - 5;
 
-            //switch (type)
-            //{
-            //    case enmType.Success:
-            //        this.pictureBox1.Image = Resources.success;
-            //        this.BackColor = Color.SeaGreen;
-            //        break;
-            //    case enmType.Error:
-            //        this.pictureBox1.Image = Resources.error;
-            //        this.BackColor = Color.DarkRed;
-            //        break;
-            //    case enmType.Info:
-            //        this.pictureBox1.Image = Resources.info;
-            //        this.BackColor = Color.RoyalBlue;
-            //        break;
-            //    case enmType.Warning:
-            //        this.pictureBox1.Image = Resources.warning;
-            //        this.BackColor = Color.DarkOrange;
-            //        break;
-            //}
+            switch (type)
+            {
+                case enmType.Success:
+                    //this.pictureBox1.Image = Resources.success;
+                    this.BackColor = Color.SeaGreen;
+                    break;
+                case enmType.Error:
+                    //this.pictureBox1.Image = Resources.error;
+                    this.BackColor = Color.DarkRed;
+                    break;
+                case enmType.Info:
+                    //this.pictureBox1.Image = Resources.info;
+                    this.BackColor = Color.RoyalBlue;
+                    break;
+                case enmType.Warning:
+                    //this.pictureBox1.Image = Resources.warning;
+                    this.BackColor = Color.DarkOrange;
+                    break;
+            }
 
 
             this.lblMsg.Text = msg;

@@ -15,14 +15,14 @@ namespace CarServiceManagement
 
         public void Load_Vehicles()
         {
-            DataTable data = DataProvider.Instance.ExecuteQuery("select distinct v.vehicleID,v.name,v.color,v.typeID,v.brandID,v.plate_number,v.descriptions,v.customerID,vt.type_name,vb.brand_name, c.name as custname, c.phone,v.oilchange_date,v.required_oilchange_date " +
+            DataTable data = DataProvider.Instance.ExecuteQuery("select distinct v.vehicleID,v.name,v.color,v.typeID,v.brandID,v.plate_number,v.descriptions,v.customerID,vt.type_name,vb.brand_name, c.name as custname, c.phone,v.oilchange_date,v.start_kms,v.end_kms " +
                 "from Vehicle v inner join Customer c on v.customerID = c.customerID " +
                 "inner join VehicleType vt on v.typeID = vt.typeID " +
                 "inner join VehicleBrand vb on v.brandID = vb.brandID " +
                 "where concat(v.name, v.color, v.plate_number, vt.type_name, vb.brand_name, c.name, c.phone) LIKE N'%" + txtSearch.Text + "%'");
-            gunaDtgvVehicles.DataSource = data;
-            gunaDtgvVehicles.Columns["required_oilchange_date"].DefaultCellStyle.Format = "dd/MM/yyyy";
 
+            gunaDtgvVehicles.DataSource = data;
+            gunaDtgvVehicles.Columns["oilchange_date"].DefaultCellStyle.Format = "dd/MM/yyyy";
 
         }
 
@@ -98,19 +98,5 @@ namespace CarServiceManagement
             }
         }
 
-        private void guna2TileButton2_Click(object sender, EventArgs e)
-        {
-            Load_Vehicles();
-        }
-
-        private void guna2TileButton1_Click(object sender, EventArgs e)
-        {
-            DataTable data = DataProvider.Instance.ExecuteQuery("select distinct v.vehicleID,v.name,v.color,v.typeID,v.brandID,v.plate_number,v.descriptions,v.customerID,vt.type_name,vb.brand_name, c.name as custname, c.phone,v.oilchange_date,v.required_oilchange_date " +
-                "from Vehicle v inner join Customer c on v.customerID = c.customerID " +
-                "inner join VehicleType vt on v.typeID = vt.typeID " +
-                "inner join VehicleBrand vb on v.brandID = vb.brandID " +
-                "where concat(v.name, v.color, v.plate_number, vt.type_name, vb.brand_name, c.name, c.phone) LIKE N'%" + txtSearch.Text + "%' and cast(getdate() as date) >= v.required_oilchange_date");
-            gunaDtgvVehicles.DataSource = data;
-        }
     }
 }

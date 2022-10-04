@@ -56,6 +56,9 @@
             this.labelAddNewCust = new System.Windows.Forms.Label();
             this.formInputPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.labelCustID = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtKmageCheck = new System.Windows.Forms.TextBox();
+            this.btnKmageCheck = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.formInputPanel.SuspendLayout();
             this.SuspendLayout();
@@ -70,8 +73,8 @@
             this.dtpCreatedDate.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpCreatedDate.ForeColor = System.Drawing.Color.White;
             this.dtpCreatedDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpCreatedDate.Location = new System.Drawing.Point(677, 175);
-            this.dtpCreatedDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpCreatedDate.Location = new System.Drawing.Point(677, 173);
+            this.dtpCreatedDate.Margin = new System.Windows.Forms.Padding(4);
             this.dtpCreatedDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpCreatedDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpCreatedDate.Name = "dtpCreatedDate";
@@ -84,7 +87,7 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(440, 175);
+            this.label7.Location = new System.Drawing.Point(440, 173);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(39, 33);
@@ -96,8 +99,8 @@
             this.txtTotal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtTotal.Enabled = false;
             this.txtTotal.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotal.Location = new System.Drawing.Point(180, 175);
-            this.txtTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTotal.Location = new System.Drawing.Point(180, 173);
+            this.txtTotal.Margin = new System.Windows.Forms.Padding(4);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(251, 40);
             this.txtTotal.TabIndex = 127;
@@ -107,7 +110,7 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(4, 175);
+            this.label6.Location = new System.Drawing.Point(4, 173);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(75, 33);
@@ -124,8 +127,8 @@
             this.cbbStatus.Items.AddRange(new object[] {
             "ຊຳລະແລ້ວ",
             "ຍັງບໍ່ຊຳລະ"});
-            this.cbbStatus.Location = new System.Drawing.Point(180, 20);
-            this.cbbStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbStatus.Location = new System.Drawing.Point(180, 18);
+            this.cbbStatus.Margin = new System.Windows.Forms.Padding(4);
             this.cbbStatus.Name = "cbbStatus";
             this.cbbStatus.Size = new System.Drawing.Size(299, 41);
             this.cbbStatus.TabIndex = 124;
@@ -141,7 +144,7 @@
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(556, 175);
+            this.label9.Location = new System.Drawing.Point(556, 173);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(96, 33);
@@ -157,8 +160,8 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Dosis", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(765, 502);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUpdate.Location = new System.Drawing.Point(765, 585);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(125, 43);
             this.btnUpdate.TabIndex = 132;
@@ -182,8 +185,8 @@
             // 
             this.txtDesc.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtDesc.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDesc.Location = new System.Drawing.Point(180, 76);
-            this.txtDesc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDesc.Location = new System.Drawing.Point(180, 74);
+            this.txtDesc.Margin = new System.Windows.Forms.Padding(4);
             this.txtDesc.Multiline = true;
             this.txtDesc.Name = "txtDesc";
             this.txtDesc.Size = new System.Drawing.Size(799, 79);
@@ -194,7 +197,7 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(4, 76);
+            this.label8.Location = new System.Drawing.Point(4, 74);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(96, 33);
@@ -206,7 +209,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(556, 20);
+            this.label4.Location = new System.Drawing.Point(556, 18);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(87, 33);
@@ -217,8 +220,8 @@
             // 
             this.txtPayment.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPayment.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPayment.Location = new System.Drawing.Point(693, 20);
-            this.txtPayment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPayment.Location = new System.Drawing.Point(693, 18);
+            this.txtPayment.Margin = new System.Windows.Forms.Padding(4);
             this.txtPayment.Name = "txtPayment";
             this.txtPayment.Size = new System.Drawing.Size(285, 40);
             this.txtPayment.TabIndex = 125;
@@ -227,7 +230,7 @@
             // 
             this.labelID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelID.AutoSize = true;
-            this.labelID.Location = new System.Drawing.Point(48, 526);
+            this.labelID.Location = new System.Drawing.Point(48, 609);
             this.labelID.Name = "labelID";
             this.labelID.Size = new System.Drawing.Size(38, 16);
             this.labelID.TabIndex = 135;
@@ -239,7 +242,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(4, 20);
+            this.label3.Location = new System.Drawing.Point(4, 18);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(113, 33);
@@ -255,8 +258,8 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Dosis", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(632, 502);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Location = new System.Drawing.Point(632, 585);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(125, 43);
             this.btnSave.TabIndex = 130;
@@ -273,8 +276,8 @@
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Dosis", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
-            this.btnCancel.Location = new System.Drawing.Point(897, 502);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancel.Location = new System.Drawing.Point(897, 585);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(125, 43);
             this.btnCancel.TabIndex = 133;
@@ -289,7 +292,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1067, 62);
             this.panel1.TabIndex = 129;
@@ -319,7 +322,7 @@
             this.txtCustName.Enabled = false;
             this.txtCustName.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCustName.Location = new System.Drawing.Point(733, 177);
-            this.txtCustName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCustName.Margin = new System.Windows.Forms.Padding(4);
             this.txtCustName.Name = "txtCustName";
             this.txtCustName.Size = new System.Drawing.Size(285, 40);
             this.txtCustName.TabIndex = 146;
@@ -351,7 +354,7 @@
             this.txtCustInfo.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtCustInfo.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCustInfo.Location = new System.Drawing.Point(219, 177);
-            this.txtCustInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCustInfo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCustInfo.Name = "txtCustInfo";
             this.txtCustInfo.Size = new System.Drawing.Size(299, 40);
             this.txtCustInfo.TabIndex = 142;
@@ -385,6 +388,9 @@
             // 
             // formInputPanel
             // 
+            this.formInputPanel.Controls.Add(this.btnKmageCheck);
+            this.formInputPanel.Controls.Add(this.txtKmageCheck);
+            this.formInputPanel.Controls.Add(this.label11);
             this.formInputPanel.Controls.Add(this.cbbStatus);
             this.formInputPanel.Controls.Add(this.label3);
             this.formInputPanel.Controls.Add(this.txtPayment);
@@ -400,25 +406,64 @@
             this.formInputPanel.Location = new System.Drawing.Point(40, 222);
             this.formInputPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.formInputPanel.Name = "formInputPanel";
-            this.formInputPanel.Size = new System.Drawing.Size(1000, 249);
+            this.formInputPanel.Size = new System.Drawing.Size(1000, 342);
             this.formInputPanel.TabIndex = 148;
             // 
             // labelCustID
             // 
             this.labelCustID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelCustID.AutoSize = true;
-            this.labelCustID.Location = new System.Drawing.Point(101, 526);
+            this.labelCustID.Location = new System.Drawing.Point(101, 609);
             this.labelCustID.Name = "labelCustID";
             this.labelCustID.Size = new System.Drawing.Size(76, 16);
             this.labelCustID.TabIndex = 149;
             this.labelCustID.Text = "labelCustID";
             this.labelCustID.Visible = false;
             // 
+            // label11
+            // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(5, 241);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(227, 33);
+            this.label11.TabIndex = 142;
+            this.label11.Text = "ພິມເລກໄລຍະທາງລົດເພື່ອກວດ";
+            // 
+            // txtKmageCheck
+            // 
+            this.txtKmageCheck.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtKmageCheck.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKmageCheck.Location = new System.Drawing.Point(11, 278);
+            this.txtKmageCheck.Margin = new System.Windows.Forms.Padding(4);
+            this.txtKmageCheck.Name = "txtKmageCheck";
+            this.txtKmageCheck.Size = new System.Drawing.Size(251, 40);
+            this.txtKmageCheck.TabIndex = 143;
+            // 
+            // btnKmageCheck
+            // 
+            this.btnKmageCheck.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnKmageCheck.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnKmageCheck.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnKmageCheck.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnKmageCheck.FillColor = System.Drawing.Color.Transparent;
+            this.btnKmageCheck.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnKmageCheck.ForeColor = System.Drawing.Color.White;
+            this.btnKmageCheck.Image = global::CarServiceManagement.Properties.Resources.search;
+            this.btnKmageCheck.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnKmageCheck.Location = new System.Drawing.Point(270, 278);
+            this.btnKmageCheck.Name = "btnKmageCheck";
+            this.btnKmageCheck.Size = new System.Drawing.Size(50, 40);
+            this.btnKmageCheck.TabIndex = 144;
+            this.btnKmageCheck.Click += new System.EventHandler(this.btnKmageCheck_Click);
+            // 
             // RepairBillModule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 569);
+            this.ClientSize = new System.Drawing.Size(1067, 652);
             this.Controls.Add(this.labelCustID);
             this.Controls.Add(this.formInputPanel);
             this.Controls.Add(this.labelAddNewCust);
@@ -474,5 +519,8 @@
         public System.Windows.Forms.Label labelCustID;
         public Guna.UI2.WinForms.Guna2Panel formInputPanel;
         private Guna.UI2.WinForms.Guna2ImageButton picClose;
+        public System.Windows.Forms.TextBox txtKmageCheck;
+        private System.Windows.Forms.Label label11;
+        private Guna.UI2.WinForms.Guna2Button btnKmageCheck;
     }
 }

@@ -8,6 +8,8 @@ namespace CarServiceManagement
         public CustomerMain()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
+
         }
 
         private Form activeForm = null;

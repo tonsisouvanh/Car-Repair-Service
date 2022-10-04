@@ -63,8 +63,8 @@
             this.edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
             this.labelTotalRepairbill = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.guna2PanelBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDtgvRepairBill)).BeginInit();
@@ -121,7 +121,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(775, 11);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 33);
+            this.label3.Size = new System.Drawing.Size(35, 26);
             this.label3.TabIndex = 7;
             this.label3.Text = "ເຖິງ:";
             // 
@@ -133,7 +133,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(515, 11);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 33);
+            this.label2.Size = new System.Drawing.Size(39, 26);
             this.label2.TabIndex = 6;
             this.label2.Text = "ຈາກ:";
             // 
@@ -182,7 +182,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 33);
+            this.label1.Size = new System.Drawing.Size(50, 26);
             this.label1.TabIndex = 3;
             this.label1.Text = "ຄົ້ນຫາ:";
             // 
@@ -256,7 +256,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(909, 15);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(103, 33);
+            this.label5.Size = new System.Drawing.Size(79, 26);
             this.label5.TabIndex = 10;
             this.label5.Text = "ເພີ່ມບິນໃໝ່:";
             // 
@@ -269,7 +269,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(605, 15);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(109, 33);
+            this.label4.Size = new System.Drawing.Size(85, 26);
             this.label4.TabIndex = 9;
             this.label4.Text = "ກອງຂໍ້ມູນບິນ:";
             // 
@@ -443,7 +443,7 @@
             this.cust_name.MinimumWidth = 6;
             this.cust_name.Name = "cust_name";
             this.cust_name.ReadOnly = true;
-            this.cust_name.Width = 107;
+            this.cust_name.Width = 89;
             // 
             // phone
             // 
@@ -454,7 +454,7 @@
             this.phone.Name = "phone";
             this.phone.ReadOnly = true;
             this.phone.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.phone.Width = 87;
+            this.phone.Width = 72;
             // 
             // email
             // 
@@ -465,7 +465,7 @@
             this.email.Name = "email";
             this.email.ReadOnly = true;
             this.email.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.email.Width = 92;
+            this.email.Width = 74;
             // 
             // status
             // 
@@ -476,7 +476,7 @@
             this.status.Name = "status";
             this.status.ReadOnly = true;
             this.status.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.status.Width = 140;
+            this.status.Width = 114;
             // 
             // payment
             // 
@@ -487,7 +487,7 @@
             this.payment.Name = "payment";
             this.payment.ReadOnly = true;
             this.payment.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.payment.Width = 132;
+            this.payment.Width = 106;
             // 
             // total
             // 
@@ -498,7 +498,7 @@
             this.total.Name = "total";
             this.total.ReadOnly = true;
             this.total.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.total.Width = 115;
+            this.total.Width = 93;
             // 
             // descriptions
             // 
@@ -519,7 +519,7 @@
             this.created_date.Name = "created_date";
             this.created_date.ReadOnly = true;
             this.created_date.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.created_date.Width = 141;
+            this.created_date.Width = 112;
             // 
             // detail
             // 
@@ -568,31 +568,31 @@
             this.panel1.Size = new System.Drawing.Size(1083, 40);
             this.panel1.TabIndex = 17;
             // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(865, 3);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 33);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "ລວມ:";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // labelTotalRepairbill
             // 
             this.labelTotalRepairbill.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelTotalRepairbill.AutoSize = true;
-            this.labelTotalRepairbill.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotalRepairbill.Font = new System.Drawing.Font("Defago Noto Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTotalRepairbill.ForeColor = System.Drawing.Color.Black;
-            this.labelTotalRepairbill.Location = new System.Drawing.Point(951, 3);
+            this.labelTotalRepairbill.Location = new System.Drawing.Point(901, 3);
             this.labelTotalRepairbill.Name = "labelTotalRepairbill";
-            this.labelTotalRepairbill.Size = new System.Drawing.Size(114, 33);
+            this.labelTotalRepairbill.Size = new System.Drawing.Size(105, 32);
             this.labelTotalRepairbill.TabIndex = 10;
             this.labelTotalRepairbill.Text = "100000000";
             this.labelTotalRepairbill.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Defago Noto Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(797, 3);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(52, 32);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "ລວມ:";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // RepairBill
             // 

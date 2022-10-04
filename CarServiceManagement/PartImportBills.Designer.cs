@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnReload = new Guna.UI2.WinForms.Guna2ImageButton();
             this.label3 = new System.Windows.Forms.Label();
@@ -122,7 +122,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(759, 11);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 33);
+            this.label3.Size = new System.Drawing.Size(35, 26);
             this.label3.TabIndex = 7;
             this.label3.Text = "ເຖິງ:";
             // 
@@ -134,7 +134,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(499, 11);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 33);
+            this.label2.Size = new System.Drawing.Size(39, 26);
             this.label2.TabIndex = 6;
             this.label2.Text = "ຈາກ:";
             // 
@@ -183,7 +183,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 33);
+            this.label1.Size = new System.Drawing.Size(50, 26);
             this.label1.TabIndex = 3;
             this.label1.Text = "ຄົ້ນຫາ:";
             // 
@@ -256,7 +256,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(893, 15);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(103, 33);
+            this.label5.Size = new System.Drawing.Size(79, 26);
             this.label5.TabIndex = 10;
             this.label5.Text = "ເພີ່ມບິນໃໝ່:";
             // 
@@ -269,7 +269,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(589, 15);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(109, 33);
+            this.label4.Size = new System.Drawing.Size(85, 26);
             this.label4.TabIndex = 9;
             this.label4.Text = "ກອງຂໍ້ມູນບິນ:";
             // 
@@ -323,25 +323,25 @@
             this.gunaDtgvPartImportBill.AllowUserToAddRows = false;
             this.gunaDtgvPartImportBill.AllowUserToDeleteRows = false;
             this.gunaDtgvPartImportBill.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            this.gunaDtgvPartImportBill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Black;
+            this.gunaDtgvPartImportBill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
             this.gunaDtgvPartImportBill.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gunaDtgvPartImportBill.BackgroundColor = System.Drawing.Color.White;
             this.gunaDtgvPartImportBill.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaDtgvPartImportBill.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDtgvPartImportBill.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Defago Noto Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDtgvPartImportBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Defago Noto Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDtgvPartImportBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.gunaDtgvPartImportBill.ColumnHeadersHeight = 35;
             this.gunaDtgvPartImportBill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.importbillID,
@@ -357,14 +357,14 @@
             this.edit,
             this.delete});
             this.gunaDtgvPartImportBill.Cursor = System.Windows.Forms.Cursors.Default;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDtgvPartImportBill.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gunaDtgvPartImportBill.DefaultCellStyle = dataGridViewCellStyle18;
             this.gunaDtgvPartImportBill.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaDtgvPartImportBill.EnableHeadersVisualStyles = false;
             this.gunaDtgvPartImportBill.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -373,21 +373,21 @@
             this.gunaDtgvPartImportBill.Name = "gunaDtgvPartImportBill";
             this.gunaDtgvPartImportBill.ReadOnly = true;
             this.gunaDtgvPartImportBill.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Defago Noto Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDtgvPartImportBill.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Defago Noto Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDtgvPartImportBill.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
             this.gunaDtgvPartImportBill.RowHeadersVisible = false;
             this.gunaDtgvPartImportBill.RowHeadersWidth = 51;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(2);
-            this.gunaDtgvPartImportBill.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle20.Padding = new System.Windows.Forms.Padding(2);
+            this.gunaDtgvPartImportBill.RowsDefaultCellStyle = dataGridViewCellStyle20;
             this.gunaDtgvPartImportBill.RowTemplate.Height = 33;
             this.gunaDtgvPartImportBill.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gunaDtgvPartImportBill.Size = new System.Drawing.Size(1067, 396);
@@ -434,7 +434,7 @@
             this.supplier.Name = "supplier";
             this.supplier.ReadOnly = true;
             this.supplier.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.supplier.Width = 163;
+            this.supplier.Width = 131;
             // 
             // supplier_contact
             // 
@@ -445,7 +445,7 @@
             this.supplier_contact.Name = "supplier_contact";
             this.supplier_contact.ReadOnly = true;
             this.supplier_contact.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.supplier_contact.Width = 131;
+            this.supplier_contact.Width = 106;
             // 
             // status
             // 
@@ -456,7 +456,7 @@
             this.status.Name = "status";
             this.status.ReadOnly = true;
             this.status.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.status.Width = 140;
+            this.status.Width = 114;
             // 
             // payment
             // 
@@ -467,7 +467,7 @@
             this.payment.Name = "payment";
             this.payment.ReadOnly = true;
             this.payment.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.payment.Width = 132;
+            this.payment.Width = 106;
             // 
             // descriptions
             // 
@@ -488,7 +488,7 @@
             this.total.Name = "total";
             this.total.ReadOnly = true;
             this.total.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.total.Width = 115;
+            this.total.Width = 93;
             // 
             // created_date
             // 
@@ -499,7 +499,7 @@
             this.created_date.Name = "created_date";
             this.created_date.ReadOnly = true;
             this.created_date.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.created_date.Width = 141;
+            this.created_date.Width = 112;
             // 
             // updated_date
             // 
@@ -510,7 +510,7 @@
             this.updated_date.Name = "updated_date";
             this.updated_date.ReadOnly = true;
             this.updated_date.Visible = false;
-            this.updated_date.Width = 119;
+            this.updated_date.Width = 95;
             // 
             // detail
             // 
@@ -558,7 +558,6 @@
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             this.dataGridViewImageColumn1.ReadOnly = true;
             this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewImageColumn1.Width = 125;
             // 
             // dataGridViewImageColumn2
             // 
@@ -570,7 +569,6 @@
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.ReadOnly = true;
             this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewImageColumn2.Width = 125;
             // 
             // dataGridViewImageColumn3
             // 
@@ -582,7 +580,6 @@
             this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
             this.dataGridViewImageColumn3.ReadOnly = true;
             this.dataGridViewImageColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewImageColumn3.Width = 125;
             // 
             // panel1
             // 
@@ -598,11 +595,11 @@
             // 
             this.labelTotalImportbill.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelTotalImportbill.AutoSize = true;
-            this.labelTotalImportbill.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotalImportbill.Font = new System.Drawing.Font("Defago Noto Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTotalImportbill.ForeColor = System.Drawing.Color.Black;
-            this.labelTotalImportbill.Location = new System.Drawing.Point(935, 3);
+            this.labelTotalImportbill.Location = new System.Drawing.Point(887, 3);
             this.labelTotalImportbill.Name = "labelTotalImportbill";
-            this.labelTotalImportbill.Size = new System.Drawing.Size(114, 33);
+            this.labelTotalImportbill.Size = new System.Drawing.Size(105, 32);
             this.labelTotalImportbill.TabIndex = 10;
             this.labelTotalImportbill.Text = "100000000";
             this.labelTotalImportbill.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -611,11 +608,11 @@
             // 
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Defago Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Defago Noto Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(849, 3);
+            this.label6.Location = new System.Drawing.Point(782, 3);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 33);
+            this.label6.Size = new System.Drawing.Size(52, 32);
             this.label6.TabIndex = 9;
             this.label6.Text = "ລວມ:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

@@ -92,22 +92,19 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>0.34537in</Width>
+                  <Width>0.67584in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.65236in</Width>
+                  <Width>3.42233in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>3.09186in</Width>
+                  <Width>1.3709in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.04043in</Width>
+                  <Width>0.83503in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.50456in</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>1.1626in</Width>
+                  <Width>1.49307in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -138,56 +135,6 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox1</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Style>Solid</Style>
-                              <Width>1.5pt</Width>
-                            </Border>
-                            <TopBorder>
-                              <Style>None</Style>
-                            </TopBorder>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
-                            <LeftBorder>
-                              <Style>None</Style>
-                            </LeftBorder>
-                            <RightBorder>
-                              <Style>None</Style>
-                            </RightBorder>
-                            <BackgroundColor>White</BackgroundColor>
-                            <PaddingLeft>3pt</PaddingLeft>
-                            <PaddingRight>3pt</PaddingRight>
-                            <PaddingTop>3pt</PaddingTop>
-                            <PaddingBottom>3pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox4">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>ລະຫັດ</Value>
-                                  <Style>
-                                    <FontStyle>Normal</FontStyle>
-                                    <FontFamily>phetsarath OT</FontFamily>
-                                    <FontSize>11pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                    <TextDecoration>None</TextDecoration>
-                                    <Color>#000000</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox4</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -467,52 +414,6 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="code">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!code.Value</Value>
-                                  <Style>
-                                    <FontSize>11pt</FontSize>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>code</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>DimGray</Color>
-                              <Style>None</Style>
-                            </Border>
-                            <TopBorder>
-                              <Style>None</Style>
-                            </TopBorder>
-                            <BottomBorder>
-                              <Style>None</Style>
-                            </BottomBorder>
-                            <LeftBorder>
-                              <Style>None</Style>
-                            </LeftBorder>
-                            <RightBorder>
-                              <Style>None</Style>
-                            </RightBorder>
-                            <PaddingLeft>3pt</PaddingLeft>
-                            <PaddingRight>3pt</PaddingRight>
-                            <PaddingTop>3pt</PaddingTop>
-                            <PaddingBottom>3pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
                         <Textbox Name="name">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -706,7 +607,6 @@
             </TablixBody>
             <TablixColumnHierarchy>
               <TablixMembers>
-                <TablixMember />
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
@@ -1734,7 +1634,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>ຮ້ານ: ລວມອາໄຫຼ່ (ຂາຍອາໄຫຼ່ທຸກຊະນິດ)</Value>
+                      <Value>ຮ້ານ: ຊ້າງໃຫຍ່ປະດິດ</Value>
                       <Style>
                         <FontFamily>phetsarath OT</FontFamily>
                         <FontSize>14pt</FontSize>
@@ -1771,7 +1671,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>ທີ່ຢູ່: ຖະໜົນສີທອງ, ບ້ານ ໜອງດ້ວງເໜືອ</Value>
+                      <Value>ທີ່ຢູ່: ອຸດົມໄຊ, ມ. ໄຊ ບ້ານ ນາໝີ ທາງເວັນເມື່ອງ</Value>
                       <Style>
                         <FontFamily>phetsarath OT</FontFamily>
                         <FontSize>12pt</FontSize>
@@ -1788,7 +1688,7 @@
               <Top>1.94611in</Top>
               <Left>0.25in</Left>
               <Height>0.35222in</Height>
-              <Width>2.97714in</Width>
+              <Width>3.26047in</Width>
               <ZIndex>3</ZIndex>
               <Style>
                 <Border>
@@ -1816,10 +1716,11 @@
                       </Style>
                     </TextRun>
                     <TextRun>
-                      <Value>020 5950 4888, 58188857, 56291196</Value>
+                      <Value>Whatsapp - 020 99138882, FB - Phonepadith Dith</Value>
                       <Style>
+                        <FontFamily>arial</FontFamily>
                         <FontSize>12pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
+                        <FontWeight>Normal</FontWeight>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -1832,7 +1733,7 @@
               <Top>2.29833in</Top>
               <Left>0.25in</Left>
               <Height>0.35222in</Height>
-              <Width>3.68547in</Width>
+              <Width>4.80408in</Width>
               <ZIndex>4</ZIndex>
               <Style>
                 <Border>
@@ -1852,7 +1753,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>ທ. ພອນປະດິດ</Value>
+                      <Value>ທ. ພອນປະດິດ ວໍລະກົດ</Value>
                       <Style>
                         <FontFamily>phetsarath OT</FontFamily>
                         <FontSize>14pt</FontSize>

@@ -16,14 +16,16 @@ namespace CarServiceManagement
         }
         public void loadInfo()
         {
-            DataTable data = DataProvider.Instance.ExecuteQuery("select oilchange_date, required_oilchange_date from Vehicle where customerID = " + custID);
+            DataTable data = DataProvider.Instance.ExecuteQuery("select oilchange_date, start_kms, end_kms from Vehicle where customerID = " + custID);
 
             if (data.Rows.Count > 0)
             {
                 DataRow row = data.Rows[0];
 
                 dtpStart.Text = row["oilchange_date"].ToString().Split(' ')[0];
-                dtpEnd.Text = row["required_oilchange_date"].ToString().Split(' ')[0];
+                txtStartKms.Text = row["start_kms"].ToString();
+                txtEndKms.Text = row["end_kms"].ToString();
+
 
             }
         }
@@ -35,10 +37,11 @@ namespace CarServiceManagement
                 if (TMessageBox.Show("ຕ້ອງການບັນທິກຂໍ້ມູນ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     DateTime currDate = dtpStart.Value;
-                    DateTime nextChange = dtpEnd.Value;
 
-                    string query = "Update Vehicle set oilchange_date = '" + currDate + "', required_oilchange_date = '" + nextChange + "' " +
-                        "where CustomerID = " + custID;
+                    //string query = "Update Vehicle set oilchange_date = '" + currDate + "', required_oilchange_date = '" + nextChange + "' " +
+                    //    "where CustomerID = " + custID;
+                    string query = "Update Vehicle set oilchange_date = '" + currDate + "', start_kms = " + Convert.ToInt32(txtStartKms.Text) + ",end_kms = " + Convert.ToInt32(txtEndKms.Text) +
+                        " where CustomerID = " + custID;
                     int result = DataProvider.Instance.ExecuteNoneQuery(query);
 
                     if (result != 0)

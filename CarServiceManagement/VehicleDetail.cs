@@ -13,6 +13,7 @@ namespace CarServiceManagement
             InitializeComponent();
             custID = id;
             load_vehicle();
+            txtKmageCheck.Focus();
         }
 
         private void picClose_Click(object sender, EventArgs e)
@@ -20,19 +21,9 @@ namespace CarServiceManagement
             this.Dispose();
         }
 
-        private void isRequireOilChange()
-        {
-            DataTable data = DataProvider.Instance.ExecuteQuery("select * from Vehicle where cast(getdate() as date) >= required_oilchange_date and customerID = " + custID);
-            if (data.Rows.Count > 0)
-            {
-                this.labelOilChangeNoti.Text = "ລົດຮອດກຳນົດປ່ຽນນ້ຳມັນເຄື່ອງ";
-                this.labelOilChangeNoti.ForeColor = System.Drawing.Color.FromArgb(0, 70, 160);
-            }
-        }
 
         private void load_vehicle()
         {
-            isRequireOilChange();
             DataTable data = DataProvider.Instance.ExecuteQuery("select top(1) v.*,vt.type_name,vb.brand_name from Vehicle v " +
                 "inner join VehicleType vt on v.typeID = vt.typeID " +
                 "inner join VehicleBrand vb on v.brandID = vb.brandID " +
@@ -49,10 +40,30 @@ namespace CarServiceManagement
                 this.labelBrand.Text = row["brand_name"].ToString();
                 this.labelPlateNO.Text = row["plate_number"].ToString();
                 this.dtpStart.Text = row["oilchange_date"].ToString();
-                this.dtpEnd.Text = row["required_oilchange_date"].ToString();
+                this.txtStartKms.Text = row["start_kms"].ToString();
+                this.txtEndKms.Text = row["end_kms"].ToString();
                 this.txtDescriptions.Text = row["descriptions"].ToString();
 
 
+            }
+        }
+
+        public void Alert(string msg, FormAlert.enmType type)
+        {
+            FormAlert frm = new FormAlert();
+            frm.showAlert(msg, type);
+        }
+
+
+        private void btnKmageCheck_Click(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(txtKmageCheck.Text.ToString()) >= Convert.ToInt32(txtEndKms.Text.ToString()))
+            {
+                this.Alert("ລົດຮອດກຳນົດປ່ຽນນ້ຳມັນເຄື່ອງ", FormAlert.enmType.Warning);
+            }
+            else
+            {
+                this.Alert("ຍັງບໍ່ຮອດກຳນົດປ່ຽນ", FormAlert.enmType.Info);
             }
         }
     }

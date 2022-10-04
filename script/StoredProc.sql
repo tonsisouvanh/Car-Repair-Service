@@ -2,56 +2,6 @@
 go
 
 
-if(OBJECT_ID('fn_CalImportPrice') is not null)
-	drop function fn_CalImportPrice
-go
-CREATE FUNCTION fn_CalImportPrice
-(@quantity int, @partID int)
-RETURNS money
-AS
-BEGIN
-	declare @ImportPrice money;
-	declare @result money;
-	set @ImportPrice = 0;
-	set @result = 0;
-
-
-	select @ImportPrice = import_price from Part
-	where partID = @partID
-	
-	set @result = @result + (@ImportPrice * @quantity)
-
-	RETURN @result;
-
-END;
-go
-
-
-if(OBJECT_ID('fn_CalSellPrice') is not null)
-	drop function fn_CalSellPrice
-go
-CREATE FUNCTION fn_CalSellPrice
-(@quantity int, @partID int)
-RETURNS money
-AS
-BEGIN
-	declare @sellPrice money;
-	declare @result money;
-	set @sellPrice = 0;
-	set @result = 0;
-
-
-	select @sellPrice = price from Part
-	where partID = @partID
-	
-	set @result = @result + (@sellPrice * @quantity)
-
-	RETURN @result;
-
-END;
-go
-
-
 -- @@@@@@@@@@@@@@@@@@@@@@ Spare Parts @@@@@@@@@@@@@@@@@@@@@@@
 -- @@ Create Part
 if(OBJECT_ID('sp_AddPart') is not null)
@@ -75,13 +25,11 @@ begin
 	IF(@@ROWCOUNT > 0)
 	BEGIN
 		set @partID = SCOPE_IDENTITY();
-		--set @subtotal = dbo.fn_CalImportPrice(@stock,@partID);
 		set @subtotal = @stock * @import_price;
 
 
 		--handle bill total
 		update PartImportBill
-		--set total = total + dbo.fn_CalImportPrice(@stock,@partID)
 		set total = total + @subtotal
 		where importbillID = @importbillID;
 

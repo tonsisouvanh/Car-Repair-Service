@@ -164,8 +164,12 @@ CREATE TABLE Vehicle
 	descriptions nvarchar(255),
 	customerID int, --FK
 	oilchange_date date,
-	required_oilchange_date date,
-	primary key (vehicleID)
+	--required_oilchange_date date,
+	start_kms int check(start_kms >= 0),
+	end_kms int,
+
+	primary key (vehicleID),
+	constraint ck_endkms check (end_kms > start_kms)
 )
 
 if(OBJECT_ID('VehicleType') is not null)

@@ -85,6 +85,16 @@ namespace CarServiceManagement
 
         }
 
+        private bool isCustomerVehicleExist()
+        {
+            int result = (int)DataProvider.Instance.ExecuteScalar("select count(c.customerID) from Customer c inner join Vehicle v on c.customerID = v.customerID where phone = '" + txtCustInfo.Text + "'");
+            if (result != 0)
+            {
+                return true;
+            }
+            return false;
+        }
+
         private void btnSave_Click(object sender, EventArgs e)
         {
             try
@@ -94,6 +104,12 @@ namespace CarServiceManagement
                     if (!checkForm())
                     {
                         TMessageBox.Show("ກາລຸນາປ້ອນຂໍ້ມູນໃຫ້ຄົບຖ້ວນ!", "Warning Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+
+                    if (isCustomerVehicleExist())
+                    {
+                        TMessageBox.Show("ລູກຄ້າມີຂໍ້ມູນລົດແລ້ວບໍ່ສາມາດເພີ່ມຕື່ມໄດ້", "Warning Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
 

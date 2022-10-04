@@ -1,7 +1,8 @@
 ﻿use GarageServiceDB
 go
 
-INSERT INTO Account(username,password,name) VALUES ('admin','admin',N'Tons');
+INSERT INTO Account(username,password,name) VALUES ('admin','admin',N'Phonepadith');
+
 -- @@@@@@@@@@@@@@@@@@@ INSERT DATA @@@@@@@@@@@@@@@@@@@ --
 
 
@@ -185,14 +186,14 @@ INSERT INTO PartType(name) VALUES(N'ດອກໄຟ')
 
 
 --@@ CUSTOMER
-INSERT INTO Customer(name,email,phone,province,district,address_detail) 
-VALUES(N'ໂຕ້','to2022@gmail.com','02054433029',N'ອຸດົມໄຊ',N'ສີສັດຕະນາກ',N'14,ສຸພານຸວົງ')
+--INSERT INTO Customer(name,email,phone,province,district,address_detail) 
+--VALUES(N'ໂຕ້','to2022@gmail.com','02054433029',N'ອຸດົມໄຊ',N'ສີສັດຕະນາກ',N'14,ສຸພານຸວົງ')
 
-INSERT INTO Customer(name,email,phone,province,district,address_detail) 
-VALUES(N'ແຈັກ','jack2022@gmail.com','02074433029',N'ນະຄອນຫຼວງວຽງຈັນ',N'ສີໂຄດຕະບອງ',N'13,ສຸພານຸວົງ')
+--INSERT INTO Customer(name,email,phone,province,district,address_detail) 
+--VALUES(N'ແຈັກ','jack2022@gmail.com','02074433029',N'ນະຄອນຫຼວງວຽງຈັນ',N'ສີໂຄດຕະບອງ',N'13,ສຸພານຸວົງ')
 
-INSERT INTO Customer(name,email,phone,province,district,address_detail) 
-VALUES(N'ແມັກ','mack2022@gmail.com','02054433021',N'ນະຄອນຫຼວງວຽງຈັນ',N'ໄຊເສດຖາ',N'12,ສຸພານຸວົງ')
+--INSERT INTO Customer(name,email,phone,province,district,address_detail) 
+--VALUES(N'ແມັກ','mack2022@gmail.com','02054433021',N'ນະຄອນຫຼວງວຽງຈັນ',N'ໄຊເສດຖາ',N'12,ສຸພານຸວົງ')
 
 --@@ VEHICLE TYPE
 INSERT INTO VehicleType(type_name) 
@@ -202,29 +203,29 @@ VALUES(N'ລົດເກັງ')
 
 --@@ VEHICLE BRAND
 INSERT INTO VehicleBrand(brand_name) 
-VALUES(N'TOYOTA')
+VALUES(N'Toyota')
 INSERT INTO VehicleBrand(brand_name) 
-VALUES(N'Audi')
+VALUES(N'Izuzu')
 
 
 
 --@@ VEHICLE
-INSERT INTO Vehicle(name,color,typeID,brandID,plate_number,descriptions,customerID,oilchange_date,required_oilchange_date) 
-VALUES(N'Toyota vios 2011',N'ຂາວ,ດຳ',100,101,N'ກຂ 4923',N'ອະທິບາຍ',101,'2022-01-01','2022-04-01')
+--INSERT INTO Vehicle(name,color,typeID,brandID,plate_number,descriptions,customerID,oilchange_date) 
+--VALUES(N'Toyota vios 2011',N'ຂາວ,ດຳ',100,101,N'ກຂ 4923',N'ອະທິບາຍ',101,'2022-01-01')
 
-INSERT INTO Vehicle(name,color,typeID,brandID,plate_number,descriptions,customerID,oilchange_date,required_oilchange_date) 
-VALUES(N'Nissan 2011',N'ຂາວ,ດຳ',101,100,N'ກຂ 9923',N'ອະທິບາຍ',102,'2022-03-01','2022-07-01')
+--INSERT INTO Vehicle(name,color,typeID,brandID,plate_number,descriptions,customerID,oilchange_date) 
+--VALUES(N'Nissan 2011',N'ຂາວ,ດຳ',101,100,N'ກຂ 9923',N'ອະທິບາຍ',102,'2022-03-01')
 
-INSERT INTO Vehicle(name,color,typeID,brandID,plate_number,descriptions,customerID,oilchange_date,required_oilchange_date) 
-VALUES(N'Nissan 2022',N'ຂາວ,ແດງ',101,100,N'ກຂ 9823',N'ອະທິບາຍ',100,'2022-08-01','2022-12-01')
+--INSERT INTO Vehicle(name,color,typeID,brandID,plate_number,descriptions,customerID,oilchange_date) 
+--VALUES(N'Nissan 2022',N'ຂາວ,ແດງ',101,100,N'ກຂ 9823',N'ອະທິບາຍ',100,'2022-08-01')
 
-----@@ Part Import Bill
-INSERT INTO PartImportBill(supplier,supplier_contact,status,payment,descriptions)
-VALUES (N'ຈິບ ອາໄຫຼ່','jip@gmail.com',N'ຍັງບໍ່ຈ່າຍ',N'ໂອນ',N'')
-INSERT INTO PartImportBill(supplier,supplier_contact,status,payment,descriptions)
-VALUES (N'ດາວວີປະດັບຍົນ','020553344291',N'ຈ່າຍແລ້ວ',N'ເງິນສົດ',N'')
-INSERT INTO PartImportBill(supplier,supplier_contact,status,payment,descriptions)
-VALUES (N'ເສັງສ້ອມແປງລົດຍົນ','seng@gmail.com',N'ຍັງບໍ່ຈ່າຍ',N'ໂອນ',N'')
+------@@ Part Import Bill
+--INSERT INTO PartImportBill(supplier,supplier_contact,status,payment,descriptions)
+--VALUES (N'ຈິບ ອາໄຫຼ່','jip@gmail.com',N'ຍັງບໍ່ຈ່າຍ',N'ໂອນ',N'')
+--INSERT INTO PartImportBill(supplier,supplier_contact,status,payment,descriptions)
+--VALUES (N'ດາວວີປະດັບຍົນ','020553344291',N'ຈ່າຍແລ້ວ',N'ເງິນສົດ',N'')
+--INSERT INTO PartImportBill(supplier,supplier_contact,status,payment,descriptions)
+--VALUES (N'ເສັງສ້ອມແປງລົດຍົນ','seng@gmail.com',N'ຍັງບໍ່ຈ່າຍ',N'ໂອນ',N'')
 
 
 --@@ PARTS

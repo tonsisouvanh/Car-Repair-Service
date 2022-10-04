@@ -16,8 +16,7 @@ namespace CarServiceManagement
             load_District();
             customers = cust;
             btnUpdate.Enabled = false;
-            comboBoxDistrict.SelectedIndex = -1;
-            comboBoxProvince.SelectedIndex = -1;
+            comboBoxProvince.SelectedIndex = 14;
             txtPhone.Text = "020";
 
         }
